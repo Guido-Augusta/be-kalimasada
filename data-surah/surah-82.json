@@ -1,0 +1,146 @@
+[
+  {
+    "nomor": 82,
+    "nama": "الإنفطار",
+    "namaLatin": "Al-Infitar",
+    "totalAyat": 19,
+    "tempatTurun": "Makkiyyah",
+    "arti": "Terbelah",
+    "deskripsi": "Surat ini terdiri atas 19 ayat, termasuk golongan surat-surat Makkiyah dan diturunkan sesudah surat An Naazi'aat. Al Infithaar yang dijadikan  nama untuk surat ini adalah kata asal dari kata Infatharat (terbelah)  yang terdapat pada ayat pertama.",
+    "ayat": [
+      {
+        "nomorAyat": 1,
+        "arab": "إِذَا السَّمَاءُ انفَطَرَتْ",
+        "latin": "Izas samaaa'un fatarat",
+        "terjemah": "Apabila langit terbelah,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 2,
+        "arab": "وَإِذَا الْكَوَاكِبُ انتَثَرَتْ",
+        "latin": "Wa izal kawaakibun tasarat",
+        "terjemah": "dan apabila bintang-bintang jatuh berserakan,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 3,
+        "arab": "وَإِذَا الْبِحَارُ فُجِّرَتْ",
+        "latin": "Wa izal bihaaru fujjirat",
+        "terjemah": "dan apabila lautan dijadikan meluap,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 4,
+        "arab": "وَإِذَا الْقُبُورُ بُعْثِرَتْ",
+        "latin": "Wa izal qubooru bu'sirat",
+        "terjemah": "dan apabila kuburan-kuburan dibongkar,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 5,
+        "arab": "عَلِمَتْ نَفْسٌ مَّا قَدَّمَتْ وَأَخَّرَتْ",
+        "latin": "'Alimat nafsum maa qaddamat wa akhkharat",
+        "terjemah": "(maka) setiap jiwa akan mengetahui apa yang telah dikerjakan dan yang dilalaikan(nya).",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 6,
+        "arab": "يَا أَيُّهَا الْإِنسَانُ مَا غَرَّكَ بِرَبِّكَ الْكَرِيمِ",
+        "latin": "Yaaa ayyuhal insaaanu maa gharraka bi Rabbikal kareem",
+        "terjemah": "Wahai manusia! Apakah yang telah memperdayakan kamu (berbuat durhaka) terhadap Tuhanmu Yang Mahamulia,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 7,
+        "arab": "الَّذِي خَلَقَكَ فَسَوَّاكَ فَعَدَلَكَ",
+        "latin": "Allazee khalaqaka fasaw waaka fa'adalak",
+        "terjemah": "yang telah menciptakanmu lalu menyempurnakan kejadianmu dan menjadikan (susunan tubuh)mu seimbang,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 8,
+        "arab": "فِي أَيِّ صُورَةٍ مَّا شَاءَ رَكَّبَكَ",
+        "latin": "Feee ayye sooratim maa shaaa'a rakkabak",
+        "terjemah": "dalam bentuk apa saja yang dikehendaki, Dia menyusun tubuhmu.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 9,
+        "arab": "كَلَّا بَلْ تُكَذِّبُونَ بِالدِّينِ",
+        "latin": "Kalla bal tukazziboona bid deen",
+        "terjemah": "Sekali-kali jangan begitu! Bahkan kamu mendustakan hari pembalasan.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 10,
+        "arab": "وَإِنَّ عَلَيْكُمْ لَحَافِظِينَ",
+        "latin": "Wa inna 'alaikum lahaa fizeen",
+        "terjemah": "Dan sesungguhnya bagi kamu ada (malaikat-malaikat) yang mengawasi (pekerjaanmu),",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 11,
+        "arab": "كِرَامًا كَاتِبِينَ",
+        "latin": "Kiraaman kaatibeen",
+        "terjemah": "yang mulia (di sisi Allah) dan yang mencatat (amal perbuatanmu),",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 12,
+        "arab": "يَعْلَمُونَ مَا تَفْعَلُونَ",
+        "latin": "Ya'lamoona ma taf'aloon",
+        "terjemah": "mereka mengetahui apa yang kamu kerjakan.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 13,
+        "arab": "إِنَّ الْأَبْرَارَ لَفِي نَعِيمٍ",
+        "latin": "Innal abraara lafee na'eem",
+        "terjemah": "Sesungguhnya orang-orang yang berbakti benar-benar berada dalam (surga yang penuh) kenikmatan,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 14,
+        "arab": "وَإِنَّ الْفُجَّارَ لَفِي جَحِيمٍ",
+        "latin": "Wa innal fujjaara lafee jaheem",
+        "terjemah": "dan sesungguhnya orang-orang yang durhaka benar-benar berada dalam neraka.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 15,
+        "arab": "يَصْلَوْنَهَا يَوْمَ الدِّينِ",
+        "latin": "Yaslawnahaa Yawmad Deen",
+        "terjemah": "Mereka masuk ke dalamnya pada hari pembalasan.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 16,
+        "arab": "وَمَا هُمْ عَنْهَا بِغَائِبِينَ",
+        "latin": "Wa maa hum 'anhaa bighaaa 'ibeen",
+        "terjemah": "Dan mereka tidak mungkin keluar dari neraka itu.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 17,
+        "arab": "وَمَا أَدْرَاكَ مَا يَوْمُ الدِّينِ",
+        "latin": "Wa maaa adraaka maa Yawmud Deen",
+        "terjemah": "Dan tahukah kamu apakah hari pembalasan itu?",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 18,
+        "arab": "ثُمَّ مَا أَدْرَاكَ مَا يَوْمُ الدِّينِ",
+        "latin": "Summa maaa adraaka maa Yawmud Deen",
+        "terjemah": "Sekali lagi, tahukah kamu apakah hari pembalasan itu?",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 19,
+        "arab": "يَوْمَ لَا تَمْلِكُ نَفْسٌ لِّنَفْسٍ شَيْئًا ۖ وَالْأَمْرُ يَوْمَئِذٍ لِّلَّهِ",
+        "latin": "Yawma laa tamliku nafsul linafsin shai'anw walamru yawma'izil lillaah",
+        "terjemah": "(Yaitu) pada hari (ketika) seseorang sama sekali tidak berdaya (menolong) orang lain. Dan segala urusan pada hari itu dalam kekuasaan Allah.",
+        "juz": 30
+      }
+    ]
+  }
+]

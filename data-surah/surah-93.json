@@ -1,0 +1,90 @@
+[
+  {
+    "nomor": 93,
+    "nama": "الضحى",
+    "namaLatin": "Ad-Duha",
+    "totalAyat": 11,
+    "tempatTurun": "Makkiyyah",
+    "arti": "Duha",
+    "deskripsi": "Surat ini terdiri atas 11 ayat, termasuk golongan surat Makiyyah dan diturunkan sesudah surat Al Fajr. Nama Adh Dhuhaa diambil dari kata yang terdapat pada ayat pertama, artinya : waktu matahari sepenggalahan naik.",
+    "ayat": [
+      {
+        "nomorAyat": 1,
+        "arab": "وَالضُّحَىٰ",
+        "latin": "Wad duhaa",
+        "terjemah": "Demi waktu duha (ketika matahari naik sepenggalah),",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 2,
+        "arab": "وَاللَّيْلِ إِذَا سَجَىٰ",
+        "latin": "Wal laili iza sajaa",
+        "terjemah": "dan demi malam apabila telah sunyi,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 3,
+        "arab": "مَا وَدَّعَكَ رَبُّكَ وَمَا قَلَىٰ",
+        "latin": "Ma wad da'aka rabbuka wa ma qalaa",
+        "terjemah": "Tuhanmu tidak meninggalkan engkau (Muhammad) dan tidak (pula) membencimu,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 4,
+        "arab": "وَلَلْآخِرَةُ خَيْرٌ لَّكَ مِنَ الْأُولَىٰ",
+        "latin": "Walal-aakhiratu khairul laka minal-oola",
+        "terjemah": "dan sungguh, yang kemudian itu lebih baik bagimu dari yang permulaan.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 5,
+        "arab": "وَلَسَوْفَ يُعْطِيكَ رَبُّكَ فَتَرْضَىٰ",
+        "latin": "Wa la sawfa y'uteeka rabbuka fatarda",
+        "terjemah": "Dan sungguh, kelak Tuhanmu pasti memberikan karunia-Nya kepadamu, sehingga engkau menjadi puas.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 6,
+        "arab": "أَلَمْ يَجِدْكَ يَتِيمًا فَآوَىٰ",
+        "latin": "Alam ya jidka yateeman fa aawaa",
+        "terjemah": "Bukankah Dia mendapatimu sebagai seorang yatim, lalu Dia melindungi(mu),",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 7,
+        "arab": "وَوَجَدَكَ ضَالًّا فَهَدَىٰ",
+        "latin": "Wa wa jadaka daal lan fahada",
+        "terjemah": "dan Dia mendapatimu sebagai seorang yang bingung, lalu Dia memberikan petunjuk,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 8,
+        "arab": "وَوَجَدَكَ عَائِلًا فَأَغْنَىٰ",
+        "latin": "Wa wa jadaka 'aa-ilan fa aghnaa",
+        "terjemah": "dan Dia mendapatimu sebagai seorang yang kekurangan, lalu Dia memberikan kecukupan.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 9,
+        "arab": "فَأَمَّا الْيَتِيمَ فَلَا تَقْهَرْ",
+        "latin": "Fa am mal yateema fala taqhar",
+        "terjemah": "Maka terhadap anak yatim janganlah engkau berlaku sewenang-wenang.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 10,
+        "arab": "وَأَمَّا السَّائِلَ فَلَا تَنْهَرْ",
+        "latin": "Wa am mas saa-ila fala tanhar",
+        "terjemah": "Dan terhadap orang yang meminta-minta janganlah engkau menghardik(nya).",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 11,
+        "arab": "وَأَمَّا بِنِعْمَةِ رَبِّكَ فَحَدِّثْ",
+        "latin": "Wa amma bi ni'mati rabbika fahad dith",
+        "terjemah": "Dan terhadap nikmat Tuhanmu hendaklah engkau nyatakan (dengan bersyukur).",
+        "juz": 30
+      }
+    ]
+  }
+]

@@ -1,0 +1,209 @@
+[
+  {
+    "nomor": 71,
+    "nama": "نوح",
+    "namaLatin": "Nuh",
+    "totalAyat": 28,
+    "tempatTurun": "Makkiyyah",
+    "arti": "Nuh",
+    "deskripsi": "Surat ini terdiri atas 28 ayat, termasuk golongan surat-surat Makkiyah, diturunkan sesudah surat An Nahl. Dinamakan dengan surat Nuh karena surat ini seluruhnya menjelaskan da'wah dan doa Nabi Nuh a.s.",
+    "ayat": [
+      {
+        "nomorAyat": 1,
+        "arab": "إِنَّا أَرْسَلْنَا نُوحًا إِلَىٰ قَوْمِهِ أَنْ أَنذِرْ قَوْمَكَ مِن قَبْلِ أَن يَأْتِيَهُمْ عَذَابٌ أَلِيمٌ",
+        "latin": "Innaaa arsalnaa Noohan ilaa qawmihee an anzir qawmaka min qabli any yaatiyahum 'azaabun aleem",
+        "terjemah": "Sesungguhnya Kami telah mengutus Nuh kepada kaumnya (dengan perintah), “Berilah kaummu peringatan sebelum datang kepadanya azab yang pedih.”",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 2,
+        "arab": "قَالَ يَا قَوْمِ إِنِّي لَكُمْ نَذِيرٌ مُّبِينٌ",
+        "latin": "Qaala yaa qawmi innee lakum nazeerum mubeen",
+        "terjemah": "Dia (Nuh) berkata, “Wahai kaumku! Sesungguhnya aku ini seorang pemberi peringatan yang menjelaskan kepada kamu,",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 3,
+        "arab": "أَنِ اعْبُدُوا اللَّهَ وَاتَّقُوهُ وَأَطِيعُونِ",
+        "latin": "Ani'udul laaha watta qoohu wa atee'oon",
+        "terjemah": "(yaitu) sembahlah Allah, bertakwalah kepada-Nya dan taatlah kepadaku,",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 4,
+        "arab": "يَغْفِرْ لَكُم مِّن ذُنُوبِكُمْ وَيُؤَخِّرْكُمْ إِلَىٰ أَجَلٍ مُّسَمًّى ۚ إِنَّ أَجَلَ اللَّهِ إِذَا جَاءَ لَا يُؤَخَّرُ ۖ لَوْ كُنتُمْ تَعْلَمُونَ",
+        "latin": "Yaghfir lakum min zunoobikum wa yu'akhkhirkum ilaaa ajalim musammaa; innaa ajalal laahi izaa jaaa'a laa yu'akhkhar; law kuntum ta'lamoon",
+        "terjemah": "niscaya Dia mengampuni sebagian dosa-dosamu dan menangguhkan kamu (memanjangkan umurmu) sampai pada batas waktu yang ditentukan. Sungguh, ketetapan Allah itu apabila telah datang tidak dapat ditunda, seandainya kamu mengetahui.”",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 5,
+        "arab": "قَالَ رَبِّ إِنِّي دَعَوْتُ قَوْمِي لَيْلًا وَنَهَارًا",
+        "latin": "Qaala rabbi innee da'awtu qawmee lailanw wa naharaa",
+        "terjemah": "Dia (Nuh) berkata, “Ya Tuhanku, sesungguhnya aku telah menyeru kaumku siang dan malam,",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 6,
+        "arab": "فَلَمْ يَزِدْهُمْ دُعَائِي إِلَّا فِرَارًا",
+        "latin": "Falam yazid hum du'aaa 'eee illaa firaaraa",
+        "terjemah": "tetapi seruanku itu tidak menambah (iman) mereka, justru mereka lari (dari kebenaran).",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 7,
+        "arab": "وَإِنِّي كُلَّمَا دَعَوْتُهُمْ لِتَغْفِرَ لَهُمْ جَعَلُوا أَصَابِعَهُمْ فِي آذَانِهِمْ وَاسْتَغْشَوْا ثِيَابَهُمْ وَأَصَرُّوا وَاسْتَكْبَرُوا اسْتِكْبَارًا",
+        "latin": "Wa inee kullamaa da'awtuhum litaghfira lahum ja'alooo asaabi'ahum fee aazaanihim wastaghshaw siyaabahum wa asaarroo wastakbarus tikbaaraa",
+        "terjemah": "Dan sesungguhnya aku setiap kali menyeru mereka (untuk beriman) agar Engkau mengampuni mereka, mereka memasukkan anak jarinya ke telinganya dan menutupkan bajunya (ke wajahnya) dan mereka tetap (mengingkari) dan sangat menyombongkan diri.",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 8,
+        "arab": "ثُمَّ إِنِّي دَعَوْتُهُمْ جِهَارًا",
+        "latin": "Summa innee da'aw tuhum jihaara",
+        "terjemah": "Lalu sesungguhnya aku menyeru mereka dengan cara terang-terangan.",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 9,
+        "arab": "ثُمَّ إِنِّي أَعْلَنتُ لَهُمْ وَأَسْرَرْتُ لَهُمْ إِسْرَارًا",
+        "latin": "Summaa inneee a'lantu lahum wa asrartu lahum israaraa",
+        "terjemah": "Kemudian aku menyeru mereka secara terbuka dan dengan diam-diam,",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 10,
+        "arab": "فَقُلْتُ اسْتَغْفِرُوا رَبَّكُمْ إِنَّهُ كَانَ غَفَّارًا",
+        "latin": "Faqultus taghfiroo Rabakam innahoo kaana Ghaffaaraa",
+        "terjemah": "maka aku berkata (kepada mereka), “Mohonlah ampunan kepada Tuhanmu, Sungguh, Dia Maha Pengampun,",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 11,
+        "arab": "يُرْسِلِ السَّمَاءَ عَلَيْكُم مِّدْرَارًا",
+        "latin": "Yursilis samaaa'a 'alaikum midraaraa",
+        "terjemah": "niscaya Dia akan menurunkan hujan yang lebat dari langit kepadamu,",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 12,
+        "arab": "وَيُمْدِدْكُم بِأَمْوَالٍ وَبَنِينَ وَيَجْعَل لَّكُمْ جَنَّاتٍ وَيَجْعَل لَّكُمْ أَنْهَارًا",
+        "latin": "Wa yumdidkum bi am waalinw wa baneena wa yaj'al lakum Jannaatinw wa yaj'al lakum anhaaraa",
+        "terjemah": "dan Dia memperbanyak harta dan anak-anakmu, dan mengadakan kebun-kebun untukmu dan mengadakan sungai-sungai untukmu.”",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 13,
+        "arab": "مَّا لَكُمْ لَا تَرْجُونَ لِلَّهِ وَقَارًا",
+        "latin": "Maa lakum laa tarjoona lillaahi waqaaraa",
+        "terjemah": "Mengapa kamu tidak takut akan kebesaran Allah?",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 14,
+        "arab": "وَقَدْ خَلَقَكُمْ أَطْوَارًا",
+        "latin": "Wa qad khalaqakum at waaraa",
+        "terjemah": "Dan sungguh, Dia telah menciptakan kamu dalam beberapa tingkatan (kejadian).",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 15,
+        "arab": "أَلَمْ تَرَوْا كَيْفَ خَلَقَ اللَّهُ سَبْعَ سَمَاوَاتٍ طِبَاقًا",
+        "latin": "Alam taraw kaifa khalaqal laahu sab'a samaawaatin tibaaqaa",
+        "terjemah": "Tidakkah kamu memperhatikan bagai-mana Allah telah menciptakan tujuh langit berlapis-lapis?",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 16,
+        "arab": "وَجَعَلَ الْقَمَرَ فِيهِنَّ نُورًا وَجَعَلَ الشَّمْسَ سِرَاجًا",
+        "latin": "Wa ja'alal qamara feehinna nooranw wa ja'alash shamsa siraajaa",
+        "terjemah": "Dan di sana Dia menciptakan bulan yang bercahaya dan menjadikan matahari sebagai pelita (yang cemerlang)?",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 17,
+        "arab": "وَاللَّهُ أَنبَتَكُم مِّنَ الْأَرْضِ نَبَاتًا",
+        "latin": "Wallaahu ambatakum minal ardi nabaataa",
+        "terjemah": "Dan Allah menumbuhkan kamu dari tanah, tumbuh (berangsur-angsur),",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 18,
+        "arab": "ثُمَّ يُعِيدُكُمْ فِيهَا وَيُخْرِجُكُمْ إِخْرَاجًا",
+        "latin": "Summa yu'eedukum feehaa wa ukhrijukum ikhraajaa",
+        "terjemah": "kemudian Dia akan mengembalikan kamu ke dalamnya (tanah) dan mengeluarkan kamu (pada hari Kiamat) dengan pasti.",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 19,
+        "arab": "وَاللَّهُ جَعَلَ لَكُمُ الْأَرْضَ بِسَاطًا",
+        "latin": "Wallaahu ja'ala lakumul arda bisaataa",
+        "terjemah": "Dan Allah menjadikan bumi untukmu sebagai hamparan,",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 20,
+        "arab": "لِّتَسْلُكُوا مِنْهَا سُبُلًا فِجَاجًا",
+        "latin": "Litaslukoo minhaa subulan fijaajaa",
+        "terjemah": "agar kamu dapat pergi kian kemari di jalan-jalan yang luas.",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 21,
+        "arab": "قَالَ نُوحٌ رَّبِّ إِنَّهُمْ عَصَوْنِي وَاتَّبَعُوا مَن لَّمْ يَزِدْهُ مَالُهُ وَوَلَدُهُ إِلَّا خَسَارًا",
+        "latin": "Qaala Noohur Robbi innahum 'asawnee wattaba'oo mal lam yazid hu maaluhoo wa waladuhooo illaa khasaara",
+        "terjemah": "Nuh berkata, “Ya Tuhanku, sesungguhnya mereka durhaka kepadaku, dan mereka mengikuti orang-orang yang harta dan anak-anaknya hanya menambah kerugian baginya,",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 22,
+        "arab": "وَمَكَرُوا مَكْرًا كُبَّارًا",
+        "latin": "Wa makaroo makran kubbaaraa",
+        "terjemah": "dan mereka melakukan tipu daya yang sangat besar.”",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 23,
+        "arab": "وَقَالُوا لَا تَذَرُنَّ آلِهَتَكُمْ وَلَا تَذَرُنَّ وَدًّا وَلَا سُوَاعًا وَلَا يَغُوثَ وَيَعُوقَ وَنَسْرًا",
+        "latin": "Wa qaaloo laa tazarunna aalihatakum wa laa tazarunna Waddanw wa laa Suwaa'anw wa laa Yaghoosa wa Ya'ooqa wa Nasraa",
+        "terjemah": "Dan mereka berkata, “Jangan sekali-kali kamu meninggalkan (penyembahan) tuhan-tuhan kamu dan jangan pula sekali-kali kamu meninggalkan (penyembahan) Wadd, dan jangan pula Suwa‘, Yagus, Ya‘uq dan Nasr.”",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 24,
+        "arab": "وَقَدْ أَضَلُّوا كَثِيرًا ۖ وَلَا تَزِدِ الظَّالِمِينَ إِلَّا ضَلَالًا",
+        "latin": "Wa qad adalloo kasee ranw wa laa tazidiz zaalimeena illaa dalaalaa",
+        "terjemah": "Dan sungguh, mereka telah menyesatkan banyak orang; dan janganlah Engkau tambahkan bagi orang-orang yang zalim itu selain kesesatan.",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 25,
+        "arab": "مِّمَّا خَطِيئَاتِهِمْ أُغْرِقُوا فَأُدْخِلُوا نَارًا فَلَمْ يَجِدُوا لَهُم مِّن دُونِ اللَّهِ أَنصَارًا",
+        "latin": "Mimmaa khateee' aatihim ughriqoo fa udkhiloo Naaran falam yajidoo lahum min doonil laahi ansaaraa",
+        "terjemah": "Disebabkan kesalahan-kesalahan mereka, mereka ditenggelamkan lalu dimasukkan ke neraka, maka mereka tidak mendapat penolong selain Allah.",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 26,
+        "arab": "وَقَالَ نُوحٌ رَّبِّ لَا تَذَرْ عَلَى الْأَرْضِ مِنَ الْكَافِرِينَ دَيَّارًا",
+        "latin": "Wa qaala Noohur Rabbi laa tazar 'alal ardi minal kaafireena daiyaaraa",
+        "terjemah": "Dan Nuh berkata, “Ya Tuhanku, janganlah Engkau biarkan seorang pun di antara orang-orang kafir itu tinggal di atas bumi.",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 27,
+        "arab": "إِنَّكَ إِن تَذَرْهُمْ يُضِلُّوا عِبَادَكَ وَلَا يَلِدُوا إِلَّا فَاجِرًا كَفَّارًا",
+        "latin": "Innaka in tazarhum yudil loo 'ibaadaka wa laa yalidooo illaa faajiran kaffaaraa",
+        "terjemah": "Sesungguhnya jika Engkau biarkan mereka tinggal, niscaya mereka akan menyesatkan hamba-hamba-Mu, dan mereka hanya akan melahirkan anak-anak yang jahat dan tidak tahu bersyukur.",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 28,
+        "arab": "رَّبِّ اغْفِرْ لِي وَلِوَالِدَيَّ وَلِمَن دَخَلَ بَيْتِيَ مُؤْمِنًا وَلِلْمُؤْمِنِينَ وَالْمُؤْمِنَاتِ وَلَا تَزِدِ الظَّالِمِينَ إِلَّا تَبَارًا",
+        "latin": "Rabbigh fir lee wa liwaa lidaiya wa liman dakhala baitiya mu'minanw wa lil mu'mineena wal mu'minaati wa laa tazidiz zaalimeena illaa tabaaraa",
+        "terjemah": "Ya Tuhanku, ampunilah aku, ibu bapakku, dan siapa pun yang memasuki rumahku dengan beriman dan semua orang yang beriman laki-laki dan perempuan. Dan janganlah Engkau tambahkan bagi orang-orang yang zalim itu selain kehancuran.”",
+        "juz": 29
+      }
+    ]
+  }
+]

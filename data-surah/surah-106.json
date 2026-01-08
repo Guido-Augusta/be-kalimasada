@@ -1,0 +1,41 @@
+[
+  {
+    "nomor": 106,
+    "nama": "قريش",
+    "namaLatin": "Quraisy",
+    "totalAyat": 4,
+    "tempatTurun": "Makkiyyah",
+    "arti": "Quraisy",
+    "deskripsi": "Surat ini terdiri atas 4 ayat, termasuk golongan surat-surat Makkiyyah dan diturunkan sesudah surat At Tiin. Nama Quraisy diambil dari kata Quraisy yang terdapat pada ayat pertama, artinya suku Quraisy. Suku Quraisy adalah suku yang mendapat  kehormatan untuk memelihara Ka'bah.",
+    "ayat": [
+      {
+        "nomorAyat": 1,
+        "arab": "لِإِيلَافِ قُرَيْشٍ",
+        "latin": "Li-ilaafi quraish",
+        "terjemah": "Karena kebiasaan orang-orang Quraisy,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 2,
+        "arab": "إِيلَافِهِمْ رِحْلَةَ الشِّتَاءِ وَالصَّيْفِ",
+        "latin": "Elaafihim rihlatash shitaa-i wass saif",
+        "terjemah": "(yaitu) kebiasaan mereka bepergian pada musim dingin dan musim panas.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 3,
+        "arab": "فَلْيَعْبُدُوا رَبَّ هَٰذَا الْبَيْتِ",
+        "latin": "Fal y'abudu rabba haazal-bait",
+        "terjemah": "Maka hendaklah mereka menyembah Tuhan (pemilik) rumah ini (Ka‘bah),",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 4,
+        "arab": "الَّذِي أَطْعَمَهُم مِّن جُوعٍ وَآمَنَهُم مِّنْ خَوْفٍ",
+        "latin": "Allazi at'amahum min ju'inw-wa-aamana hum min khawf",
+        "terjemah": "yang telah memberi makanan kepada mereka untuk menghilangkan lapar dan mengamankan mereka dari rasa ketakutan.",
+        "juz": 30
+      }
+    ]
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "nomor": 112,
+    "nama": "الإخلاص",
+    "namaLatin": "Al-Ikhlas",
+    "totalAyat": 4,
+    "tempatTurun": "Makkiyyah",
+    "arti": "Ikhlas",
+    "deskripsi": "Surat ini terdiri atas 4 ayat, termasuk golongan surat-surat  Makkiyyah, diturunkan sesudah sesudah surat An Naas. Dinamakan Al Ikhlas karena surat ini sepenuhnya menegaskan kemurnian keesaan Allah s.w.t.",
+    "ayat": [
+      {
+        "nomorAyat": 1,
+        "arab": "قُلْ هُوَ اللَّهُ أَحَدٌ",
+        "latin": "Qul huwal laahu ahad",
+        "terjemah": "Katakanlah (Muhammad), “Dialah Allah, Yang Maha Esa.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 2,
+        "arab": "اللَّهُ الصَّمَدُ",
+        "latin": "Allah hus-samad",
+        "terjemah": "Allah tempat meminta segala sesuatu.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 3,
+        "arab": "لَمْ يَلِدْ وَلَمْ يُولَدْ",
+        "latin": "Lam yalid wa lam yoolad",
+        "terjemah": "(Allah) tidak beranak dan tidak pula diperanakkan.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 4,
+        "arab": "وَلَمْ يَكُن لَّهُ كُفُوًا أَحَدٌ",
+        "latin": "Wa lam yakul-lahu kufuwan ahad",
+        "terjemah": "Dan tidak ada sesuatu yang setara dengan Dia.”",
+        "juz": 30
+      }
+    ]
+  }
+]

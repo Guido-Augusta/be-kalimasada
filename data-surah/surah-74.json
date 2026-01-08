@@ -1,0 +1,405 @@
+[
+  {
+    "nomor": 74,
+    "nama": "المدثر",
+    "namaLatin": "Al-Muddassir",
+    "totalAyat": 56,
+    "tempatTurun": "Makkiyyah",
+    "arti": "Orang Yang Berkemul",
+    "deskripsi": "Surat Al Muddatstsir terdiri atas 56 ayat, termasuk golongan  surat-surat Makkiyah, diturunkan sesudah surat Al Muzzammil. \tDinamai Al Muddatstsir (orang yang berkemul) diambil dari perkataan Al Muddatstsir yang terdapat pada ayat pertama surat ini.",
+    "ayat": [
+      {
+        "nomorAyat": 1,
+        "arab": "يَا أَيُّهَا الْمُدَّثِّرُ",
+        "latin": "Yaaa ayyuhal muddassir",
+        "terjemah": "Wahai orang yang berkemul (berselimut)!",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 2,
+        "arab": "قُمْ فَأَنذِرْ",
+        "latin": "Qum fa anzir",
+        "terjemah": "bangunlah, lalu berilah peringatan!",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 3,
+        "arab": "وَرَبَّكَ فَكَبِّرْ",
+        "latin": "Wa rabbaka fakabbir",
+        "terjemah": "dan agungkanlah Tuhanmu,",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 4,
+        "arab": "وَثِيَابَكَ فَطَهِّرْ",
+        "latin": "Wa siyaabaka fatahhir",
+        "terjemah": "dan bersihkanlah pakaianmu,",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 5,
+        "arab": "وَالرُّجْزَ فَاهْجُرْ",
+        "latin": "Warrujza fahjur",
+        "terjemah": "dan tinggalkanlah segala (perbuatan) yang keji,",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 6,
+        "arab": "وَلَا تَمْنُن تَسْتَكْثِرُ",
+        "latin": "Wa laa tamnun tastaksir",
+        "terjemah": "dan janganlah engkau (Muhammad) memberi (dengan maksud) memperoleh (balasan) yang lebih banyak.",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 7,
+        "arab": "وَلِرَبِّكَ فَاصْبِرْ",
+        "latin": "Wa li Rabbika fasbir",
+        "terjemah": "Dan karena Tuhanmu, bersabarlah.",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 8,
+        "arab": "فَإِذَا نُقِرَ فِي النَّاقُورِ",
+        "latin": "Fa izaa nuqira fin naaqoor",
+        "terjemah": "Maka apabila sangkakala ditiup,",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 9,
+        "arab": "فَذَٰلِكَ يَوْمَئِذٍ يَوْمٌ عَسِيرٌ",
+        "latin": "Fazaalika yawma 'iziny yawmun 'aseer",
+        "terjemah": "maka itulah hari yang serba sulit,",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 10,
+        "arab": "عَلَى الْكَافِرِينَ غَيْرُ يَسِيرٍ",
+        "latin": "'Alal kaafireena ghayru yaseer",
+        "terjemah": "bagi orang-orang kafir tidak mudah.",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 11,
+        "arab": "ذَرْنِي وَمَنْ خَلَقْتُ وَحِيدًا",
+        "latin": "Zamee wa man khalaqtu waheedaa",
+        "terjemah": "Biarkanlah Aku (yang bertindak) terhadap orang yang Aku sendiri telah menciptakannya,",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 12,
+        "arab": "وَجَعَلْتُ لَهُ مَالًا مَّمْدُودًا",
+        "latin": "Wa ja'altu lahoo maalam mamdoodaa",
+        "terjemah": "dan Aku beri kekayaan yang melimpah,",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 13,
+        "arab": "وَبَنِينَ شُهُودًا",
+        "latin": "Wa baneena shuhoodaa",
+        "terjemah": "dan anak-anak yang selalu bersamanya,",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 14,
+        "arab": "وَمَهَّدتُّ لَهُ تَمْهِيدًا",
+        "latin": "Wa mahhattu lahoo tamheeda",
+        "terjemah": "dan Aku beri kelapangan (hidup) seluas-luasnya.",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 15,
+        "arab": "ثُمَّ يَطْمَعُ أَنْ أَزِيدَ",
+        "latin": "Summa yat ma'u an azeed",
+        "terjemah": "Kemudian dia ingin sekali agar Aku menambahnya.",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 16,
+        "arab": "كَلَّا ۖ إِنَّهُ كَانَ لِآيَاتِنَا عَنِيدًا",
+        "latin": "Kallaaa innahoo kaana li Aayaatinaa 'aneedaa",
+        "terjemah": "Tidak bisa! Sesungguhnya dia telah menentang ayat-ayat Kami (Al-Qur'an).",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 17,
+        "arab": "سَأُرْهِقُهُ صَعُودًا",
+        "latin": "Sa urhiquhoo sa'oodaa",
+        "terjemah": "Aku akan membebaninya dengan pendakian yang memayahkan.",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 18,
+        "arab": "إِنَّهُ فَكَّرَ وَقَدَّرَ",
+        "latin": "Innahoo fakkara wa qaddar",
+        "terjemah": "Sesungguhnya dia telah memikirkan dan menetapkan (apa yang ditetapkannya),",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 19,
+        "arab": "فَقُتِلَ كَيْفَ قَدَّرَ",
+        "latin": "Faqutila kayfa qaddar",
+        "terjemah": "maka celakalah dia! Bagaimana dia menetapkan?",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 20,
+        "arab": "ثُمَّ قُتِلَ كَيْفَ قَدَّرَ",
+        "latin": "Summa qutila kaifa qaddar",
+        "terjemah": "Sekali lagi, celakalah dia! Bagaimana dia menetapkan?",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 21,
+        "arab": "ثُمَّ نَظَرَ",
+        "latin": "Summa nazar",
+        "terjemah": "Kemudian dia (merenung) memikirkan,",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 22,
+        "arab": "ثُمَّ عَبَسَ وَبَسَرَ",
+        "latin": "Summa 'abasa wa basar",
+        "terjemah": "lalu berwajah masam dan cemberut,",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 23,
+        "arab": "ثُمَّ أَدْبَرَ وَاسْتَكْبَرَ",
+        "latin": "Summaa adbara wastakbar",
+        "terjemah": "kemudian berpaling (dari kebenaran) dan menyombongkan diri,",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 24,
+        "arab": "فَقَالَ إِنْ هَٰذَا إِلَّا سِحْرٌ يُؤْثَرُ",
+        "latin": "Faqaala in haazaaa illaa sihruny yu'sar",
+        "terjemah": "lalu dia berkata, “(Al-Qur'an) ini hanyalah sihir yang dipelajari (dari orang-orang dahulu).",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 25,
+        "arab": "إِنْ هَٰذَا إِلَّا قَوْلُ الْبَشَرِ",
+        "latin": "In haazaaa illaa qawlul bashar",
+        "terjemah": "Ini hanyalah perkataan manusia.”",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 26,
+        "arab": "سَأُصْلِيهِ سَقَرَ",
+        "latin": "Sa usleehi saqar",
+        "terjemah": "Kelak, Aku akan memasukkannya ke dalam (neraka) Saqar,",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 27,
+        "arab": "وَمَا أَدْرَاكَ مَا سَقَرُ",
+        "latin": "Wa maaa adraaka maa saqar",
+        "terjemah": "dan tahukah kamu apa (neraka) Saqar itu?",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 28,
+        "arab": "لَا تُبْقِي وَلَا تَذَرُ",
+        "latin": "Laa tubqee wa laa tazar",
+        "terjemah": "Ia (Saqar itu) tidak meninggalkan dan tidak membiarkan,",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 29,
+        "arab": "لَوَّاحَةٌ لِّلْبَشَرِ",
+        "latin": "Lawwaahatul lilbashar",
+        "terjemah": "yang menghanguskan kulit manusia.",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 30,
+        "arab": "عَلَيْهَا تِسْعَةَ عَشَرَ",
+        "latin": "'Alaihaa tis'ata 'ashar",
+        "terjemah": "Di atasnya ada sembilan belas (malaikat penjaga).",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 31,
+        "arab": "وَمَا جَعَلْنَا أَصْحَابَ النَّارِ إِلَّا مَلَائِكَةً ۙ وَمَا جَعَلْنَا عِدَّتَهُمْ إِلَّا فِتْنَةً لِّلَّذِينَ كَفَرُوا لِيَسْتَيْقِنَ الَّذِينَ أُوتُوا الْكِتَابَ وَيَزْدَادَ الَّذِينَ آمَنُوا إِيمَانًا ۙ وَلَا يَرْتَابَ الَّذِينَ أُوتُوا الْكِتَابَ وَالْمُؤْمِنُونَ ۙ وَلِيَقُولَ الَّذِينَ فِي قُلُوبِهِم مَّرَضٌ وَالْكَافِرُونَ مَاذَا أَرَادَ اللَّهُ بِهَٰذَا مَثَلًا ۚ كَذَٰلِكَ يُضِلُّ اللَّهُ مَن يَشَاءُ وَيَهْدِي مَن يَشَاءُ ۚ وَمَا يَعْلَمُ جُنُودَ رَبِّكَ إِلَّا هُوَ ۚ وَمَا هِيَ إِلَّا ذِكْرَىٰ لِلْبَشَرِ",
+        "latin": "Wa maaja''alnaaa As haaban naari illaa malaaa 'ikatanw wa maa ja'alnaa 'iddatahum illaa fitnatal lillazeena kafaroo liyastayqinal lazeena ootul kitaaba wa yazdaadal lazeena aamanooo eemaananw wa laa yartaabal lazeena ootul kitaaba walmu'minoona wa liyaqoolal lazeena fee quloo bihim maradunw walkaafiroona maazaaa araadal laahu bihaazaa masalaa; kazaalika yudillul laahu many yashaaa'u wa yahdee many yashaaa'; wa maa ya'lamu junooda rabbika illaa hoo; wa maa hiya illaa zikraa lil bashar",
+        "terjemah": "Dan yang Kami jadikan penjaga neraka itu hanya dari malaikat; dan Kami menentukan bilangan mereka itu hanya sebagai cobaan bagi orang-orang kafir, agar orang-orang yang diberi kitab menjadi yakin, agar orang yang beriman bertambah imannya, agar orang-orang yang diberi kitab dan orang-orang mukmin itu tidak ragu-ragu; dan agar orang-orang yang di dalam hatinya ada penyakit dan orang-orang kafir (berkata), “Apakah yang dikehendaki Allah dengan (bilangan) ini sebagai suatu perumpamaan?” Demikianlah Allah membiarkan sesat orang-orang yang Dia kehendaki dan memberi petunjuk kepada orang-orang yang Dia kehendaki. Dan tidak ada yang mengetahui bala tentara Tuhanmu kecuali Dia sendiri. Dan Saqar itu tidak lain hanyalah peringatan bagi manusia.",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 32,
+        "arab": "كَلَّا وَالْقَمَرِ",
+        "latin": "Kallaa walqamar",
+        "terjemah": "Tidak! Demi bulan,",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 33,
+        "arab": "وَاللَّيْلِ إِذْ أَدْبَرَ",
+        "latin": "Wallaili adbar",
+        "terjemah": "dan demi malam ketika telah berlalu,",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 34,
+        "arab": "وَالصُّبْحِ إِذَا أَسْفَرَ",
+        "latin": "Wassub hi izaaa asfar",
+        "terjemah": "dan demi subuh apabila mulai terang,",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 35,
+        "arab": "إِنَّهَا لَإِحْدَى الْكُبَرِ",
+        "latin": "Innahaa la ihdal kubar",
+        "terjemah": "sesunggunya (Saqar itu) adalah salah satu (bencana) yang sangat besar,",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 36,
+        "arab": "نَذِيرًا لِّلْبَشَرِ",
+        "latin": "Nazeeral lilbashar",
+        "terjemah": "sebagai peringatan bagi manusia,",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 37,
+        "arab": "لِمَن شَاءَ مِنكُمْ أَن يَتَقَدَّمَ أَوْ يَتَأَخَّرَ",
+        "latin": "Liman shaaa'a minkum any yataqaddama aw yata akhkhar",
+        "terjemah": "(yaitu) bagi siapa di antara kamu yang ingin maju atau mundur.",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 38,
+        "arab": "كُلُّ نَفْسٍ بِمَا كَسَبَتْ رَهِينَةٌ",
+        "latin": "Kullu nafsim bim kasabat raheenah",
+        "terjemah": "Setiap orang bertanggung jawab atas apa yang telah dilakukannya,",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 39,
+        "arab": "إِلَّا أَصْحَابَ الْيَمِينِ",
+        "latin": "Illaaa as haabal yameen",
+        "terjemah": "kecuali golongan kanan,",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 40,
+        "arab": "فِي جَنَّاتٍ يَتَسَاءَلُونَ",
+        "latin": "Fee jannaatiny yata saaa'aloon",
+        "terjemah": "berada di dalam surga, mereka saling menanyakan,",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 41,
+        "arab": "عَنِ الْمُجْرِمِينَ",
+        "latin": "'Anil mujrimeen",
+        "terjemah": "tentang (keadaan) orang-orang yang berdosa,",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 42,
+        "arab": "مَا سَلَكَكُمْ فِي سَقَرَ",
+        "latin": "Maa salakakum fee saqar",
+        "terjemah": "”Apa yang menyebabkan kamu masuk ke dalam (neraka) Saqar?”",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 43,
+        "arab": "قَالُوا لَمْ نَكُ مِنَ الْمُصَلِّينَ",
+        "latin": "Qaaloo lam naku minal musalleen",
+        "terjemah": "Mereka menjawab, “Dahulu kami tidak termasuk orang-orang yang me-laksanakan salat,",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 44,
+        "arab": "وَلَمْ نَكُ نُطْعِمُ الْمِسْكِينَ",
+        "latin": "Wa lam naku nut'imul miskeen",
+        "terjemah": "dan kami (juga) tidak memberi makan orang miskin,",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 45,
+        "arab": "وَكُنَّا نَخُوضُ مَعَ الْخَائِضِينَ",
+        "latin": "Wa kunnaa nakhoodu ma'al khaaa'ideen",
+        "terjemah": "bahkan kami biasa berbincang (untuk tujuan yang batil), bersama orang-orang yang membicarakannya,",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 46,
+        "arab": "وَكُنَّا نُكَذِّبُ بِيَوْمِ الدِّينِ",
+        "latin": "Wa kunnaa nukazzibu bi yawmid Deen",
+        "terjemah": "dan kami mendustakan hari pembalasan,",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 47,
+        "arab": "حَتَّىٰ أَتَانَا الْيَقِينُ",
+        "latin": "Hattaaa ataanal yaqeen",
+        "terjemah": "sampai datang kepada kami kematian.”",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 48,
+        "arab": "فَمَا تَنفَعُهُمْ شَفَاعَةُ الشَّافِعِينَ",
+        "latin": "Famaa tanfa'uhum shafaa'atush shaafi'een",
+        "terjemah": "Maka tidak berguna lagi bagi mereka syafaat (pertolongan) dari orang-orang yang memberikan syafaat.",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 49,
+        "arab": "فَمَا لَهُمْ عَنِ التَّذْكِرَةِ مُعْرِضِينَ",
+        "latin": "Famaa lahum 'anittazkirati mu'rideen",
+        "terjemah": "Lalu mengapa mereka (orang-orang kafir) berpaling dari peringatan (Allah)?",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 50,
+        "arab": "كَأَنَّهُمْ حُمُرٌ مُّسْتَنفِرَةٌ",
+        "latin": "Ka annahum humurum mustanfirah",
+        "terjemah": "seakan-akan mereka keledai liar yang lari terkejut,",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 51,
+        "arab": "فَرَّتْ مِن قَسْوَرَةٍ",
+        "latin": "Farrat min qaswarah",
+        "terjemah": "lari dari singa.",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 52,
+        "arab": "بَلْ يُرِيدُ كُلُّ امْرِئٍ مِّنْهُمْ أَن يُؤْتَىٰ صُحُفًا مُّنَشَّرَةً",
+        "latin": "Bal yureedu kullum ri'im minhum any yu'taa suhufam munashsharah",
+        "terjemah": "Bahkan setiap orang dari mereka ingin agar diberikan kepadanya lembaran-lembaran (kitab) yang terbuka.",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 53,
+        "arab": "كَلَّا ۖ بَل لَّا يَخَافُونَ الْآخِرَةَ",
+        "latin": "Kallaa bal laa yakhaafoonal aakhirah",
+        "terjemah": "Tidak! Sebenarnya mereka tidak takut kepada akhirat.",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 54,
+        "arab": "كَلَّا إِنَّهُ تَذْكِرَةٌ",
+        "latin": "Kallaaa innahoo tazkirah",
+        "terjemah": "Tidak! Sesungguhnya (Al-Qur'an) itu benar-benar suatu peringatan.",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 55,
+        "arab": "فَمَن شَاءَ ذَكَرَهُ",
+        "latin": "Fa man shaaa'a zakarah",
+        "terjemah": "Maka barangsiapa menghendaki, tentu dia mengambil pelajaran darinya.",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 56,
+        "arab": "وَمَا يَذْكُرُونَ إِلَّا أَن يَشَاءَ اللَّهُ ۚ هُوَ أَهْلُ التَّقْوَىٰ وَأَهْلُ الْمَغْفِرَةِ",
+        "latin": "Wa maa yazkuroona illaaa any yashaaa'al laah; Huwa ahlut taqwaa wa ahlul maghfirah",
+        "terjemah": "Dan mereka tidak akan mengambil pelajaran darinya (Al-Qur'an) kecuali (jika) Allah menghendakinya. Dialah Tuhan yang patut (kita) bertakwa kepada-Nya dan yang berhak memberi ampunan.",
+        "juz": 29
+      }
+    ]
+  }
+]

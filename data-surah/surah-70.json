@@ -1,0 +1,321 @@
+[
+  {
+    "nomor": 70,
+    "nama": "المعارج",
+    "namaLatin": "Al-Ma'arij",
+    "totalAyat": 44,
+    "tempatTurun": "Makkiyyah",
+    "arti": "Tempat Naik",
+    "deskripsi": "Surat ini terdiri atas 44 ayat, termasuk golongan surat-surat Makkiyyah, diturunkan sesudah surat Al Haaqqah.Perkataan Al Ma'arij yang menjadi nama bagi surat ini adalah kata jamak dari Mi'raj, diambil dari perkataan Al Ma'arij yang terdapat pada ayat 3, yang artinya menurut bahasa tempat naik. Sedang para ahli  tafsir memberi arti bermacam-macam, di antaranya langit, nikmat karunia dan derajat atau tingkatan yang diberikan Allah s.w.t kepada ahli surga.",
+    "ayat": [
+      {
+        "nomorAyat": 1,
+        "arab": "سَأَلَ سَائِلٌ بِعَذَابٍ وَاقِعٍ",
+        "latin": "Sa ala saaa'ilum bi'azaa binw-waaqi'",
+        "terjemah": "Seseorang bertanya tentang azab yang pasti terjadi,",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 2,
+        "arab": "لِّلْكَافِرِينَ لَيْسَ لَهُ دَافِعٌ",
+        "latin": "Lilkaafireen laisa lahoo daafi'",
+        "terjemah": "bagi orang-orang kafir, yang tidak seorang pun dapat menolaknya,",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 3,
+        "arab": "مِّنَ اللَّهِ ذِي الْمَعَارِجِ",
+        "latin": "Minal laahi zil ma'aarij",
+        "terjemah": "(Azab) dari Allah, yang memiliki tempat-tempat naik.",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 4,
+        "arab": "تَعْرُجُ الْمَلَائِكَةُ وَالرُّوحُ إِلَيْهِ فِي يَوْمٍ كَانَ مِقْدَارُهُ خَمْسِينَ أَلْفَ سَنَةٍ",
+        "latin": "Ta'rujul malaaa'ikatu war Roohu ilaihi fee yawmin kaana miqdaaruhoo khamseena alfa sanah",
+        "terjemah": "Para malaikat dan Jibril naik (menghadap) kepada Tuhan, dalam sehari setara dengan lima puluh ribu tahun.",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 5,
+        "arab": "فَاصْبِرْ صَبْرًا جَمِيلًا",
+        "latin": "Fasbir ssabran jameelaa",
+        "terjemah": "Maka bersabarlah engkau (Muhammad) dengan kesabaran yang baik.",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 6,
+        "arab": "إِنَّهُمْ يَرَوْنَهُ بَعِيدًا",
+        "latin": "Inaahum yarawnahoo ba'eedaa",
+        "terjemah": "Mereka memandang (azab) itu jauh (mustahil).",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 7,
+        "arab": "وَنَرَاهُ قَرِيبًا",
+        "latin": "Wa naraahu qareebaa",
+        "terjemah": "Sedangkan Kami memandangnya dekat (pasti terjadi).",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 8,
+        "arab": "يَوْمَ تَكُونُ السَّمَاءُ كَالْمُهْلِ",
+        "latin": "Yawma takoonus samaaa'u kalmuhl",
+        "terjemah": "(Ingatlah) pada hari ketika langit men-jadi bagaikan cairan tembaga,",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 9,
+        "arab": "وَتَكُونُ الْجِبَالُ كَالْعِهْنِ",
+        "latin": "Wa takoonul jibaalu kal'ihn",
+        "terjemah": "dan gunung-gunung bagaikan bulu (yang beterbangan),",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 10,
+        "arab": "وَلَا يَسْأَلُ حَمِيمٌ حَمِيمًا",
+        "latin": "Wa laa yas'alu hameemun hameemaa",
+        "terjemah": "dan tidak ada seorang teman karib pun menanyakan temannya,",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 11,
+        "arab": "يُبَصَّرُونَهُمْ ۚ يَوَدُّ الْمُجْرِمُ لَوْ يَفْتَدِي مِنْ عَذَابِ يَوْمِئِذٍ بِبَنِيهِ",
+        "latin": "Yubassaroonahum; ya waddul mujrimu law yaftadee min 'azaabi yawma'izim bibaneeh",
+        "terjemah": "sedang mereka saling melihat. Pada hari itu, orang yang berdosa ingin sekiranya dia dapat menebus (dirinya) dari azab dengan anak-anaknya,",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 12,
+        "arab": "وَصَاحِبَتِهِ وَأَخِيهِ",
+        "latin": "Wa saahibatihee wa akheeh",
+        "terjemah": "dan istrinya dan saudaranya,",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 13,
+        "arab": "وَفَصِيلَتِهِ الَّتِي تُؤْوِيهِ",
+        "latin": "Wa faseelathil latee tu'weeh",
+        "terjemah": "dan keluarga yang melindunginya (di dunia),",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 14,
+        "arab": "وَمَن فِي الْأَرْضِ جَمِيعًا ثُمَّ يُنجِيهِ",
+        "latin": "Wa man fil ardi jamee'an summa yunjeeh",
+        "terjemah": "dan orang-orang di bumi seluruhnya, kemudian mengharapkan (tebusan) itu dapat menyelamatkannya.",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 15,
+        "arab": "كَلَّا ۖ إِنَّهَا لَظَىٰ",
+        "latin": "Kallaa innahaa lazaa",
+        "terjemah": "Sama sekali tidak! Sungguh, neraka itu api yang bergejolak,",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 16,
+        "arab": "نَزَّاعَةً لِّلشَّوَىٰ",
+        "latin": "Nazzaa'atal lishshawaa",
+        "terjemah": "yang mengelupaskan kulit kepala.",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 17,
+        "arab": "تَدْعُو مَنْ أَدْبَرَ وَتَوَلَّىٰ",
+        "latin": "Tad'oo man adbara wa tawallaa",
+        "terjemah": "Yang memanggil orang yang membelakangi dan yang berpaling (dari agama),",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 18,
+        "arab": "وَجَمَعَ فَأَوْعَىٰ",
+        "latin": "W jama'a fa aw'aa",
+        "terjemah": "dan orang yang mengumpulkan (harta benda) lalu menyimpannya.",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 19,
+        "arab": "۞ إِنَّ الْإِنسَانَ خُلِقَ هَلُوعًا",
+        "latin": "Innal insaana khuliqa haloo'aa",
+        "terjemah": "Sungguh, manusia diciptakan bersifat suka mengeluh.",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 20,
+        "arab": "إِذَا مَسَّهُ الشَّرُّ جَزُوعًا",
+        "latin": "Izaa massahush sharru jazoo'aa",
+        "terjemah": "Apabila dia ditimpa kesusahan dia berkeluh kesah,",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 21,
+        "arab": "وَإِذَا مَسَّهُ الْخَيْرُ مَنُوعًا",
+        "latin": "Wa izaa massahul khairu manoo'aa",
+        "terjemah": "dan apabila mendapat kebaikan (harta) dia jadi kikir,",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 22,
+        "arab": "إِلَّا الْمُصَلِّينَ",
+        "latin": "Illal musalleen",
+        "terjemah": "kecuali orang-orang yang melaksanakan salat,",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 23,
+        "arab": "الَّذِينَ هُمْ عَلَىٰ صَلَاتِهِمْ دَائِمُونَ",
+        "latin": "Allazeena hum 'alaa Salaatihim daaa'imoon",
+        "terjemah": "mereka yang tetap setia melaksanakan salatnya,",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 24,
+        "arab": "وَالَّذِينَ فِي أَمْوَالِهِمْ حَقٌّ مَّعْلُومٌ",
+        "latin": "Wallazeena feee amwaalihim haqqum ma'loom",
+        "terjemah": "dan orang-orang yang dalam hartanya disiapkan bagian tertentu,",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 25,
+        "arab": "لِّلسَّائِلِ وَالْمَحْرُومِ",
+        "latin": "Lissaaa 'ili walmahroom",
+        "terjemah": "bagi orang (miskin) yang meminta dan yang tidak meminta,",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 26,
+        "arab": "وَالَّذِينَ يُصَدِّقُونَ بِيَوْمِ الدِّينِ",
+        "latin": "Wallazeena yusaddiqoona bi yawmid Deen",
+        "terjemah": "dan orang-orang yang mempercayai hari pembalasan,",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 27,
+        "arab": "وَالَّذِينَ هُم مِّنْ عَذَابِ رَبِّهِم مُّشْفِقُونَ",
+        "latin": "Wallazeena hum min 'azaabi Rabbihim mushfiqoon",
+        "terjemah": "dan orang-orang yang takut terhadap azab Tuhannya,",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 28,
+        "arab": "إِنَّ عَذَابَ رَبِّهِمْ غَيْرُ مَأْمُونٍ",
+        "latin": "Inna 'azaaba Rabbihim ghairu maamoon",
+        "terjemah": "sesungguhnya terhadap azab Tuhan mereka, tidak ada seseorang yang merasa aman (dari kedatangannya),",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 29,
+        "arab": "وَالَّذِينَ هُمْ لِفُرُوجِهِمْ حَافِظُونَ",
+        "latin": "Wallazeena hum lifuroo jihim haafizoon",
+        "terjemah": "dan orang-orang yang memelihara kemaluannya,",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 30,
+        "arab": "إِلَّا عَلَىٰ أَزْوَاجِهِمْ أَوْ مَا مَلَكَتْ أَيْمَانُهُمْ فَإِنَّهُمْ غَيْرُ مَلُومِينَ",
+        "latin": "Illaa 'alaaa azwaajihim aw maa malakat aymaanuhum fainnahum ghairu maloomeen",
+        "terjemah": "kecuali terhadap istri-istri mereka atau hamba sahaya yang mereka miliki maka sesungguhnya mereka tidak tercela.",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 31,
+        "arab": "فَمَنِ ابْتَغَىٰ وَرَاءَ ذَٰلِكَ فَأُولَٰئِكَ هُمُ الْعَادُونَ",
+        "latin": "Famanib taghaa waraaa'a zaalika fa ulaaa'ika humul 'aadoon",
+        "terjemah": "Maka barangsiapa mencari di luar itu (seperti zina, homoseks dan lesbian), mereka itulah orang-orang yang melampaui batas.",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 32,
+        "arab": "وَالَّذِينَ هُمْ لِأَمَانَاتِهِمْ وَعَهْدِهِمْ رَاعُونَ",
+        "latin": "Wallazeena hum li amaa naatihim wa 'ahdihim raa'oon",
+        "terjemah": "Dan orang-orang yang memelihara amanat dan janjinya,",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 33,
+        "arab": "وَالَّذِينَ هُم بِشَهَادَاتِهِمْ قَائِمُونَ",
+        "latin": "Wallazeena hum bishahaadaatihim qaaa'imoon",
+        "terjemah": "dan orang-orang yang berpegang teguh pada kesaksiannya,",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 34,
+        "arab": "وَالَّذِينَ هُمْ عَلَىٰ صَلَاتِهِمْ يُحَافِظُونَ",
+        "latin": "Wallazeena hum 'alaa salaatihim yuhaafizoon",
+        "terjemah": "dan orang-orang yang memelihara salatnya.",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 35,
+        "arab": "أُولَٰئِكَ فِي جَنَّاتٍ مُّكْرَمُونَ",
+        "latin": "Ulaaa'ika fee jannaatim mukramoon",
+        "terjemah": "Mereka itu dimuliakan di dalam surga.",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 36,
+        "arab": "فَمَالِ الَّذِينَ كَفَرُوا قِبَلَكَ مُهْطِعِينَ",
+        "latin": "Famaa lil lazeena kafaroo qibalaka muhti'een",
+        "terjemah": "Maka mengapa orang-orang kafir itu datang bergegas ke hadapanmu (Muhammad),",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 37,
+        "arab": "عَنِ الْيَمِينِ وَعَنِ الشِّمَالِ عِزِينَ",
+        "latin": "'Anil yameeni wa 'anish shimaali 'izeen",
+        "terjemah": "dari kanan dan dari kiri dengan berkelompok-kelompok?",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 38,
+        "arab": "أَيَطْمَعُ كُلُّ امْرِئٍ مِّنْهُمْ أَن يُدْخَلَ جَنَّةَ نَعِيمٍ",
+        "latin": "Ayatma'u kullum ri'im minhum anyyudkhala jannata Na'eem",
+        "terjemah": "Apakah setiap orang dari orang-orang kafir itu ingin masuk surga yang penuh kenikmatan?",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 39,
+        "arab": "كَلَّا ۖ إِنَّا خَلَقْنَاهُم مِّمَّا يَعْلَمُونَ",
+        "latin": "Kallaaa innaa khalaq nahum mimmaa ya'lamoon",
+        "terjemah": "Tidak mungkin! Sesungguhnya Kami menciptakan mereka dari apa yang mereka ketahui.",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 40,
+        "arab": "فَلَا أُقْسِمُ بِرَبِّ الْمَشَارِقِ وَالْمَغَارِبِ إِنَّا لَقَادِرُونَ",
+        "latin": "Falaaa uqsimu bi Rabbil mashaariqi wal maghaaribi innaa laqaadiroon",
+        "terjemah": "Maka Aku bersumpah demi Tuhan yang mengatur tempat-tempat terbit dan terbenamnya  (matahari, bulan dan bintang), sungguh, Kami pasti mampu,",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 41,
+        "arab": "عَلَىٰ أَن نُّبَدِّلَ خَيْرًا مِّنْهُمْ وَمَا نَحْنُ بِمَسْبُوقِينَ",
+        "latin": "'Alaaa an nubaddila khairam minhum wa maa Nahnu bimasbooqeen",
+        "terjemah": "untuk mengganti (mereka) dengan kaum yang lebih baik dari mereka, dan Kami tidak dapat dikalahkan.",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 42,
+        "arab": "فَذَرْهُمْ يَخُوضُوا وَيَلْعَبُوا حَتَّىٰ يُلَاقُوا يَوْمَهُمُ الَّذِي يُوعَدُونَ",
+        "latin": "Fazarhum yakhoodoo wa yal'aboo hattaa yulaaqoo yaw mahumul lazee yoo'adoon",
+        "terjemah": "Maka biarkanlah mereka tenggelam dan bermain-main (dalam kesesatan) sampai mereka menjumpai hari yang diancamkan kepada mereka,",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 43,
+        "arab": "يَوْمَ يَخْرُجُونَ مِنَ الْأَجْدَاثِ سِرَاعًا كَأَنَّهُمْ إِلَىٰ نُصُبٍ يُوفِضُونَ",
+        "latin": "Yawma yakhrujoona minal ajdaasi siraa'an ka anna hum ilaa nusubiny yoofidoon",
+        "terjemah": "(yaitu) pada hari ketika mereka keluar dari kubur dengan cepat seakan-akan mereka pergi dengan segera kepada berhala-berhala (sewaktu di dunia),",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 44,
+        "arab": "خَاشِعَةً أَبْصَارُهُمْ تَرْهَقُهُمْ ذِلَّةٌ ۚ ذَٰلِكَ الْيَوْمُ الَّذِي كَانُوا يُوعَدُونَ",
+        "latin": "Khaashi'atan absaaruhum tarhaquhum zillah; zaalikal yawmul lazee kaanoo yoo'adoon",
+        "terjemah": "pandangan mereka tertunduk ke bawah diliputi kehinaan. Itulah hari yang diancamkan kepada mereka.",
+        "juz": 29
+      }
+    ]
+  }
+]

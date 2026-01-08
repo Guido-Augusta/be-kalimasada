@@ -1,0 +1,8 @@
+### Get Riwayat Hafalan
+http://localhost:5000/api/hafalan/riwayat/:santriId?page=1&limit=10
+
+### Get Riwayat Hafalan tanggal (DEFAULT DESC)
+http://localhost:5000/api/hafalan/riwayat/:santriId?page=1&limit=10&sort=tanggal&sortBy=asc
+
+### Delete Riwayat Hafalan status
+http://localhost:5000/api/hafalan/riwayat/:santriId?page=1&limit=10&status=TambahHafalan

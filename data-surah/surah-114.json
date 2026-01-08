@@ -1,0 +1,55 @@
+[
+  {
+    "nomor": 114,
+    "nama": "الناس",
+    "namaLatin": "An-Nas",
+    "totalAyat": 6,
+    "tempatTurun": "Makkiyyah",
+    "arti": "Manusia",
+    "deskripsi": "Surat ini terdiri atas 6 ayat, termasuk golongan surat-surat Makkiyah,  diturunkan sesudah surat Al Falaq. Nama An Naas diambil dari An Naas yang berulang kali disebut dalam surat ini yang artinya manusia.",
+    "ayat": [
+      {
+        "nomorAyat": 1,
+        "arab": "قُلْ أَعُوذُ بِرَبِّ النَّاسِ",
+        "latin": "Qul a'uzu birabbin naas",
+        "terjemah": "Katakanlah, “Aku berlindung kepada Tuhannya manusia,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 2,
+        "arab": "مَلِكِ النَّاسِ",
+        "latin": "Malikin naas",
+        "terjemah": "Raja manusia,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 3,
+        "arab": "إِلَٰهِ النَّاسِ",
+        "latin": "Ilaahin naas",
+        "terjemah": "sembahan manusia,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 4,
+        "arab": "مِن شَرِّ الْوَسْوَاسِ الْخَنَّاسِ",
+        "latin": "Min sharril was waasil khannaas",
+        "terjemah": "dari kejahatan (bisikan) setan yang bersembunyi,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 5,
+        "arab": "الَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاسِ",
+        "latin": "Al lazee yuwas wisu fee sudoorin naas",
+        "terjemah": "yang membisikkan (kejahatan) ke dalam dada manusia,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 6,
+        "arab": "مِنَ الْجِنَّةِ وَالنَّاسِ",
+        "latin": "Minal jinnati wan naas",
+        "terjemah": "dari (golongan) jin dan manusia.”",
+        "juz": 30
+      }
+    ]
+  }
+]

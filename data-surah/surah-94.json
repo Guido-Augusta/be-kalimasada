@@ -1,0 +1,69 @@
+[
+  {
+    "nomor": 94,
+    "nama": "الشرح",
+    "namaLatin": "Asy-Syarh",
+    "totalAyat": 8,
+    "tempatTurun": "Makkiyyah",
+    "arti": "Lapang",
+    "deskripsi": "Surat ini terdiri atas 8 ayat, termasuk golongan surat-surat Makkiyah dan diturunkan sesudah surat Adh Dhuhaa. Nama Alam Nasyrah diambil dari kata Alam Nasyrah yang terdapat pada ayat pertama, yang berarti: bukankah Kami telah melapangkan.",
+    "ayat": [
+      {
+        "nomorAyat": 1,
+        "arab": "أَلَمْ نَشْرَحْ لَكَ صَدْرَكَ",
+        "latin": "Alam nashrah laka sadrak",
+        "terjemah": "Bukankah Kami telah melapangkan dadamu (Muhammad)?",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 2,
+        "arab": "وَوَضَعْنَا عَنكَ وِزْرَكَ",
+        "latin": "Wa wa d'ana 'anka wizrak",
+        "terjemah": "dan Kami pun telah menurunkan bebanmu darimu,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 3,
+        "arab": "الَّذِي أَنقَضَ ظَهْرَكَ",
+        "latin": "Allazee anqada zahrak",
+        "terjemah": "yang memberatkan punggungmu,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 4,
+        "arab": "وَرَفَعْنَا لَكَ ذِكْرَكَ",
+        "latin": "Wa raf 'ana laka zikrak",
+        "terjemah": "dan Kami tinggikan sebutan (nama)mu bagimu.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 5,
+        "arab": "فَإِنَّ مَعَ الْعُسْرِ يُسْرًا",
+        "latin": "Fa inna ma'al usri yusra",
+        "terjemah": "Maka sesungguhnya beserta kesulitan ada kemudahan,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 6,
+        "arab": "إِنَّ مَعَ الْعُسْرِ يُسْرًا",
+        "latin": "Inna ma'al 'usri yusra",
+        "terjemah": "sesungguhnya beserta kesulitan itu ada kemudahan.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 7,
+        "arab": "فَإِذَا فَرَغْتَ فَانصَبْ",
+        "latin": "Fa iza faragh ta fansab",
+        "terjemah": "Maka apabila engkau telah selesai (dari sesuatu urusan), tetaplah bekerja keras (untuk urusan yang lain),",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 8,
+        "arab": "وَإِلَىٰ رَبِّكَ فَارْغَب",
+        "latin": "Wa ilaa rabbika far ghab",
+        "terjemah": "dan hanya kepada Tuhanmulah engkau berharap.",
+        "juz": 30
+      }
+    ]
+  }
+]

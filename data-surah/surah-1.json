@@ -1,0 +1,62 @@
+[
+  {
+    "nomor": 1,
+    "nama": "الفاتحة",
+    "namaLatin": "Al-Fatihah",
+    "totalAyat": 7,
+    "tempatTurun": "Makkiyyah",
+    "arti": "Pembukaan",
+    "deskripsi": "Surat Al Faatihah (Pembukaan) yang diturunkan di Mekah dan terdiri dari 7 ayat adalah surat yang pertama-tama diturunkan dengan lengkap  diantara surat-surat yang ada dalam Al Quran dan termasuk golongan surat Makkiyyah. Surat ini disebut Al Faatihah (Pembukaan), karena dengan surat inilah dibuka dan dimulainya Al Quran. Dinamakan Ummul Quran (induk Al Quran) atau Ummul Kitaab (induk Al Kitaab) karena dia merupakan induk dari semua isi Al Quran, dan karena itu diwajibkan membacanya pada tiap-tiap sembahyang. Dinamakan pula As Sab'ul matsaany (tujuh yang berulang-ulang) karena ayatnya tujuh dan dibaca berulang-ulang dalam sholat.",
+    "ayat": [
+      {
+        "nomorAyat": 1,
+        "arab": "﻿بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ",
+        "latin": "Bismillaahir Rahmaanir Raheem",
+        "terjemah": "Dengan nama Allah Yang Maha Pengasih, Maha Penyayang.",
+        "juz": 1
+      },
+      {
+        "nomorAyat": 2,
+        "arab": "الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ",
+        "latin": "Alhamdu lillaahi Rabbil 'aalameen",
+        "terjemah": "Segala puji bagi Allah, Tuhan seluruh alam,",
+        "juz": 1
+      },
+      {
+        "nomorAyat": 3,
+        "arab": "الرَّحْمَٰنِ الرَّحِيمِ",
+        "latin": "Ar-Rahmaanir-Raheem",
+        "terjemah": "Yang Maha Pengasih, Maha Penyayang,",
+        "juz": 1
+      },
+      {
+        "nomorAyat": 4,
+        "arab": "مَالِكِ يَوْمِ الدِّينِ",
+        "latin": "Maaliki Yawmid-Deen",
+        "terjemah": "Pemilik hari pembalasan.",
+        "juz": 1
+      },
+      {
+        "nomorAyat": 5,
+        "arab": "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ",
+        "latin": "Iyyaaka na'budu wa lyyaaka nasta'een",
+        "terjemah": "Hanya kepada Engkaulah kami menyembah dan hanya kepada Engkaulah kami mohon pertolongan.",
+        "juz": 1
+      },
+      {
+        "nomorAyat": 6,
+        "arab": "اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ",
+        "latin": "Ihdinas-Siraatal-Mustaqeem",
+        "terjemah": "Tunjukilah kami jalan yang lurus,",
+        "juz": 1
+      },
+      {
+        "nomorAyat": 7,
+        "arab": "صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ",
+        "latin": "Siraatal-lazeena an'amta 'alaihim ghayril-maghdoobi 'alaihim wa lad-daaalleen",
+        "terjemah": "(yaitu) jalan orang-orang yang telah Engkau beri nikmat kepadanya; bukan (jalan) mereka yang dimurkai, dan bukan (pula jalan) mereka yang sesat.",
+        "juz": 1
+      }
+    ]
+  }
+]

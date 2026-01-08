@@ -1,0 +1,132 @@
+[
+  {
+    "nomor": 86,
+    "nama": "الطارق",
+    "namaLatin": "At-Tariq",
+    "totalAyat": 17,
+    "tempatTurun": "Makkiyyah",
+    "arti": "Yang Datang Di Malam Hari",
+    "deskripsi": "Surat Ath Thaariq terdiri atas 17 ayat, termasuk golongan surat-surat Makkiyah,  diturunkan sesudah surat Al Balad.  Dinamai Ath Thaariq (yang datang di malam hari) diambil dari  perkataan Ath Thaariq yang terdapat pada ayat 1 surat ini.",
+    "ayat": [
+      {
+        "nomorAyat": 1,
+        "arab": "وَالسَّمَاءِ وَالطَّارِقِ",
+        "latin": "Wassamaaa'i wattaariq",
+        "terjemah": "Demi langit dan yang datang pada malam hari.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 2,
+        "arab": "وَمَا أَدْرَاكَ مَا الطَّارِقُ",
+        "latin": "Wa maaa adraaka mattaariq",
+        "terjemah": "Dan tahukah kamu apakah yang datang pada malam hari itu?",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 3,
+        "arab": "النَّجْمُ الثَّاقِبُ",
+        "latin": "Annajmus saaqib",
+        "terjemah": "(yaitu) bintang yang bersinar tajam,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 4,
+        "arab": "إِن كُلُّ نَفْسٍ لَّمَّا عَلَيْهَا حَافِظٌ",
+        "latin": "In kullu nafsil lammaa 'alaihaa haafiz",
+        "terjemah": "setiap orang pasti ada penjaganya.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 5,
+        "arab": "فَلْيَنظُرِ الْإِنسَانُ مِمَّ خُلِقَ",
+        "latin": "Fal yanzuril insaanu mimma khuliq",
+        "terjemah": "Maka hendaklah manusia memperhatikan dari apa dia diciptakan.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 6,
+        "arab": "خُلِقَ مِن مَّاءٍ دَافِقٍ",
+        "latin": "Khuliqa mim maaa'in daafiq",
+        "terjemah": "Dia diciptakan dari air (mani) yang terpancar,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 7,
+        "arab": "يَخْرُجُ مِن بَيْنِ الصُّلْبِ وَالتَّرَائِبِ",
+        "latin": "Yakhruju mim bainissulbi wat taraaa'ib",
+        "terjemah": "yang keluar dari antara tulang punggung (sulbi) dan tulang dada.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 8,
+        "arab": "إِنَّهُ عَلَىٰ رَجْعِهِ لَقَادِرٌ",
+        "latin": "Innahoo 'alaa raj'ihee laqaadir",
+        "terjemah": "Sungguh, Allah benar-benar kuasa untuk mengembalikannya (hidup setelah mati).",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 9,
+        "arab": "يَوْمَ تُبْلَى السَّرَائِرُ",
+        "latin": "Yawma tublas saraaa'ir",
+        "terjemah": "Pada hari ditampakkan segala rahasia,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 10,
+        "arab": "فَمَا لَهُ مِن قُوَّةٍ وَلَا نَاصِرٍ",
+        "latin": "Famaa lahoo min quwwatinw wa laa naasir",
+        "terjemah": "maka manusia tidak lagi mempunyai suatu kekuatan dan tidak (pula) ada penolong.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 11,
+        "arab": "وَالسَّمَاءِ ذَاتِ الرَّجْعِ",
+        "latin": "Wassamaaa'i zaatir raj'",
+        "terjemah": "Demi langit yang mengandung hujan,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 12,
+        "arab": "وَالْأَرْضِ ذَاتِ الصَّدْعِ",
+        "latin": "Wal ardi zaatis sad'",
+        "terjemah": "dan bumi yang mempunyai tumbuh-tumbuhan,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 13,
+        "arab": "إِنَّهُ لَقَوْلٌ فَصْلٌ",
+        "latin": "Innahoo laqawlun fasl",
+        "terjemah": "sungguh, (Al-Qur'an) itu benar-benar firman pemisah (antara yang hak dan yang batil),",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 14,
+        "arab": "وَمَا هُوَ بِالْهَزْلِ",
+        "latin": "Wa maa huwa bil hazl",
+        "terjemah": "dan (Al-Qur'an) itu bukanlah sendagurauan.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 15,
+        "arab": "إِنَّهُمْ يَكِيدُونَ كَيْدًا",
+        "latin": "Innahum yakeedoona kaidaa",
+        "terjemah": "Sungguh, mereka (orang kafir) merencanakan tipu daya yang jahat.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 16,
+        "arab": "وَأَكِيدُ كَيْدًا",
+        "latin": "Wa akeedu kaidaa",
+        "terjemah": "Dan Aku pun membuat rencana (tipu daya) yang jitu.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 17,
+        "arab": "فَمَهِّلِ الْكَافِرِينَ أَمْهِلْهُمْ رُوَيْدًا",
+        "latin": "Famahhilil kaafireena amhilhum ruwaidaa",
+        "terjemah": "Karena itu berilah penangguhan kepada orang-orang kafir itu. Berilah mereka itu kesempatan untuk sementara waktu.",
+        "juz": 30
+      }
+    ]
+  }
+]

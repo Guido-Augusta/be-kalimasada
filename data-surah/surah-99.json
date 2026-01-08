@@ -1,0 +1,69 @@
+[
+  {
+    "nomor": 99,
+    "nama": "الزلزلة",
+    "namaLatin": "Az-Zalzalah",
+    "totalAyat": 8,
+    "tempatTurun": "Madaniyyah",
+    "arti": "Guncangan",
+    "deskripsi": "Surat ini terdiri atas 8 ayat, termasuk golongan surat-surat Madaniyyah diturunkan sesudah surat An Nisaa'. Nama Al Zalzalah diambil dari kata: Zilzaal yang terdapat pada ayat pertama surat ini yang berarti goncangan.",
+    "ayat": [
+      {
+        "nomorAyat": 1,
+        "arab": "إِذَا زُلْزِلَتِ الْأَرْضُ زِلْزَالَهَا",
+        "latin": "Izaa zul zilatil ardu zil zaalaha",
+        "terjemah": "Apabila bumi diguncangkan dengan guncangan yang dahsyat,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 2,
+        "arab": "وَأَخْرَجَتِ الْأَرْضُ أَثْقَالَهَا",
+        "latin": "Wa akh rajatil ardu athqaalaha",
+        "terjemah": "dan bumi telah mengeluarkan beban-beban berat (yang dikandung)nya,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 3,
+        "arab": "وَقَالَ الْإِنسَانُ مَا لَهَا",
+        "latin": "Wa qaalal insaanu ma laha",
+        "terjemah": "Dan manusia bertanya, “Apa yang terjadi pada bumi ini?”",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 4,
+        "arab": "يَوْمَئِذٍ تُحَدِّثُ أَخْبَارَهَا",
+        "latin": "Yawmaa izin tuhad dithu akhbaaraha",
+        "terjemah": "Pada hari itu bumi menyampaikan beritanya,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 5,
+        "arab": "بِأَنَّ رَبَّكَ أَوْحَىٰ لَهَا",
+        "latin": "Bi-anna rabbaka awhaa laha",
+        "terjemah": "karena sesungguhnya Tuhanmu telah memerintahkan (yang sedemikian itu) padanya.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 6,
+        "arab": "يَوْمَئِذٍ يَصْدُرُ النَّاسُ أَشْتَاتًا لِّيُرَوْا أَعْمَالَهُمْ",
+        "latin": "Yawma iziy yas durun naasu ash tatal liyuraw a'maalahum",
+        "terjemah": "Pada hari itu manusia keluar dari kuburnya dalam keadaan berkelompok-kelompok, untuk diperlihatkan kepada mereka (balasan) semua perbuatannya.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 7,
+        "arab": "فَمَن يَعْمَلْ مِثْقَالَ ذَرَّةٍ خَيْرًا يَرَهُ",
+        "latin": "Famaiy ya'mal mithqala zarratin khai raiy-yarah",
+        "terjemah": "Maka barangsiapa mengerjakan kebaikan seberat zarrah, niscaya dia akan melihat (balasan)nya,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 8,
+        "arab": "وَمَن يَعْمَلْ مِثْقَالَ ذَرَّةٍ شَرًّا يَرَهُ",
+        "latin": "Wa maiy-y'amal mithqala zarratin sharraiy-yarah",
+        "terjemah": "dan barangsiapa mengerjakan kejahatan seberat zarrah, niscaya dia akan melihat (balasan)nya.",
+        "juz": 30
+      }
+    ]
+  }
+]

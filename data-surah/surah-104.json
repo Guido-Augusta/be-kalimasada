@@ -1,0 +1,76 @@
+[
+  {
+    "nomor": 104,
+    "nama": "الهمزة",
+    "namaLatin": "Al-Humazah",
+    "totalAyat": 9,
+    "tempatTurun": "Makkiyyah",
+    "arti": "Pengumpat",
+    "deskripsi": "Surat Al Humazah terdiri atas 9 ayat, termasuk golongan surat-surat Makkiyyah, diturunkan sesudah surat Al Qiyaamah. Dinamai Al Humazah (pengumpat) diambil dari perkataan Humazah yang terdapat pada ayat pertama surat ini.",
+    "ayat": [
+      {
+        "nomorAyat": 1,
+        "arab": "وَيْلٌ لِّكُلِّ هُمَزَةٍ لُّمَزَةٍ",
+        "latin": "Wai lul-li kulli hu mazatil-lumaza",
+        "terjemah": "Celakalah bagi setiap pengumpat dan pencela,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 2,
+        "arab": "الَّذِي جَمَعَ مَالًا وَعَدَّدَهُ",
+        "latin": "Al-lazi jama'a maalaw wa'addadah",
+        "terjemah": "yang mengumpulkan harta dan menghitung-hitungnya,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 3,
+        "arab": "يَحْسَبُ أَنَّ مَالَهُ أَخْلَدَهُ",
+        "latin": "Yahsabu anna maalahu akhladah",
+        "terjemah": "dia (manusia) mengira bahwa hartanya itu dapat mengekalkannya.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 4,
+        "arab": "كَلَّا ۖ لَيُنبَذَنَّ فِي الْحُطَمَةِ",
+        "latin": "Kalla layum ba zanna fil hutamah",
+        "terjemah": "Sekali-kali tidak! Pasti dia akan dilemparkan ke dalam (neraka) Hutamah.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 5,
+        "arab": "وَمَا أَدْرَاكَ مَا الْحُطَمَةُ",
+        "latin": "Wa maa adraaka mal-hutamah",
+        "terjemah": "Dan tahukah kamu apakah (neraka) Hutamah itu?",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 6,
+        "arab": "نَارُ اللَّهِ الْمُوقَدَةُ",
+        "latin": "Narul laahil-mooqada",
+        "terjemah": "(Yaitu) api  (azab) Allah yang dinyalakan,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 7,
+        "arab": "الَّتِي تَطَّلِعُ عَلَى الْأَفْئِدَةِ",
+        "latin": "Al latee tat tali'u 'alalafidah",
+        "terjemah": "yang (membakar) sampai ke hati.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 8,
+        "arab": "إِنَّهَا عَلَيْهِم مُّؤْصَدَةٌ",
+        "latin": "Innaha 'alaihim moosada",
+        "terjemah": "Sungguh, api itu ditutup rapat atas (diri) mereka,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 9,
+        "arab": "فِي عَمَدٍ مُّمَدَّدَةٍ",
+        "latin": "Fee 'amadim-mu mad dadah",
+        "terjemah": "(sedang mereka itu) diikat pada tiang-tiang yang panjang.",
+        "juz": 30
+      }
+    ]
+  }
+]

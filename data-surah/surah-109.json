@@ -1,0 +1,55 @@
+[
+  {
+    "nomor": 109,
+    "nama": "الكافرون",
+    "namaLatin": "Al-Kafirun",
+    "totalAyat": 6,
+    "tempatTurun": "Makkiyyah",
+    "arti": "Orang-Orang kafir",
+    "deskripsi": "Surat Al Kaafiruun terdiri atas 6 ayat, termasuk golongan surat-surat  Makkiyyah, diturunkan sesudah surat Al Maa'uun. Dinamai Al Kaafiruun (orang-orang kafir), diambil dari perkataan  Al Kaafiruun yang terdapat pada ayat pertama surat ini.",
+    "ayat": [
+      {
+        "nomorAyat": 1,
+        "arab": "قُلْ يَا أَيُّهَا الْكَافِرُونَ",
+        "latin": "Qul yaa-ai yuhal kaafiroon",
+        "terjemah": "Katakanlah (Muhammad), “Wahai orang-orang kafir!",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 2,
+        "arab": "لَا أَعْبُدُ مَا تَعْبُدُونَ",
+        "latin": "Laa a'budu ma t'abudoon",
+        "terjemah": "aku tidak akan menyembah apa yang kamu sembah,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 3,
+        "arab": "وَلَا أَنتُمْ عَابِدُونَ مَا أَعْبُدُ",
+        "latin": "Wa laa antum 'aabidoona maa a'bud",
+        "terjemah": "dan kamu bukan penyembah apa yang aku sembah,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 4,
+        "arab": "وَلَا أَنَا عَابِدٌ مَّا عَبَدتُّمْ",
+        "latin": "Wa laa ana 'abidum maa 'abattum",
+        "terjemah": "dan aku tidak pernah menjadi penyembah apa yang kamu sembah,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 5,
+        "arab": "وَلَا أَنتُمْ عَابِدُونَ مَا أَعْبُدُ",
+        "latin": "Wa laa antum 'aabidoona ma a'bud",
+        "terjemah": "dan kamu tidak pernah (pula) menjadi penyembah apa yang aku sembah.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 6,
+        "arab": "لَكُمْ دِينُكُمْ وَلِيَ دِينِ",
+        "latin": "Lakum deenukum wa liya deen.",
+        "terjemah": "Untukmu agamamu, dan untukku agamaku.”",
+        "juz": 30
+      }
+    ]
+  }
+]

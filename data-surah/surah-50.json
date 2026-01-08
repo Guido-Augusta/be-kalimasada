@@ -1,0 +1,328 @@
+[
+  {
+    "nomor": 50,
+    "nama": "ق",
+    "namaLatin": "Qaf",
+    "totalAyat": 45,
+    "tempatTurun": "Makkiyyah",
+    "arti": "Qaf",
+    "deskripsi": "Surat Qaaf terdiri atas 45 ayat, termasuk golongan surat-surat Makkiyah diturunkan sesudah surat Al Murssalaat. Dinamai Qaaf karena surat ini dimulai dengan huruf Qaaf. Menurut hadits yang diriwayatkan Imam Muslim, bahwa Rasulullah SAW senang membaca surat ini pada rakaat pertama sembahyang subuh dan pada shalat hari raya. Sedang menurut riwayat Abu Daud, Al Baihaqy dan Ibnu Majah bahwa Rasulullah SAW membaca surat ini pada tiap-tiap membaca Khutbah pada hari Jum'at. Kedua riwayat ini menunjukkan bahwa surat QAAF sering dibaca Nabi Muhammad SAW di tempat-tempat umum, untuk memperingatkan manusia tentang kejadian mereka dan nikmat-nikmat yang diberikan kepadanya, begitu pula tentang hari berbangkit, hari berhisab, syurga, neraka, pahala, dosa, dsb. Surat ini dinamai juga Al Baasiqaat, diambil dari perkataan Al- Baasiqaat yang terdapat pada ayat 10 surat ini.",
+    "ayat": [
+      {
+        "nomorAyat": 1,
+        "arab": "ق ۚ وَالْقُرْآنِ الْمَجِيدِ",
+        "latin": "Qaaaf; wal Qur aanil Majeed",
+        "terjemah": "Qaf. Demi Al-Qur'an yang mulia.",
+        "juz": 26
+      },
+      {
+        "nomorAyat": 2,
+        "arab": "بَلْ عَجِبُوا أَن جَاءَهُم مُّنذِرٌ مِّنْهُمْ فَقَالَ الْكَافِرُونَ هَٰذَا شَيْءٌ عَجِيبٌ",
+        "latin": "Bal 'ajibooo an jaa'ahum munzirum minhum faqaalal kaafiroona haazaa shai'un 'ajeeb",
+        "terjemah": "(Mereka tidak menerimanya) bahkan mereka tercengang karena telah datang kepada mereka seorang pemberi peringatan dari (kalangan) mereka sendiri, maka berkatalah orang-orang kafir, “Ini adalah suatu yang sangat ajaib.”",
+        "juz": 26
+      },
+      {
+        "nomorAyat": 3,
+        "arab": "أَإِذَا مِتْنَا وَكُنَّا تُرَابًا ۖ ذَٰلِكَ رَجْعٌ بَعِيدٌ",
+        "latin": "'A-izaa mitnaa wa kunnaa turaaban zaalika raj'um ba'eed",
+        "terjemah": "Apakah apabila kami telah mati dan sudah menjadi tanah (akan kembali lagi)? Itu adalah suatu pengembalian yang tidak mungkin.",
+        "juz": 26
+      },
+      {
+        "nomorAyat": 4,
+        "arab": "قَدْ عَلِمْنَا مَا تَنقُصُ الْأَرْضُ مِنْهُمْ ۖ وَعِندَنَا كِتَابٌ حَفِيظٌ",
+        "latin": "Qad 'alimnaa maa tanqu-sul-ardu minhum wa 'indanaa Kitaabun Hafeez",
+        "terjemah": "Sungguh, Kami telah mengetahui apa yang ditelan bumi dari (tubuh) mereka, sebab pada Kami ada kitab (catatan) yang terpelihara baik.",
+        "juz": 26
+      },
+      {
+        "nomorAyat": 5,
+        "arab": "بَلْ كَذَّبُوا بِالْحَقِّ لَمَّا جَاءَهُمْ فَهُمْ فِي أَمْرٍ مَّرِيجٍ",
+        "latin": "Bal kazzaboo bilhaqqi lammaa jaaa'ahum fahum feee amrim mareej",
+        "terjemah": "Bahkan mereka telah mendustakan kebenaran ketika (kebenaran itu) datang kepada mereka, maka mereka berada dalam keadaan kacau balau.",
+        "juz": 26
+      },
+      {
+        "nomorAyat": 6,
+        "arab": "أَفَلَمْ يَنظُرُوا إِلَى السَّمَاءِ فَوْقَهُمْ كَيْفَ بَنَيْنَاهَا وَزَيَّنَّاهَا وَمَا لَهَا مِن فُرُوجٍ",
+        "latin": "Afalam yanzurooo ilas samaaa'i fawqahum kaifa banainaahaa wa zaiyannaahaa wa maa lahaa min furooj",
+        "terjemah": "Maka tidakkah mereka memperhatikan langit yang ada di atas mereka, bagaimana cara Kami membangunnya dan menghiasinya dan tidak terdapat retak-retak sedikit pun?",
+        "juz": 26
+      },
+      {
+        "nomorAyat": 7,
+        "arab": "وَالْأَرْضَ مَدَدْنَاهَا وَأَلْقَيْنَا فِيهَا رَوَاسِيَ وَأَنبَتْنَا فِيهَا مِن كُلِّ زَوْجٍ بَهِيجٍ",
+        "latin": "Wal arda madadnaahaa wa alqainaa feehaa rawaasiya wa ambatnaa feehaa min kulli zawjim baheej",
+        "terjemah": "Dan bumi yang Kami hamparkan dan Kami pancangkan di atasnya gunung-gunung yang kokoh dan Kami tumbuhkan di atasnya tanam-tanaman yang indah,",
+        "juz": 26
+      },
+      {
+        "nomorAyat": 8,
+        "arab": "تَبْصِرَةً وَذِكْرَىٰ لِكُلِّ عَبْدٍ مُّنِيبٍ",
+        "latin": "Tabsiratanw wa zikraa likulli 'abdim muneeb",
+        "terjemah": "untuk menjadi pelajaran dan peringatan bagi setiap hamba yang kembali (tunduk kepada Allah).",
+        "juz": 26
+      },
+      {
+        "nomorAyat": 9,
+        "arab": "وَنَزَّلْنَا مِنَ السَّمَاءِ مَاءً مُّبَارَكًا فَأَنبَتْنَا بِهِ جَنَّاتٍ وَحَبَّ الْحَصِيدِ",
+        "latin": "Wa nazzalnaa minas samaaa'i maaa'am mubaarakan fa ambatnaa bihee jannaatinw wa habbal haseed",
+        "terjemah": "Dan dari langit Kami turunkan air yang memberi berkah lalu Kami tumbuhkan dengan (air) itu pepohonan yang rindang dan biji-bijian yang dapat dipanen.",
+        "juz": 26
+      },
+      {
+        "nomorAyat": 10,
+        "arab": "وَالنَّخْلَ بَاسِقَاتٍ لَّهَا طَلْعٌ نَّضِيدٌ",
+        "latin": "Wannakhla baasiqaatil laha tal'un nadeed",
+        "terjemah": "Dan pohon kurma yang tinggi-tinggi yang mempunyai mayang yang bersusun-susun,",
+        "juz": 26
+      },
+      {
+        "nomorAyat": 11,
+        "arab": "رِّزْقًا لِّلْعِبَادِ ۖ وَأَحْيَيْنَا بِهِ بَلْدَةً مَّيْتًا ۚ كَذَٰلِكَ الْخُرُوجُ",
+        "latin": "Rizqal lil'ibaad, wa ahyainaa bihee baldatam maitaa; kazaalikal khurooj",
+        "terjemah": "(sebagai) rezeki bagi hamba-hamba (Kami), dan Kami hidupkan dengan (air) itu negeri yang mati (tandus). Seperti itulah terjadinya kebangkitan (dari kubur).",
+        "juz": 26
+      },
+      {
+        "nomorAyat": 12,
+        "arab": "كَذَّبَتْ قَبْلَهُمْ قَوْمُ نُوحٍ وَأَصْحَابُ الرَّسِّ وَثَمُودُ",
+        "latin": "Kazzabat qablahum qawmu Noohinw wa Ashaabur Rassi wa Samood",
+        "terjemah": "Sebelum mereka, kaum Nuh, penduduk Rass dan Samud telah mendustakan (rasul-rasul),",
+        "juz": 26
+      },
+      {
+        "nomorAyat": 13,
+        "arab": "وَعَادٌ وَفِرْعَوْنُ وَإِخْوَانُ لُوطٍ",
+        "latin": "Wa 'Aadunw wa Fir'awnu wikhwaanu loot",
+        "terjemah": "dan (demikian juga) kaum  ‘Ad, kaum Fir‘aun dan kaum Lut,",
+        "juz": 26
+      },
+      {
+        "nomorAyat": 14,
+        "arab": "وَأَصْحَابُ الْأَيْكَةِ وَقَوْمُ تُبَّعٍ ۚ كُلٌّ كَذَّبَ الرُّسُلَ فَحَقَّ وَعِيدِ",
+        "latin": "Wa Ashaabul Aykati wa qawmu Tubba'; kullun kazzabar Rusula fahaqqa wa'eed",
+        "terjemah": "dan (juga) penduduk Aikah serta kaum Tubba‘. Semuanya telah mendustakan rasul-rasul maka berlakulah ancaman-Ku (atas mereka).",
+        "juz": 26
+      },
+      {
+        "nomorAyat": 15,
+        "arab": "أَفَعَيِينَا بِالْخَلْقِ الْأَوَّلِ ۚ بَلْ هُمْ فِي لَبْسٍ مِّنْ خَلْقٍ جَدِيدٍ",
+        "latin": "Afa'a yeenaa bilkhalqil awwal; bal hum fee labsim min khalqin jadeed",
+        "terjemah": "Maka apakah Kami letih dengan penciptaan yang pertama? (Sama sekali tidak) bahkan mereka dalam keadaan ragu-ragu tentang penciptaan yang baru.",
+        "juz": 26
+      },
+      {
+        "nomorAyat": 16,
+        "arab": "وَلَقَدْ خَلَقْنَا الْإِنسَانَ وَنَعْلَمُ مَا تُوَسْوِسُ بِهِ نَفْسُهُ ۖ وَنَحْنُ أَقْرَبُ إِلَيْهِ مِنْ حَبْلِ الْوَرِيدِ",
+        "latin": "Wa laqad khalaqnal insaana wa na'lamu maa tuwaswisu bihee nafsuhoo wa Nahnu aqrabu ilaihi min hablil wareed",
+        "terjemah": "Dan sungguh, Kami telah menciptakan manusia dan mengetahui apa yang dibisikkan oleh hatinya, dan Kami lebih dekat kepadanya daripada urat lehernya.",
+        "juz": 26
+      },
+      {
+        "nomorAyat": 17,
+        "arab": "إِذْ يَتَلَقَّى الْمُتَلَقِّيَانِ عَنِ الْيَمِينِ وَعَنِ الشِّمَالِ قَعِيدٌ",
+        "latin": "'Iz yatalaqqal mutalaqqi yaani 'anil yameeni wa 'anish shimaali qa'eed",
+        "terjemah": "(Ingatlah) ketika dua malaikat mencatat (perbuatannya), yang satu duduk di sebelah kanan dan yang lain di sebelah kiri.",
+        "juz": 26
+      },
+      {
+        "nomorAyat": 18,
+        "arab": "مَّا يَلْفِظُ مِن قَوْلٍ إِلَّا لَدَيْهِ رَقِيبٌ عَتِيدٌ",
+        "latin": "Maa yalfizu min qawlin illaa ladaihi raqeebun 'ateed",
+        "terjemah": "Tidak ada suatu kata yang diucapkannya melainkan ada di sisinya malaikat pengawas yang selalu siap (mencatat).",
+        "juz": 26
+      },
+      {
+        "nomorAyat": 19,
+        "arab": "وَجَاءَتْ سَكْرَةُ الْمَوْتِ بِالْحَقِّ ۖ ذَٰلِكَ مَا كُنتَ مِنْهُ تَحِيدُ",
+        "latin": "Wa jaaa'at kullu nafsim ma'ahaa saaa'iqunw wa shaheed",
+        "terjemah": "Dan datanglah sakaratul maut dengan sebenar-benarnya. Itulah yang dahulu hendak kamu hindari.",
+        "juz": 26
+      },
+      {
+        "nomorAyat": 20,
+        "arab": "وَنُفِخَ فِي الصُّورِ ۚ ذَٰلِكَ يَوْمُ الْوَعِيدِ",
+        "latin": "Wa nufikha fis Soor; zaalika yawmul wa'eed",
+        "terjemah": "Dan ditiuplah sangkakala. Itulah hari yang diancamkan.",
+        "juz": 26
+      },
+      {
+        "nomorAyat": 21,
+        "arab": "وَجَاءَتْ كُلُّ نَفْسٍ مَّعَهَا سَائِقٌ وَشَهِيدٌ",
+        "latin": "Wa jaaa'at kullu nafsim ma'ahaa saaa'iqunw wa shaheed",
+        "terjemah": "Setiap orang akan datang bersama (malaikat) penggiring dan (malaikat) saksi.",
+        "juz": 26
+      },
+      {
+        "nomorAyat": 22,
+        "arab": "لَّقَدْ كُنتَ فِي غَفْلَةٍ مِّنْ هَٰذَا فَكَشَفْنَا عَنكَ غِطَاءَكَ فَبَصَرُكَ الْيَوْمَ حَدِيدٌ",
+        "latin": "Laqad kunta fee ghaf latim min haazaa fakashafnaa 'anka ghitaaa'aka fabasarukal yawma hadeed",
+        "terjemah": "Sungguh, kamu dahulu lalai tentang (peristiwa) ini, maka Kami singkapkan tutup (yang menutupi) matamu, sehingga penglihatanmu pada hari ini sangat tajam.",
+        "juz": 26
+      },
+      {
+        "nomorAyat": 23,
+        "arab": "وَقَالَ قَرِينُهُ هَٰذَا مَا لَدَيَّ عَتِيدٌ",
+        "latin": "Wa qaala qareenuhoo haazaa maa ladaiya 'ateed",
+        "terjemah": "Dan (malaikat) yang menyertainya berkata, “Inilah (catatan perbuatan) yang ada padaku.”",
+        "juz": 26
+      },
+      {
+        "nomorAyat": 24,
+        "arab": "أَلْقِيَا فِي جَهَنَّمَ كُلَّ كَفَّارٍ عَنِيدٍ",
+        "latin": "Alqiyaa fee Jahannama kulla kaffaarin 'aneed",
+        "terjemah": "(Allah berfirman), “Lemparkanlah olehmu berdua ke dalam neraka Jahanam semua orang yang sangat ingkar dan keras kepala,",
+        "juz": 26
+      },
+      {
+        "nomorAyat": 25,
+        "arab": "مَّنَّاعٍ لِّلْخَيْرِ مُعْتَدٍ مُّرِيبٍ",
+        "latin": "Mannaa'il lilkhayri mu'tadim mureeb",
+        "terjemah": "yang sangat enggan melakukan kebajikan, melampaui batas dan bersikap ragu-ragu,",
+        "juz": 26
+      },
+      {
+        "nomorAyat": 26,
+        "arab": "الَّذِي جَعَلَ مَعَ اللَّهِ إِلَٰهًا آخَرَ فَأَلْقِيَاهُ فِي الْعَذَابِ الشَّدِيدِ",
+        "latin": "Allazee ja'ala ma'al laahi ilaahan aakhara fa alqiyaahu fil'azaabish shadeed",
+        "terjemah": "yang mempersekutukan Allah dengan tuhan lain, maka lemparkanlah dia ke dalam azab yang keras.”",
+        "juz": 26
+      },
+      {
+        "nomorAyat": 27,
+        "arab": "۞ قَالَ قَرِينُهُ رَبَّنَا مَا أَطْغَيْتُهُ وَلَٰكِن كَانَ فِي ضَلَالٍ بَعِيدٍ",
+        "latin": "Qaala qareenuhoo Rabbanaa maaa atghaituhoo wa laakin kaana fee dalaahim ba'eed",
+        "terjemah": "(Setan) yang menyertainya berkata (pula), “Ya Tuhan kami, aku tidak menyesatkannya tetapi dia sendiri yang berada dalam kesesatan yang jauh.”",
+        "juz": 26
+      },
+      {
+        "nomorAyat": 28,
+        "arab": "قَالَ لَا تَخْتَصِمُوا لَدَيَّ وَقَدْ قَدَّمْتُ إِلَيْكُم بِالْوَعِيدِ",
+        "latin": "Qaala laa takhtasimoo ladaayya wa qad qaddamtu ilaikum bilwa'eed",
+        "terjemah": "(Allah) berfirman, “Janganlah kamu bertengkar di hadapan-Ku, dan sungguh, dahulu Aku telah memberikan ancaman kepadamu.",
+        "juz": 26
+      },
+      {
+        "nomorAyat": 29,
+        "arab": "مَا يُبَدَّلُ الْقَوْلُ لَدَيَّ وَمَا أَنَا بِظَلَّامٍ لِّلْعَبِيدِ",
+        "latin": "Maa yubaddalul qawlu ladaiya wa maaa ana bizal laamil lil'abeed",
+        "terjemah": "Keputusan-Ku tidak dapat diubah dan Aku tidak menzalimi hamba-hamba-Ku.”",
+        "juz": 26
+      },
+      {
+        "nomorAyat": 30,
+        "arab": "يَوْمَ نَقُولُ لِجَهَنَّمَ هَلِ امْتَلَأْتِ وَتَقُولُ هَلْ مِن مَّزِيدٍ",
+        "latin": "Yawma naqoolu li'jahannama halim talaati wa taqoolu hal mim mazeed",
+        "terjemah": "(Ingatlah) pada hari (ketika) Kami bertanya kepada Jahanam, “Apakah kamu sudah penuh?”  Ia menjawab, “Masih adakah tambahan?”",
+        "juz": 26
+      },
+      {
+        "nomorAyat": 31,
+        "arab": "وَأُزْلِفَتِ الْجَنَّةُ لِلْمُتَّقِينَ غَيْرَ بَعِيدٍ",
+        "latin": "Wa uzlifatil jannatu lil muttaqeena ghaira ba'eed",
+        "terjemah": "Sedangkan surga didekatkan kepada orang-orang yang bertakwa pada tempat yang tidak jauh (dari mereka).",
+        "juz": 26
+      },
+      {
+        "nomorAyat": 32,
+        "arab": "هَٰذَا مَا تُوعَدُونَ لِكُلِّ أَوَّابٍ حَفِيظٍ",
+        "latin": "Haaza maa too'adoona likulli awwaabin hafeez",
+        "terjemah": "(Kepada mereka dikatakan), “Inilah nikmat yang dijanjikan kepadamu, (yaitu) kepada setiap hamba yang senantiasa bertobat (kepada Allah) dan memelihara (semua peraturan-peraturan-Nya).",
+        "juz": 26
+      },
+      {
+        "nomorAyat": 33,
+        "arab": "مَّنْ خَشِيَ الرَّحْمَٰنَ بِالْغَيْبِ وَجَاءَ بِقَلْبٍ مُّنِيبٍ",
+        "latin": "Man khashiyar Rahmaana bilghaibi wa jaaa'a biqalbim muneeb",
+        "terjemah": "(Yaitu) orang yang takut kepada Allah Yang Maha Pengasih sekalipun tidak kelihatan (olehnya) dan dia datang dengan hati yang bertobat,",
+        "juz": 26
+      },
+      {
+        "nomorAyat": 34,
+        "arab": "ادْخُلُوهَا بِسَلَامٍ ۖ ذَٰلِكَ يَوْمُ الْخُلُودِ",
+        "latin": "Udkhuloohaa bisalaamin zaalika yawmul khulood",
+        "terjemah": "masuklah ke (dalam surga) dengan aman dan damai. Itulah hari yang abadi.”",
+        "juz": 26
+      },
+      {
+        "nomorAyat": 35,
+        "arab": "لَهُم مَّا يَشَاءُونَ فِيهَا وَلَدَيْنَا مَزِيدٌ",
+        "latin": "Lahum maa yashaaa'oona feehaa wa ladainaa mazeed",
+        "terjemah": "Mereka di dalamnya memperoleh apa yang mereka kehendaki, dan pada Kami ada tambahannya.",
+        "juz": 26
+      },
+      {
+        "nomorAyat": 36,
+        "arab": "وَكَمْ أَهْلَكْنَا قَبْلَهُم مِّن قَرْنٍ هُمْ أَشَدُّ مِنْهُم بَطْشًا فَنَقَّبُوا فِي الْبِلَادِ هَلْ مِن مَّحِيصٍ",
+        "latin": "Wa kam ahlaknaa qablahum min qarnin hum ashaddu minhum batshan fanaqqaboo fil bilaad, hal mim mahees",
+        "terjemah": "Dan betapa banyak umat yang telah Kami binasakan sebelum mereka, (padahal) mereka lebih hebat kekuatannya daripada mereka (umat yang belakangan) ini. Mereka pernah menjelajah di beberapa negeri. Adakah tempat pelarian (dari kebinasaan bagi mereka)?",
+        "juz": 26
+      },
+      {
+        "nomorAyat": 37,
+        "arab": "إِنَّ فِي ذَٰلِكَ لَذِكْرَىٰ لِمَن كَانَ لَهُ قَلْبٌ أَوْ أَلْقَى السَّمْعَ وَهُوَ شَهِيدٌ",
+        "latin": "Inna fee zaalika lazikraa liman kaana lahoo qalbun aw alqas sam'a wa huwa shaheed",
+        "terjemah": "Sungguh, pada yang demikian itu pasti terdapat peringatan bagi orang-orang yang mempunyai hati atau yang menggunakan pendengarannya, sedang dia menyaksikannya.",
+        "juz": 26
+      },
+      {
+        "nomorAyat": 38,
+        "arab": "وَلَقَدْ خَلَقْنَا السَّمَاوَاتِ وَالْأَرْضَ وَمَا بَيْنَهُمَا فِي سِتَّةِ أَيَّامٍ وَمَا مَسَّنَا مِن لُّغُوبٍ",
+        "latin": "Wa laqad khalaqnas samaawaati wal arda wa maa bainahumaa fee sittati ayyaamin wa maa massanaa mil lughoob",
+        "terjemah": "Dan sungguh, Kami telah menciptakan langit dan bumi dan apa yang ada antara keduanya dalam enam masa, dan Kami tidak merasa letih sedikit pun.",
+        "juz": 26
+      },
+      {
+        "nomorAyat": 39,
+        "arab": "فَاصْبِرْ عَلَىٰ مَا يَقُولُونَ وَسَبِّحْ بِحَمْدِ رَبِّكَ قَبْلَ طُلُوعِ الشَّمْسِ وَقَبْلَ الْغُرُوبِ",
+        "latin": "Fasbir 'alaa maa yaqooloona wa sabbih bihamdi Rabbika qabla tuloo'ish shamsi wa qablal ghuroob",
+        "terjemah": "Maka bersabarlah engkau (Muhammad) terhadap apa yang mereka katakan dan bertasbihlah dengan memuji Tuhanmu sebelum matahari terbit dan sebelum terbenam.",
+        "juz": 26
+      },
+      {
+        "nomorAyat": 40,
+        "arab": "وَمِنَ اللَّيْلِ فَسَبِّحْهُ وَأَدْبَارَ السُّجُودِ",
+        "latin": "Wa minal laili fasabbih hu wa adbaaras sujood",
+        "terjemah": "Dan bertasbihlah kepada-Nya pada malam hari dan setiap selesai salat.",
+        "juz": 26
+      },
+      {
+        "nomorAyat": 41,
+        "arab": "وَاسْتَمِعْ يَوْمَ يُنَادِ الْمُنَادِ مِن مَّكَانٍ قَرِيبٍ",
+        "latin": "Wastami' yawma yunaa dil munaadi mim makaanin qareeb",
+        "terjemah": "Dan dengarkanlah (seruan) pada hari (ketika) penyeru (malaikat) menyeru dari tempat yang dekat.",
+        "juz": 26
+      },
+      {
+        "nomorAyat": 42,
+        "arab": "يَوْمَ يَسْمَعُونَ الصَّيْحَةَ بِالْحَقِّ ۚ ذَٰلِكَ يَوْمُ الْخُرُوجِ",
+        "latin": "Yawma yasmaoonas sai hata bilhaqq zaalika yawmul khurooj",
+        "terjemah": "(Yaitu) pada hari (ketika) mereka men-dengar suara dahsyat dengan sebenarnya. Itulah hari keluar (dari kubur).",
+        "juz": 26
+      },
+      {
+        "nomorAyat": 43,
+        "arab": "إِنَّا نَحْنُ نُحْيِي وَنُمِيتُ وَإِلَيْنَا الْمَصِيرُ",
+        "latin": "Innaa Nahnu nuhyee wa numeetu wa ilainal maseer",
+        "terjemah": "Sungguh, Kami yang menghidupkan dan mematikan dan kepada Kami tempat kembali (semua makhluk).",
+        "juz": 26
+      },
+      {
+        "nomorAyat": 44,
+        "arab": "يَوْمَ تَشَقَّقُ الْأَرْضُ عَنْهُمْ سِرَاعًا ۚ ذَٰلِكَ حَشْرٌ عَلَيْنَا يَسِيرٌ",
+        "latin": "Yawma tashaqqaqul ardu 'anhum siraa'aa; zaalika hashrun 'alainaa yaseer",
+        "terjemah": "(Yaitu) pada hari (ketika) bumi terbelah, mereka keluar dengan cepat. Yang demikian itu adalah pengumpulan yang mudah bagi Kami.",
+        "juz": 26
+      },
+      {
+        "nomorAyat": 45,
+        "arab": "نَّحْنُ أَعْلَمُ بِمَا يَقُولُونَ ۖ وَمَا أَنتَ عَلَيْهِم بِجَبَّارٍ ۖ فَذَكِّرْ بِالْقُرْآنِ مَن يَخَافُ وَعِيدِ",
+        "latin": "Nahnu a'lamu bimaa yaqooloona wa maaa anta 'alihim bijabbaarin fazakkir bil quraani many yakhaafu wa'eed",
+        "terjemah": "Kami lebih mengetahui tentang apa yang mereka katakan, dan engkau (Muhammad) bukanlah seorang pemaksa terhadap mereka. Maka berilah peringatan dengan Al-Qur'an kepada siapa pun yang takut kepada ancaman-Ku.",
+        "juz": 26
+      }
+    ]
+  }
+]

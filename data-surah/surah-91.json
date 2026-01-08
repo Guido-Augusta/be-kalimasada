@@ -1,0 +1,118 @@
+[
+  {
+    "nomor": 91,
+    "nama": "الشمس",
+    "namaLatin": "Asy-Syams",
+    "totalAyat": 15,
+    "tempatTurun": "Makkiyyah",
+    "arti": "Matahari",
+    "deskripsi": "Surat Asy Syams terdiri atas 15 ayat, termasuk golongan surat-surat Makkiyyah, diturunkan sesudah surat Al Qadar.  Dinamai Asy Syams (matahari) diambil dari perkataan Asy Syams yang terdapat pada ayat permulaan surat ini.",
+    "ayat": [
+      {
+        "nomorAyat": 1,
+        "arab": "وَالشَّمْسِ وَضُحَاهَا",
+        "latin": "Wash shamsi wa duhaa haa",
+        "terjemah": "Demi matahari dan sinarnya pada pagi hari,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 2,
+        "arab": "وَالْقَمَرِ إِذَا تَلَاهَا",
+        "latin": "Wal qamari izaa talaa haa",
+        "terjemah": "demi bulan apabila mengiringinya,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 3,
+        "arab": "وَالنَّهَارِ إِذَا جَلَّاهَا",
+        "latin": "Wannahaari izaa jallaa haa",
+        "terjemah": "demi siang apabila menampakkannya,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 4,
+        "arab": "وَاللَّيْلِ إِذَا يَغْشَاهَا",
+        "latin": "Wallaili izaa yaghshaa haa",
+        "terjemah": "demi malam apabila menutupinya (gelap gulita),",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 5,
+        "arab": "وَالسَّمَاءِ وَمَا بَنَاهَا",
+        "latin": "Wassamaaa'i wa maa banaahaa",
+        "terjemah": "demi langit serta pembinaannya (yang menakjubkan),",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 6,
+        "arab": "وَالْأَرْضِ وَمَا طَحَاهَا",
+        "latin": "Wal ardi wa maa tahaahaa",
+        "terjemah": "demi bumi serta penghamparannya,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 7,
+        "arab": "وَنَفْسٍ وَمَا سَوَّاهَا",
+        "latin": "Wa nafsinw wa maa sawwaahaa",
+        "terjemah": "demi jiwa serta penyempurnaan (ciptaan)nya,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 8,
+        "arab": "فَأَلْهَمَهَا فُجُورَهَا وَتَقْوَاهَا",
+        "latin": "Fa-alhamahaa fujoorahaa wa taqwaahaa",
+        "terjemah": "maka Dia mengilhamkan kepadanya (jalan) kejahatan dan ketakwaannya,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 9,
+        "arab": "قَدْ أَفْلَحَ مَن زَكَّاهَا",
+        "latin": "Qad aflaha man zakkaahaa",
+        "terjemah": "sungguh beruntung orang yang menyucikannya (jiwa itu),",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 10,
+        "arab": "وَقَدْ خَابَ مَن دَسَّاهَا",
+        "latin": "Wa qad khaaba man dassaahaa",
+        "terjemah": "dan sungguh rugi orang yang mengotorinya.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 11,
+        "arab": "كَذَّبَتْ ثَمُودُ بِطَغْوَاهَا",
+        "latin": "Kazzabat Samoodu bi taghwaahaaa",
+        "terjemah": "(Kaum) samud telah mendustakan (rasulnya) karena mereka melampaui batas (zalim),",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 12,
+        "arab": "إِذِ انبَعَثَ أَشْقَاهَا",
+        "latin": "Izim ba'asa ashqaahaa",
+        "terjemah": "ketika bangkit orang yang paling celaka di antara mereka,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 13,
+        "arab": "فَقَالَ لَهُمْ رَسُولُ اللَّهِ نَاقَةَ اللَّهِ وَسُقْيَاهَا",
+        "latin": "Faqaala lahum Rasoolul laahi naaqatal laahi wa suqiyaahaa",
+        "terjemah": "lalu Rasul Allah (Saleh) berkata kepada mereka, “(Biarkanlah) unta betina dari Allah ini dengan minumannya.”",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 14,
+        "arab": "فَكَذَّبُوهُ فَعَقَرُوهَا فَدَمْدَمَ عَلَيْهِمْ رَبُّهُم بِذَنبِهِمْ فَسَوَّاهَا",
+        "latin": "Fakazzaboohu fa'aqaroohaa fadamdama 'alaihim Rabbuhum bizambihim fasaw waahaa",
+        "terjemah": "Namun mereka mendustakannya dan menyembelihnya, karena itu Tuhan membinasakan mereka karena dosanya, lalu diratakan-Nya (dengan tanah),",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 15,
+        "arab": "وَلَا يَخَافُ عُقْبَاهَا",
+        "latin": "Wa laa yakhaafu'uqbaahaa",
+        "terjemah": "dan Dia tidak takut terhadap akibatnya.",
+        "juz": 30
+      }
+    ]
+  }
+]

@@ -1,0 +1,216 @@
+[
+  {
+    "nomor": 81,
+    "nama": "التكوير",
+    "namaLatin": "At-Takwir",
+    "totalAyat": 29,
+    "tempatTurun": "Makkiyyah",
+    "arti": "Penggulungan",
+    "deskripsi": "Surat At Takwir terdiri atas 29 ayat dan termasuk golongan surat-surat Makkiyah, diturunkan sesudah surat Al Masadd. Kata At Takwir (terbelah) yang menjadi nama bagi surat ini adalah dari kata asal (mashdar) dari kata kerja kuwwirat (digulung) yang terdapat pada ayat pertama surat ini.",
+    "ayat": [
+      {
+        "nomorAyat": 1,
+        "arab": "إِذَا الشَّمْسُ كُوِّرَتْ",
+        "latin": "Izash shamsu kuwwirat",
+        "terjemah": "Apabila matahari digulung,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 2,
+        "arab": "وَإِذَا النُّجُومُ انكَدَرَتْ",
+        "latin": "Wa izan nujoomun kadarat",
+        "terjemah": "dan apabila bintang-bintang berjatuhan,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 3,
+        "arab": "وَإِذَا الْجِبَالُ سُيِّرَتْ",
+        "latin": "Wa izal jibaalu suyyirat",
+        "terjemah": "dan apabila gunung-gunung dihancurkan,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 4,
+        "arab": "وَإِذَا الْعِشَارُ عُطِّلَتْ",
+        "latin": "Wa izal 'ishaaru 'uttilat",
+        "terjemah": "dan apabila unta-unta yang bunting ditinggalkan (tidak terurus),",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 5,
+        "arab": "وَإِذَا الْوُحُوشُ حُشِرَتْ",
+        "latin": "Wa izal wuhooshu hushirat",
+        "terjemah": "dan apabila binatang-binatang liar dikumpulkan,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 6,
+        "arab": "وَإِذَا الْبِحَارُ سُجِّرَتْ",
+        "latin": "Wa izal bihaaru sujjirat",
+        "terjemah": "dan apabila lautan dipanaskan,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 7,
+        "arab": "وَإِذَا النُّفُوسُ زُوِّجَتْ",
+        "latin": "Wa izan nufoosu zuwwijat",
+        "terjemah": "dan apabila roh-roh dipertemukan (dengan tubuh),",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 8,
+        "arab": "وَإِذَا الْمَوْءُودَةُ سُئِلَتْ",
+        "latin": "Wa izal maw'oodatu su'ilat",
+        "terjemah": "dan apabila bayi-bayi perempuan yang dikubur hidup-hidup ditanya,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 9,
+        "arab": "بِأَيِّ ذَنبٍ قُتِلَتْ",
+        "latin": "Bi ayyi zambin qutilat",
+        "terjemah": "karena dosa apa dia dibunuh?",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 10,
+        "arab": "وَإِذَا الصُّحُفُ نُشِرَتْ",
+        "latin": "Wa izas suhufu nushirat",
+        "terjemah": "Dan apabila lembaran-lembaran (catatan amal) telah dibuka lebar-lebar,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 11,
+        "arab": "وَإِذَا السَّمَاءُ كُشِطَتْ",
+        "latin": "Wa izas samaaa'u kushitat",
+        "terjemah": "dan apabila langit dilenyapkan,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 12,
+        "arab": "وَإِذَا الْجَحِيمُ سُعِّرَتْ",
+        "latin": "Wa izal jaheemu su'-'irat",
+        "terjemah": "dan apabila neraka Jahim dinyalakan,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 13,
+        "arab": "وَإِذَا الْجَنَّةُ أُزْلِفَتْ",
+        "latin": "Wa izal jannatu uzlifat",
+        "terjemah": "dan apabila surga didekatkan,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 14,
+        "arab": "عَلِمَتْ نَفْسٌ مَّا أَحْضَرَتْ",
+        "latin": "'Alimat nafsum maaa ahdarat",
+        "terjemah": "setiap jiwa akan mengetahui apa yang telah dikerjakannya.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 15,
+        "arab": "فَلَا أُقْسِمُ بِالْخُنَّسِ",
+        "latin": "Falaaa uqsimu bil khunnas",
+        "terjemah": "Aku bersumpah demi bintang-bintang,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 16,
+        "arab": "الْجَوَارِ الْكُنَّسِ",
+        "latin": "Al jawaaril kunnas",
+        "terjemah": "yang beredar dan terbenam,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 17,
+        "arab": "وَاللَّيْلِ إِذَا عَسْعَسَ",
+        "latin": "Wallaili izaa 'as'as",
+        "terjemah": "demi malam apabila telah larut,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 18,
+        "arab": "وَالصُّبْحِ إِذَا تَنَفَّسَ",
+        "latin": "Wassubhi izaa tanaffas",
+        "terjemah": "dan demi subuh apabila fajar telah menyingsing,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 19,
+        "arab": "إِنَّهُ لَقَوْلُ رَسُولٍ كَرِيمٍ",
+        "latin": "Innahoo laqawlu rasoolin kareem",
+        "terjemah": "sesungguhnya (Al-Qur'an) itu benar-benar firman (Allah yang dibawa oleh) utusan yang mulia (Jibril),",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 20,
+        "arab": "ذِي قُوَّةٍ عِندَ ذِي الْعَرْشِ مَكِينٍ",
+        "latin": "Zee quwwatin 'inda zil 'arshi makeen",
+        "terjemah": "yang memiliki kekuatan, memiliki kedudukan tinggi di sisi (Allah) yang memiliki ‘Arsy,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 21,
+        "arab": "مُّطَاعٍ ثَمَّ أَمِينٍ",
+        "latin": "Mutaa'in samma ameen",
+        "terjemah": "yang di sana (di alam malaikat) ditaati dan dipercaya.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 22,
+        "arab": "وَمَا صَاحِبُكُم بِمَجْنُونٍ",
+        "latin": "Wa maa saahibukum bimajnoon",
+        "terjemah": "Dan temanmu (Muhammad) itu bukanlah orang gila.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 23,
+        "arab": "وَلَقَدْ رَآهُ بِالْأُفُقِ الْمُبِينِ",
+        "latin": "Wa laqad ra aahu bilufuqil mubeen",
+        "terjemah": "Dan sungguh, dia (Muhammad) telah melihatnya (Jibril) di ufuk yang terang.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 24,
+        "arab": "وَمَا هُوَ عَلَى الْغَيْبِ بِضَنِينٍ",
+        "latin": "Wa maa huwa 'alal ghaibi bidaneen",
+        "terjemah": "Dan dia (Muhammad) bukanlah seorang yang kikir (enggan) untuk menerangkan yang gaib.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 25,
+        "arab": "وَمَا هُوَ بِقَوْلِ شَيْطَانٍ رَّجِيمٍ",
+        "latin": "Wa maa huwa biqawli shaitaanir rajeem",
+        "terjemah": "Dan (Al-Qur'an) itu bukanlah perkataan setan yang terkutuk,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 26,
+        "arab": "فَأَيْنَ تَذْهَبُونَ",
+        "latin": "Fa ayna tazhaboon",
+        "terjemah": "maka ke manakah kamu akan pergi?",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 27,
+        "arab": "إِنْ هُوَ إِلَّا ذِكْرٌ لِّلْعَالَمِينَ",
+        "latin": "In huwa illaa zikrul lil'aalameen",
+        "terjemah": "(Al-Qur'an) itu tidak lain adalah peringatan bagi seluruh alam,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 28,
+        "arab": "لِمَن شَاءَ مِنكُمْ أَن يَسْتَقِيمَ",
+        "latin": "Liman shaaa'a minkum ai yastaqeem",
+        "terjemah": "(yaitu) bagi siapa di antara kamu yang menghendaki menempuh jalan yang lurus.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 29,
+        "arab": "وَمَا تَشَاءُونَ إِلَّا أَن يَشَاءَ اللَّهُ رَبُّ الْعَالَمِينَ",
+        "latin": "Wa maa tashaaa'oona illaaa ai yashaaa 'al laahu Rabbul 'Aalameen",
+        "terjemah": "Dan kamu tidak dapat menghendaki (menempuh jalan itu) kecuali apabila dikehendaki Allah, Tuhan seluruh alam.",
+        "juz": 30
+      }
+    ]
+  }
+]

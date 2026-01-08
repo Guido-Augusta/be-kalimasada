@@ -1,0 +1,5 @@
+### GET Alquran
+GET http://localhost:5000/api/alquran
+
+### GET Surah By Number
+GET http://localhost:5000/api/alquran/surah/114

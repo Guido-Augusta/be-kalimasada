@@ -1,0 +1,209 @@
+[
+  {
+    "nomor": 72,
+    "nama": "الجن",
+    "namaLatin": "Al-Jinn",
+    "totalAyat": 28,
+    "tempatTurun": "Makkiyyah",
+    "arti": "Jin",
+    "deskripsi": "Surat Al Jin terdiri atas 28 ayat, termasuk golongan surat-surat Makkiyyah, diturunkan sesudah surat Al A'raaf. Dinamai Al Jin diambil dari perkataan Al Jin yang terdapat  pada ayat pertama surat ini. Pada ayat tersebut dan ayat-ayat berikutnya  diterangkan bahwa Jin sebagai makhluk halus telah mendengar pembacaan  Al Quran dan mereka mengikuti ajaran Al Quran tersebut.",
+    "ayat": [
+      {
+        "nomorAyat": 1,
+        "arab": "قُلْ أُوحِيَ إِلَيَّ أَنَّهُ اسْتَمَعَ نَفَرٌ مِّنَ الْجِنِّ فَقَالُوا إِنَّا سَمِعْنَا قُرْآنًا عَجَبًا",
+        "latin": "Qul oohiya ilaiya annna hustama'a nafarum minal jinnni faqaalooo innaa sami'naa quraanan 'ajabaa",
+        "terjemah": "Katakanlah (Muhammad), “Telah diwahyukan kepadaku bahwa sekumpulan jin telah mendengarkan (bacaan),” lalu mereka berkata, “Kami telah mendengarkan bacaan yang menakjubkan (Al-Qur'an),",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 2,
+        "arab": "يَهْدِي إِلَى الرُّشْدِ فَآمَنَّا بِهِ ۖ وَلَن نُّشْرِكَ بِرَبِّنَا أَحَدًا",
+        "latin": "Yahdeee ilar rushdi fa aamannaa bihee wa lan nushrika bi rabbinaaa ahadaa",
+        "terjemah": "(yang) memberi petunjuk kepada jalan yang benar, lalu kami beriman kepadanya. Dan kami sekali-kali tidak akan mempersekutukan sesuatu pun dengan Tuhan kami,",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 3,
+        "arab": "وَأَنَّهُ تَعَالَىٰ جَدُّ رَبِّنَا مَا اتَّخَذَ صَاحِبَةً وَلَا وَلَدًا",
+        "latin": "Wa annahoo Ta'aalaa jaddu Rabbinaa mat takhaza saahibatanw wa la waladaa",
+        "terjemah": "dan sesungguhnya Mahatinggi keagungan Tuhan kami, Dia tidak beristri dan tidak beranak.”",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 4,
+        "arab": "وَأَنَّهُ كَانَ يَقُولُ سَفِيهُنَا عَلَى اللَّهِ شَطَطًا",
+        "latin": "Wa annahoo kaana yaqoolu safeehunaa 'alal laahi shatataa",
+        "terjemah": "Dan sesungguhnya orang yang bodoh di antara kami dahulu selalu mengucapkan (perkataan) yang melampaui batas terhadap Allah,",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 5,
+        "arab": "وَأَنَّا ظَنَنَّا أَن لَّن تَقُولَ الْإِنسُ وَالْجِنُّ عَلَى اللَّهِ كَذِبًا",
+        "latin": "Wa annaa zanannaaa al lan taqoolal insu wal jinnu 'alal laahi kazibaa",
+        "terjemah": "dan sesungguhnya kami mengira, bahwa manusia dan jin itu tidak akan mengatakan perkataan yang dusta terhadap Allah,",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 6,
+        "arab": "وَأَنَّهُ كَانَ رِجَالٌ مِّنَ الْإِنسِ يَعُوذُونَ بِرِجَالٍ مِّنَ الْجِنِّ فَزَادُوهُمْ رَهَقًا",
+        "latin": "Wa annahoo kaana rijaa lum minal insi ya'oozoona birijaalim minal jinni fazaa doohum rahaqaa",
+        "terjemah": "dan sesungguhnya ada beberapa orang laki-laki dari kalangan manusia yang meminta perlindungan kepada beberapa laki-laki dari jin, tetapi mereka (jin) menjadikan mereka (manusia) bertambah sesat.",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 7,
+        "arab": "وَأَنَّهُمْ ظَنُّوا كَمَا ظَنَنتُمْ أَن لَّن يَبْعَثَ اللَّهُ أَحَدًا",
+        "latin": "Wa annahum zannoo kamaa zanantum al lany yab'asal laahu ahadaa",
+        "terjemah": "Dan sesungguhnya mereka (jin) mengira seperti kamu (orang musyrik Mekah) yang juga mengira bahwa Allah tidak akan membangkitkan kembali siapa pun (pada hari Kiamat).",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 8,
+        "arab": "وَأَنَّا لَمَسْنَا السَّمَاءَ فَوَجَدْنَاهَا مُلِئَتْ حَرَسًا شَدِيدًا وَشُهُبًا",
+        "latin": "Wa annaa lamasnas sa maaa'a fa wajadnaahaa muli'at harasan shadeedanw wa shuhubaa",
+        "terjemah": "Dan sesungguhnya kami (jin) telah mencoba mengetahui (rahasia) langit, maka kami mendapatinya penuh dengan penjagaan yang kuat dan panah-panah api,",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 9,
+        "arab": "وَأَنَّا كُنَّا نَقْعُدُ مِنْهَا مَقَاعِدَ لِلسَّمْعِ ۖ فَمَن يَسْتَمِعِ الْآنَ يَجِدْ لَهُ شِهَابًا رَّصَدًا",
+        "latin": "Wa annaa kunnaa naq'udu minhaa maqaa'ida lis'sam'i famany yastami'il aana yajid lahoo shihaabar rasada",
+        "terjemah": "dan sesungguhnya kami (jin) dahulu dapat menduduki beberapa tempat di langit itu untuk mencuri dengar (berita-beritanya). Tetapi sekarang siapa (mencoba) mencuri dengar (seperti itu) pasti akan menjumpai panah-panah api yang mengintai (untuk membakarnya).",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 10,
+        "arab": "وَأَنَّا لَا نَدْرِي أَشَرٌّ أُرِيدَ بِمَن فِي الْأَرْضِ أَمْ أَرَادَ بِهِمْ رَبُّهُمْ رَشَدًا",
+        "latin": "Wa annaa laa nadreee asharrun ureeda biman fil ardi am araada bihim rabbuhum rashadaa",
+        "terjemah": "Dan sesungguhnya kami (jin) tidak mengetahui (adanya penjagaan itu) apakah keburukan yang dikehendaki orang yang di bumi ataukah Tuhan mereka menghendaki kebaikan baginya.",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 11,
+        "arab": "وَأَنَّا مِنَّا الصَّالِحُونَ وَمِنَّا دُونَ ذَٰلِكَ ۖ كُنَّا طَرَائِقَ قِدَدًا",
+        "latin": "Wa annaa minnas saalihoona wa minnaa doona zaalika kunnaa taraaa'ilqa qidadaa",
+        "terjemah": "Dan sesungguhnya di antara kami (jin) ada yang saleh dan ada (pula) kebalikannya. Kami menempuh jalan yang berbeda-beda.",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 12,
+        "arab": "وَأَنَّا ظَنَنَّا أَن لَّن نُّعْجِزَ اللَّهَ فِي الْأَرْضِ وَلَن نُّعْجِزَهُ هَرَبًا",
+        "latin": "Wa annaa zanannaaa al lan nu'jizal laaha fil ardi wa lan nu'jizahoo harabaa",
+        "terjemah": "Dan sesungguhnya kami (jin) telah menduga, bahwa kami tidak akan mampu melepaskan diri (dari kekuasaan) Allah di bumi dan tidak (pula) dapat lari melepaskan diri (dari)-Nya.",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 13,
+        "arab": "وَأَنَّا لَمَّا سَمِعْنَا الْهُدَىٰ آمَنَّا بِهِ ۖ فَمَن يُؤْمِن بِرَبِّهِ فَلَا يَخَافُ بَخْسًا وَلَا رَهَقًا",
+        "latin": "Wa annaa lammaa sami'nal hudaaa aamannaa bihee famany yu'mim bi rabbihee falaa yakhaafu bakhsanw wa laa rahaqaa",
+        "terjemah": "Dan sesungguhnya ketika kami (jin) mendengar petunjuk (Al-Qur'an), kami beriman kepadanya. Maka barangsiapa beriman kepada Tuhan, maka tidak perlu ia takut rugi atau berdosa.",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 14,
+        "arab": "وَأَنَّا مِنَّا الْمُسْلِمُونَ وَمِنَّا الْقَاسِطُونَ ۖ فَمَنْ أَسْلَمَ فَأُولَٰئِكَ تَحَرَّوْا رَشَدًا",
+        "latin": "Wa annaa minnal muslimoona wa minnal qaasitoona faman aslama fa ulaaa'ika taharraw rashadaa",
+        "terjemah": "Dan di antara kami ada yang Islam dan ada yang menyimpang dari kebenaran. Siapa yang Islam, maka mereka itu telah memilih jalan yang lurus.",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 15,
+        "arab": "وَأَمَّا الْقَاسِطُونَ فَكَانُوا لِجَهَنَّمَ حَطَبًا",
+        "latin": "Wa ammal qaasitoona fa kaanoo li jahannama hatabaa",
+        "terjemah": "Dan adapun yang menyimpang dari kebenaran, maka mereka menjadi bahan bakar bagi neraka Jahanam.”",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 16,
+        "arab": "وَأَن لَّوِ اسْتَقَامُوا عَلَى الطَّرِيقَةِ لَأَسْقَيْنَاهُم مَّاءً غَدَقًا",
+        "latin": "Wa alla wis taqaamoo 'alat tareeqati la asqaynaahum maa'an ghadaqaa",
+        "terjemah": "Dan sekiranya mereka tetap berjalan lurus di atas jalan itu (agama Islam), niscaya Kami akan mencurahkan kepada mereka air yang cukup.",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 17,
+        "arab": "لِّنَفْتِنَهُمْ فِيهِ ۚ وَمَن يُعْرِضْ عَن ذِكْرِ رَبِّهِ يَسْلُكْهُ عَذَابًا صَعَدًا",
+        "latin": "Linaftinahum feeh; wa many yu'rid 'an zikri rabbihee yasluk hu 'azaaban sa'adaa",
+        "terjemah": "Dengan (cara) itu Kami hendak menguji mereka. Dan barangsiapa berpaling dari peringatan Tuhannya, niscaya akan dimasukkan-Nya ke dalam azab yang sangat berat.",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 18,
+        "arab": "وَأَنَّ الْمَسَاجِدَ لِلَّهِ فَلَا تَدْعُوا مَعَ اللَّهِ أَحَدًا",
+        "latin": "Wa annal masaajida lillaahi falaa tad'oo ma'al laahi ahadaa",
+        "terjemah": "Dan sesungguhnya masjid-masjid itu adalah untuk Allah. Maka janganlah kamu menyembah apa pun di dalamnya selain Allah.",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 19,
+        "arab": "وَأَنَّهُ لَمَّا قَامَ عَبْدُ اللَّهِ يَدْعُوهُ كَادُوا يَكُونُونَ عَلَيْهِ لِبَدًا",
+        "latin": "Wa annahoo lammaa qaama 'adul laahi yad'oohu kaadoo yakoonoona 'alaihi libadaa",
+        "terjemah": "Dan sesungguhnya ketika hamba Allah (Muhammad) berdiri menyembah-Nya (melaksanakan salat), mereka (jin-jin) itu berdesakan mengerumuninya.",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 20,
+        "arab": "قُلْ إِنَّمَا أَدْعُو رَبِّي وَلَا أُشْرِكُ بِهِ أَحَدًا",
+        "latin": "Qul innamaaa ad'oo rabbee wa laaa ushriku biheee ahadaa",
+        "terjemah": "Katakanlah (Muhammad), “Sesungguhnya aku hanya menyembah Tuhanku dan aku tidak mempersekutukan sesuatu pun dengan-Nya.”",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 21,
+        "arab": "قُلْ إِنِّي لَا أَمْلِكُ لَكُمْ ضَرًّا وَلَا رَشَدًا",
+        "latin": "Qul innee laaa amliku lakum darranw wa laa rashadaa",
+        "terjemah": "Katakanlah (Muhammad), “Aku tidak kuasa menolak mudarat maupun mendatangkan kebaikan kepadamu.”",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 22,
+        "arab": "قُلْ إِنِّي لَن يُجِيرَنِي مِنَ اللَّهِ أَحَدٌ وَلَنْ أَجِدَ مِن دُونِهِ مُلْتَحَدًا",
+        "latin": "Qul innee lany yujeeranee minal laahi ahad, wa lan ajida min doonihee multahadaa",
+        "terjemah": "Katakanlah (Muhammad), “Sesungguhnya tidak ada sesuatu pun yang dapat melindungiku dari (azab) Allah dan aku tidak akan memperoleh tempat berlindung selain dari-Nya.",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 23,
+        "arab": "إِلَّا بَلَاغًا مِّنَ اللَّهِ وَرِسَالَاتِهِ ۚ وَمَن يَعْصِ اللَّهَ وَرَسُولَهُ فَإِنَّ لَهُ نَارَ جَهَنَّمَ خَالِدِينَ فِيهَا أَبَدًا",
+        "latin": "Illaa balaagham minal laahi wa risaalaatih; wa many ya'sil laaha wa rasoolahoo fa inna lahoo naara jahannama khaalideena feehaaa abadaa",
+        "terjemah": "(Aku hanya) menyampaikan (peringatan) dari Allah dan risalah-Nya. Dan barangsiapa mendurhakai Allah dan Rasul-Nya maka sesungguhnya dia akan mendapat (azab) neraka Jahanam, mereka kekal di dalamnya selama-lamanya.”",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 24,
+        "arab": "حَتَّىٰ إِذَا رَأَوْا مَا يُوعَدُونَ فَسَيَعْلَمُونَ مَنْ أَضْعَفُ نَاصِرًا وَأَقَلُّ عَدَدًا",
+        "latin": "Hattaaa izaa ra aw maa yoo'adoona fasaya'lamoona man ad'afu naasiranw wa aqallu 'adadaa",
+        "terjemah": "Sehingga apabila mereka melihat (azab) yang diancamkan kepadanya, maka mereka akan mengetahui siapakah yang lebih lemah penolongnya dan lebih sedikit jumlahnya.",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 25,
+        "arab": "قُلْ إِنْ أَدْرِي أَقَرِيبٌ مَّا تُوعَدُونَ أَمْ يَجْعَلُ لَهُ رَبِّي أَمَدًا",
+        "latin": "Qul in adreee a qareebum maa too'adoona am yaj'alu lahoo rabbeee amadaa",
+        "terjemah": "Katakanlah (Muhammad), “Aku tidak mengetahui, apakah azab yang diancamkan kepadamu itu sudah dekat ataukah Tuhanku menetapkan waktunya masih lama.”",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 26,
+        "arab": "عَالِمُ الْغَيْبِ فَلَا يُظْهِرُ عَلَىٰ غَيْبِهِ أَحَدًا",
+        "latin": "'Aalimul ghaibi falaa yuzhiru alaa ghaibiheee ahadaa",
+        "terjemah": "Dia Mengetahui yang gaib, tetapi Dia tidak memperlihatkan kepada siapa pun tentang yang gaib itu.",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 27,
+        "arab": "إِلَّا مَنِ ارْتَضَىٰ مِن رَّسُولٍ فَإِنَّهُ يَسْلُكُ مِن بَيْنِ يَدَيْهِ وَمِنْ خَلْفِهِ رَصَدًا",
+        "latin": "Illaa manir tadaa mir rasoolin fa innahoo yasluku mim baini yadihi wa min khalfihee rasadaa",
+        "terjemah": "Kecuali kepada rasul yang diridai-Nya, maka sesungguhnya Dia mengadakan penjaga-penjaga (malaikat) di depan dan di belakangnya.",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 28,
+        "arab": "لِّيَعْلَمَ أَن قَدْ أَبْلَغُوا رِسَالَاتِ رَبِّهِمْ وَأَحَاطَ بِمَا لَدَيْهِمْ وَأَحْصَىٰ كُلَّ شَيْءٍ عَدَدًا",
+        "latin": "Liya'lama an qad ablaghoo risaalaati rabbihim wa ahaata bima ladihim wa ahsaa kulla shai'in 'adadaa",
+        "terjemah": "Agar Dia mengetahui bahwa rasul-rasul itu sungguh telah menyampaikan risalah Tuhannya, sedang (ilmu-Nya) meliputi apa yang ada pada mereka, dan Dia menghitung segala sesuatu satu persatu.",
+        "juz": 29
+      }
+    ]
+  }
+]

@@ -1,0 +1,90 @@
+[
+  {
+    "nomor": 62,
+    "nama": "الجمعة",
+    "namaLatin": "Al-Jumu'ah",
+    "totalAyat": 11,
+    "tempatTurun": "Madaniyyah",
+    "arti": "Jumat",
+    "deskripsi": "Surat Al Jumu'ah ini terdiri atas 11 ayat, termasuk golongan-golongan surat-surat Madaniyyah dan diturunkan sesudah surat Ash Shaf. Nama surat Al Jumu'ah diambil dari kata Al Jumu'ah yang terdapat pada ayat 9 surat ini yang artinya: hari Jum'at.",
+    "ayat": [
+      {
+        "nomorAyat": 1,
+        "arab": "يُسَبِّحُ لِلَّهِ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ الْمَلِكِ الْقُدُّوسِ الْعَزِيزِ الْحَكِيمِ",
+        "latin": "Yusabbihu lilaahi maa fis samaawaati wa maa fil ardil Malikil Quddoosil 'Azeezil Hakeem",
+        "terjemah": "Apa yang ada di langit dan apa yang ada di bumi senantiasa bertasbih kepada Allah. Maharaja, Yang Mahasuci, Yang Mahaperkasa, Mahabijaksana.",
+        "juz": 28
+      },
+      {
+        "nomorAyat": 2,
+        "arab": "هُوَ الَّذِي بَعَثَ فِي الْأُمِّيِّينَ رَسُولًا مِّنْهُمْ يَتْلُو عَلَيْهِمْ آيَاتِهِ وَيُزَكِّيهِمْ وَيُعَلِّمُهُمُ الْكِتَابَ وَالْحِكْمَةَ وَإِن كَانُوا مِن قَبْلُ لَفِي ضَلَالٍ مُّبِينٍ",
+        "latin": "Huwal lazee ba'asa fil ummiyyeena Rasoolam min hum yatloo 'alaihim aayaatihee wa yuzakkeehim wa yu'allimuhumul Kitaaba wal Hikmata wa in kaano min qablu lafee dalaalim mubeen",
+        "terjemah": "Dialah yang mengutus seorang Rasul kepada kaum yang buta huruf dari kalangan mereka sendiri, yang membacakan kepada mereka ayat-ayat-Nya, menyucikan (jiwa) mereka dan mengajarkan kepada mereka Kitab dan Hikmah (Sunnah), meskipun sebelumnya, mereka benar-benar dalam kesesatan yang nyata.",
+        "juz": 28
+      },
+      {
+        "nomorAyat": 3,
+        "arab": "وَآخَرِينَ مِنْهُمْ لَمَّا يَلْحَقُوا بِهِمْ ۚ وَهُوَ الْعَزِيزُ الْحَكِيمُ",
+        "latin": "Wa aakhareena minhum lammaa yalhaqoo bihim wa huwal 'azeezul hakeem",
+        "terjemah": "Dan (juga) kepada kaum yang lain dari mereka yang belum berhubungan dengan mereka. Dan Dialah Yang Mahaperkasa, Mahabijaksana.",
+        "juz": 28
+      },
+      {
+        "nomorAyat": 4,
+        "arab": "ذَٰلِكَ فَضْلُ اللَّهِ يُؤْتِيهِ مَن يَشَاءُ ۚ وَاللَّهُ ذُو الْفَضْلِ الْعَظِيمِ",
+        "latin": "Zaalika fadlul laahi yu'teehi many-yashaaa; wallaahu zul fadil 'azeem",
+        "terjemah": "Demikianlah karunia Allah, yang diberikan kepada siapa yang Dia kehendaki; dan Allah memiliki karunia yang besar.",
+        "juz": 28
+      },
+      {
+        "nomorAyat": 5,
+        "arab": "مَثَلُ الَّذِينَ حُمِّلُوا التَّوْرَاةَ ثُمَّ لَمْ يَحْمِلُوهَا كَمَثَلِ الْحِمَارِ يَحْمِلُ أَسْفَارًا ۚ بِئْسَ مَثَلُ الْقَوْمِ الَّذِينَ كَذَّبُوا بِآيَاتِ اللَّهِ ۚ وَاللَّهُ لَا يَهْدِي الْقَوْمَ الظَّالِمِينَ",
+        "latin": "Masalul lazeena hum milut tawraata summa lam yahmiloonhaa kamasalil himaari yah milu asfaaraa; bi'sa masalul qawmil lazeena kaazzaboo bi aayaatil laah; wallaahu laa yahdil qawmazzaalimeen",
+        "terjemah": "Perumpamaan orang-orang yang diberi tugas membawa Taurat, kemudian mereka tidak membawanya (tidak mengamalkannya) adalah seperti keledai yang membawa kitab-kitab yang tebal. Sangat buruk perumpamaan kaum yang mendustakan ayat-ayat Allah. Dan Allah tidak memberi petunjuk kepada orang-orang yang zalim.",
+        "juz": 28
+      },
+      {
+        "nomorAyat": 6,
+        "arab": "قُلْ يَا أَيُّهَا الَّذِينَ هَادُوا إِن زَعَمْتُمْ أَنَّكُمْ أَوْلِيَاءُ لِلَّهِ مِن دُونِ النَّاسِ فَتَمَنَّوُا الْمَوْتَ إِن كُنتُمْ صَادِقِينَ",
+        "latin": "Qul yaaa ayyuhal lazeena haadoo in za'amtum annakum awliyaaa'u lilaahi min doonin naasi fatamannawul mawta in kuntum saadiqeen",
+        "terjemah": "Katakanlah (Muhammad), “Wahai orang-orang Yahudi! Jika kamu mengira bahwa kamulah kekasih Allah, bukan orang-orang yang lain, maka harapkanlah kematianmu, jika kamu orang yang benar.”",
+        "juz": 28
+      },
+      {
+        "nomorAyat": 7,
+        "arab": "وَلَا يَتَمَنَّوْنَهُ أَبَدًا بِمَا قَدَّمَتْ أَيْدِيهِمْ ۚ وَاللَّهُ عَلِيمٌ بِالظَّالِمِينَ",
+        "latin": "Wa laa yatamannaw nahooo abadam bimaa qaddamat aydeehim; wallaahu 'aleemum bix zaalimeen",
+        "terjemah": "Dan mereka tidak akan mengharapkan kematian itu selamanya disebabkan kejahatan yang telah mereka perbuat dengan tangan mereka sendiri. Dan Allah Maha Mengetahui orang-orang yang zalim.",
+        "juz": 28
+      },
+      {
+        "nomorAyat": 8,
+        "arab": "قُلْ إِنَّ الْمَوْتَ الَّذِي تَفِرُّونَ مِنْهُ فَإِنَّهُ مُلَاقِيكُمْ ۖ ثُمَّ تُرَدُّونَ إِلَىٰ عَالِمِ الْغَيْبِ وَالشَّهَادَةِ فَيُنَبِّئُكُم بِمَا كُنتُمْ تَعْمَلُونَ",
+        "latin": "Qul innal mawtal lazee tafirroona minhu fa innahoo mulaaqeekum summa turaddoona ilaa 'Aalimil Ghaibi wash shahaadati fa yunabbi'ukum bimaa kuntum ta'maloon",
+        "terjemah": "Katakanlah, “Sesungguhnya kematian yang kamu lari dari padanya, ia pasti menemui kamu, kemudian kamu akan dikembalikan kepada (Allah), yang mengetahui yang gaib dan yang nyata, lalu Dia beritakan kepadamu apa yang telah kamu kerjakan.”",
+        "juz": 28
+      },
+      {
+        "nomorAyat": 9,
+        "arab": "يَا أَيُّهَا الَّذِينَ آمَنُوا إِذَا نُودِيَ لِلصَّلَاةِ مِن يَوْمِ الْجُمُعَةِ فَاسْعَوْا إِلَىٰ ذِكْرِ اللَّهِ وَذَرُوا الْبَيْعَ ۚ ذَٰلِكُمْ خَيْرٌ لَّكُمْ إِن كُنتُمْ تَعْلَمُونَ",
+        "latin": "Yaaa ayyuhal lazeena aamanoo izaa noodiya lis-Salaati miny yawmil Jumu'ati fas'aw ilaa zikril laahi wa zarul bai'; zaalikum khayrul lakum in kuntum ta'lamoon",
+        "terjemah": "Wahai orang-orang yang beriman! Apabila telah diseru untuk melaksanakan salat pada hari Jum‘at, maka segeralah kamu mengingat Allah dan tinggalkanlah jual beli. Yang demikian itu lebih baik bagimu jika kamu mengetahui.",
+        "juz": 28
+      },
+      {
+        "nomorAyat": 10,
+        "arab": "فَإِذَا قُضِيَتِ الصَّلَاةُ فَانتَشِرُوا فِي الْأَرْضِ وَابْتَغُوا مِن فَضْلِ اللَّهِ وَاذْكُرُوا اللَّهَ كَثِيرًا لَّعَلَّكُمْ تُفْلِحُونَ",
+        "latin": "Fa-izaa qudiyatis Salaatu fantashiroo fil ardi wabtaghoo min fadlil laahi wazkurul laaha kaseeral la'allakum tuflihoon",
+        "terjemah": "Apabila salat telah dilaksanakan, maka bertebaranlah kamu di bumi; carilah karunia Allah dan ingatlah Allah banyak-banyak agar kamu beruntung.",
+        "juz": 28
+      },
+      {
+        "nomorAyat": 11,
+        "arab": "وَإِذَا رَأَوْا تِجَارَةً أَوْ لَهْوًا انفَضُّوا إِلَيْهَا وَتَرَكُوكَ قَائِمًا ۚ قُلْ مَا عِندَ اللَّهِ خَيْرٌ مِّنَ اللَّهْوِ وَمِنَ التِّجَارَةِ ۚ وَاللَّهُ خَيْرُ الرَّازِقِينَ",
+        "latin": "Wa izaa ra'aw tijaaratan aw lahwanin faddooo ilaihaa wa tarakooka qaaa'imaa; qul maa 'indal laahi khairum minal lahwi wa minat tijaarah; wallaahu khayrur raaziqeen",
+        "terjemah": "Dan apabila mereka melihat perdagangan atau permainan, mereka segera menuju kepadanya dan mereka tinggalkan engkau (Muhammad) sedang berdiri (berkhotbah). Katakanlah, “Apa yang ada di sisi Allah lebih baik daripada permainan dan perdagangan,” dan Allah pemberi rezeki yang terbaik.",
+        "juz": 28
+      }
+    ]
+  }
+]

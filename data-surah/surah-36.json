@@ -1,0 +1,594 @@
+[
+  {
+    "nomor": 36,
+    "nama": "يس",
+    "namaLatin": "Yasin",
+    "totalAyat": 83,
+    "tempatTurun": "Makkiyyah",
+    "arti": "Yasin",
+    "deskripsi": "Surat Yaasiin terdiri atas 83 ayat, termasuk golongan surat-surat Makkiyyah,  diturunkan sesudah surat Jin. Dinamai Yaasiin karena dimulai dengan huruf Yaasiin. Sebagaimana halnya arti huruf-huruf abjad yang terletak pada permulaan beberapa surat Al Quran, maka demikian pula arti Yaasiin yang terdapat pada ayat permulaan surat ini, yaitu Allah mengisyaratkan bahwa sesudah huruf tersebut akan dikemukakan hal-hal yang penting antara lain: Allah bersumpah dengan Al Quran bahwa Muhammad s.a.w. benar-benar seorang rasul yang diutus-Nya kepada kaum yang belum pernah diutus kepada mereka rasul-rasul.",
+    "ayat": [
+      {
+        "nomorAyat": 1,
+        "arab": "يس",
+        "latin": "Yaa-Seeen",
+        "terjemah": "Ya Sin",
+        "juz": 22
+      },
+      {
+        "nomorAyat": 2,
+        "arab": "وَالْقُرْآنِ الْحَكِيمِ",
+        "latin": "Wal-Qur-aanil-Hakeem",
+        "terjemah": "Demi Al-Qur'an yang penuh hikmah,",
+        "juz": 22
+      },
+      {
+        "nomorAyat": 3,
+        "arab": "إِنَّكَ لَمِنَ الْمُرْسَلِينَ",
+        "latin": "Innaka laminal mursaleen",
+        "terjemah": "sungguh, engkau (Muhammad) adalah salah seorang dari rasul-rasul,",
+        "juz": 22
+      },
+      {
+        "nomorAyat": 4,
+        "arab": "عَلَىٰ صِرَاطٍ مُّسْتَقِيمٍ",
+        "latin": "'Alaa Siraatim Mustaqeem",
+        "terjemah": "(yang berada) di atas jalan yang lurus,",
+        "juz": 22
+      },
+      {
+        "nomorAyat": 5,
+        "arab": "تَنزِيلَ الْعَزِيزِ الرَّحِيمِ",
+        "latin": "Tanzeelal 'Azeezir Raheem",
+        "terjemah": "(sebagai wahyu) yang diturunkan oleh (Allah) Yang Mahaperkasa, Maha Penyayang,",
+        "juz": 22
+      },
+      {
+        "nomorAyat": 6,
+        "arab": "لِتُنذِرَ قَوْمًا مَّا أُنذِرَ آبَاؤُهُمْ فَهُمْ غَافِلُونَ",
+        "latin": "Litunzira qawmam maaa unzira aabaaa'uhum fahum ghaafiloon",
+        "terjemah": "agar engkau memberi peringatan kepada suatu kaum yang nenek moyangnya belum pernah diberi peringatan, karena itu mereka lalai.",
+        "juz": 22
+      },
+      {
+        "nomorAyat": 7,
+        "arab": "لَقَدْ حَقَّ الْقَوْلُ عَلَىٰ أَكْثَرِهِمْ فَهُمْ لَا يُؤْمِنُونَ",
+        "latin": "Laqad haqqal qawlu 'alaaa aksarihim fahum laa yu'minoon",
+        "terjemah": "Sungguh, pasti berlaku perkataan (hukuman) terhadap kebanyakan mereka, karena mereka tidak beriman.",
+        "juz": 22
+      },
+      {
+        "nomorAyat": 8,
+        "arab": "إِنَّا جَعَلْنَا فِي أَعْنَاقِهِمْ أَغْلَالًا فَهِيَ إِلَى الْأَذْقَانِ فَهُم مُّقْمَحُونَ",
+        "latin": "Innaa ja'alnaa feee a'naaqihim aghlaalan fahiya ilal azqaani fahum muqmahoon",
+        "terjemah": "Sungguh, Kami telah memasang belenggu di leher mereka, lalu tangan mereka (diangkat) ke dagu, karena itu mereka tertengadah.",
+        "juz": 22
+      },
+      {
+        "nomorAyat": 9,
+        "arab": "وَجَعَلْنَا مِن بَيْنِ أَيْدِيهِمْ سَدًّا وَمِنْ خَلْفِهِمْ سَدًّا فَأَغْشَيْنَاهُمْ فَهُمْ لَا يُبْصِرُونَ",
+        "latin": "Wa ja'alnaa mim baini aydeehim saddanw-wa min khalfihim saddan fa aghshai naahum fahum laa yubsiroon",
+        "terjemah": "Dan Kami jadikan di hadapan mereka sekat (dinding) dan di belakang mereka juga sekat, dan Kami tutup (mata) mereka sehingga mereka tidak dapat melihat.",
+        "juz": 22
+      },
+      {
+        "nomorAyat": 10,
+        "arab": "وَسَوَاءٌ عَلَيْهِمْ أَأَنذَرْتَهُمْ أَمْ لَمْ تُنذِرْهُمْ لَا يُؤْمِنُونَ",
+        "latin": "Wa sawaaa'un 'alaihim 'a-anzartahum am lam tunzirhum laa yu'minoon",
+        "terjemah": "Dan sama saja bagi mereka, apakah engkau memberi peringatan kepada mereka atau engkau tidak memberi peringatan kepada mereka, mereka tidak akan beriman juga.",
+        "juz": 22
+      },
+      {
+        "nomorAyat": 11,
+        "arab": "إِنَّمَا تُنذِرُ مَنِ اتَّبَعَ الذِّكْرَ وَخَشِيَ الرَّحْمَٰنَ بِالْغَيْبِ ۖ فَبَشِّرْهُ بِمَغْفِرَةٍ وَأَجْرٍ كَرِيمٍ",
+        "latin": "Innamaa tunziru manit taba 'az-Zikra wa khashiyar Rahmaana bilghaib, fabashshirhu bimaghfiratinw-wa ajrin kareem",
+        "terjemah": "Sesungguhnya engkau hanya memberi peringatan kepada orang-orang yang mau mengikuti peringatan dan yang takut kepada Tuhan Yang Maha Pengasih, walaupun mereka tidak melihat-Nya. Maka berilah mereka kabar gembira dengan ampunan dan pahala yang mulia.",
+        "juz": 22
+      },
+      {
+        "nomorAyat": 12,
+        "arab": "إِنَّا نَحْنُ نُحْيِي الْمَوْتَىٰ وَنَكْتُبُ مَا قَدَّمُوا وَآثَارَهُمْ ۚ وَكُلَّ شَيْءٍ أَحْصَيْنَاهُ فِي إِمَامٍ مُّبِينٍ",
+        "latin": "Innaa Nahnu nuhyil mawtaa wa naktubu maa qaddamoo wa aasaarahum; wa kulla shai'in ahsainaahu feee Imaamim Mubeen",
+        "terjemah": "Sungguh, Kamilah yang menghidupkan orang-orang yang mati, dan Kamilah yang mencatat apa yang telah mereka kerjakan dan bekas-bekas yang mereka (tinggalkan). Dan segala sesuatu Kami kumpulkan dalam Kitab yang jelas (Lauh Mahfuzh).",
+        "juz": 22
+      },
+      {
+        "nomorAyat": 13,
+        "arab": "وَاضْرِبْ لَهُم مَّثَلًا أَصْحَابَ الْقَرْيَةِ إِذْ جَاءَهَا الْمُرْسَلُونَ",
+        "latin": "Wadrib lahum masalan Ashaabal Qaryatih; iz jaaa'ahal mursaloon",
+        "terjemah": "Dan buatlah suatu perumpamaan bagi mereka, yaitu penduduk suatu negeri, ketika utusan-utusan datang kepada mereka;",
+        "juz": 22
+      },
+      {
+        "nomorAyat": 14,
+        "arab": "إِذْ أَرْسَلْنَا إِلَيْهِمُ اثْنَيْنِ فَكَذَّبُوهُمَا فَعَزَّزْنَا بِثَالِثٍ فَقَالُوا إِنَّا إِلَيْكُم مُّرْسَلُونَ",
+        "latin": "Iz arsalnaaa ilaihimusnaini fakazzaboohumaa fa'azzaznaa bisaalisin faqaalooo innaaa ilaikum mursaloon",
+        "terjemah": "(yaitu) ketika Kami mengutus kepada mereka dua orang utusan, lalu mereka mendustakan keduanya; kemudian Kami kuatkan dengan (utusan) yang ketiga, maka ketiga (utusan itu) berkata, “Sungguh, kami adalah orang-orang yang diutus kepadamu.”",
+        "juz": 22
+      },
+      {
+        "nomorAyat": 15,
+        "arab": "قَالُوا مَا أَنتُمْ إِلَّا بَشَرٌ مِّثْلُنَا وَمَا أَنزَلَ الرَّحْمَٰنُ مِن شَيْءٍ إِنْ أَنتُمْ إِلَّا تَكْذِبُونَ",
+        "latin": "Qaaloo maaa antum illaa basharum mislunaa wa maaa anzalar Rahmaanu min shai'in in antum illaa takziboon",
+        "terjemah": "Mereka (penduduk negeri) menjawab, “Kamu ini hanyalah manusia seperti kami, dan (Allah) Yang Maha Pengasih tidak menurunkan sesuatu apa pun; kamu hanyalah pendusta belaka.”",
+        "juz": 22
+      },
+      {
+        "nomorAyat": 16,
+        "arab": "قَالُوا رَبُّنَا يَعْلَمُ إِنَّا إِلَيْكُمْ لَمُرْسَلُونَ",
+        "latin": "Qaaloo Rabbunaa ya'lamu innaaa ilaikum lamursaloon",
+        "terjemah": "Mereka berkata, “Tuhan kami mengetahui sesungguhnya kami adalah utusan-utusan(-Nya) kepada kamu.",
+        "juz": 22
+      },
+      {
+        "nomorAyat": 17,
+        "arab": "وَمَا عَلَيْنَا إِلَّا الْبَلَاغُ الْمُبِينُ",
+        "latin": "Wa maa 'alainaaa illal balaaghul mubeen",
+        "terjemah": "Dan kewajiban kami hanyalah menyampaikan (perintah Allah) dengan jelas.”",
+        "juz": 22
+      },
+      {
+        "nomorAyat": 18,
+        "arab": "قَالُوا إِنَّا تَطَيَّرْنَا بِكُمْ ۖ لَئِن لَّمْ تَنتَهُوا لَنَرْجُمَنَّكُمْ وَلَيَمَسَّنَّكُم مِّنَّا عَذَابٌ أَلِيمٌ",
+        "latin": "Qaaloo innaa tataiyarnaa bikum la'il-lam tantahoo lanar jumannakum wa la-yamassan nakum minnaa 'azaabun aleem",
+        "terjemah": "Mereka menjawab, “Sesungguhnya kami bernasib malang karena kamu. Sungguh, jika kamu tidak berhenti (menyeru kami), niscaya kami rajam kamu dan kamu pasti akan merasakan siksaan yang pedih dari kami.”",
+        "juz": 22
+      },
+      {
+        "nomorAyat": 19,
+        "arab": "قَالُوا طَائِرُكُم مَّعَكُمْ ۚ أَئِن ذُكِّرْتُم ۚ بَلْ أَنتُمْ قَوْمٌ مُّسْرِفُونَ",
+        "latin": "Qaaloo taaa'irukum ma'akum; a'in zukkirtum; bal antum qawmum musrifoon",
+        "terjemah": "Mereka (utusan-utusan) itu berkata, “Kemalangan kamu itu adalah karena kamu sendiri. Apakah karena kamu diberi peringatan? Sebenarnya kamu adalah kaum yang melampaui batas.”",
+        "juz": 22
+      },
+      {
+        "nomorAyat": 20,
+        "arab": "وَجَاءَ مِنْ أَقْصَى الْمَدِينَةِ رَجُلٌ يَسْعَىٰ قَالَ يَا قَوْمِ اتَّبِعُوا الْمُرْسَلِينَ",
+        "latin": "Wa jaaa'a min aqsal madeenati rajuluny yas'aa qaala yaa qawmit tabi'ul mursaleen",
+        "terjemah": "Dan datanglah dari ujung kota, seorang laki-laki dengan bergegas dia berkata, “Wahai kaumku! Ikutilah utusan-utusan itu.",
+        "juz": 22
+      },
+      {
+        "nomorAyat": 21,
+        "arab": "اتَّبِعُوا مَن لَّا يَسْأَلُكُمْ أَجْرًا وَهُم مُّهْتَدُونَ",
+        "latin": "Ittabi'oo mal-laa yas'alukum ajranw-wa hum muhtadoon",
+        "terjemah": "Ikutilah orang yang tidak meminta imbalan kepadamu; dan mereka adalah orang-orang yang mendapat petunjuk.",
+        "juz": 22
+      },
+      {
+        "nomorAyat": 22,
+        "arab": "وَمَا لِيَ لَا أَعْبُدُ الَّذِي فَطَرَنِي وَإِلَيْهِ تُرْجَعُونَ",
+        "latin": "Wa maa liya laaa a'budul lazee fataranee wa ilaihi turja'oon",
+        "terjemah": "Dan tidak ada alasan bagiku untuk tidak menyembah (Allah) yang telah menciptakanku dan hanya kepada-Nyalah kamu akan dikembalikan.",
+        "juz": 22
+      },
+      {
+        "nomorAyat": 23,
+        "arab": "أَأَتَّخِذُ مِن دُونِهِ آلِهَةً إِن يُرِدْنِ الرَّحْمَٰنُ بِضُرٍّ لَّا تُغْنِ عَنِّي شَفَاعَتُهُمْ شَيْئًا وَلَا يُنقِذُونِ",
+        "latin": "'A-attakhizu min dooniheee aalihatan iny-yuridnir Rahmaanu bidurril-laa tughni 'annee shafaa 'atuhum shai 'anw-wa laa yunqizoon",
+        "terjemah": "Mengapa aku akan menyembah tuhan-tuhan selain-Nya? Jika (Allah) Yang Maha Pengasih menghendaki bencana terhadapku, pasti pertolongan mereka tidak berguna sama sekali bagi diriku dan mereka (juga) tidak dapat menyelamatkanku.",
+        "juz": 22
+      },
+      {
+        "nomorAyat": 24,
+        "arab": "إِنِّي إِذًا لَّفِي ضَلَالٍ مُّبِينٍ",
+        "latin": "Inneee izal-lafee dalaa-lim-mubeen",
+        "terjemah": "Sesungguhnya jika aku (berbuat) begitu, pasti aku berada dalam kesesatan yang nyata.",
+        "juz": 22
+      },
+      {
+        "nomorAyat": 25,
+        "arab": "إِنِّي آمَنتُ بِرَبِّكُمْ فَاسْمَعُونِ",
+        "latin": "Inneee aamantu bi Rabbikum fasma'oon",
+        "terjemah": "Sesungguhnya aku telah beriman kepada Tuhanmu; maka dengarkanlah (pengakuan keimanan)-ku.”",
+        "juz": 22
+      },
+      {
+        "nomorAyat": 26,
+        "arab": "قِيلَ ادْخُلِ الْجَنَّةَ ۖ قَالَ يَا لَيْتَ قَوْمِي يَعْلَمُونَ",
+        "latin": "Qeelad khulil Jannnah; qaala yaa laita qawmee ya'lamoon",
+        "terjemah": "Dikatakan (kepadanya), “Masuklah ke surga.” Dia (laki-laki itu) berkata, “Alangkah baiknya sekiranya kaumku mengetahui,",
+        "juz": 22
+      },
+      {
+        "nomorAyat": 27,
+        "arab": "بِمَا غَفَرَ لِي رَبِّي وَجَعَلَنِي مِنَ الْمُكْرَمِينَ",
+        "latin": "Bimaa ghafara lee Rabbee wa ja'alanee minal mukrameen",
+        "terjemah": "apa yang menyebabkan Tuhanku memberi ampun kepadaku dan menjadikan aku termasuk orang-orang yang telah dimuliakan.”",
+        "juz": 22
+      },
+      {
+        "nomorAyat": 28,
+        "arab": "۞ وَمَا أَنزَلْنَا عَلَىٰ قَوْمِهِ مِن بَعْدِهِ مِن جُندٍ مِّنَ السَّمَاءِ وَمَا كُنَّا مُنزِلِينَ",
+        "latin": "Wa maaa anzalnaa 'alaa qawmihee mim ba'dihee min jundim minas-samaaa'i wa maa kunnaa munzileen",
+        "terjemah": "Dan setelah dia (meninggal), Kami tidak menurunkan suatu pasukan pun dari langit kepada kaumnya, dan Kami tidak perlu menurunkannya.",
+        "juz": 23
+      },
+      {
+        "nomorAyat": 29,
+        "arab": "إِن كَانَتْ إِلَّا صَيْحَةً وَاحِدَةً فَإِذَا هُمْ خَامِدُونَ",
+        "latin": "In kaanat illaa saihatanw waahidatan fa-izaa hum khaamidoon",
+        "terjemah": "Tidak ada siksaan terhadap mereka melainkan dengan satu teriakan saja; maka seketika itu mereka mati.",
+        "juz": 23
+      },
+      {
+        "nomorAyat": 30,
+        "arab": "يَا حَسْرَةً عَلَى الْعِبَادِ ۚ مَا يَأْتِيهِم مِّن رَّسُولٍ إِلَّا كَانُوا بِهِ يَسْتَهْزِئُونَ",
+        "latin": "Yaa hasratan 'alal 'ibaad; maa yaateehim mir Rasoolin illaa kaanoo bihee yastahzi 'oon",
+        "terjemah": "Alangkah besar penyesalan terhadap hamba-hamba itu, setiap datang seorang rasul kepada mereka, mereka selalu memperolok-olokkannya.",
+        "juz": 23
+      },
+      {
+        "nomorAyat": 31,
+        "arab": "أَلَمْ يَرَوْا كَمْ أَهْلَكْنَا قَبْلَهُم مِّنَ الْقُرُونِ أَنَّهُمْ إِلَيْهِمْ لَا يَرْجِعُونَ",
+        "latin": "Alam yaraw kam ahlak naa qablahum minal qurooni annahum ilaihim laa yarji'oon",
+        "terjemah": "Tidakkah mereka mengetahui berapa banyak umat-umat sebelum mereka yang telah Kami binasakan. Orang-orang (yang telah Kami binasakan) itu tidak ada yang kembali kepada mereka.",
+        "juz": 23
+      },
+      {
+        "nomorAyat": 32,
+        "arab": "وَإِن كُلٌّ لَّمَّا جَمِيعٌ لَّدَيْنَا مُحْضَرُونَ",
+        "latin": "Wa in kullul lammaa jamee'ul-ladainaa muhdaroon",
+        "terjemah": "Dan setiap (umat), semuanya akan dihadapkan kepada Kami.",
+        "juz": 23
+      },
+      {
+        "nomorAyat": 33,
+        "arab": "وَآيَةٌ لَّهُمُ الْأَرْضُ الْمَيْتَةُ أَحْيَيْنَاهَا وَأَخْرَجْنَا مِنْهَا حَبًّا فَمِنْهُ يَأْكُلُونَ",
+        "latin": "Wa Aayatul lahumul ardul maitatu ahyainaahaa wa akhrajnaa minhaa habban faminhu yaakuloon",
+        "terjemah": "Dan suatu tanda (kebesaran Allah) bagi mereka adalah bumi yang mati (tandus). Kami hidupkan bumi itu dan Kami keluarkan darinya biji-bijian, maka dari (biji-bijian) itu mereka makan.",
+        "juz": 23
+      },
+      {
+        "nomorAyat": 34,
+        "arab": "وَجَعَلْنَا فِيهَا جَنَّاتٍ مِّن نَّخِيلٍ وَأَعْنَابٍ وَفَجَّرْنَا فِيهَا مِنَ الْعُيُونِ",
+        "latin": "Wa ja'alnaa feehaa jannaatim min nakheelinw wa a'naabinw wa fajjarnaa feeha minal 'uyoon",
+        "terjemah": "Dan Kami jadikan padanya di bumi itu kebun-kebun kurma dan anggur dan Kami pancarkan padanya beberapa mata air,",
+        "juz": 23
+      },
+      {
+        "nomorAyat": 35,
+        "arab": "لِيَأْكُلُوا مِن ثَمَرِهِ وَمَا عَمِلَتْهُ أَيْدِيهِمْ ۖ أَفَلَا يَشْكُرُونَ",
+        "latin": "Liyaakuloo min samarihee wa maa 'amilat-hu aideehim; afalaa yashkuroon",
+        "terjemah": "agar mereka dapat makan dari buahnya, dan dari hasil usaha tangan mereka. Maka mengapa mereka tidak bersyukur?",
+        "juz": 23
+      },
+      {
+        "nomorAyat": 36,
+        "arab": "سُبْحَانَ الَّذِي خَلَقَ الْأَزْوَاجَ كُلَّهَا مِمَّا تُنبِتُ الْأَرْضُ وَمِنْ أَنفُسِهِمْ وَمِمَّا لَا يَعْلَمُونَ",
+        "latin": "Subhaanal lazee khalaqal azwaaja kullahaa mimmaa tumbitul ardu wa min anfusihim wa mimmaa laa ya'lamoon",
+        "terjemah": "Mahasuci (Allah) yang telah menciptakan semuanya berpasang-pasangan, baik dari apa yang ditumbuhkan oleh bumi dan dari diri mereka sendiri, maupun dari apa yang tidak mereka ketahui.",
+        "juz": 23
+      },
+      {
+        "nomorAyat": 37,
+        "arab": "وَآيَةٌ لَّهُمُ اللَّيْلُ نَسْلَخُ مِنْهُ النَّهَارَ فَإِذَا هُم مُّظْلِمُونَ",
+        "latin": "Wa Aayatul lahumul lailu naslakhu minhun nahaara fa-izaa hum muzlimoon",
+        "terjemah": "Dan suatu tanda (kebesaran Allah) bagi mereka adalah malam; Kami tanggalkan siang dari (malam) itu, maka seketika itu mereka (berada dalam) kegelapan,",
+        "juz": 23
+      },
+      {
+        "nomorAyat": 38,
+        "arab": "وَالشَّمْسُ تَجْرِي لِمُسْتَقَرٍّ لَّهَا ۚ ذَٰلِكَ تَقْدِيرُ الْعَزِيزِ الْعَلِيمِ",
+        "latin": "Wash-shamsu tajree limustaqarril lahaa; zaalika taqdeerul 'Azeezil Aleem",
+        "terjemah": "dan matahari berjalan di tempat peredarannya. Demikianlah ketetapan (Allah) Yang Mahaperkasa, Maha Mengetahui.",
+        "juz": 23
+      },
+      {
+        "nomorAyat": 39,
+        "arab": "وَالْقَمَرَ قَدَّرْنَاهُ مَنَازِلَ حَتَّىٰ عَادَ كَالْعُرْجُونِ الْقَدِيمِ",
+        "latin": "Walqamara qaddarnaahu manaazila hattaa 'aada kal'ur joonil qadeem",
+        "terjemah": "Dan telah Kami tetapkan tempat peredaran bagi bulan, sehingga (setelah ia sampai ke tempat peredaran yang terakhir) kembalilah ia seperti bentuk tandan yang tua.",
+        "juz": 23
+      },
+      {
+        "nomorAyat": 40,
+        "arab": "لَا الشَّمْسُ يَنبَغِي لَهَا أَن تُدْرِكَ الْقَمَرَ وَلَا اللَّيْلُ سَابِقُ النَّهَارِ ۚ وَكُلٌّ فِي فَلَكٍ يَسْبَحُونَ",
+        "latin": "Lash shamsu yambaghee lahaaa an tudrikal qamara wa lal lailu saabiqun nahaar; wa kullun fee falaki yasbahoon",
+        "terjemah": "Tidaklah mungkin bagi matahari mengejar bulan dan malam pun tidak dapat mendahului siang. Masing-masing beredar pada garis edarnya.",
+        "juz": 23
+      },
+      {
+        "nomorAyat": 41,
+        "arab": "وَآيَةٌ لَّهُمْ أَنَّا حَمَلْنَا ذُرِّيَّتَهُمْ فِي الْفُلْكِ الْمَشْحُونِ",
+        "latin": "Wa Aayatul lahum annaa hamalnaa zurriyatahum fil fulkil mashhoon",
+        "terjemah": "Dan suatu tanda (kebesaran Allah) bagi mereka adalah bahwa Kami angkut keturunan mereka dalam kapal yang penuh muatan,",
+        "juz": 23
+      },
+      {
+        "nomorAyat": 42,
+        "arab": "وَخَلَقْنَا لَهُم مِّن مِّثْلِهِ مَا يَرْكَبُونَ",
+        "latin": "Wa khalaqnaa lahum mim-mislihee maa yarkaboon",
+        "terjemah": "dan Kami ciptakan (juga) untuk mereka (angkutan lain) seperti apa yang mereka kendarai.",
+        "juz": 23
+      },
+      {
+        "nomorAyat": 43,
+        "arab": "وَإِن نَّشَأْ نُغْرِقْهُمْ فَلَا صَرِيخَ لَهُمْ وَلَا هُمْ يُنقَذُونَ",
+        "latin": "Wa in nashaa nughriqhum falaa sareekha lahum wa laa hum yunqazoon",
+        "terjemah": "Dan jika Kami menghendaki, Kami tenggelamkan mereka. Maka tidak ada penolong bagi mereka dan tidak (pula) mereka diselamatkan,",
+        "juz": 23
+      },
+      {
+        "nomorAyat": 44,
+        "arab": "إِلَّا رَحْمَةً مِّنَّا وَمَتَاعًا إِلَىٰ حِينٍ",
+        "latin": "Illaa rahmatam minnaa wa mataa'an ilaa heen",
+        "terjemah": "melainkan (Kami selamatkan mereka) karena rahmat yang besar dari Kami dan untuk memberikan kesenangan hidup sampai waktu tertentu.",
+        "juz": 23
+      },
+      {
+        "nomorAyat": 45,
+        "arab": "وَإِذَا قِيلَ لَهُمُ اتَّقُوا مَا بَيْنَ أَيْدِيكُمْ وَمَا خَلْفَكُمْ لَعَلَّكُمْ تُرْحَمُونَ",
+        "latin": "Wa izaa qeela lahumuttaqoo maa baina aideekum wa maa khalfakum la'allakum turhamoon",
+        "terjemah": "Dan apabila dikatakan kepada mereka, “Takutlah kamu akan siksa yang di hadapanmu (di dunia) dan azab yang akan datang (akhirat) agar kamu mendapat rahmat.”",
+        "juz": 23
+      },
+      {
+        "nomorAyat": 46,
+        "arab": "وَمَا تَأْتِيهِم مِّنْ آيَةٍ مِّنْ آيَاتِ رَبِّهِمْ إِلَّا كَانُوا عَنْهَا مُعْرِضِينَ",
+        "latin": "Wa maa taateehim min aayatim min ayataati Rabbihim illaa kaanoo 'anhaa mu'rideen",
+        "terjemah": "Dan setiap kali suatu tanda dari tanda-tanda (kebesaran) Tuhan datang kepada mereka, mereka selalu berpaling darinya.",
+        "juz": 23
+      },
+      {
+        "nomorAyat": 47,
+        "arab": "وَإِذَا قِيلَ لَهُمْ أَنفِقُوا مِمَّا رَزَقَكُمُ اللَّهُ قَالَ الَّذِينَ كَفَرُوا لِلَّذِينَ آمَنُوا أَنُطْعِمُ مَن لَّوْ يَشَاءُ اللَّهُ أَطْعَمَهُ إِنْ أَنتُمْ إِلَّا فِي ضَلَالٍ مُّبِينٍ",
+        "latin": "Wa izaa qeela lahum anfiqoo mimmaa razaqakumul laahu qaalal lazeena kafaroo lillazeena aamanooo anut'imu mal-law yashaaa'ul laahu at'amahooo in antum illaa fee dalaalim mubeen",
+        "terjemah": "Dan apabila dikatakan kepada mereka, “Infakkanlah sebagian rezeki yang diberikan Allah kepadamu,” orang-orang yang kafir itu berkata kepada orang-orang yang beriman, “Apakah pantas kami memberi makan kepada orang-orang yang jika Allah menghendaki Dia akan memberinya makan? Kamu benar-benar dalam kesesatan yang nyata.”",
+        "juz": 23
+      },
+      {
+        "nomorAyat": 48,
+        "arab": "وَيَقُولُونَ مَتَىٰ هَٰذَا الْوَعْدُ إِن كُنتُمْ صَادِقِينَ",
+        "latin": "Wa yaqooloona mataa haazal wa'du in kuntum saadiqeen",
+        "terjemah": "Dan mereka (orang-orang kafir) berkata, “Kapan janji (hari berbangkit) itu (terjadi) jika kamu orang yang benar?”",
+        "juz": 23
+      },
+      {
+        "nomorAyat": 49,
+        "arab": "مَا يَنظُرُونَ إِلَّا صَيْحَةً وَاحِدَةً تَأْخُذُهُمْ وَهُمْ يَخِصِّمُونَ",
+        "latin": "Maa yanzuroona illaa saihatanw waahidatan taa khuzuhum wa hum yakhissimoon",
+        "terjemah": "Mereka hanya menunggu satu teriakan, yang akan membinasakan mereka ketika mereka sedang bertengkar.",
+        "juz": 23
+      },
+      {
+        "nomorAyat": 50,
+        "arab": "فَلَا يَسْتَطِيعُونَ تَوْصِيَةً وَلَا إِلَىٰ أَهْلِهِمْ يَرْجِعُونَ",
+        "latin": "Falaa yastatee'oona taw siyatanw-wa laaa ilaaa ahlihim yarji'oon",
+        "terjemah": "Sehingga mereka tidak mampu membuat suatu wasiat dan mereka (juga) tidak dapat kembali kepada keluarganya.",
+        "juz": 23
+      },
+      {
+        "nomorAyat": 51,
+        "arab": "وَنُفِخَ فِي الصُّورِ فَإِذَا هُم مِّنَ الْأَجْدَاثِ إِلَىٰ رَبِّهِمْ يَنسِلُونَ",
+        "latin": "Wa nufikha fis-soori faizaa hum minal ajdaasi ilaa Rabbihim yansiloon",
+        "terjemah": "Lalu ditiuplah sangkakala, maka seketika itu mereka keluar dari kuburnya (dalam keadaan hidup), menuju kepada Tuhannya.",
+        "juz": 23
+      },
+      {
+        "nomorAyat": 52,
+        "arab": "قَالُوا يَا وَيْلَنَا مَن بَعَثَنَا مِن مَّرْقَدِنَا ۜ ۗ هَٰذَا مَا وَعَدَ الرَّحْمَٰنُ وَصَدَقَ الْمُرْسَلُونَ",
+        "latin": "Qaaloo yaa wailanaa mam ba'asanaa mim marqadinaa; haaza maa wa'adar Rahmanu wa sadaqal mursaloon",
+        "terjemah": "Mereka berkata, “Celakalah kami! Siapakah yang membangkitkan kami dari tempat tidur kami (kubur)?” Inilah yang dijanjikan (Allah) Yang Maha Pengasih dan benarlah rasul-rasul(-Nya).",
+        "juz": 23
+      },
+      {
+        "nomorAyat": 53,
+        "arab": "إِن كَانَتْ إِلَّا صَيْحَةً وَاحِدَةً فَإِذَا هُمْ جَمِيعٌ لَّدَيْنَا مُحْضَرُونَ",
+        "latin": "In kaanat illaa saihatanw waahidatan fa-izaa hum jamee'ul ladainaa muhdaroon",
+        "terjemah": "Teriakan itu hanya sekali saja, maka seketika itu mereka semua dihadapkan kepada Kami (untuk dihisab).",
+        "juz": 23
+      },
+      {
+        "nomorAyat": 54,
+        "arab": "فَالْيَوْمَ لَا تُظْلَمُ نَفْسٌ شَيْئًا وَلَا تُجْزَوْنَ إِلَّا مَا كُنتُمْ تَعْمَلُونَ",
+        "latin": "Fal-Yawma laa tuzlamu nafsun shai'anw-wa laa tujzawna illaa maa kuntum ta'maloon",
+        "terjemah": "Maka pada hari itu seseorang tidak akan dirugikan sedikit pun dan kamu tidak akan diberi balasan, kecuali sesuai dengan apa yang telah kamu kerjakan.",
+        "juz": 23
+      },
+      {
+        "nomorAyat": 55,
+        "arab": "إِنَّ أَصْحَابَ الْجَنَّةِ الْيَوْمَ فِي شُغُلٍ فَاكِهُونَ",
+        "latin": "Inna Ashaabal jannatil Yawma fee shughulin faakihoon",
+        "terjemah": "Sesungguhnya penghuni surga pada hari itu bersenang-senang dalam kesibukan (mereka).",
+        "juz": 23
+      },
+      {
+        "nomorAyat": 56,
+        "arab": "هُمْ وَأَزْوَاجُهُمْ فِي ظِلَالٍ عَلَى الْأَرَائِكِ مُتَّكِئُونَ",
+        "latin": "Hum wa azwaajuhum fee zilaalin 'alal araaa'iki muttaki'oon",
+        "terjemah": "Mereka dan pasangan-pasangannya berada dalam tempat yang teduh, bersandar di atas dipan-dipan.",
+        "juz": 23
+      },
+      {
+        "nomorAyat": 57,
+        "arab": "لَهُمْ فِيهَا فَاكِهَةٌ وَلَهُم مَّا يَدَّعُونَ",
+        "latin": "Lahum feehaa faakiha tunw-wa lahum maa yadda'oon",
+        "terjemah": "Di surga itu mereka memperoleh buah-buahan dan memperoleh apa saja yang mereka inginkan.",
+        "juz": 23
+      },
+      {
+        "nomorAyat": 58,
+        "arab": "سَلَامٌ قَوْلًا مِّن رَّبٍّ رَّحِيمٍ",
+        "latin": "Salaamun qawlam mir Rabbir Raheem",
+        "terjemah": "(Kepada mereka dikatakan), “Salam,” sebagai ucapan selamat dari Tuhan Yang Maha Penyayang.",
+        "juz": 23
+      },
+      {
+        "nomorAyat": 59,
+        "arab": "وَامْتَازُوا الْيَوْمَ أَيُّهَا الْمُجْرِمُونَ",
+        "latin": "Wamtaazul Yawma ayyuhal mujrimoon",
+        "terjemah": "Dan (dikatakan kepada orang-orang kafir), “Berpisahlah kamu (dari orang-orang mukmin) pada hari ini, wahai orang-orang yang berdosa!",
+        "juz": 23
+      },
+      {
+        "nomorAyat": 60,
+        "arab": "۞ أَلَمْ أَعْهَدْ إِلَيْكُمْ يَا بَنِي آدَمَ أَن لَّا تَعْبُدُوا الشَّيْطَانَ ۖ إِنَّهُ لَكُمْ عَدُوٌّ مُّبِينٌ",
+        "latin": "Alam a'had ilaikum yaa Baneee Aadama al-laa ta'budush Shaitaana innahoo lakum 'aduwwum mubeen",
+        "terjemah": "Bukankah Aku telah memerintahkan kepadamu wahai anak cucu Adam agar kamu tidak menyembah setan? Sungguh, setan itu musuh yang nyata bagi kamu,",
+        "juz": 23
+      },
+      {
+        "nomorAyat": 61,
+        "arab": "وَأَنِ اعْبُدُونِي ۚ هَٰذَا صِرَاطٌ مُّسْتَقِيمٌ",
+        "latin": "Wa ani'budoonee; haazaa Siraatum Mustaqeem",
+        "terjemah": "dan hendaklah kamu menyembah-Ku. Inilah jalan yang lurus.”",
+        "juz": 23
+      },
+      {
+        "nomorAyat": 62,
+        "arab": "وَلَقَدْ أَضَلَّ مِنكُمْ جِبِلًّا كَثِيرًا ۖ أَفَلَمْ تَكُونُوا تَعْقِلُونَ",
+        "latin": "Wa laqad adalla minkum jibillan kaseeraa; afalam takoonoo ta'qiloon",
+        "terjemah": "Dan sungguh, ia (setan itu) telah menyesatkan sebagian besar di antara kamu. Maka apakah kamu tidak mengerti?",
+        "juz": 23
+      },
+      {
+        "nomorAyat": 63,
+        "arab": "هَٰذِهِ جَهَنَّمُ الَّتِي كُنتُمْ تُوعَدُونَ",
+        "latin": "Haazihee Jahannamul latee kuntum too'adoon",
+        "terjemah": "Inilah (neraka) Jahanam yang dahulu telah diperingatkan kepadamu.",
+        "juz": 23
+      },
+      {
+        "nomorAyat": 64,
+        "arab": "اصْلَوْهَا الْيَوْمَ بِمَا كُنتُمْ تَكْفُرُونَ",
+        "latin": "Islawhal Yawma bimaa kuntum takfuroon",
+        "terjemah": "Masuklah ke dalamnya pada hari ini karena dahulu kamu mengingkarinya.",
+        "juz": 23
+      },
+      {
+        "nomorAyat": 65,
+        "arab": "الْيَوْمَ نَخْتِمُ عَلَىٰ أَفْوَاهِهِمْ وَتُكَلِّمُنَا أَيْدِيهِمْ وَتَشْهَدُ أَرْجُلُهُم بِمَا كَانُوا يَكْسِبُونَ",
+        "latin": "Al-Yawma nakhtimu 'alaaa afwaahihim wa tukallimunaaa aideehim wa tashhadu arjuluhum bimaa kaanoo yaksiboon",
+        "terjemah": "Pada hari ini Kami tutup mulut mereka; tangan mereka akan berkata kepada Kami dan kaki mereka akan memberi kesaksian terhadap apa yang dahulu mereka kerjakan.",
+        "juz": 23
+      },
+      {
+        "nomorAyat": 66,
+        "arab": "وَلَوْ نَشَاءُ لَطَمَسْنَا عَلَىٰ أَعْيُنِهِمْ فَاسْتَبَقُوا الصِّرَاطَ فَأَنَّىٰ يُبْصِرُونَ",
+        "latin": "Wa law nashaaa'u lata masna 'alaaa aiyunihim fasta baqus-siraata fa-annaa yubsiroon",
+        "terjemah": "Dan jika Kami menghendaki, pastilah Kami hapuskan penglihatan mata mereka; sehingga mereka berlomba-lomba (mencari) jalan. Maka bagaimana mungkin mereka dapat melihat?",
+        "juz": 23
+      },
+      {
+        "nomorAyat": 67,
+        "arab": "وَلَوْ نَشَاءُ لَمَسَخْنَاهُمْ عَلَىٰ مَكَانَتِهِمْ فَمَا اسْتَطَاعُوا مُضِيًّا وَلَا يَرْجِعُونَ",
+        "latin": "Wa law nashaaa'u lamasakhnaahum 'alaa makaanatihim famas-tataa'oo mudiyyanw-wa laa yarji'oon",
+        "terjemah": "Dan jika Kami menghendaki, pastilah Kami ubah bentuk mereka di tempat mereka berada; sehingga mereka tidak sanggup berjalan lagi dan juga tidak sanggup kembali.",
+        "juz": 23
+      },
+      {
+        "nomorAyat": 68,
+        "arab": "وَمَن نُّعَمِّرْهُ نُنَكِّسْهُ فِي الْخَلْقِ ۖ أَفَلَا يَعْقِلُونَ",
+        "latin": "Wa man nu 'ammirhu nunakkishu fil-khalq; afalaa ya'qiloon",
+        "terjemah": "Dan barangsiapa Kami panjangkan umurnya niscaya Kami kembalikan dia kepada awal kejadian(nya). Maka mengapa mereka tidak mengerti?",
+        "juz": 23
+      },
+      {
+        "nomorAyat": 69,
+        "arab": "وَمَا عَلَّمْنَاهُ الشِّعْرَ وَمَا يَنبَغِي لَهُ ۚ إِنْ هُوَ إِلَّا ذِكْرٌ وَقُرْآنٌ مُّبِينٌ",
+        "latin": "Wa maa 'allamnaahush shi'ra wa maa yambaghee lah; in huwa illaa zikrunw-wa Qur-aanum mubeen",
+        "terjemah": "Dan Kami tidak mengajarkan syair kepadanya (Muhammad) dan bersyair itu tidaklah pantas baginya. Al-Qur'an itu tidak lain hanyalah pelajaran dan Kitab yang jelas,",
+        "juz": 23
+      },
+      {
+        "nomorAyat": 70,
+        "arab": "لِّيُنذِرَ مَن كَانَ حَيًّا وَيَحِقَّ الْقَوْلُ عَلَى الْكَافِرِينَ",
+        "latin": "Liyunzira man kaana haiyanw-wa yahiqqal qawlu 'alal-kaafireen",
+        "terjemah": "agar dia (Muhammad) memberi peringatan kepada orang-orang yang hidup (hatinya) dan agar pasti ketetapan (azab) terhadap orang-orang kafir.",
+        "juz": 23
+      },
+      {
+        "nomorAyat": 71,
+        "arab": "أَوَلَمْ يَرَوْا أَنَّا خَلَقْنَا لَهُم مِّمَّا عَمِلَتْ أَيْدِينَا أَنْعَامًا فَهُمْ لَهَا مَالِكُونَ",
+        "latin": "Awalam yaraw annaa khalaqnaa lahum mimmaa 'amilat aideenaaa an'aaman fahum lahaa maalikoon",
+        "terjemah": "Dan tidakkah mereka melihat bahwa Kami telah menciptakan hewan ternak untuk mereka, yaitu sebagian dari apa yang telah Kami ciptakan dengan kekuasaan Kami, lalu mereka menguasainya?",
+        "juz": 23
+      },
+      {
+        "nomorAyat": 72,
+        "arab": "وَذَلَّلْنَاهَا لَهُمْ فَمِنْهَا رَكُوبُهُمْ وَمِنْهَا يَأْكُلُونَ",
+        "latin": "Wa zallalnaahaa lahum faminhaa rakoobuhum wa minhaa yaakuloon",
+        "terjemah": "Dan Kami menundukkannya (hewan-hewan itu) untuk mereka; lalu sebagiannya untuk menjadi tunggangan mereka dan sebagian untuk mereka makan.",
+        "juz": 23
+      },
+      {
+        "nomorAyat": 73,
+        "arab": "وَلَهُمْ فِيهَا مَنَافِعُ وَمَشَارِبُ ۖ أَفَلَا يَشْكُرُونَ",
+        "latin": "Wa lahum feehaa manaa fi'u wa mashaarib; afalaa yashkuroon",
+        "terjemah": "Dan mereka memperoleh berbagai manfaat dan minuman darinya. Maka mengapa mereka tidak bersyukur?",
+        "juz": 23
+      },
+      {
+        "nomorAyat": 74,
+        "arab": "وَاتَّخَذُوا مِن دُونِ اللَّهِ آلِهَةً لَّعَلَّهُمْ يُنصَرُونَ",
+        "latin": "Wattakhazoo min doonil laahi aalihatal la'allahum yunsaroon",
+        "terjemah": "Dan mereka mengambil sesembahan selain Allah agar mereka mendapat pertolongan.",
+        "juz": 23
+      },
+      {
+        "nomorAyat": 75,
+        "arab": "لَا يَسْتَطِيعُونَ نَصْرَهُمْ وَهُمْ لَهُمْ جُندٌ مُّحْضَرُونَ",
+        "latin": "Laa yastatee'oona nasrahum wa hum lahum jundum muhdaroon",
+        "terjemah": "Mereka (sesembahan) itu tidak dapat menolong mereka; padahal mereka itu menjadi tentara yang disiapkan untuk menjaga (sesembahan) itu.",
+        "juz": 23
+      },
+      {
+        "nomorAyat": 76,
+        "arab": "فَلَا يَحْزُنكَ قَوْلُهُمْ ۘ إِنَّا نَعْلَمُ مَا يُسِرُّونَ وَمَا يُعْلِنُونَ",
+        "latin": "Falaa yahzunka qawluhum; innaa na'lamu maa yusirroona wa maa yu'linoon",
+        "terjemah": "Maka jangan sampai ucapan mereka membuat engkau (Muhammad) bersedih hati. Sungguh, Kami mengetahui apa yang mereka rahasiakan dan apa yang mereka nyatakan.",
+        "juz": 23
+      },
+      {
+        "nomorAyat": 77,
+        "arab": "أَوَلَمْ يَرَ الْإِنسَانُ أَنَّا خَلَقْنَاهُ مِن نُّطْفَةٍ فَإِذَا هُوَ خَصِيمٌ مُّبِينٌ",
+        "latin": "Awalam yaral insaanu annaa khalaqnaahu min nutfatin fa-izaa huwa khaseemum mubeen",
+        "terjemah": "Dan tidakkah manusia memperhatikan bahwa Kami menciptakannya dari setetes mani, ternyata dia menjadi musuh yang nyata!",
+        "juz": 23
+      },
+      {
+        "nomorAyat": 78,
+        "arab": "وَضَرَبَ لَنَا مَثَلًا وَنَسِيَ خَلْقَهُ ۖ قَالَ مَن يُحْيِي الْعِظَامَ وَهِيَ رَمِيمٌ",
+        "latin": "Wa daraba lanaa maslanw-wa nasiya khalqahoo qaala mai-yuhyil'izaama wa hiya rameem",
+        "terjemah": "Dan dia membuat perumpamaan bagi Kami dan melupakan asal kejadiannya; dia berkata, “Siapakah yang dapat menghidupkan tulang-belulang, yang telah hancur luluh?”",
+        "juz": 23
+      },
+      {
+        "nomorAyat": 79,
+        "arab": "قُلْ يُحْيِيهَا الَّذِي أَنشَأَهَا أَوَّلَ مَرَّةٍ ۖ وَهُوَ بِكُلِّ خَلْقٍ عَلِيمٌ",
+        "latin": "Qul yuh yeehal lazeee ansha ahaaa awwala marrah; wa Huwa bikulli khalqin 'Aleem",
+        "terjemah": "Katakanlah (Muhammad), “Yang akan menghidupkannya ialah (Allah) yang menciptakannya pertama kali. Dan Dia Maha Mengetahui tentang segala makhluk,",
+        "juz": 23
+      },
+      {
+        "nomorAyat": 80,
+        "arab": "الَّذِي جَعَلَ لَكُم مِّنَ الشَّجَرِ الْأَخْضَرِ نَارًا فَإِذَا أَنتُم مِّنْهُ تُوقِدُونَ",
+        "latin": "Allazee ja'ala lakum minash shajaril akhdari naaran fa-izaaa antum minhu tooqidoon",
+        "terjemah": "yaitu (Allah) yang menjadikan api untukmu dari kayu yang hijau, maka seketika itu kamu nyalakan (api) dari kayu itu.”",
+        "juz": 23
+      },
+      {
+        "nomorAyat": 81,
+        "arab": "أَوَلَيْسَ الَّذِي خَلَقَ السَّمَاوَاتِ وَالْأَرْضَ بِقَادِرٍ عَلَىٰ أَن يَخْلُقَ مِثْلَهُم ۚ بَلَىٰ وَهُوَ الْخَلَّاقُ الْعَلِيمُ",
+        "latin": "Awa laisal lazee khalaqas samaawaati wal arda biqaadirin 'alaaa ai-yakhluqa mislahum; balaa wa Huwal Khallaaqul 'Aleem",
+        "terjemah": "Dan bukankah (Allah) yang menciptakan langit dan bumi, mampu menciptakan kembali yang serupa itu (jasad mereka yang sudah hancur itu)? Benar, dan Dia Maha Pencipta, Maha Mengetahui.",
+        "juz": 23
+      },
+      {
+        "nomorAyat": 82,
+        "arab": "إِنَّمَا أَمْرُهُ إِذَا أَرَادَ شَيْئًا أَن يَقُولَ لَهُ كُن فَيَكُونُ",
+        "latin": "Innamaa amruhooo izaaa araada shai'an ai-yaqoola lahoo kun fa-yakoon",
+        "terjemah": "Sesungguhnya urusan-Nya apabila Dia menghendaki sesuatu Dia hanya berkata kepadanya, “Jadilah!” Maka jadilah sesuatu itu.",
+        "juz": 23
+      },
+      {
+        "nomorAyat": 83,
+        "arab": "فَسُبْحَانَ الَّذِي بِيَدِهِ مَلَكُوتُ كُلِّ شَيْءٍ وَإِلَيْهِ تُرْجَعُونَ",
+        "latin": "Fa Subhaanal lazee biyadihee malakootu kulli shai-inw-wa ilaihi turja'oon",
+        "terjemah": "Maka Mahasuci (Allah) yang di tangan-Nya kekuasaan atas segala sesuatu dan kepada-Nya kamu dikembalikan.",
+        "juz": 23
+      }
+    ]
+  }
+]

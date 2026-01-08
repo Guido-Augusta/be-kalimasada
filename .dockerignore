@@ -1,0 +1,16 @@
+# Node
+node_modules
+npm-debug.log
+yarn-error.log
+
+# Build outputs
+dist
+build
+
+# Git
+.git
+.gitignore
+
+# System / OS files
+.DS_Store
+*.swp

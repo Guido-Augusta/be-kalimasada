@@ -1,0 +1,24 @@
+POST http://localhost:5000/api/seed/seed-admin
+
+### Login Admin Web
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "admin@gmail.com",
+  "password": "admin123",
+  "platform": "web"
+}
+
+### Login Admin Mobile
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "admin@gmail.com",
+  "password": "admin123",
+  "platform": "mobile"
+}
+
+### Logout Admin
+POST http://localhost:5000/api/auth/logout/13

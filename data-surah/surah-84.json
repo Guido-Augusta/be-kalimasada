@@ -1,0 +1,188 @@
+[
+  {
+    "nomor": 84,
+    "nama": "الإنشقاق",
+    "namaLatin": "Al-Insyiqaq",
+    "totalAyat": 25,
+    "tempatTurun": "Makkiyyah",
+    "arti": "Terbelah",
+    "deskripsi": "Surat Al Insyiqaaq, terdiri atas 25 ayat, termasuk golongan surat-surat Makkiyah, diturunkan sesudah surat Al Infithaarr. Dinamai Al Insyiqaaq (terbelah), diambil dari perkataan Insyaqqat yang terdapat pada permulaan surat ini, yang pokok katanya ialah insyiqaaq.",
+    "ayat": [
+      {
+        "nomorAyat": 1,
+        "arab": "إِذَا السَّمَاءُ انشَقَّتْ",
+        "latin": "Izas samaaa'un shaqqat",
+        "terjemah": "Apabila langit terbelah,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 2,
+        "arab": "وَأَذِنَتْ لِرَبِّهَا وَحُقَّتْ",
+        "latin": "Wa azinat li Rabbihaa wa huqqat",
+        "terjemah": "dan patuh kepada Tuhannya, dan sudah semestinya patuh,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 3,
+        "arab": "وَإِذَا الْأَرْضُ مُدَّتْ",
+        "latin": "Wa izal ardu muddat",
+        "terjemah": "dan apabila bumi diratakan,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 4,
+        "arab": "وَأَلْقَتْ مَا فِيهَا وَتَخَلَّتْ",
+        "latin": "Wa alqat maa feehaa wa takhallat",
+        "terjemah": "dan memuntahkan apa yang ada di dalamnya dan menjadi kosong,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 5,
+        "arab": "وَأَذِنَتْ لِرَبِّهَا وَحُقَّتْ",
+        "latin": "Wa azinat li Rabbihaa wa huqqat",
+        "terjemah": "dan patuh kepada Tuhannya, dan sudah semestinya patuh.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 6,
+        "arab": "يَا أَيُّهَا الْإِنسَانُ إِنَّكَ كَادِحٌ إِلَىٰ رَبِّكَ كَدْحًا فَمُلَاقِيهِ",
+        "latin": "Yaaa ayyuhal insaanu innaka kaadihun ilaa Rabbika kad han famulaaqeeh",
+        "terjemah": "Wahai manusia! Sesungguhnya kamu telah bekerja keras menuju Tuhanmu, maka kamu akan menemui-Nya.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 7,
+        "arab": "فَأَمَّا مَنْ أُوتِيَ كِتَابَهُ بِيَمِينِهِ",
+        "latin": "Fa ammaa man ootiya kitaabahoo biyameenih",
+        "terjemah": "Maka adapun orang yang catatannya diberikan dari sebelah kanannya,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 8,
+        "arab": "فَسَوْفَ يُحَاسَبُ حِسَابًا يَسِيرًا",
+        "latin": "Fasawfa yuhaasabu hi saabai yaseeraa",
+        "terjemah": "maka dia akan diperiksa dengan pemeriksaan yang mudah,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 9,
+        "arab": "وَيَنقَلِبُ إِلَىٰ أَهْلِهِ مَسْرُورًا",
+        "latin": "Wa yanqalibu ilaaa ahlihee masrooraa",
+        "terjemah": "dan dia akan kembali kepada keluarganya (yang sama-sama beriman) dengan gembira.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 10,
+        "arab": "وَأَمَّا مَنْ أُوتِيَ كِتَابَهُ وَرَاءَ ظَهْرِهِ",
+        "latin": "Wa ammaa man ootiya kitaabahoo waraaa'a zahrih",
+        "terjemah": "Dan adapun orang yang catatannya diberikan dari sebelah belakang,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 11,
+        "arab": "فَسَوْفَ يَدْعُو ثُبُورًا",
+        "latin": "Fasawfa yad'oo subooraa",
+        "terjemah": "maka dia akan berteriak, “Celakalah aku!”",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 12,
+        "arab": "وَيَصْلَىٰ سَعِيرًا",
+        "latin": "Wa yaslaa sa'eeraa",
+        "terjemah": "Dan dia akan masuk ke dalam api yang menyala-nyala (neraka).",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 13,
+        "arab": "إِنَّهُ كَانَ فِي أَهْلِهِ مَسْرُورًا",
+        "latin": "Innahoo kaana feee ahlihee masrooraa",
+        "terjemah": "Sungguh, dia dahulu (di dunia) bergembira di kalangan keluarganya (yang sama-sama kafir).",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 14,
+        "arab": "إِنَّهُ ظَنَّ أَن لَّن يَحُورَ",
+        "latin": "Innahoo zanna al lai yahoor",
+        "terjemah": "Sesungguhnya dia mengira bahwa dia tidak akan kembali (kepada Tuhannya).",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 15,
+        "arab": "بَلَىٰ إِنَّ رَبَّهُ كَانَ بِهِ بَصِيرًا",
+        "latin": "Balaaa inna Rabbahoo kaana bihee baseeraa",
+        "terjemah": "Tidak demikian, sesungguhnya Tuhannya selalu melihatnya.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 16,
+        "arab": "فَلَا أُقْسِمُ بِالشَّفَقِ",
+        "latin": "Falaaa uqsimu bishshafaq",
+        "terjemah": "Maka Aku bersumpah demi cahaya merah pada waktu senja,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 17,
+        "arab": "وَاللَّيْلِ وَمَا وَسَقَ",
+        "latin": "Wallaili wa maa wasaq",
+        "terjemah": "demi malam dan apa yang diselubunginya,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 18,
+        "arab": "وَالْقَمَرِ إِذَا اتَّسَقَ",
+        "latin": "Walqamari izat tasaq",
+        "terjemah": "demi bulan apabila jadi purnama,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 19,
+        "arab": "لَتَرْكَبُنَّ طَبَقًا عَن طَبَقٍ",
+        "latin": "Latarkabunna tabaqan 'an tabaq",
+        "terjemah": "sungguh, akan kamu jalani tingkat demi tingkat (dalam kehidupan).",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 20,
+        "arab": "فَمَا لَهُمْ لَا يُؤْمِنُونَ",
+        "latin": "Famaa lahum laa yu'minoon",
+        "terjemah": "Maka mengapa mereka tidak mau beriman?",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 21,
+        "arab": "وَإِذَا قُرِئَ عَلَيْهِمُ الْقُرْآنُ لَا يَسْجُدُونَ ۩",
+        "latin": "Wa izaa quri'a 'alaihimul Quraanu laa yasjudoon",
+        "terjemah": "Dan apabila Al-Qur'an dibacakan kepada mereka, mereka tidak (mau) bersujud,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 22,
+        "arab": "بَلِ الَّذِينَ كَفَرُوا يُكَذِّبُونَ",
+        "latin": "Balil lazeena kafaroo yukazziboon",
+        "terjemah": "bahkan orang-orang kafir itu mendustakan(nya).",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 23,
+        "arab": "وَاللَّهُ أَعْلَمُ بِمَا يُوعُونَ",
+        "latin": "Wallaahu a'lamu bimaa yoo'oon",
+        "terjemah": "Dan Allah lebih mengetahui apa yang mereka sembunyikan (dalam hati mereka).",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 24,
+        "arab": "فَبَشِّرْهُم بِعَذَابٍ أَلِيمٍ",
+        "latin": "Fabashshirhum bi'azaabin aleem",
+        "terjemah": "Maka sampaikanlah kepada mereka (ancaman) azab yang pedih,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 25,
+        "arab": "إِلَّا الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ لَهُمْ أَجْرٌ غَيْرُ مَمْنُونٍ",
+        "latin": "Illal lazeena aamanoo wa 'amilus saalihaati lahum ajrun ghairu mamnoon",
+        "terjemah": "kecuali orang-orang yang beriman dan mengerjakan kebajikan, mereka akan mendapat pahala yang tidak putus-putusnya.",
+        "juz": 30
+      }
+    ]
+  }
+]

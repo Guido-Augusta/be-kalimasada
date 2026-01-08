@@ -1,0 +1,111 @@
+[
+  {
+    "nomor": 61,
+    "nama": "الصف",
+    "namaLatin": "As-Saff",
+    "totalAyat": 14,
+    "tempatTurun": "Madaniyyah",
+    "arti": "Barisan",
+    "deskripsi": "Surat Ash Shaff terdiri atas 14 ayat termasuk golongan surat-surat Madaniyyah. Dinamai dengan Ash Shaff, karena pada ayat 4 surat ini terdapat kata Shaffan yang berarti satu barisan. Ayat ini menerangkan apa yang diridhai Allah sesudah menerangkan apa yang dimurkai-Nya. Pada ayat 3 diterangkan bahwa Allah murka kepada orang yang hanya pandai berkata saja tetapi tidak melaksanakan apa yang diucapkannya. Dan pada ayat 4 diterangkan bahwa Allah menyukai orang yang mempraktekkan apa yang diucapkannya yaitu orang-orang yang berperang pada jalan Allah dalam satu barisan.",
+    "ayat": [
+      {
+        "nomorAyat": 1,
+        "arab": "سَبَّحَ لِلَّهِ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ ۖ وَهُوَ الْعَزِيزُ الْحَكِيمُ",
+        "latin": "Sabbaha lillaahi maa fisamaawaati wa maa fil ardi wa huwal 'Azeezul Hakeem",
+        "terjemah": "Apa yang ada di langit dan apa yang ada di bumi bertasbih kepada Allah; dan Dialah Yang Mahaperkasa, Mahabijaksana.",
+        "juz": 28
+      },
+      {
+        "nomorAyat": 2,
+        "arab": "يَا أَيُّهَا الَّذِينَ آمَنُوا لِمَ تَقُولُونَ مَا لَا تَفْعَلُونَ",
+        "latin": "Yaa ayyuhal lazeena aamanoo lima taqooloona maa laa taf'aloon",
+        "terjemah": "Wahai orang-orang yang beriman! Mengapa kamu mengatakan sesuatu yang tidak kamu kerjakan?",
+        "juz": 28
+      },
+      {
+        "nomorAyat": 3,
+        "arab": "كَبُرَ مَقْتًا عِندَ اللَّهِ أَن تَقُولُوا مَا لَا تَفْعَلُونَ",
+        "latin": "Kabura maqtan 'indal laahi an taqooloo maa laa taf'aloon",
+        "terjemah": "(Itu) sangatlah dibenci di sisi Allah jika kamu mengatakan apa-apa yang tidak kamu kerjakan.",
+        "juz": 28
+      },
+      {
+        "nomorAyat": 4,
+        "arab": "إِنَّ اللَّهَ يُحِبُّ الَّذِينَ يُقَاتِلُونَ فِي سَبِيلِهِ صَفًّا كَأَنَّهُم بُنْيَانٌ مَّرْصُوصٌ",
+        "latin": "Innal laaha yuhibbul lazeena yuqaatiloona fee sabeelihee saffan kaannahum bunyaanum marsoos",
+        "terjemah": "Sesungguhnya Allah mencintai orang-orang yang berperang di jalan-Nya dalam barisan yang teratur, mereka seakan-akan seperti suatu bangunan yang tersusun kokoh.",
+        "juz": 28
+      },
+      {
+        "nomorAyat": 5,
+        "arab": "وَإِذْ قَالَ مُوسَىٰ لِقَوْمِهِ يَا قَوْمِ لِمَ تُؤْذُونَنِي وَقَد تَّعْلَمُونَ أَنِّي رَسُولُ اللَّهِ إِلَيْكُمْ ۖ فَلَمَّا زَاغُوا أَزَاغَ اللَّهُ قُلُوبَهُمْ ۚ وَاللَّهُ لَا يَهْدِي الْقَوْمَ الْفَاسِقِينَ",
+        "latin": "Wa iz qaala Moosa liqawmihee yaa qawmi lima tu'zoonanee wa qat ta'lamoona annee Rasoolul laahi ilaikum falammaa zaaghooo azaaghal laahu quloobahum; wallaahu laa yahdil qawmal faasiqeen",
+        "terjemah": "Dan (ingatlah) ketika Musa berkata kepada kaumnya, “Wahai kaumku! Mengapa kamu menyakitiku, padahal kamu sungguh mengetahui bahwa sesungguhnya aku utusan Allah kepadamu?” Maka ketika mereka berpaling (dari kebenaran), Allah memalingkan hati mereka. Dan Allah tidak memberi petunjuk kepada kaum yang fasik.",
+        "juz": 28
+      },
+      {
+        "nomorAyat": 6,
+        "arab": "وَإِذْ قَالَ عِيسَى ابْنُ مَرْيَمَ يَا بَنِي إِسْرَائِيلَ إِنِّي رَسُولُ اللَّهِ إِلَيْكُم مُّصَدِّقًا لِّمَا بَيْنَ يَدَيَّ مِنَ التَّوْرَاةِ وَمُبَشِّرًا بِرَسُولٍ يَأْتِي مِن بَعْدِي اسْمُهُ أَحْمَدُ ۖ فَلَمَّا جَاءَهُم بِالْبَيِّنَاتِ قَالُوا هَٰذَا سِحْرٌ مُّبِينٌ",
+        "latin": "Wa iz qaala 'Eesab-nu-Mayama yaa Banee Israaa'eela innee Rasoolul laahi ilaikum musaddiqal limaa baina yadayya minat Tawraati wa mubashshiram bi Rasooliny yaatee mim ba'dis muhooo Ahmad; falammaa jaaa'ahum bil baiyinaati qaaloo haazaa sihrum mubeen",
+        "terjemah": "Dan (ingatlah) ketika Isa putra Maryam berkata, “Wahai Bani Israil! Sesungguhnya aku utusan Allah kepadamu, yang membenarkan kitab (yang turun) sebelumku, yaitu Taurat dan memberi kabar gembira dengan seorang Rasul yang akan datang setelahku, yang namanya Ahmad (Muhammad).” Namun ketika Rasul itu datang kepada mereka dengan membawa bukti-bukti yang nyata, mereka berkata, “Ini adalah sihir yang nyata.”",
+        "juz": 28
+      },
+      {
+        "nomorAyat": 7,
+        "arab": "وَمَنْ أَظْلَمُ مِمَّنِ افْتَرَىٰ عَلَى اللَّهِ الْكَذِبَ وَهُوَ يُدْعَىٰ إِلَى الْإِسْلَامِ ۚ وَاللَّهُ لَا يَهْدِي الْقَوْمَ الظَّالِمِينَ",
+        "latin": "Wa man azlamu mimma nif taraa 'alal laahil kaziba wa huwa yad'aaa ilal Islaam; wallaahu laa yahdil qawmaz zaalimeen",
+        "terjemah": "Dan siapakah yang lebih zalim daripada orang yang mengada-adakan kebohongan terhadap Allah padahal dia diajak kepada (agama) Islam? Dan Allah tidak memberi petunjuk kepada orang-orang yang zalim.",
+        "juz": 28
+      },
+      {
+        "nomorAyat": 8,
+        "arab": "يُرِيدُونَ لِيُطْفِئُوا نُورَ اللَّهِ بِأَفْوَاهِهِمْ وَاللَّهُ مُتِمُّ نُورِهِ وَلَوْ كَرِهَ الْكَافِرُونَ",
+        "latin": "Yureedoona liyutfi'oo nooral laahi bi afwaahimim wallaahu mutimmu noorihee wa law karihal kaafiroon",
+        "terjemah": "Mereka hendak memadamkan cahaya (agama) Allah dengan mulut (ucapan-ucapan) mereka, tetapi Allah tetap menyempurnakan cahaya-Nya meskipun orang-orang kafir membencinya.",
+        "juz": 28
+      },
+      {
+        "nomorAyat": 9,
+        "arab": "هُوَ الَّذِي أَرْسَلَ رَسُولَهُ بِالْهُدَىٰ وَدِينِ الْحَقِّ لِيُظْهِرَهُ عَلَى الدِّينِ كُلِّهِ وَلَوْ كَرِهَ الْمُشْرِكُونَ",
+        "latin": "Huwal lazee arsala Rasoolahoo bilhudaa wa deenil haqqi liyuzhirahoo 'alad deeni kullihee wa law karihal mushrikoon",
+        "terjemah": "Dialah yang mengutus Rasul-Nya dengan membawa petunjuk dan agama yang benar, untuk memenangkannya di atas segala agama meskipun orang-orang musyrik membencinya.",
+        "juz": 28
+      },
+      {
+        "nomorAyat": 10,
+        "arab": "يَا أَيُّهَا الَّذِينَ آمَنُوا هَلْ أَدُلُّكُمْ عَلَىٰ تِجَارَةٍ تُنجِيكُم مِّنْ عَذَابٍ أَلِيمٍ",
+        "latin": "Yaaa ayyuhal lazeena aammano hal adullukum 'alaa tijaaratin tunjeekum min 'azaabin aleem",
+        "terjemah": "Wahai orang-orang yang beriman! Maukah kamu Aku tunjukkan suatu perdagangan yang dapat menyelamatkan kamu dari azab yang pedih?",
+        "juz": 28
+      },
+      {
+        "nomorAyat": 11,
+        "arab": "تُؤْمِنُونَ بِاللَّهِ وَرَسُولِهِ وَتُجَاهِدُونَ فِي سَبِيلِ اللَّهِ بِأَمْوَالِكُمْ وَأَنفُسِكُمْ ۚ ذَٰلِكُمْ خَيْرٌ لَّكُمْ إِن كُنتُمْ تَعْلَمُونَ",
+        "latin": "Tu'minoona billaahi wa Rasoolihee wa tujaahidoona fee sabeelil laahi bi amwaalikum wa anfusikum; zaalikum khairul lakum in kuntum ta'lamoon",
+        "terjemah": "Yaitu kamu beriman kepada Allah dan Rasul-Nya dan berjihad di jalan Allah dengan harta dan jiwamu. Itulah yang lebih baik bagi kamu jika kamu mengetahui,",
+        "juz": 28
+      },
+      {
+        "nomorAyat": 12,
+        "arab": "يَغْفِرْ لَكُمْ ذُنُوبَكُمْ وَيُدْخِلْكُمْ جَنَّاتٍ تَجْرِي مِن تَحْتِهَا الْأَنْهَارُ وَمَسَاكِنَ طَيِّبَةً فِي جَنَّاتِ عَدْنٍ ۚ ذَٰلِكَ الْفَوْزُ الْعَظِيمُ",
+        "latin": "Yaghfir lakum zunoobakum wa yudkhilkum Jannaatin tajree min tahtihal anhaaru wa masaakina taiyibatan fee Jannaati 'Ad; zaalikal fawzul 'Azeem",
+        "terjemah": "niscaya Allah mengampuni dosa-dosamu dan memasukkan kamu ke dalam surga yang mengalir di bawahnya sungai-sungai, dan ke tempat-tempat tinggal yang baik di dalam surga ‘Adn. Itulah kemenangan yang agung.",
+        "juz": 28
+      },
+      {
+        "nomorAyat": 13,
+        "arab": "وَأُخْرَىٰ تُحِبُّونَهَا ۖ نَصْرٌ مِّنَ اللَّهِ وَفَتْحٌ قَرِيبٌ ۗ وَبَشِّرِ الْمُؤْمِنِينَ",
+        "latin": "Wa ukhraa tuhibboonahaa nasrum minal laahi wa fat hun qaree; wa bashshiril mu 'mineen",
+        "terjemah": "Dan (ada lagi) karunia yang lain yang kamu sukai (yaitu) pertolongan dari Allah dan kemenangan yang dekat (waktunya). Dan sampaikanlah berita gembira kepada orang-orang mukmin.",
+        "juz": 28
+      },
+      {
+        "nomorAyat": 14,
+        "arab": "يَا أَيُّهَا الَّذِينَ آمَنُوا كُونُوا أَنصَارَ اللَّهِ كَمَا قَالَ عِيسَى ابْنُ مَرْيَمَ لِلْحَوَارِيِّينَ مَنْ أَنصَارِي إِلَى اللَّهِ ۖ قَالَ الْحَوَارِيُّونَ نَحْنُ أَنصَارُ اللَّهِ ۖ فَآمَنَت طَّائِفَةٌ مِّن بَنِي إِسْرَائِيلَ وَكَفَرَت طَّائِفَةٌ ۖ فَأَيَّدْنَا الَّذِينَ آمَنُوا عَلَىٰ عَدُوِّهِمْ فَأَصْبَحُوا ظَاهِرِينَ",
+        "latin": "Yaaa ayyuhal lazeena aamaanoo koonooo ansaaral laahi kamaa qaala 'Eesab-nu-Maryama lil Hawaariyyeena man ansaareee ilal laah; qaalal Hawaariyyoona nahnu ansaa rul laahi fa aamanat taaa'ifatum mim Bannee Israaa'eela wa kafarat taaa'ifatun fa ayyadnal lazeena aammanoo 'alaa 'aduwwihim fa asbahoo zaahireen",
+        "terjemah": "Wahai orang-orang yang beriman! Jadilah kamu penolong-penolong (agama) Allah sebagaimana Isa putra Maryam telah berkata kepada pengikut-pengikutnya yang setia, “Siapakah yang akan menjadi penolong-penolongku (untuk menegakkan agama) Allah?” Pengikut-pengikutnya yang setia itu berkata, “Kamilah penolong-penolong (agama) Allah,” lalu segolongan dari Bani Israil beriman dan segolongan (yang lain) kafir; lalu Kami berikan kekuatan ke-pada orang-orang yang beriman terhadap musuh-musuh mereka, sehingga mereka menjadi orang-orang yang menang.",
+        "juz": 28
+      }
+    ]
+  }
+]

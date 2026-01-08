@@ -1,0 +1,293 @@
+[
+  {
+    "nomor": 78,
+    "nama": "النبإ",
+    "namaLatin": "An-Naba'",
+    "totalAyat": 40,
+    "tempatTurun": "Makkiyyah",
+    "arti": "Berita Besar",
+    "deskripsi": "Surat An Naba´ terdiri atas 40 ayat, termasuk golongan surat-surat Makkiyah, diturunkan sesudah surat Al Ma´aarij. Dinamai An Naba´ (berita besar) diambil dari perkataan An Naba´ yang terdapat pada ayat 2 surat ini. Dinamai juga Amma yatasaa aluun diambil dari perkataan Amma yatasaa aluun yang terdapat pada ayat 1 surat ini.",
+    "ayat": [
+      {
+        "nomorAyat": 1,
+        "arab": "عَمَّ يَتَسَاءَلُونَ",
+        "latin": "'Amma Yatasaa-aloon",
+        "terjemah": "Tentang apakah mereka saling bertanya-tanya?",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 2,
+        "arab": "عَنِ النَّبَإِ الْعَظِيمِ",
+        "latin": "'Anin-nabaa-il 'azeem",
+        "terjemah": "Tentang berita yang besar (hari kebangkitan),",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 3,
+        "arab": "الَّذِي هُمْ فِيهِ مُخْتَلِفُونَ",
+        "latin": "Allazi hum feehi mukh talifoon",
+        "terjemah": "yang dalam hal itu mereka berselisih.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 4,
+        "arab": "كَلَّا سَيَعْلَمُونَ",
+        "latin": "Kallaa sa y'alamoon",
+        "terjemah": "Tidak! Kelak mereka akan mengetahui,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 5,
+        "arab": "ثُمَّ كَلَّا سَيَعْلَمُونَ",
+        "latin": "Thumma kallaa sa y'alamoon",
+        "terjemah": "sekali lagi tidak! Kelak mereka akan mengetahui.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 6,
+        "arab": "أَلَمْ نَجْعَلِ الْأَرْضَ مِهَادًا",
+        "latin": "Alam naj'alil arda mihaa da",
+        "terjemah": "Bukankah Kami telah menjadikan bumi sebagai hamparan,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 7,
+        "arab": "وَالْجِبَالَ أَوْتَادًا",
+        "latin": "Wal jibaala au taada",
+        "terjemah": "dan gunung-gunung sebagai pasak?",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 8,
+        "arab": "وَخَلَقْنَاكُمْ أَزْوَاجًا",
+        "latin": "Wa khalaq naakum azwaaja",
+        "terjemah": "Dan Kami menciptakan kamu berpasang-pasangan,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 9,
+        "arab": "وَجَعَلْنَا نَوْمَكُمْ سُبَاتًا",
+        "latin": "Waja'alnan naumakum subata",
+        "terjemah": "dan Kami menjadikan tidurmu untuk istirahat,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 10,
+        "arab": "وَجَعَلْنَا اللَّيْلَ لِبَاسًا",
+        "latin": "Waja'alnal laila libasa",
+        "terjemah": "dan Kami menjadikan malam sebagai pakaian,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 11,
+        "arab": "وَجَعَلْنَا النَّهَارَ مَعَاشًا",
+        "latin": "Waja'alnan nahara ma 'aasha",
+        "terjemah": "dan Kami menjadikan siang untuk mencari penghidupan,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 12,
+        "arab": "وَبَنَيْنَا فَوْقَكُمْ سَبْعًا شِدَادًا",
+        "latin": "Wa banaina fauqakum sab 'an shi daada",
+        "terjemah": "dan Kami membangun di atas kamu tujuh (langit) yang kokoh,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 13,
+        "arab": "وَجَعَلْنَا سِرَاجًا وَهَّاجًا",
+        "latin": "Waja'alna siraajaw wah haaja",
+        "terjemah": "dan Kami menjadikan pelita yang terang-benderang (matahari),",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 14,
+        "arab": "وَأَنزَلْنَا مِنَ الْمُعْصِرَاتِ مَاءً ثَجَّاجًا",
+        "latin": "Wa anzalna minal m'usiraati maa-an saj-jaaja",
+        "terjemah": "dan Kami turunkan dari awan, air hujan yang tercurah dengan hebatnya,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 15,
+        "arab": "لِّنُخْرِجَ بِهِ حَبًّا وَنَبَاتًا",
+        "latin": "Linukh rija bihee habbaw wana baata",
+        "terjemah": "untuk Kami tumbuhkan dengan air itu biji-bijian dan tanam-tanaman,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 16,
+        "arab": "وَجَنَّاتٍ أَلْفَافًا",
+        "latin": "Wa jan naatin alfafa",
+        "terjemah": "dan kebun-kebun yang rindang.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 17,
+        "arab": "إِنَّ يَوْمَ الْفَصْلِ كَانَ مِيقَاتًا",
+        "latin": "Inna yaumal-fasli kana miqaata",
+        "terjemah": "Sungguh, hari keputusan adalah suatu waktu yang telah ditetapkan,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 18,
+        "arab": "يَوْمَ يُنفَخُ فِي الصُّورِ فَتَأْتُونَ أَفْوَاجًا",
+        "latin": "Yauma yun fakhu fis-soori fataa toona afwaaja",
+        "terjemah": "(yaitu) pada hari (ketika) sangkakala ditiup, lalu kamu datang berbondong-bondong,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 19,
+        "arab": "وَفُتِحَتِ السَّمَاءُ فَكَانَتْ أَبْوَابًا",
+        "latin": "Wa futiha tis samaa-u fakaanat abwaaba",
+        "terjemah": "dan langit pun dibukalah, maka terdapatlah beberapa pintu,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 20,
+        "arab": "وَسُيِّرَتِ الْجِبَالُ فَكَانَتْ سَرَابًا",
+        "latin": "Wa suyyi raatil jibaalu fa kaanat saraaba",
+        "terjemah": "dan gunung-gunung pun dijalankan sehingga menjadi fatamorgana.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 21,
+        "arab": "إِنَّ جَهَنَّمَ كَانَتْ مِرْصَادًا",
+        "latin": "Inna jahan nama kaanat mirsaada",
+        "terjemah": "Sungguh, (neraka) Jahanam itu (sebagai) tempat mengintai (bagi penjaga yang mengawasi isi neraka),",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 22,
+        "arab": "لِّلطَّاغِينَ مَآبًا",
+        "latin": "Lit taa gheena ma aaba",
+        "terjemah": "menjadi tempat kembali bagi orang-orang yang melampaui batas.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 23,
+        "arab": "لَّابِثِينَ فِيهَا أَحْقَابًا",
+        "latin": "Laa bitheena feehaa ahqaaba",
+        "terjemah": "Mereka tinggal di sana dalam masa yang lama,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 24,
+        "arab": "لَّا يَذُوقُونَ فِيهَا بَرْدًا وَلَا شَرَابًا",
+        "latin": "Laa ya zooqoona feeha bar daw walaa sharaaba",
+        "terjemah": "mereka tidak merasakan kesejukan di dalamnya dan tidak (pula mendapat) minuman,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 25,
+        "arab": "إِلَّا حَمِيمًا وَغَسَّاقًا",
+        "latin": "Illa hamee maw-wa ghas saaqa",
+        "terjemah": "selain air yang mendidih dan nanah,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 26,
+        "arab": "جَزَاءً وِفَاقًا",
+        "latin": "Jazaa-aw wi faaqa",
+        "terjemah": "sebagai pembalasan yang setimpal.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 27,
+        "arab": "إِنَّهُمْ كَانُوا لَا يَرْجُونَ حِسَابًا",
+        "latin": "Innahum kaanu laa yarjoona hisaaba",
+        "terjemah": "Sesungguhnya dahulu mereka tidak pernah mengharapkan perhitungan.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 28,
+        "arab": "وَكَذَّبُوا بِآيَاتِنَا كِذَّابًا",
+        "latin": "Wa kazzabu bi aayaa tina kizzaba",
+        "terjemah": "Dan mereka benar-benar mendustakan ayat-ayat Kami.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 29,
+        "arab": "وَكُلَّ شَيْءٍ أَحْصَيْنَاهُ كِتَابًا",
+        "latin": "Wa kulla shai-in ahsai naahu kitaa ba",
+        "terjemah": "Dan segala sesuatu telah Kami catat dalam suatu Kitab (buku catatan amalan manusia).",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 30,
+        "arab": "فَذُوقُوا فَلَن نَّزِيدَكُمْ إِلَّا عَذَابًا",
+        "latin": "Fa zooqoo falan-nazee dakum ill-laa azaaba",
+        "terjemah": "Maka karena itu rasakanlah! Maka tidak ada yang akan Kami tambahkan kepadamu selain azab.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 31,
+        "arab": "إِنَّ لِلْمُتَّقِينَ مَفَازًا",
+        "latin": "Inna lil mutta qeena mafaaza",
+        "terjemah": "Sungguh, orang-orang yang bertakwa mendapat kemenangan,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 32,
+        "arab": "حَدَائِقَ وَأَعْنَابًا",
+        "latin": "Hadaa-iqa wa a'anaa ba",
+        "terjemah": "(yaitu) kebun-kebun dan buah anggur,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 33,
+        "arab": "وَكَوَاعِبَ أَتْرَابًا",
+        "latin": "Wa kaawa 'iba at raaba",
+        "terjemah": "dan gadis-gadis montok yang sebaya,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 34,
+        "arab": "وَكَأْسًا دِهَاقًا",
+        "latin": "Wa ka'san di haaqa",
+        "terjemah": "dan gelas-gelas yang penuh (berisi minuman).",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 35,
+        "arab": "لَّا يَسْمَعُونَ فِيهَا لَغْوًا وَلَا كِذَّابًا",
+        "latin": "Laa yasma'oona fiha lagh waw walaa kizzaba",
+        "terjemah": "Di sana mereka tidak mendengar percakapan yang sia-sia maupun (perkataan) dusta.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 36,
+        "arab": "جَزَاءً مِّن رَّبِّكَ عَطَاءً حِسَابًا",
+        "latin": "Jazaa-am mir-rabbika ataa-an hisaaba",
+        "terjemah": "Sebagai balasan dan pemberian yang cukup banyak dari Tuhanmu,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 37,
+        "arab": "رَّبِّ السَّمَاوَاتِ وَالْأَرْضِ وَمَا بَيْنَهُمَا الرَّحْمَٰنِ ۖ لَا يَمْلِكُونَ مِنْهُ خِطَابًا",
+        "latin": "Rabbis samaa waati wal ardi wa maa baina humar rahmaani laa yam likoona minhu khi taaba",
+        "terjemah": "Tuhan (yang memelihara) langit dan bumi dan apa yang ada di antara keduanya; Yang Maha Pengasih, mereka tidak mampu berbicara dengan Dia.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 38,
+        "arab": "يَوْمَ يَقُومُ الرُّوحُ وَالْمَلَائِكَةُ صَفًّا ۖ لَّا يَتَكَلَّمُونَ إِلَّا مَنْ أَذِنَ لَهُ الرَّحْمَٰنُ وَقَالَ صَوَابًا",
+        "latin": "Yauma yaqoo mur roohu wal malaa-ikatu saf-fal laa yata kalla moona illa man azina lahur rahmaanu wa qaala sawaaba",
+        "terjemah": "Pada hari, ketika ruh dan para malaikat berdiri bersaf-saf, mereka tidak berkata-kata, kecuali siapa yang telah diberi izin kepadanya oleh Tuhan Yang Maha Pengasih dan dia hanya mengatakan yang benar.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 39,
+        "arab": "ذَٰلِكَ الْيَوْمُ الْحَقُّ ۖ فَمَن شَاءَ اتَّخَذَ إِلَىٰ رَبِّهِ مَآبًا",
+        "latin": "Zaalikal yaumul haqqu faman shaa-at ta khaaza ill-laa rabbihi ma-aaba",
+        "terjemah": "Itulah hari yang pasti terjadi. Maka barang siapa menghendaki, niscaya dia menempuh jalan kembali kepada Tuhannya.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 40,
+        "arab": "إِنَّا أَنذَرْنَاكُمْ عَذَابًا قَرِيبًا يَوْمَ يَنظُرُ الْمَرْءُ مَا قَدَّمَتْ يَدَاهُ وَيَقُولُ الْكَافِرُ يَا لَيْتَنِي كُنتُ تُرَابًا",
+        "latin": "In naa anzar naakum azaaban qareebaiy-yauma yan zurul marr-u maa qaddamat yadaahu wa ya qoolul-kaafiru yaa lai tanee kuntu turaaba",
+        "terjemah": "Sesungguhnya Kami telah memperingatkan kepadamu (orang kafir) azab yang dekat, pada hari manusia melihat apa yang telah diperbuat oleh kedua tangannya; dan orang kafir berkata, “Alangkah baiknya seandainya dahulu aku jadi tanah.”",
+        "juz": 30
+      }
+    ]
+  }
+]

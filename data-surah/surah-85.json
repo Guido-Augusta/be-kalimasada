@@ -1,0 +1,167 @@
+[
+  {
+    "nomor": 85,
+    "nama": "البروج",
+    "namaLatin": "Al-Buruj",
+    "totalAyat": 22,
+    "tempatTurun": "Makkiyyah",
+    "arti": "Gugusan Bintang",
+    "deskripsi": "Surat Al Buruuj terdiri atas 22 ayat, termasuk golongan surat-surat Makkiyyah diturunkan sesudah surat Asy-Syams.Dinamai Al Buruuj (gugusan bintang) diambil dari perkataan Al Buruuj yang terdapat pada ayat 1 surat ini.",
+    "ayat": [
+      {
+        "nomorAyat": 1,
+        "arab": "وَالسَّمَاءِ ذَاتِ الْبُرُوجِ",
+        "latin": "Wassamaaa'i zaatil burooj",
+        "terjemah": "Demi langit yang mempunyai gugusan bintang,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 2,
+        "arab": "وَالْيَوْمِ الْمَوْعُودِ",
+        "latin": "Wal yawmil maw'ood",
+        "terjemah": "dan demi hari yang dijanjikan.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 3,
+        "arab": "وَشَاهِدٍ وَمَشْهُودٍ",
+        "latin": "Wa shaahidinw wa mashhood",
+        "terjemah": "Demi yang menyaksikan dan yang disaksikan.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 4,
+        "arab": "قُتِلَ أَصْحَابُ الْأُخْدُودِ",
+        "latin": "Qutila as haabul ukhdood",
+        "terjemah": "Binasalah orang-orang yang membuat parit (yaitu para pembesar Najran di Yaman),",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 5,
+        "arab": "النَّارِ ذَاتِ الْوَقُودِ",
+        "latin": "Annaari zaatil waqood",
+        "terjemah": "yang berapi (yang mempunyai) kayu bakar,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 6,
+        "arab": "إِذْ هُمْ عَلَيْهَا قُعُودٌ",
+        "latin": "Iz hum 'alaihaa qu'ood",
+        "terjemah": "ketika mereka duduk di sekitarnya,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 7,
+        "arab": "وَهُمْ عَلَىٰ مَا يَفْعَلُونَ بِالْمُؤْمِنِينَ شُهُودٌ",
+        "latin": "Wa hum 'alaa maa yaf'aloona bilmu 'mineena shuhood",
+        "terjemah": "sedang mereka menyaksikan apa yang mereka perbuat terhadap orang-orang mukmin.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 8,
+        "arab": "وَمَا نَقَمُوا مِنْهُمْ إِلَّا أَن يُؤْمِنُوا بِاللَّهِ الْعَزِيزِ الْحَمِيدِ",
+        "latin": "Wa maa naqamoo minhum illaaa aiyu'minoo billaahil 'azeezil Hameed",
+        "terjemah": "Dan mereka menyiksa orang-orang mukmin itu hanya karena (orang-orang mukmin itu) beriman kepada Allah Yang Mahaperkasa, Maha Terpuji,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 9,
+        "arab": "الَّذِي لَهُ مُلْكُ السَّمَاوَاتِ وَالْأَرْضِ ۚ وَاللَّهُ عَلَىٰ كُلِّ شَيْءٍ شَهِيدٌ",
+        "latin": "Allazee lahoo mulkus samaawaati wal ard; wallaahu 'alaa kulli shai 'in Shaheed",
+        "terjemah": "yang memiliki kerajaan langit dan bumi. Dan Allah Maha Menyaksikan segala sesuatu.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 10,
+        "arab": "إِنَّ الَّذِينَ فَتَنُوا الْمُؤْمِنِينَ وَالْمُؤْمِنَاتِ ثُمَّ لَمْ يَتُوبُوا فَلَهُمْ عَذَابُ جَهَنَّمَ وَلَهُمْ عَذَابُ الْحَرِيقِ",
+        "latin": "Innal lazeena fatanul mu'mineena wal mu'minaati summa lam yatooboo falahum 'azaabu Jahannama wa lahum 'azaabul hareeq",
+        "terjemah": "Sungguh, orang-orang yang mendatangkan cobaan (bencana, membunuh, menyiksa) kepada orang-orang mukmin laki-laki dan perempuan lalu mereka tidak bertobat, maka mereka akan mendapat azab Jahanam dan mereka akan mendapat azab (neraka) yang membakar.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 11,
+        "arab": "إِنَّ الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ لَهُمْ جَنَّاتٌ تَجْرِي مِن تَحْتِهَا الْأَنْهَارُ ۚ ذَٰلِكَ الْفَوْزُ الْكَبِيرُ",
+        "latin": "Innal lazeena aamanoo wa 'amilus saalihaati lahum Jannaatun tajree min tahtihal anhaar; zaalikal fawzul kabeer",
+        "terjemah": "Sungguh, orang-orang yang beriman dan mengerjakan kebajikan, mereka akan mendapat surga yang mengalir di bawahnya sungai-sungai, itulah kemenangan yang agung.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 12,
+        "arab": "إِنَّ بَطْشَ رَبِّكَ لَشَدِيدٌ",
+        "latin": "Inna batsha Rabbika lashadeed",
+        "terjemah": "Sungguh, azab Tuhanmu sangat keras.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 13,
+        "arab": "إِنَّهُ هُوَ يُبْدِئُ وَيُعِيدُ",
+        "latin": "Innahoo Huwa yubdi'u wa yu'eed",
+        "terjemah": "Sungguh, Dialah yang memulai pen-ciptaan (makhluk) dan yang menghidupkannya (kembali).",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 14,
+        "arab": "وَهُوَ الْغَفُورُ الْوَدُودُ",
+        "latin": "Wa Huwal Ghafoorul Wadood",
+        "terjemah": "Dan Dialah Yang Maha Pengampun, Maha Pengasih,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 15,
+        "arab": "ذُو الْعَرْشِ الْمَجِيدُ",
+        "latin": "Zul 'Arshil Majeed",
+        "terjemah": "yang memiliki ‘Arsy, lagi Mahamulia,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 16,
+        "arab": "فَعَّالٌ لِّمَا يُرِيدُ",
+        "latin": "Fa' 'aalul limaa yureed",
+        "terjemah": "Mahakuasa berbuat apa yang Dia kehendaki.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 17,
+        "arab": "هَلْ أَتَاكَ حَدِيثُ الْجُنُودِ",
+        "latin": "Hal ataaka hadeesul junood",
+        "terjemah": "Sudahkah sampai kepadamu berita tentang bala tentara (penentang),",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 18,
+        "arab": "فِرْعَوْنَ وَثَمُودَ",
+        "latin": "Fir'awna wa Samood",
+        "terjemah": "(yaitu) Fir‘aun dan Samud?",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 19,
+        "arab": "بَلِ الَّذِينَ كَفَرُوا فِي تَكْذِيبٍ",
+        "latin": "Balil lazeena kafaroo fee takzeeb",
+        "terjemah": "Memang orang-orang kafir (selalu) mendustakan,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 20,
+        "arab": "وَاللَّهُ مِن وَرَائِهِم مُّحِيطٌ",
+        "latin": "Wallaahu minw waraaa'ihim muheet",
+        "terjemah": "padahal Allah mengepung dari belakang mereka (sehingga tidak dapat lolos).",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 21,
+        "arab": "بَلْ هُوَ قُرْآنٌ مَّجِيدٌ",
+        "latin": "Bal huwa Quraanum Majeed",
+        "terjemah": "Bahkan (yang didustakan itu) ialah Al-Qur'an yang mulia,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 22,
+        "arab": "فِي لَوْحٍ مَّحْفُوظٍ",
+        "latin": "Fee Lawhim Mahfooz",
+        "terjemah": "yang (tersimpan) dalam (tempat) yang terjaga (Lauh Mahfuzh).",
+        "juz": 30
+      }
+    ]
+  }
+]

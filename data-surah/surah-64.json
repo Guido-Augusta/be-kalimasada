@@ -1,0 +1,139 @@
+[
+  {
+    "nomor": 64,
+    "nama": "التغابن",
+    "namaLatin": "At-Tagabun",
+    "totalAyat": 18,
+    "tempatTurun": "Madaniyyah",
+    "arti": "Pengungkapan Kesalahan",
+    "deskripsi": "Surat ini terdiri atas 18 ayat, termasuk golongan surat-surat Madaniyyah dan diturunkan sesudah surat At Tahrim. Nama At Taghaabun diambil dari kata At Taghaabun yang terdapat pada ayat ke 9 yang artinya hari dinampakkan kesalahan-kesalahan.",
+    "ayat": [
+      {
+        "nomorAyat": 1,
+        "arab": "يُسَبِّحُ لِلَّهِ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ ۖ لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ ۖ وَهُوَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ",
+        "latin": "Yusabbihu lillaahi maa fis samaawaati wa maa fil ardi lahul mulku wa lahul hamd, wa Huwa 'alaa kulli shai 'in Qadeer",
+        "terjemah": "Apa yang ada di langit dan apa yang ada di bumi senantiasa bertasbih kepada Allah; milik-Nya semua kerajaan dan bagi-Nya (pula) segala puji; dan Dia Mahakuasa atas segala sesuatu.",
+        "juz": 28
+      },
+      {
+        "nomorAyat": 2,
+        "arab": "هُوَ الَّذِي خَلَقَكُمْ فَمِنكُمْ كَافِرٌ وَمِنكُم مُّؤْمِنٌ ۚ وَاللَّهُ بِمَا تَعْمَلُونَ بَصِيرٌ",
+        "latin": "Huwal lazee khalaqakum faminkum kaafirunw wa min kum mu'min ; wallaahu bimaa ta'maloona Baseer",
+        "terjemah": "Dialah yang menciptakan kamu, lalu di antara kamu ada yang kafir dan di antara kamu (juga) ada yang mukmin. Dan Allah Maha Melihat apa yang kamu kerjakan.",
+        "juz": 28
+      },
+      {
+        "nomorAyat": 3,
+        "arab": "خَلَقَ السَّمَاوَاتِ وَالْأَرْضَ بِالْحَقِّ وَصَوَّرَكُمْ فَأَحْسَنَ صُوَرَكُمْ ۖ وَإِلَيْهِ الْمَصِيرُ",
+        "latin": "Khalaqas samaawaati wal arda bilhaqqi wa sawwarakum fa ahsana suwarakum wa ilaihil maseer",
+        "terjemah": "Dia menciptakan langit dan bumi dengan (tujuan) yang benar, Dia membentuk rupamu lalu memperbagus rupamu, dan kepada-Nya tempat kembali.",
+        "juz": 28
+      },
+      {
+        "nomorAyat": 4,
+        "arab": "يَعْلَمُ مَا فِي السَّمَاوَاتِ وَالْأَرْضِ وَيَعْلَمُ مَا تُسِرُّونَ وَمَا تُعْلِنُونَ ۚ وَاللَّهُ عَلِيمٌ بِذَاتِ الصُّدُورِ",
+        "latin": "Ya'lamu maa fis samaawaati wal ardi wa ya'lamu maa tusirroona wa maa tu'linoon; wallaahu 'Aleemum bizaatis sudoor",
+        "terjemah": "Dia mengetahui apa yang di langit dan di bumi, dan mengetahui apa yang kamu rahasiakan dan apa yang kamu nyatakan. Dan Allah Maha Mengetahui segala isi hati.",
+        "juz": 28
+      },
+      {
+        "nomorAyat": 5,
+        "arab": "أَلَمْ يَأْتِكُمْ نَبَأُ الَّذِينَ كَفَرُوا مِن قَبْلُ فَذَاقُوا وَبَالَ أَمْرِهِمْ وَلَهُمْ عَذَابٌ أَلِيمٌ",
+        "latin": "Alam yaatikum naba'ul lazeena kafaroo min qablu fazaaqoo wabaala amrihim wa lahum 'azaabun aleem",
+        "terjemah": "Apakah belum sampai kepadamu (orang-orang kafir) berita orang-orang kafir dahulu? Maka mereka telah merasakan akibat buruk dari perbuatannya dan mereka memperoleh azab yang pedih.",
+        "juz": 28
+      },
+      {
+        "nomorAyat": 6,
+        "arab": "ذَٰلِكَ بِأَنَّهُ كَانَت تَّأْتِيهِمْ رُسُلُهُم بِالْبَيِّنَاتِ فَقَالُوا أَبَشَرٌ يَهْدُونَنَا فَكَفَرُوا وَتَوَلَّوا ۚ وَّاسْتَغْنَى اللَّهُ ۚ وَاللَّهُ غَنِيٌّ حَمِيدٌ",
+        "latin": "Zaalika bi annahoo kaanat taateehim Rusuluhum bilbaiyinaati faqaaloo a basharuny yahdoonanaa fakafaroo wa tawallaw; wastaghnal laah; wallaahu ghaniyyun hameed",
+        "terjemah": "Yang demikian itu karena sesungguhnya ketika rasul-rasul datang kepada mereka (membawa) keterangan-ke-terangan lalu mereka berkata, “Apakah  (pantas) manusia yang memberi petunjuk kepada kami?” Lalu mereka ingkar dan berpaling; padahal Allah tidak memerlukan (mereka). Dan Allah Mahakaya, Maha Terpuji.",
+        "juz": 28
+      },
+      {
+        "nomorAyat": 7,
+        "arab": "زَعَمَ الَّذِينَ كَفَرُوا أَن لَّن يُبْعَثُوا ۚ قُلْ بَلَىٰ وَرَبِّي لَتُبْعَثُنَّ ثُمَّ لَتُنَبَّؤُنَّ بِمَا عَمِلْتُمْ ۚ وَذَٰلِكَ عَلَى اللَّهِ يَسِيرٌ",
+        "latin": "Za'amal lazeena kafarooo al-lany yub'asoo; qul balaa wa rabbee latub'asunna summa latunabba'unna bimaa 'amiltum; wa zaalika 'alal laahi yaseer",
+        "terjemah": "Orang-orang yang kafir mengira, bahwa mereka tidak akan dibangkitkan. Katakanlah (Muhammad), “Tidak demikian, demi Tuhanku, kamu pasti dibangkitkan, kemudian diberitakan semua yang telah kamu kerjakan.” Dan yang demikian itu mudah bagi Allah.",
+        "juz": 28
+      },
+      {
+        "nomorAyat": 8,
+        "arab": "فَآمِنُوا بِاللَّهِ وَرَسُولِهِ وَالنُّورِ الَّذِي أَنزَلْنَا ۚ وَاللَّهُ بِمَا تَعْمَلُونَ خَبِيرٌ",
+        "latin": "Fa-aaminoo billaahi wa rasoolihee wannooril lazeee anzalnaa; wallaahu bima ta'maloona khabeer",
+        "terjemah": "Maka berimanlah kamu kepada Allah dan Rasul-Nya dan kepada cahaya (Al-Qur'an) yang telah Kami turunkan. Dan Allah Mahateliti terhadap apa yang kamu kerjakan.",
+        "juz": 28
+      },
+      {
+        "nomorAyat": 9,
+        "arab": "يَوْمَ يَجْمَعُكُمْ لِيَوْمِ الْجَمْعِ ۖ ذَٰلِكَ يَوْمُ التَّغَابُنِ ۗ وَمَن يُؤْمِن بِاللَّهِ وَيَعْمَلْ صَالِحًا يُكَفِّرْ عَنْهُ سَيِّئَاتِهِ وَيُدْخِلْهُ جَنَّاتٍ تَجْرِي مِن تَحْتِهَا الْأَنْهَارُ خَالِدِينَ فِيهَا أَبَدًا ۚ ذَٰلِكَ الْفَوْزُ الْعَظِيمُ",
+        "latin": "Ywma yajma'ukum li yawmil jam'i zaalika yawmut taghaabun; wa many-yumim billaahi wa ya'mal saalihany yukaffir 'anhu sayyi aatihee wa yudkhilhu jannaatin tajree min tahtihal anhaaru khaalideena feehaaa abadaa; zaalikal fawzul 'azeem",
+        "terjemah": "(Ingatlah) pada hari (ketika) Allah mengumpulkan kamu pada hari berhimpun, itulah hari pengungkapan kesalahan-kesalahan. Dan barangsiapa beriman kepada Allah dan mengerjakan kebajikan niscaya Allah akan menghapus kesalahan-kesalahannya dan memasukkannya ke dalam surga yang mengalir di bawahnya sungai-sungai, mereka kekal di dalamnya selama-lamanya. Itulah kemenangan yang agung.",
+        "juz": 28
+      },
+      {
+        "nomorAyat": 10,
+        "arab": "وَالَّذِينَ كَفَرُوا وَكَذَّبُوا بِآيَاتِنَا أُولَٰئِكَ أَصْحَابُ النَّارِ خَالِدِينَ فِيهَا ۖ وَبِئْسَ الْمَصِيرُ",
+        "latin": "Wallazeena kafaroo wa kazzaboo bi aayaaatinaaa ulaaa'ika ashaabun naari khaalideena feehaa bi'sal maseer",
+        "terjemah": "Dan orang-orang yang kafir dan mendustakan ayat-ayat Kami, mereka itulah penghuni neraka, mereka kekal di dalamnya. Dan itulah seburuk-buruk tempat kembali.",
+        "juz": 28
+      },
+      {
+        "nomorAyat": 11,
+        "arab": "مَا أَصَابَ مِن مُّصِيبَةٍ إِلَّا بِإِذْنِ اللَّهِ ۗ وَمَن يُؤْمِن بِاللَّهِ يَهْدِ قَلْبَهُ ۚ وَاللَّهُ بِكُلِّ شَيْءٍ عَلِيمٌ",
+        "latin": "Maaa asaaba mim musee batin illaa bi-iznil laah; wa many yu'mim billaahi yahdi qalbah; wallaahu bikulli shai;in Aleem",
+        "terjemah": "Tidak ada sesuatu musibah yang menimpa (seseorang), kecuali dengan izin Allah; dan barangsiapa beriman kepada Allah, niscaya Allah akan memberi petunjuk kepada hatinya. Dan Allah Maha Mengetahui segala sesuatu.",
+        "juz": 28
+      },
+      {
+        "nomorAyat": 12,
+        "arab": "وَأَطِيعُوا اللَّهَ وَأَطِيعُوا الرَّسُولَ ۚ فَإِن تَوَلَّيْتُمْ فَإِنَّمَا عَلَىٰ رَسُولِنَا الْبَلَاغُ الْمُبِينُ",
+        "latin": "Wa atee'ul laaha wa atee'ur Rasool; fa in tawallaitum fa innamaa 'alaa Rasoolinal balaaghul mubeen",
+        "terjemah": "Dan taatlah kepada Allah dan taatlah kepada Rasul. Jika kamu berpaling maka sesungguhnya kewajiban Rasul Kami hanyalah menyampaikan (amanah Allah) dengan terang.",
+        "juz": 28
+      },
+      {
+        "nomorAyat": 13,
+        "arab": "اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ ۚ وَعَلَى اللَّهِ فَلْيَتَوَكَّلِ الْمُؤْمِنُونَ",
+        "latin": "Allaahu laaa ilaaha illaa Hoo; wa 'alal laahi falyata wakkalil mu'minoon",
+        "terjemah": "(Dialah) Allah, tidak ada tuhan selain Dia. Dan hendaklah orang-orang mukmin bertawakal kepada Allah.",
+        "juz": 28
+      },
+      {
+        "nomorAyat": 14,
+        "arab": "يَا أَيُّهَا الَّذِينَ آمَنُوا إِنَّ مِنْ أَزْوَاجِكُمْ وَأَوْلَادِكُمْ عَدُوًّا لَّكُمْ فَاحْذَرُوهُمْ ۚ وَإِن تَعْفُوا وَتَصْفَحُوا وَتَغْفِرُوا فَإِنَّ اللَّهَ غَفُورٌ رَّحِيمٌ",
+        "latin": "Yaaa ayyuhal lazeena aamanooo inna min azwaaji kum wa awlaadikum 'aduwwal lakum fahzaroohum; wa in ta'foo wa tasfahoo wa taghfiroo fa innal laaha ghafoorur Raheem",
+        "terjemah": "Wahai orang-orang yang beriman! Sesungguhnya di antara istri-istrimu dan anak-anakmu ada yang menjadi musuh bagimu, maka berhati-hatilah kamu terhadap mereka; dan jika kamu maafkan dan kamu santuni serta ampuni (mereka), maka sungguh, Allah Maha Pengampun, Maha Penyayang.",
+        "juz": 28
+      },
+      {
+        "nomorAyat": 15,
+        "arab": "إِنَّمَا أَمْوَالُكُمْ وَأَوْلَادُكُمْ فِتْنَةٌ ۚ وَاللَّهُ عِندَهُ أَجْرٌ عَظِيمٌ",
+        "latin": "Innamaa amwaalukum wa awlaadukum fitnah; wallaahu 'indahooo ajrun 'azeem",
+        "terjemah": "Sesungguhnya hartamu dan anak-anakmu hanyalah cobaan (bagimu), dan di sisi Allah pahala yang besar.",
+        "juz": 28
+      },
+      {
+        "nomorAyat": 16,
+        "arab": "فَاتَّقُوا اللَّهَ مَا اسْتَطَعْتُمْ وَاسْمَعُوا وَأَطِيعُوا وَأَنفِقُوا خَيْرًا لِّأَنفُسِكُمْ ۗ وَمَن يُوقَ شُحَّ نَفْسِهِ فَأُولَٰئِكَ هُمُ الْمُفْلِحُونَ",
+        "latin": "Fattaqul laaha mastat'tum wasma'oo wa atee'oo waanfiqoo khairal li anfusikum; wa many-yooqa shuha nafsihee fa-ulaaa'ika humul muflihoon",
+        "terjemah": "Maka bertakwalah kamu kepada Allah menurut kesanggupanmu dan dengarlah serta taatlah; dan infakkanlah harta yang baik untuk dirimu. Dan barang-siapa dijaga dirinya dari kekikiran, mereka itulah orang-orang yang beruntung.",
+        "juz": 28
+      },
+      {
+        "nomorAyat": 17,
+        "arab": "إِن تُقْرِضُوا اللَّهَ قَرْضًا حَسَنًا يُضَاعِفْهُ لَكُمْ وَيَغْفِرْ لَكُمْ ۚ وَاللَّهُ شَكُورٌ حَلِيمٌ",
+        "latin": "In tuqridul laaha qardan hasanany yudd'ifhu lakum wa yaghfir lakum; wallaahu Shakoorun Haleem",
+        "terjemah": "Jika kamu meminjamkan kepada Allah dengan pinjaman yang baik, niscaya Dia melipatgandakan (balasan) untukmu dan mengampuni kamu. Dan Allah Maha Mensyukuri, Maha Penyantun.",
+        "juz": 28
+      },
+      {
+        "nomorAyat": 18,
+        "arab": "عَالِمُ الْغَيْبِ وَالشَّهَادَةِ الْعَزِيزُ الْحَكِيمُ",
+        "latin": "'Aalimul-Ghaibi wash-shahaadatil 'Azeezul Hakeem",
+        "terjemah": "Yang Mengetahui yang gaib dan yang nyata. Yang Mahaperkasa, Mahabijaksana.",
+        "juz": 28
+      }
+    ]
+  }
+]

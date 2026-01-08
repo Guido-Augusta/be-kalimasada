@@ -1,0 +1,14 @@
+### GET Chart 1 Week
+GET http://localhost:5000/api/chart?range=1w&santriId=3
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsInJvbGUiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwiaXNNb2JpbGUiOmZhbHNlLCJpYXQiOjE3NTUwNTgwOTMsImV4cCI6MTc1NTEwMTI5M30.JAr2YmdoHGd6YJJkWgOkcGWELHI84O5o38UNV2w2CHw
+x-platform: web
+
+### GET Chart 1 Month
+GET http://localhost:5000/api/chart?range=1m&santriId=3
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTYsInJvbGUiOiJ1c3RhZHoiLCJlbWFpbCI6InVzdGFkejIyQGdtYWlsLmNvbSIsImlzTW9iaWxlIjp0cnVlLCJpYXQiOjE3NTQ1Mzg0Njd9.h5_VTOlSFATbhXch0DNxOuEXi7m2yEsE4dbTY9Q880Y
+x-platform: mobile
+
+### GET Chart 3 Month
+GET http://localhost:5000/api/chart?range=3m&santriId=3
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsInJvbGUiOiJzYW50cmkiLCJlbWFpbCI6InNhbnRyaTJAZ21haWwuY29tIiwiaXNNb2JpbGUiOnRydWUsImlhdCI6MTc1NDYzNjQyMn0.v3BYsL6Xi-AF5-OYjG3ZRZNNZnbM9zKrBOlc8Jg2MKs
+x-platform: mobile

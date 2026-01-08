@@ -1,0 +1,34 @@
+[
+  {
+    "nomor": 110,
+    "nama": "النصر",
+    "namaLatin": "An-Nasr",
+    "totalAyat": 3,
+    "tempatTurun": "Madaniyyah",
+    "arti": "Pertolongan",
+    "deskripsi": "Surat An Nashr terdiri atas 3 ayat, termasuk golongan surat-surat  Madaniyyah yang diturunkan di Mekah sesudah surat At Taubah.  Dinamai An Nashr (pertolongan) diambil dari perkataan Nashr yang  terdapat pada ayat pertama surat ini.",
+    "ayat": [
+      {
+        "nomorAyat": 1,
+        "arab": "إِذَا جَاءَ نَصْرُ اللَّهِ وَالْفَتْحُ",
+        "latin": "Iza jaa-a nas rullahi walfath",
+        "terjemah": "Apabila telah datang pertolongan Allah dan kemenangan,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 2,
+        "arab": "وَرَأَيْتَ النَّاسَ يَدْخُلُونَ فِي دِينِ اللَّهِ أَفْوَاجًا",
+        "latin": "Wa ra-aitan naasa yadkhuloona fee deenil laahi afwajah",
+        "terjemah": "dan engkau melihat manusia berbondong-bondong masuk agama Allah,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 3,
+        "arab": "فَسَبِّحْ بِحَمْدِ رَبِّكَ وَاسْتَغْفِرْهُ ۚ إِنَّهُ كَانَ تَوَّابًا",
+        "latin": "Fa sab bih bihamdi rabbika was taghfir, innahu kaana tawwaaba",
+        "terjemah": "maka bertasbihlah dalam dengan Tuhanmu dan mohonlah ampunan kepada-Nya. Sungguh, Dia Maha Penerima tobat.",
+        "juz": 30
+      }
+    ]
+  }
+]

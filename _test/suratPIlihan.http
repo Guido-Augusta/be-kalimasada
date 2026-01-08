@@ -1,0 +1,29 @@
+### GET all surat pilihan
+GET http://localhost:5000/api/surat-pilihan
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsInJvbGUiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwiaXNNb2JpbGUiOmZhbHNlLCJpYXQiOjE3NTQ3OTc5MDYsImV4cCI6MTc1NDg0MTEwNn0.a5WLFcDLeH4imxKRrHlYH5NsYUC86F8iFHuVZG-fDvI
+x-platform: web
+
+### POST surat pilihan
+POST http://localhost:5000/api/surat-pilihan
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsInJvbGUiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwiaXNNb2JpbGUiOmZhbHNlLCJpYXQiOjE3NTQ3OTc5MDYsImV4cCI6MTc1NDg0MTEwNn0.a5WLFcDLeH4imxKRrHlYH5NsYUC86F8iFHuVZG-fDvI
+x-platform: web
+Content-Type: application/json
+
+{
+  "nameSurah": "Al-Kahfi"
+}
+
+### DELETE surat pilihan
+DELETE http://localhost:5000/api/surat-pilihan/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsInJvbGUiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwiaXNNb2JpbGUiOmZhbHNlLCJpYXQiOjE3NTQ3OTc5MDYsImV4cCI6MTc1NDg0MTEwNn0.a5WLFcDLeH4imxKRrHlYH5NsYUC86F8iFHuVZG-fDvI
+x-platform: web
+
+### Update surat pilihan
+PUT http://localhost:5000/api/surat-pilihan/2
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsInJvbGUiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwiaXNNb2JpbGUiOmZhbHNlLCJpYXQiOjE3NTQ3OTc5MDYsImV4cCI6MTc1NDg0MTEwNn0.a5WLFcDLeH4imxKRrHlYH5NsYUC86F8iFHuVZG-fDvI
+x-platform: web
+Content-Type: application/json
+
+{
+  "nameSurah": "Al-Ikhlas"
+}

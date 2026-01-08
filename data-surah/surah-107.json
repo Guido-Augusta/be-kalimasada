@@ -1,0 +1,62 @@
+[
+  {
+    "nomor": 107,
+    "nama": "الماعون",
+    "namaLatin": "Al-Ma'un",
+    "totalAyat": 7,
+    "tempatTurun": "Makkiyyah",
+    "arti": "Barang Yang Berguna",
+    "deskripsi": "Surat ini terdiri atas 7 ayat, termasuk golongan surat-surat Makkiyyah, diturunkan sesudah surat At Taakatsur. Nama Al Maa'uun diambil dari kata Al Maa'uun yang terdapat pada ayat 7, artinya barang-barang yang berguna.",
+    "ayat": [
+      {
+        "nomorAyat": 1,
+        "arab": "أَرَأَيْتَ الَّذِي يُكَذِّبُ بِالدِّينِ",
+        "latin": "Ara-aital lazee yu kazzibu bid deen",
+        "terjemah": "Tahukah kamu (orang) yang mendustakan agama?",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 2,
+        "arab": "فَذَٰلِكَ الَّذِي يَدُعُّ الْيَتِيمَ",
+        "latin": "Fa zaalikal lazi yadu'ul-yateem",
+        "terjemah": "Maka itulah orang yang menghardik anak yatim,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 3,
+        "arab": "وَلَا يَحُضُّ عَلَىٰ طَعَامِ الْمِسْكِينِ",
+        "latin": "Wa la ya huddu 'alaa ta'amil miskeen",
+        "terjemah": "dan tidak mendorong memberi makan orang miskin.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 4,
+        "arab": "فَوَيْلٌ لِّلْمُصَلِّينَ",
+        "latin": "Fa wai lul-lil mu salleen",
+        "terjemah": "Maka celakalah orang yang salat,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 5,
+        "arab": "الَّذِينَ هُمْ عَن صَلَاتِهِمْ سَاهُونَ",
+        "latin": "Al lazeena hum 'an salaatihim sahoon",
+        "terjemah": "(yaitu) orang-orang yang lalai terhadap salatnya,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 6,
+        "arab": "الَّذِينَ هُمْ يُرَاءُونَ",
+        "latin": "Al lazeena hum yuraa-oon",
+        "terjemah": "yang berbuat ria,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 7,
+        "arab": "وَيَمْنَعُونَ الْمَاعُونَ",
+        "latin": "Wa yamna'oonal ma'oon",
+        "terjemah": "dan enggan (memberikan) bantuan.",
+        "juz": 30
+      }
+    ]
+  }
+]

@@ -1,0 +1,195 @@
+[
+  {
+    "nomor": 88,
+    "nama": "الغاشية",
+    "namaLatin": "Al-Gasyiyah",
+    "totalAyat": 26,
+    "tempatTurun": "Makkiyyah",
+    "arti": "Hari Kiamat",
+    "deskripsi": "Surat ini terdiri atas 26 ayat, termasuk surat-surat Makkiyah, diturunkan sesudah surat Adz Dzaariat. Nama Ghaasyiyah diambil dari kata Al Ghaasyiyah yang terdapat pada ayat pertama surat ini yang  artinya peristiwa yang dahsyat, tapi yang dimaksud adalah hari kiamat. Surat ini adalah surat yang kerap kali dibaca Nabi pada rakaat kedua  pada shalat hari-hari Raya dan shalat Jum'at",
+    "ayat": [
+      {
+        "nomorAyat": 1,
+        "arab": "هَلْ أَتَاكَ حَدِيثُ الْغَاشِيَةِ",
+        "latin": "Hal ataaka hadeesul ghaashiyah",
+        "terjemah": "Sudahkah sampai kepadamu berita tentang (hari Kiamat)?",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 2,
+        "arab": "وُجُوهٌ يَوْمَئِذٍ خَاشِعَةٌ",
+        "latin": "Wujoohuny yawma 'izin khaashi'ah",
+        "terjemah": "Pada hari itu banyak wajah yang tertunduk terhina,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 3,
+        "arab": "عَامِلَةٌ نَّاصِبَةٌ",
+        "latin": "'Aamilatun naasibah",
+        "terjemah": "(karena) bekerja keras lagi kepayahan,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 4,
+        "arab": "تَصْلَىٰ نَارًا حَامِيَةً",
+        "latin": "Taslaa naaran haamiyah",
+        "terjemah": "mereka memasuki api yang sangat panas (neraka),",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 5,
+        "arab": "تُسْقَىٰ مِنْ عَيْنٍ آنِيَةٍ",
+        "latin": "Tusqaa min 'aynin aaniyah",
+        "terjemah": "diberi minum dari sumber mata air yang sangat panas.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 6,
+        "arab": "لَّيْسَ لَهُمْ طَعَامٌ إِلَّا مِن ضَرِيعٍ",
+        "latin": "Laisa lahum ta'aamun illaa min daree'",
+        "terjemah": "Tidak ada makanan bagi mereka selain dari pohon yang berduri,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 7,
+        "arab": "لَّا يُسْمِنُ وَلَا يُغْنِي مِن جُوعٍ",
+        "latin": "Laa yusminu wa laa yughnee min joo'",
+        "terjemah": "yang tidak menggemukkan dan tidak menghilangkan lapar.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 8,
+        "arab": "وُجُوهٌ يَوْمَئِذٍ نَّاعِمَةٌ",
+        "latin": "Wujoohuny yawma 'izin naa'imah",
+        "terjemah": "Pada hari itu banyak (pula) wajah yang berseri-seri,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 9,
+        "arab": "لِّسَعْيِهَا رَاضِيَةٌ",
+        "latin": "Lisa'yihaa raadiyah",
+        "terjemah": "merasa senang karena usahanya (sendiri),",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 10,
+        "arab": "فِي جَنَّةٍ عَالِيَةٍ",
+        "latin": "Fee jannatin 'aaliyah",
+        "terjemah": "(mereka) dalam surga yang tinggi,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 11,
+        "arab": "لَّا تَسْمَعُ فِيهَا لَاغِيَةً",
+        "latin": "Laa tasma'u feehaa laaghiyah",
+        "terjemah": "di sana (kamu) tidak mendengar perkataan yang tidak berguna.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 12,
+        "arab": "فِيهَا عَيْنٌ جَارِيَةٌ",
+        "latin": "Feehaa 'aynun jaariyah",
+        "terjemah": "Di sana ada mata air yang mengalir.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 13,
+        "arab": "فِيهَا سُرُرٌ مَّرْفُوعَةٌ",
+        "latin": "Feehaa sururum marfoo'ah",
+        "terjemah": "Di sana ada dipan-dipan yang ditinggikan,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 14,
+        "arab": "وَأَكْوَابٌ مَّوْضُوعَةٌ",
+        "latin": "Wa akwaabum mawdoo 'ah",
+        "terjemah": "dan gelas-gelas yang tersedia (di dekatnya),",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 15,
+        "arab": "وَنَمَارِقُ مَصْفُوفَةٌ",
+        "latin": "Wa namaariqu masfoofah",
+        "terjemah": "dan bantal-bantal sandaran yang tersusun,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 16,
+        "arab": "وَزَرَابِيُّ مَبْثُوثَةٌ",
+        "latin": "Wa zaraabiyyu mabsoosah",
+        "terjemah": "dan permadani-permadani yang terhampar.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 17,
+        "arab": "أَفَلَا يَنظُرُونَ إِلَى الْإِبِلِ كَيْفَ خُلِقَتْ",
+        "latin": "Afalaa yanzuroona ilalibili kaifa khuliqat",
+        "terjemah": "Maka tidakkah mereka memperhatikan unta, bagaimana diciptakan?",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 18,
+        "arab": "وَإِلَى السَّمَاءِ كَيْفَ رُفِعَتْ",
+        "latin": "Wa ilas samaaa'i kaifa rufi'at",
+        "terjemah": "dan langit, bagaimana ditinggikan?",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 19,
+        "arab": "وَإِلَى الْجِبَالِ كَيْفَ نُصِبَتْ",
+        "latin": "Wa ilal jibaali kaifa nusibat",
+        "terjemah": "Dan gunung-gunung bagaimana ditegakkan?",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 20,
+        "arab": "وَإِلَى الْأَرْضِ كَيْفَ سُطِحَتْ",
+        "latin": "Wa ilal ardi kaifa sutihat",
+        "terjemah": "Dan bumi bagaimana dihamparkan?",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 21,
+        "arab": "فَذَكِّرْ إِنَّمَا أَنتَ مُذَكِّرٌ",
+        "latin": "Fazakkir innama anta Muzakkir",
+        "terjemah": "Maka berilah peringatan, karena sesungguhnya engkau (Muhammad) hanyalah pemberi peringatan.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 22,
+        "arab": "لَّسْتَ عَلَيْهِم بِمُصَيْطِرٍ",
+        "latin": "Lasta 'alaihim bimusaitir",
+        "terjemah": "Engkau bukanlah orang yang berkuasa atas mereka,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 23,
+        "arab": "إِلَّا مَن تَوَلَّىٰ وَكَفَرَ",
+        "latin": "Illaa man tawallaa wa kafar",
+        "terjemah": "kecuali (jika ada) orang yang berpaling dan kafir,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 24,
+        "arab": "فَيُعَذِّبُهُ اللَّهُ الْعَذَابَ الْأَكْبَرَ",
+        "latin": "Fa yu'azzibuhul laahul 'azaabal akbar",
+        "terjemah": "maka Allah akan mengazabnya dengan azab yang besar.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 25,
+        "arab": "إِنَّ إِلَيْنَا إِيَابَهُمْ",
+        "latin": "Innaa ilainaaa iyaabahum",
+        "terjemah": "Sungguh, kepada Kamilah mereka kembali,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 26,
+        "arab": "ثُمَّ إِنَّ عَلَيْنَا حِسَابَهُم",
+        "latin": "Summa inna 'alainaa hisaabahum",
+        "terjemah": "kemudian sesungguhnya (kewajiban) Kamilah membuat perhitungan atas mereka.",
+        "juz": 30
+      }
+    ]
+  }
+]

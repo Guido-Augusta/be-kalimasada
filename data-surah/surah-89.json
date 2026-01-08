@@ -1,0 +1,223 @@
+[
+  {
+    "nomor": 89,
+    "nama": "الفجر",
+    "namaLatin": "Al-Fajr",
+    "totalAyat": 30,
+    "tempatTurun": "Makkiyyah",
+    "arti": "Fajar",
+    "deskripsi": "Surat ini terdiri atas 30 ayat, termasuk golongan surat-surat Makkiyyah, diturunkan sesudah surat Al Lail. Nama Al Fajr diambil dari kata Al Fajr yang terdapat pada ayat pertama surat ini yang artinya fajar.",
+    "ayat": [
+      {
+        "nomorAyat": 1,
+        "arab": "وَالْفَجْرِ",
+        "latin": "Wal-Fajr",
+        "terjemah": "Demi fajar,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 2,
+        "arab": "وَلَيَالٍ عَشْرٍ",
+        "latin": "Wa layaalin 'ashr",
+        "terjemah": "demi malam yang sepuluh,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 3,
+        "arab": "وَالشَّفْعِ وَالْوَتْرِ",
+        "latin": "Wash shaf'i wal watr",
+        "terjemah": "demi yang genap dan yang ganjil,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 4,
+        "arab": "وَاللَّيْلِ إِذَا يَسْرِ",
+        "latin": "Wallaili izaa yasr",
+        "terjemah": "demi malam apabila berlalu.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 5,
+        "arab": "هَلْ فِي ذَٰلِكَ قَسَمٌ لِّذِي حِجْرٍ",
+        "latin": "Hal fee zaalika qasamul lizee hijr",
+        "terjemah": "Adakah pada yang demikian itu terdapat sumpah (yang dapat diterima) bagi orang-orang yang berakal?",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 6,
+        "arab": "أَلَمْ تَرَ كَيْفَ فَعَلَ رَبُّكَ بِعَادٍ",
+        "latin": "Alam tara kaifa fa'ala rabbuka bi'aad",
+        "terjemah": "Tidakkah engkau (Muhammad) memperhatikan bagaimana Tuhanmu berbuat terhadap (kaum) ‘Ad?",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 7,
+        "arab": "إِرَمَ ذَاتِ الْعِمَادِ",
+        "latin": "Iramaa zaatil 'imaad",
+        "terjemah": "(yaitu) penduduk Iram (ibukota kaum ‘Ad) yang mempunyai bangunan-bangunan yang tinggi,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 8,
+        "arab": "الَّتِي لَمْ يُخْلَقْ مِثْلُهَا فِي الْبِلَادِ",
+        "latin": "Allatee lam yukhlaq misluhaa fil bilaad",
+        "terjemah": "yang belum pernah dibangun (suatu kota) seperti itu di negeri-negeri lain,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 9,
+        "arab": "وَثَمُودَ الَّذِينَ جَابُوا الصَّخْرَ بِالْوَادِ",
+        "latin": "Wa samoodal lazeena jaabus sakhra bil waad",
+        "terjemah": "dan (terhadap) kaum samud yang memotong batu-batu besar di lembah,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 10,
+        "arab": "وَفِرْعَوْنَ ذِي الْأَوْتَادِ",
+        "latin": "Wa fir'awna zil awtaad",
+        "terjemah": "dan (terhadap) Fir‘aun yang mempunyai pasak-pasak (bangunan yang besar),",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 11,
+        "arab": "الَّذِينَ طَغَوْا فِي الْبِلَادِ",
+        "latin": "Allazeena taghaw fil bilaad",
+        "terjemah": "yang berbuat sewenang-wenang dalam negeri,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 12,
+        "arab": "فَأَكْثَرُوا فِيهَا الْفَسَادَ",
+        "latin": "Fa aksaroo feehal fasaad",
+        "terjemah": "lalu mereka banyak berbuat kerusakan dalam negeri itu,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 13,
+        "arab": "فَصَبَّ عَلَيْهِمْ رَبُّكَ سَوْطَ عَذَابٍ",
+        "latin": "Fasabba 'alaihim Rabbuka sawta 'azaab",
+        "terjemah": "karena itu Tuhanmu menimpakan cemeti azab kepada mereka,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 14,
+        "arab": "إِنَّ رَبَّكَ لَبِالْمِرْصَادِ",
+        "latin": "Inna Rabbaka labil mirsaad",
+        "terjemah": "sungguh, Tuhanmu benar-benar mengawasi.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 15,
+        "arab": "فَأَمَّا الْإِنسَانُ إِذَا مَا ابْتَلَاهُ رَبُّهُ فَأَكْرَمَهُ وَنَعَّمَهُ فَيَقُولُ رَبِّي أَكْرَمَنِ",
+        "latin": "Fa ammal insaanu izaa mab talaahu Rabbuhoo fa akramahoo wa na' 'amahoo fa yaqoolu Rabbeee akraman",
+        "terjemah": "Maka adapun manusia, apabila Tuhan mengujinya lalu memuliakannya dan memberinya kesenangan, maka dia berkata, “Tuhanku telah memuliakanku.”",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 16,
+        "arab": "وَأَمَّا إِذَا مَا ابْتَلَاهُ فَقَدَرَ عَلَيْهِ رِزْقَهُ فَيَقُولُ رَبِّي أَهَانَنِ",
+        "latin": "Wa ammaaa izaa mabtalaahu faqadara 'alaihi rizqahoo fa yaqoolu Rabbeee ahaanan",
+        "terjemah": "Namun apabila Tuhan mengujinya lalu membatasi rezekinya, maka dia berkata, “Tuhanku telah menghinaku.”",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 17,
+        "arab": "كَلَّا ۖ بَل لَّا تُكْرِمُونَ الْيَتِيمَ",
+        "latin": "Kalla bal laa tukrimooo nal yateem",
+        "terjemah": "Sekali-kali tidak! Bahkan kamu tidak memuliakan anak yatim,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 18,
+        "arab": "وَلَا تَحَاضُّونَ عَلَىٰ طَعَامِ الْمِسْكِينِ",
+        "latin": "Wa laa tahaaaddoona 'alaata'aamil miskeen",
+        "terjemah": "dan kamu tidak saling mengajak memberi makan orang miskin,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 19,
+        "arab": "وَتَأْكُلُونَ التُّرَاثَ أَكْلًا لَّمًّا",
+        "latin": "Wa taakuloonat turaasa aklal lammaa",
+        "terjemah": "sedangkan kamu memakan harta warisan dengan cara mencampurbaurkan (yang halal dan yang haram),",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 20,
+        "arab": "وَتُحِبُّونَ الْمَالَ حُبًّا جَمًّا",
+        "latin": "Wa tuhibboonal maala hubban jammaa",
+        "terjemah": "dan kamu mencintai harta dengan kecintaan yang berlebihan.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 21,
+        "arab": "كَلَّا إِذَا دُكَّتِ الْأَرْضُ دَكًّا دَكًّا",
+        "latin": "Kallaaa izaaa dukkatil ardu dakkan dakka",
+        "terjemah": "Sekali-kali tidak! Apabila bumi diguncangkan berturut-turut (berbenturan),",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 22,
+        "arab": "وَجَاءَ رَبُّكَ وَالْمَلَكُ صَفًّا صَفًّا",
+        "latin": "Wa jaaa'a Rabbuka wal malaku saffan saffaa",
+        "terjemah": "dan datanglah Tuhanmu; dan malaikat berbaris-baris,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 23,
+        "arab": "وَجِيءَ يَوْمَئِذٍ بِجَهَنَّمَ ۚ يَوْمَئِذٍ يَتَذَكَّرُ الْإِنسَانُ وَأَنَّىٰ لَهُ الذِّكْرَىٰ",
+        "latin": "Wa jeee'a yawma'izim bi jahannnam; Yawma 'iziny yatazakkarul insaanu wa annaa lahuz zikraa",
+        "terjemah": "dan pada hari itu diperlihatkan neraka Jahanam; pada hari itu sadarlah manusia, tetapi tidak berguna lagi baginya kesadaran itu.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 24,
+        "arab": "يَقُولُ يَا لَيْتَنِي قَدَّمْتُ لِحَيَاتِي",
+        "latin": "Yaqoolu yaa laitanee qaddamtu lihayaatee",
+        "terjemah": "Dia berkata, “Alangkah baiknya sekiranya dahulu aku mengerjakan (kebajikan) untuk hidupku ini.”",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 25,
+        "arab": "فَيَوْمَئِذٍ لَّا يُعَذِّبُ عَذَابَهُ أَحَدٌ",
+        "latin": "Fa Yawma izil laa yu'azzibu 'azaabahooo ahad",
+        "terjemah": "Maka pada hari itu tidak ada seorang pun yang mengazab seperti azab-Nya (yang adil),",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 26,
+        "arab": "وَلَا يُوثِقُ وَثَاقَهُ أَحَدٌ",
+        "latin": "Wa laa yoosiqu wasaaqa hooo ahad",
+        "terjemah": "dan tidak ada seorang pun yang mengikat seperti ikatan-Nya.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 27,
+        "arab": "يَا أَيَّتُهَا النَّفْسُ الْمُطْمَئِنَّةُ",
+        "latin": "Yaaa ayyatuhan nafsul mutma 'innah",
+        "terjemah": "Wahai jiwa yang tenang!",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 28,
+        "arab": "ارْجِعِي إِلَىٰ رَبِّكِ رَاضِيَةً مَّرْضِيَّةً",
+        "latin": "Irji'eee ilaa Rabbiki raadiyatam mardiyyah",
+        "terjemah": "Kembalilah kepada Tuhanmu dengan hati yang rida dan diridai-Nya.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 29,
+        "arab": "فَادْخُلِي فِي عِبَادِي",
+        "latin": "Fadkhulee fee 'ibaadee",
+        "terjemah": "Maka masuklah ke dalam golongan hamba-hamba-Ku,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 30,
+        "arab": "وَادْخُلِي جَنَّتِي",
+        "latin": "Wadkhulee jannatee",
+        "terjemah": "dan masuklah ke dalam surga-Ku.",
+        "juz": 30
+      }
+    ]
+  }
+]

@@ -1,0 +1,153 @@
+[
+  {
+    "nomor": 90,
+    "nama": "البلد",
+    "namaLatin": "Al-Balad",
+    "totalAyat": 20,
+    "tempatTurun": "Makkiyyah",
+    "arti": "Negeri",
+    "deskripsi": "Surat Al Balad terdiri atas 20 ayat, termasuk golongan surat-surat Makkiyyah, diturunkan sesudah surat Qaaf. Dinamai Al Balad, diambil dari perkataan Al Balad yang terdapat  pada ayat pertama surat ini. Yang dimaksud dengan kota di sini ialah kota Mekah.",
+    "ayat": [
+      {
+        "nomorAyat": 1,
+        "arab": "لَا أُقْسِمُ بِهَٰذَا الْبَلَدِ",
+        "latin": "Laaa uqsimu bihaazal balad",
+        "terjemah": "Aku bersumpah dengan negeri ini (Mekah),",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 2,
+        "arab": "وَأَنتَ حِلٌّ بِهَٰذَا الْبَلَدِ",
+        "latin": "Wa anta hillum bihaazal balad",
+        "terjemah": "dan engkau (Muhammad), bertempat di negeri (Mekah) ini,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 3,
+        "arab": "وَوَالِدٍ وَمَا وَلَدَ",
+        "latin": "Wa waalidinw wa maa walad",
+        "terjemah": "dan demi (pertalian) bapak dan anaknya.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 4,
+        "arab": "لَقَدْ خَلَقْنَا الْإِنسَانَ فِي كَبَدٍ",
+        "latin": "Laqad khalaqnal insaana fee kabad",
+        "terjemah": "Sungguh, Kami telah menciptakan manusia berada dalam susah payah.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 5,
+        "arab": "أَيَحْسَبُ أَن لَّن يَقْدِرَ عَلَيْهِ أَحَدٌ",
+        "latin": "Ayahsabu al-lai yaqdira 'alaihi ahad",
+        "terjemah": "Apakah dia (manusia) itu mengira bahwa tidak ada sesuatu pun yang berkuasa atasnya?",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 6,
+        "arab": "يَقُولُ أَهْلَكْتُ مَالًا لُّبَدًا",
+        "latin": "Yaqoolu ahlaktu maalal lubadaa",
+        "terjemah": "Dia mengatakan, “Aku telah menghabiskan harta yang banyak.”",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 7,
+        "arab": "أَيَحْسَبُ أَن لَّمْ يَرَهُ أَحَدٌ",
+        "latin": "Ayahsabu al lam yarahooo ahad",
+        "terjemah": "Apakah dia mengira bahwa tidak ada sesuatu pun yang melihatnya?",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 8,
+        "arab": "أَلَمْ نَجْعَل لَّهُ عَيْنَيْنِ",
+        "latin": "Alam naj'al lahoo 'aynayn",
+        "terjemah": "Bukankah Kami telah menjadikan untuknya sepasang mata,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 9,
+        "arab": "وَلِسَانًا وَشَفَتَيْنِ",
+        "latin": "Wa lisaananw wa shafatayn",
+        "terjemah": "dan lidah dan sepasang bibir?",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 10,
+        "arab": "وَهَدَيْنَاهُ النَّجْدَيْنِ",
+        "latin": "Wa hadaynaahun najdayn",
+        "terjemah": "Dan Kami telah menunjukkan kepadanya dua jalan (kebajikan dan kejahatan),",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 11,
+        "arab": "فَلَا اقْتَحَمَ الْعَقَبَةَ",
+        "latin": "Falaq tahamal-'aqabah",
+        "terjemah": "tetapi dia tidak menempuh jalan yang mendaki dan sukar?",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 12,
+        "arab": "وَمَا أَدْرَاكَ مَا الْعَقَبَةُ",
+        "latin": "Wa maaa adraaka mal'aqabah",
+        "terjemah": "Dan tahukah kamu apakah jalan yang mendaki dan sukar itu?",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 13,
+        "arab": "فَكُّ رَقَبَةٍ",
+        "latin": "Fakku raqabah",
+        "terjemah": "(yaitu) melepaskan perbudakan (hamba sahaya),",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 14,
+        "arab": "أَوْ إِطْعَامٌ فِي يَوْمٍ ذِي مَسْغَبَةٍ",
+        "latin": "Aw it'aamun fee yawmin zee masghabah",
+        "terjemah": "atau memberi makan pada hari terjadi kelaparan,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 15,
+        "arab": "يَتِيمًا ذَا مَقْرَبَةٍ",
+        "latin": "Yateeman zaa maqrabah",
+        "terjemah": "(kepada) anak yatim yang ada hubungan kerabat,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 16,
+        "arab": "أَوْ مِسْكِينًا ذَا مَتْرَبَةٍ",
+        "latin": "Aw miskeenan zaa matrabah",
+        "terjemah": "atau orang miskin yang sangat fakir.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 17,
+        "arab": "ثُمَّ كَانَ مِنَ الَّذِينَ آمَنُوا وَتَوَاصَوْا بِالصَّبْرِ وَتَوَاصَوْا بِالْمَرْحَمَةِ",
+        "latin": "Summa kaana minal lazeena aamanoo wa tawaasaw bissabri wa tawaasaw bilmarhamah",
+        "terjemah": "Kemudian dia termasuk orang-orang yang beriman dan saling berpesan untuk bersabar dan saling berpesan untuk berkasih sayang.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 18,
+        "arab": "أُولَٰئِكَ أَصْحَابُ الْمَيْمَنَةِ",
+        "latin": "Ulaaa'ika As-haabul maimanah",
+        "terjemah": "Mereka (orang-orang yang beriman dan saling berpesan itu) adalah golongan kanan.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 19,
+        "arab": "وَالَّذِينَ كَفَرُوا بِآيَاتِنَا هُمْ أَصْحَابُ الْمَشْأَمَةِ",
+        "latin": "Wallazeena kafaroo bi aayaatinaa hum as-haabul Mash'amah",
+        "terjemah": "Dan orang-orang yang kafir kepada ayat-ayat Kami, mereka itu adalah golongan kiri.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 20,
+        "arab": "عَلَيْهِمْ نَارٌ مُّؤْصَدَةٌ",
+        "latin": "Alaihim naarum mu'sadah",
+        "terjemah": "Mereka berada dalam neraka yang ditutup rapat.",
+        "juz": 30
+      }
+    ]
+  }
+]

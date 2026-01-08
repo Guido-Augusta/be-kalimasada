@@ -1,0 +1,90 @@
+[
+  {
+    "nomor": 101,
+    "nama": "القارعة",
+    "namaLatin": "Al-Qari'ah",
+    "totalAyat": 11,
+    "tempatTurun": "Makkiyyah",
+    "arti": "Hari Kiamat",
+    "deskripsi": "Surat ini terdiri atas 11 ayat, termasuk golongan surat-surat Makkiyyah, diturunkan sesudah surat Quraisy. Nama Al Qaari'ah diambil dari kata Al Qaari'ah yang terdapat pada ayat pertama, artinya mengetok dengan keras, kemudian kata ini dipakai untuk nama hari kiamat.",
+    "ayat": [
+      {
+        "nomorAyat": 1,
+        "arab": "الْقَارِعَةُ",
+        "latin": "Al qaari'ah",
+        "terjemah": "Hari Kiamat,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 2,
+        "arab": "مَا الْقَارِعَةُ",
+        "latin": "Mal qaariah",
+        "terjemah": "Apakah hari Kiamat itu?",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 3,
+        "arab": "وَمَا أَدْرَاكَ مَا الْقَارِعَةُ",
+        "latin": "Wa maa adraaka mal qaari'ah",
+        "terjemah": "Dan tahukah kamu apakah hari Kiamat itu?",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 4,
+        "arab": "يَوْمَ يَكُونُ النَّاسُ كَالْفَرَاشِ الْمَبْثُوثِ",
+        "latin": "Yauma ya koonun naasu kal farashil mabthooth",
+        "terjemah": "Pada hari itu manusia seperti laron yang beterbangan,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 5,
+        "arab": "وَتَكُونُ الْجِبَالُ كَالْعِهْنِ الْمَنفُوشِ",
+        "latin": "Wa ta koonul jibalu kal 'ihnil manfoosh",
+        "terjemah": "dan gunung-gunung seperti bulu yang dihambur-hamburkan.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 6,
+        "arab": "فَأَمَّا مَن ثَقُلَتْ مَوَازِينُهُ",
+        "latin": "Fa-amma man thaqulat mawa zeenuh",
+        "terjemah": "Maka adapun orang yang berat timbangan (kebaikan)nya,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 7,
+        "arab": "فَهُوَ فِي عِيشَةٍ رَّاضِيَةٍ",
+        "latin": "Fahuwa fee 'ishatir raadiyah",
+        "terjemah": "maka dia berada dalam kehidupan yang memuaskan (senang).",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 8,
+        "arab": "وَأَمَّا مَنْ خَفَّتْ مَوَازِينُهُ",
+        "latin": "Wa amma man khaffat mawa zeenuh",
+        "terjemah": "Dan adapun orang yang ringan timbangan (kebaikan)nya,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 9,
+        "arab": "فَأُمُّهُ هَاوِيَةٌ",
+        "latin": "Fa-ummuhu haawiyah",
+        "terjemah": "maka tempat kembalinya adalah neraka Hawiyah.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 10,
+        "arab": "وَمَا أَدْرَاكَ مَا هِيَهْ",
+        "latin": "Wa maa adraaka maa hiyah",
+        "terjemah": "Dan tahukah kamu apakah neraka Hawiyah itu?",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 11,
+        "arab": "نَارٌ حَامِيَةٌ",
+        "latin": "Naarun hamiyah",
+        "terjemah": "(Yaitu) api yang sangat panas.",
+        "juz": 30
+      }
+    ]
+  }
+]

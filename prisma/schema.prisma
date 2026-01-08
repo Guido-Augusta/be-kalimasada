@@ -1,0 +1,200 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id          Int          @id @default(autoincrement())
+  email       String       @unique
+  password    String
+  role        Role
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+
+  santri      Santri?
+  ustadz      Ustadz?
+  orangTua    OrangTua?
+  tokenStore  TokenStore[]
+  resetTokens ResetToken[]
+}
+
+model Ustadz {
+  id           Int             @id @default(autoincrement())
+  userId       Int             @unique
+  nama         String
+  nomorHp      String
+  alamat       String
+  jenisKelamin JenisKelamin
+  fotoProfil   String?
+  waliKelasTahap TahapHafalan? // null = ustadz biasa, Level1-3 = wali kelas
+
+  user         User            @relation(fields: [userId], references: [id])
+  riwayatHafalan RiwayatHafalan[]
+
+  @@index([userId])
+}
+
+model OrangTua {
+  id           Int        @id @default(autoincrement())
+  userId       Int?       @unique
+  nama         String
+  nomorHp      String
+  alamat       String
+  jenisKelamin JenisKelamin
+  fotoProfil   String?
+  tipe         TipeOrangTua
+
+  user         User?      @relation(fields: [userId], references: [id])
+  santri       Santri[]   @relation("SantriOrangTua")
+
+  @@index([userId])
+}
+
+model Santri {
+  id             Int              @id @default(autoincrement())
+  userId         Int              @unique
+  nama           String
+  nomorHp        String?
+  alamat         String
+  jenisKelamin   JenisKelamin
+  tanggalLahir   DateTime         @default(now())
+  fotoProfil     String?
+  noInduk        String?          @unique
+  tahapHafalan   TahapHafalan
+  totalPoin      Int              @default(0)
+  peringkat      Int              @default(0)
+  createdAt      DateTime         @default(now())
+  poinUpdatedAt  DateTime         @default(now())
+
+  user           User             @relation(fields: [userId], references: [id])
+  orangTua       OrangTua[]       @relation("SantriOrangTua")
+  riwayatHafalan RiwayatHafalan[]
+
+  @@index([userId])
+}
+
+model Surah {
+  id           Int        @id @default(autoincrement())
+  nomor        Int        @unique
+  nama         String
+  namaLatin    String
+  totalAyat    Int
+  tempatTurun  TempatTurun
+  arti         String
+  deskripsi    String?
+  audio        String?
+
+  ayat         Ayat[]
+
+  @@index([nomor])
+}
+
+model Ayat {
+  id            Int     @id @default(autoincrement())
+  surahId       Int
+  nomorAyat     Int
+  arab          String
+  latin         String
+  terjemah      String
+  juz           Int?
+
+  surah         Surah   @relation(fields: [surahId], references: [id])
+  riwayatHafalan RiwayatHafalan[]
+
+  @@unique([surahId, nomorAyat])
+}
+
+model RiwayatHafalan {
+  id             Int            @id @default(autoincrement())
+  santriId       Int
+  ustadzId       Int?
+  ayatId         Int
+  tanggalHafalan DateTime
+  status         StatusHafalan
+  catatan        String?
+  poinDidapat    Int            @default(0)
+  createdAt      DateTime       @default(now())
+  updatedAt      DateTime       @updatedAt
+
+  santri         Santri         @relation(fields: [santriId], references: [id], onDelete: Cascade)
+  ustadz         Ustadz?        @relation(fields: [ustadzId], references: [id], onDelete: SetNull)
+  ayat           Ayat           @relation(fields: [ayatId], references: [id])
+
+  @@index([santriId])
+  @@index([ustadzId])
+  @@index([ayatId])
+  @@index([tanggalHafalan])
+}
+
+model TokenStore {
+  id          Int     @id @default(autoincrement())
+  userId      Int
+  platform    Platform
+  token       String  @unique
+  createdAt   DateTime @default(now())
+
+  user        User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+}
+
+model ResetToken {
+  id        Int      @id @default(autoincrement())
+  token     String   @unique
+  userId    Int
+  createdAt DateTime @default(now())
+  expiresAt DateTime
+
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+}
+
+enum Role {
+  admin
+  santri
+  ustadz
+  ortu
+}
+
+enum JenisKelamin {
+  L
+  P
+}
+
+enum Platform {
+  web
+  mobile
+}
+
+enum TahapHafalan {
+  Level1
+  Level2
+  Level3
+}
+
+enum StatusHafalan {
+  TambahHafalan
+  Murajaah
+}
+
+enum TempatTurun {
+  Makkiyyah
+  Madaniyyah
+}
+
+enum TipeOrangTua {
+  Ayah
+  Ibu
+  Wali
+}

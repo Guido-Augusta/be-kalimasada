@@ -1,0 +1,139 @@
+[
+  {
+    "nomor": 49,
+    "nama": "الحجرات",
+    "namaLatin": "Al-Hujurat",
+    "totalAyat": 18,
+    "tempatTurun": "Madaniyyah",
+    "arti": "Kamar-Kamar",
+    "deskripsi": "Surat Al Hujuraat terdiri atas 18 ayat, termasuk golongan surat-surat Madaniyyah, diturunkan sesudah surat Al Mujaadalah. Dinamai Al Hujuraat diambil dari perkataan Al Hujuraat yang terdapat pada ayat 4 surat ini. Ayat tersebut mencela para sahabat yang memanggil Nabi Muhammad SAW yang sedang berada di dalam kamar rumahnya bersama isterinya. Memanggil Nabi Muhammad SAW dengan cara dan dalam keadaan yang demikian menunjukkan sifat kurang hormat kepada beliau dan mengganggu ketenteraman beliau.",
+    "ayat": [
+      {
+        "nomorAyat": 1,
+        "arab": "يَا أَيُّهَا الَّذِينَ آمَنُوا لَا تُقَدِّمُوا بَيْنَ يَدَيِ اللَّهِ وَرَسُولِهِ ۖ وَاتَّقُوا اللَّهَ ۚ إِنَّ اللَّهَ سَمِيعٌ عَلِيمٌ",
+        "latin": "Yaa ayyuhal lazeena aamanoo la tuqaddimoo baina yada yil laahi wa Rasoolihee wattaqul laah; innal laaha samee'un 'Aleem",
+        "terjemah": "Wahai orang-orang yang beriman! Janganlah kamu mendahului Allah dan Rasul-Nya dan bertakwalah kepada Allah. Sungguh, Allah Maha Mendengar, Maha Mengetahui.",
+        "juz": 26
+      },
+      {
+        "nomorAyat": 2,
+        "arab": "يَا أَيُّهَا الَّذِينَ آمَنُوا لَا تَرْفَعُوا أَصْوَاتَكُمْ فَوْقَ صَوْتِ النَّبِيِّ وَلَا تَجْهَرُوا لَهُ بِالْقَوْلِ كَجَهْرِ بَعْضِكُمْ لِبَعْضٍ أَن تَحْبَطَ أَعْمَالُكُمْ وَأَنتُمْ لَا تَشْعُرُونَ",
+        "latin": "Yaa ayyuhal lazeena aamanoo laa tarfa'ooo aswaatakum fawqa sawtin Nabiyi wa laa tajharoo lahoo bilqawli kajahri ba'dikum liba 'din an tahbata a 'maalukum wa antum laa tash'uroon",
+        "terjemah": "Wahai orang-orang yang beriman! Janganlah kamu meninggikan suaramu melebihi suara Nabi, dan janganlah kamu berkata kepadanya dengan suara keras sebagaimana kerasnya (suara) sebagian kamu terhadap yang lain, nanti (pahala) segala amalmu bisa terhapus sedangkan kamu tidak menyadari.",
+        "juz": 26
+      },
+      {
+        "nomorAyat": 3,
+        "arab": "إِنَّ الَّذِينَ يَغُضُّونَ أَصْوَاتَهُمْ عِندَ رَسُولِ اللَّهِ أُولَٰئِكَ الَّذِينَ امْتَحَنَ اللَّهُ قُلُوبَهُمْ لِلتَّقْوَىٰ ۚ لَهُم مَّغْفِرَةٌ وَأَجْرٌ عَظِيمٌ",
+        "latin": "Innal lazeena yaghud doona aswaatahum 'inda Rasoolil laahi ulaaa'ikal lazeenam tah anal laahu quloobahum littaqwaa; lahum maghfiratunw waajrun 'azeem",
+        "terjemah": "Sesungguhnya orang-orang yang merendahkan suaranya di sisi Rasulullah, mereka itulah orang-orang yang telah diuji hatinya oleh Allah untuk bertakwa. Mereka akan memperoleh ampunan dan pahala yang besar.",
+        "juz": 26
+      },
+      {
+        "nomorAyat": 4,
+        "arab": "إِنَّ الَّذِينَ يُنَادُونَكَ مِن وَرَاءِ الْحُجُرَاتِ أَكْثَرُهُمْ لَا يَعْقِلُونَ",
+        "latin": "Innal lazeena yunaadoo naka minw waraaa'il hujuraati aksaruhum laa ya'qiloon",
+        "terjemah": "Sesungguhnya orang-orang yang memanggil engkau (Muhammad) dari luar kamar(mu) kebanyakan mereka tidak mengerti.",
+        "juz": 26
+      },
+      {
+        "nomorAyat": 5,
+        "arab": "وَلَوْ أَنَّهُمْ صَبَرُوا حَتَّىٰ تَخْرُجَ إِلَيْهِمْ لَكَانَ خَيْرًا لَّهُمْ ۚ وَاللَّهُ غَفُورٌ رَّحِيمٌ",
+        "latin": "Wa law annahum sabaroo hatta takhruja ilaihim lakaana khairal lahum; wallaahu Ghafoorur Raheem",
+        "terjemah": "Dan sekiranya mereka bersabar sampai engkau keluar menemui mereka, tentu akan lebih baik bagi mereka. Dan Allah Maha Pengampun, Maha Penyayang.",
+        "juz": 26
+      },
+      {
+        "nomorAyat": 6,
+        "arab": "يَا أَيُّهَا الَّذِينَ آمَنُوا إِن جَاءَكُمْ فَاسِقٌ بِنَبَإٍ فَتَبَيَّنُوا أَن تُصِيبُوا قَوْمًا بِجَهَالَةٍ فَتُصْبِحُوا عَلَىٰ مَا فَعَلْتُمْ نَادِمِينَ",
+        "latin": "Yaaa ayyuhal lazeena aamanoo in jaaa'akum faasqum binaba in fatabaiyanooo an tuseeboo qawmam bijahalatin fatusbihoo 'alaa maa fa'altum naadimeen",
+        "terjemah": "Wahai orang-orang yang beriman! Jika seseorang yang fasik datang kepadamu membawa suatu berita, maka telitilah kebenarannya, agar kamu tidak mencelakakan suatu kaum karena kebodohan (kecerobohan), yang akhirnya kamu menyesali perbuatanmu itu.",
+        "juz": 26
+      },
+      {
+        "nomorAyat": 7,
+        "arab": "وَاعْلَمُوا أَنَّ فِيكُمْ رَسُولَ اللَّهِ ۚ لَوْ يُطِيعُكُمْ فِي كَثِيرٍ مِّنَ الْأَمْرِ لَعَنِتُّمْ وَلَٰكِنَّ اللَّهَ حَبَّبَ إِلَيْكُمُ الْإِيمَانَ وَزَيَّنَهُ فِي قُلُوبِكُمْ وَكَرَّهَ إِلَيْكُمُ الْكُفْرَ وَالْفُسُوقَ وَالْعِصْيَانَ ۚ أُولَٰئِكَ هُمُ الرَّاشِدُونَ",
+        "latin": "Wa'lamooo anna feekum Rasoolal laah; law yutee'ukum fee kaseerim minal amrila'anittum wa laakinnal laaha habbaba ilaikumul eemaana wa zaiyanahoo fee quloobikum wa karraha ilaikumul kufra walfusooqa wal'isyaan; ulaaaika humur raashidoon",
+        "terjemah": "Dan ketahuilah olehmu bahwa di tengah-tengah kamu ada Rasulullah. Kalau dia menuruti (kemauan) kamu dalam banyak hal pasti kamu akan mendapatkan kesusahan. Tetapi Allah menjadikan kamu cinta kepada keimanan dan menjadikan (iman) itu indah dalam hatimu serta menjadikan kamu benci kepada kekafiran, kefasikan, dan kedurhakaan. Mereka itulah orang-orang yang mengikuti jalan yang lurus,",
+        "juz": 26
+      },
+      {
+        "nomorAyat": 8,
+        "arab": "فَضْلًا مِّنَ اللَّهِ وَنِعْمَةً ۚ وَاللَّهُ عَلِيمٌ حَكِيمٌ",
+        "latin": "Fadlam minal laahi wa ni'mah; wallaahu 'Aleemun Hakeem",
+        "terjemah": "sebagai karunia dan nikmat dari Allah. Dan Allah Maha Mengetahui, Mahabijaksana.",
+        "juz": 26
+      },
+      {
+        "nomorAyat": 9,
+        "arab": "وَإِن طَائِفَتَانِ مِنَ الْمُؤْمِنِينَ اقْتَتَلُوا فَأَصْلِحُوا بَيْنَهُمَا ۖ فَإِن بَغَتْ إِحْدَاهُمَا عَلَى الْأُخْرَىٰ فَقَاتِلُوا الَّتِي تَبْغِي حَتَّىٰ تَفِيءَ إِلَىٰ أَمْرِ اللَّهِ ۚ فَإِن فَاءَتْ فَأَصْلِحُوا بَيْنَهُمَا بِالْعَدْلِ وَأَقْسِطُوا ۖ إِنَّ اللَّهَ يُحِبُّ الْمُقْسِطِينَ",
+        "latin": "Wa in taaa'ifataani minal mu'mineenaq tataloo faaslihoo bainahumaa fa-im baghat ih daahumaa 'alal ukhraa faqaatilul latee tabhee hattaa tafeee'a ilaaa amril laah; fa-in faaa't fa aslihoo bainahumaa bil'adli wa aqsitoo innal laaha yuhibbul muqsiteen",
+        "terjemah": "Dan apabila ada dua golongan orang-orang mukmin berperang, maka damaikanlah antara keduanya. Jika salah satu dari keduanya berbuat zalim terhadap (golongan) yang lain, maka perangilah (golongan) yang berbuat zalim itu, sehingga golongan itu kembali kepada perintah Allah. Jika golongan itu telah kembali (kepada perintah Allah), maka damaikanlah antara keduanya dengan adil, dan berlakulah adil. Sungguh, Allah mencintai orang-orang yang berlaku adil.",
+        "juz": 26
+      },
+      {
+        "nomorAyat": 10,
+        "arab": "إِنَّمَا الْمُؤْمِنُونَ إِخْوَةٌ فَأَصْلِحُوا بَيْنَ أَخَوَيْكُمْ ۚ وَاتَّقُوا اللَّهَ لَعَلَّكُمْ تُرْحَمُونَ",
+        "latin": "Innamal mu'minoona ikhwatun fa aslihoo baina akhawaykum wattaqul laaha la'allakum tuhamoon",
+        "terjemah": "Sesungguhnya orang-orang mukmin itu bersaudara, karena itu damaikanlah antara kedua saudaramu (yang berselisih) dan bertakwalah kepada Allah agar kamu mendapat rahmat.",
+        "juz": 26
+      },
+      {
+        "nomorAyat": 11,
+        "arab": "يَا أَيُّهَا الَّذِينَ آمَنُوا لَا يَسْخَرْ قَوْمٌ مِّن قَوْمٍ عَسَىٰ أَن يَكُونُوا خَيْرًا مِّنْهُمْ وَلَا نِسَاءٌ مِّن نِّسَاءٍ عَسَىٰ أَن يَكُنَّ خَيْرًا مِّنْهُنَّ ۖ وَلَا تَلْمِزُوا أَنفُسَكُمْ وَلَا تَنَابَزُوا بِالْأَلْقَابِ ۖ بِئْسَ الِاسْمُ الْفُسُوقُ بَعْدَ الْإِيمَانِ ۚ وَمَن لَّمْ يَتُبْ فَأُولَٰئِكَ هُمُ الظَّالِمُونَ",
+        "latin": "Yaaa ayyuhal lazeena aamanoo laa yaskhar qawmum min qawmin 'asaaa anyyakoonoo khairam minhum wa laa nisaaa'um min nisaaa'in 'Asaaa ay yakunna khairam minhunna wa laa talmizooo bil alqaab; bi'sal ismul fusooqu ba'dal eemaan; wa mal-lam yatub fa-ulaaa'ika humuz zaalimoon",
+        "terjemah": "Wahai orang-orang yang beriman! Janganlah suatu kaum mengolok-olok kaum yang lain (karena) boleh jadi mereka (yang diperolok-olokkan) lebih baik dari mereka (yang mengolok-olok) dan jangan pula perempuan-perempuan (mengolok-olokkan) perempuan lain (karena) boleh jadi perempuan (yang diperolok-olokkan) lebih baik dari perempuan (yang mengolok-olok). Janganlah kamu saling mencela satu sama lain dan janganlah saling memanggil dengan gelar-gelar yang buruk. Seburuk-buruk panggilan adalah (panggilan) yang buruk (fasik) setelah beriman. Dan barangsiapa tidak bertobat, maka mereka itulah orang-orang yang zalim.",
+        "juz": 26
+      },
+      {
+        "nomorAyat": 12,
+        "arab": "يَا أَيُّهَا الَّذِينَ آمَنُوا اجْتَنِبُوا كَثِيرًا مِّنَ الظَّنِّ إِنَّ بَعْضَ الظَّنِّ إِثْمٌ ۖ وَلَا تَجَسَّسُوا وَلَا يَغْتَب بَّعْضُكُم بَعْضًا ۚ أَيُحِبُّ أَحَدُكُمْ أَن يَأْكُلَ لَحْمَ أَخِيهِ مَيْتًا فَكَرِهْتُمُوهُ ۚ وَاتَّقُوا اللَّهَ ۚ إِنَّ اللَّهَ تَوَّابٌ رَّحِيمٌ",
+        "latin": "Yaaa ayyuhal lazeena aamanuj taniboo kaseeram minaz zanni inna ba'daz zanniismunw wa laa tajassasoo wa la yaghtab ba'dukum ba'daa; a yuhibbu ahadukum any yaakula lahma akheehi maitan fakarih tumooh; wattaqul laa; innal laaha tawwaabur Raheem",
+        "terjemah": "Wahai orang-orang yang beriman! Jauhilah banyak dari prasangka, sesungguhnya sebagian prasangka itu dosa dan janganlah kamu mencari-cari kesalahan orang lain dan janganlah ada di antara kamu yang menggunjing sebagian yang lain. Apakah ada di antara kamu yang suka memakan daging saudaranya yang sudah mati? Tentu kamu merasa jijik. Dan bertakwalah kepada Allah, sesungguhnya Allah Maha Penerima tobat, Maha Penyayang.",
+        "juz": 26
+      },
+      {
+        "nomorAyat": 13,
+        "arab": "يَا أَيُّهَا النَّاسُ إِنَّا خَلَقْنَاكُم مِّن ذَكَرٍ وَأُنثَىٰ وَجَعَلْنَاكُمْ شُعُوبًا وَقَبَائِلَ لِتَعَارَفُوا ۚ إِنَّ أَكْرَمَكُمْ عِندَ اللَّهِ أَتْقَاكُمْ ۚ إِنَّ اللَّهَ عَلِيمٌ خَبِيرٌ",
+        "latin": "Yaaa ayyuhan naasu innaa khalaqnaakum min zakarinw wa unsaa wa ja'alnaakum shu'oobanw wa qabaaa'ila lita'aarafoo inna akramakum 'indal laahi atqaakum innal laaha 'Aleemun khabeer",
+        "terjemah": "Wahai manusia! Sungguh, Kami telah menciptakan kamu dari seorang laki-laki dan seorang perempuan, kemudian Kami jadikan kamu berbangsa-bangsa dan bersuku-suku agar kamu saling mengenal. Sesungguhnya yang paling mulia di antara kamu di sisi Allah ialah orang yang paling bertakwa. Sungguh, Allah Maha Mengetahui, Mahateliti.",
+        "juz": 26
+      },
+      {
+        "nomorAyat": 14,
+        "arab": "۞ قَالَتِ الْأَعْرَابُ آمَنَّا ۖ قُل لَّمْ تُؤْمِنُوا وَلَٰكِن قُولُوا أَسْلَمْنَا وَلَمَّا يَدْخُلِ الْإِيمَانُ فِي قُلُوبِكُمْ ۖ وَإِن تُطِيعُوا اللَّهَ وَرَسُولَهُ لَا يَلِتْكُم مِّنْ أَعْمَالِكُمْ شَيْئًا ۚ إِنَّ اللَّهَ غَفُورٌ رَّحِيمٌ",
+        "latin": "Qaalatil-A 'raabu aamannaa qul lam tu'minoo wa laakin qoolooo aslamnaa wa lamma yadkhulil eemaanu fee quloobikum wa in tutee'ul laaha wa Rasoolahoo laa yalitkum min a'maalikum shai'aa; innal laaha Ghafoorur Raheem",
+        "terjemah": "Orang-orang Arab Badui berkata, “Kami telah beriman.” Katakanlah (kepada mereka), “Kamu belum beriman, tetapi katakanlah ‘Kami telah tunduk (Islam),’ karena iman belum masuk ke dalam hatimu. Dan jika kamu taat kepada Allah dan Rasul-Nya, Dia tidak akan mengurangi sedikit pun (pahala) amal perbuatanmu. Sungguh, Allah Maha Pengampun, Maha Penyayang.”",
+        "juz": 26
+      },
+      {
+        "nomorAyat": 15,
+        "arab": "إِنَّمَا الْمُؤْمِنُونَ الَّذِينَ آمَنُوا بِاللَّهِ وَرَسُولِهِ ثُمَّ لَمْ يَرْتَابُوا وَجَاهَدُوا بِأَمْوَالِهِمْ وَأَنفُسِهِمْ فِي سَبِيلِ اللَّهِ ۚ أُولَٰئِكَ هُمُ الصَّادِقُونَ",
+        "latin": "Innamal muu'minoonal lazeena aamanoo billaahi wa Rasoolihee summa lam yartaaboo wa jaahadoo biamwaalihim wa anfusihim fee sabeelil laah; ulaaaika humus saadiqoon",
+        "terjemah": "Sesungguhnya orang-orang mukmin yang sebenarnya adalah mereka yang beriman kepada Allah dan Rasul-Nya kemudian mereka tidak ragu-ragu dan mereka berjihad dengan harta dan jiwanya di jalan Allah. Mereka itulah orang-orang yang benar.",
+        "juz": 26
+      },
+      {
+        "nomorAyat": 16,
+        "arab": "قُلْ أَتُعَلِّمُونَ اللَّهَ بِدِينِكُمْ وَاللَّهُ يَعْلَمُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ ۚ وَاللَّهُ بِكُلِّ شَيْءٍ عَلِيمٌ",
+        "latin": "Qul atu'allimoonal laaha bideenikum wallaahu ya'lamu maa fis samaawaati wa maa fil ard; wallaahu bikulli shai'in 'Aleem",
+        "terjemah": "Katakanlah (kepada mereka), “Apakah kamu akan memberitahukan kepada Allah tentang agamamu (keyakinanmu), padahal Allah mengetahui apa yang ada di langit dan apa yang ada di bumi dan Allah Maha Mengetahui segala sesuatu.”",
+        "juz": 26
+      },
+      {
+        "nomorAyat": 17,
+        "arab": "يَمُنُّونَ عَلَيْكَ أَنْ أَسْلَمُوا ۖ قُل لَّا تَمُنُّوا عَلَيَّ إِسْلَامَكُم ۖ بَلِ اللَّهُ يَمُنُّ عَلَيْكُمْ أَنْ هَدَاكُمْ لِلْإِيمَانِ إِن كُنتُمْ صَادِقِينَ",
+        "latin": "Yamunnoona 'alaika an aslamoo qul laa tamunnoo 'alaiya Islaamakum balillaahu yamunnu 'alaikum an hadaakum lil eemaani in kuntum saadiqeen",
+        "terjemah": "Mereka merasa berjasa kepadamu dengan keislaman mereka. Katakanlah, “Janganlah kamu merasa berjasa kepadaku dengan keislamanmu, sebenarnya Allah yang melimpahkan nikmat kepadamu dengan menunjukkan kamu kepada keimanan, jika kamu orang yang benar.”",
+        "juz": 26
+      },
+      {
+        "nomorAyat": 18,
+        "arab": "إِنَّ اللَّهَ يَعْلَمُ غَيْبَ السَّمَاوَاتِ وَالْأَرْضِ ۚ وَاللَّهُ بَصِيرٌ بِمَا تَعْمَلُونَ",
+        "latin": "Innal laaha ya'lamu ghaibas samaawaati wal ard; wallaahu baseerum bimaa ta'maloon",
+        "terjemah": "Sungguh, Allah mengetahui apa yang gaib di langit dan di bumi. Dan Allah Maha Melihat apa yang kamu kerjakan.",
+        "juz": 26
+      }
+    ]
+  }
+]

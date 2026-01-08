@@ -1,0 +1,69 @@
+POST http://localhost:5000/api/ustadz
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsInJvbGUiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwiaWF0IjoxNzU0MzU4MjE2LCJleHAiOjE3NTQ0MDE0MTZ9.fQccoPt9LMXhm97oHVB0hGf4Ao4YhX4vB3gplBYf620
+Content-Type: application/json
+
+{
+  "email": "ustadz2@gmail.com",
+  "password": "rahasia123",
+  "nama": "Ustadz Ahmad Dahlan",
+  "nomorHp": "08123456789",
+  "alamat": "Jl. Pesantren No. 1",
+  "jenisKelamin": "L",
+  "fotoProfil": "https://example.com/foto.jpg",
+  "tingkatan": "Sedang"
+}
+
+### GET ALL USTADZ
+GET http://localhost:5000/api/ustadz?page=1&limit=10
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsInJvbGUiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwiaXNNb2JpbGUiOmZhbHNlLCJpYXQiOjE3NTQ4ODMxNjAsImV4cCI6MTc1NDkyNjM2MH0.EoU2hhsUPQoW6mjOKKE7Z4Aszt5AMkOJhy6J_vLNwV8
+x-platform: web
+
+### GET ALL USTADZ sesuai tingkatan
+GET http://localhost:5000/api/ustadz?page=1&limit=10&tingkatan=Cepat
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsInJvbGUiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwiaXNNb2JpbGUiOmZhbHNlLCJpYXQiOjE3NTQ4ODMxNjAsImV4cCI6MTc1NDkyNjM2MH0.EoU2hhsUPQoW6mjOKKE7Z4Aszt5AMkOJhy6J_vLNwV8
+x-platform: web
+
+### GET ALL USTADZ sesuai tingkatan dan nama
+GET http://localhost:5000/api/ustadz?page=1&limit=10&tingkatan=Sedang&search=ahmad
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsInJvbGUiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwiaXNNb2JpbGUiOmZhbHNlLCJpYXQiOjE3NTQ4ODMxNjAsImV4cCI6MTc1NDkyNjM2MH0.EoU2hhsUPQoW6mjOKKE7Z4Aszt5AMkOJhy6J_vLNwV8
+x-platform: web
+
+### GET ONE USTADZ BY ID
+GET http://localhost:5000/api/ustadz/9
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsInJvbGUiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwiaXNNb2JpbGUiOmZhbHNlLCJpYXQiOjE3NTQ4ODMxNjAsImV4cCI6MTc1NDkyNjM2MH0.EoU2hhsUPQoW6mjOKKE7Z4Aszt5AMkOJhy6J_vLNwV8
+x-platform: web
+
+### GET ONE USTADZ BY NAME
+GET http://localhost:5000/api/ustadz/nama/dahlan
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsInJvbGUiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwiaXNNb2JpbGUiOmZhbHNlLCJpYXQiOjE3NTQ4ODMxNjAsImV4cCI6MTc1NDkyNjM2MH0.EoU2hhsUPQoW6mjOKKE7Z4Aszt5AMkOJhy6J_vLNwV8
+x-platform: web
+
+### UPDATE USTADZ BY ID all field
+PUT http://localhost:5000/api/ustadz/4
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsInJvbGUiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwiaXNNb2JpbGUiOmZhbHNlLCJpYXQiOjE3NTQ4ODMxNjAsImV4cCI6MTc1NDkyNjM2MH0.EoU2hhsUPQoW6mjOKKE7Z4Aszt5AMkOJhy6J_vLNwV8
+x-platform: web
+Content-Type: application/json
+
+{
+  "nama": "Ustadz Bin",
+  "nomorHp": "08123456789",
+  "alamat": "Jl. Pesantren No. 1",
+  "jenisKelamin": "L",
+  "fotoProfil": "https://example.com/foto.jpg",
+  "tingkatan": "Lambat"
+}
+
+### UPDATE USTADZ BY ID salah satu field (kecuali email dan password)
+PUT http://localhost:5000/api/ustadz/4
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsInJvbGUiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwiaXNNb2JpbGUiOmZhbHNlLCJpYXQiOjE3NTQ4ODMxNjAsImV4cCI6MTc1NDkyNjM2MH0.EoU2hhsUPQoW6mjOKKE7Z4Aszt5AMkOJhy6J_vLNwV8
+x-platform: web
+Content-Type: application/json
+
+{
+  "nama": "Ustadz Arie"
+}
+
+### DELETE USTADZ BY ID
+DELETE http://localhost:5000/api/ustadz/4
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsInJvbGUiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwiaXNNb2JpbGUiOmZhbHNlLCJpYXQiOjE3NTQ4ODMxNjAsImV4cCI6MTc1NDkyNjM2MH0.EoU2hhsUPQoW6mjOKKE7Z4Aszt5AMkOJhy6J_vLNwV8
+x-platform: web

@@ -1,0 +1,47 @@
+### CREATE ORTU
+POST http://localhost:5000/api/ortu
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsInJvbGUiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwiaXNNb2JpbGUiOmZhbHNlLCJpYXQiOjE3NTQ2MTc3NTcsImV4cCI6MTc1NDY2MDk1N30.MneAhWAdzEAlXyaZ7LJgOLwhm1fC8kGnh-VKFzHJ0VU
+
+{
+  "email": "ortu2@gmail.com",
+  "password": "rahasia123",
+  "nama": "Orang Tua Ahmad Dahlan",
+  "nomorHp": "08123456789",
+  "alamat": "Jl. Pesantren No. 1",
+  "jenisKelamin": "L",
+  "fotoProfil": "https://example.com/foto.jpg"
+}
+
+### GET ALL ORTU
+GET http://localhost:5000/api/ortu?page=1&limit=10
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsInJvbGUiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwiaXNNb2JpbGUiOmZhbHNlLCJpYXQiOjE3NTQ4ODMxNjAsImV4cCI6MTc1NDkyNjM2MH0.EoU2hhsUPQoW6mjOKKE7Z4Aszt5AMkOJhy6J_vLNwV8
+x-platform: web
+
+### GET ORTU query search / name 
+GET http://localhost:5000/api/ortu?page=1&limit=10&search=update
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsInJvbGUiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwiaXNNb2JpbGUiOmZhbHNlLCJpYXQiOjE3NTQ4ODMxNjAsImV4cCI6MTc1NDkyNjM2MH0.EoU2hhsUPQoW6mjOKKE7Z4Aszt5AMkOJhy6J_vLNwV8
+x-platform: web
+
+### GET ONE ORTU BY ID
+GET http://localhost:5000/api/ortu/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsInJvbGUiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwiaXNNb2JpbGUiOmZhbHNlLCJpYXQiOjE3NTQ2MTc3NTcsImV4cCI6MTc1NDY2MDk1N30.MneAhWAdzEAlXyaZ7LJgOLwhm1fC8kGnh-VKFzHJ0VU
+
+### GET ORTU BY NAME
+GET http://localhost:5000/api/ortu/nama/Orang Tua Ahmad Dahlan
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsInJvbGUiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwiaXNNb2JpbGUiOmZhbHNlLCJpYXQiOjE3NTQ2MTc3NTcsImV4cCI6MTc1NDY2MDk1N30.MneAhWAdzEAlXyaZ7LJgOLwhm1fC8kGnh-VKFzHJ0VU
+
+### UPDATE ORTU
+PUT http://localhost:5000/api/ortu/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsInJvbGUiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwiaXNNb2JpbGUiOmZhbHNlLCJpYXQiOjE3NTQ2MTc3NTcsImV4cCI6MTc1NDY2MDk1N30.MneAhWAdzEAlXyaZ7LJgOLwhm1fC8kGnh-VKFzHJ0VU
+
+{
+  "nama": "Orang Tua Ahmad Dahlan",
+  "nomorHp": "08123456789",
+  "alamat": "Jl. Pesantren No. 1",
+  "jenisKelamin": "L",
+  "fotoProfil": "https://example.com/foto.jpg"
+}
+
+### DELETE ORTU
+DELETE http://localhost:5000/api/ortu/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsInJvbGUiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwiaXNNb2JpbGUiOmZhbHNlLCJpYXQiOjE3NTQ2MTc3NTcsImV4cCI6MTc1NDY2MDk1N30.MneAhWAdzEAlXyaZ7LJgOLwhm1fC8kGnh-VKFzHJ0VU

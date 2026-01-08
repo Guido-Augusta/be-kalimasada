@@ -1,0 +1,128 @@
+### login santri
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "santri2@gmail.com",
+  "password": "rahasia123",
+  "platform": "mobile"
+}
+
+### Create Santri - admin
+POST http://localhost:5000/api/santri
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsInJvbGUiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwiaXNNb2JpbGUiOmZhbHNlLCJpYXQiOjE3NTQ3OTc5MDYsImV4cCI6MTc1NDg0MTEwNn0.a5WLFcDLeH4imxKRrHlYH5NsYUC86F8iFHuVZG-fDvI
+
+{
+  "email": "santri33@gmail.com",
+  "password": "rahasia123",
+  "nama": "andi",
+  "nomorHp": "08123456789",
+  "alamat": "bandung",
+  "jenisKelamin": "L",
+  "fotoProfil": "https://res.cloudinary.com/dqrppoiza/image/upload/v1754292060/placeholder_profile_ff5xwy.jpg",
+  "ortuId": 17,
+  "tingkatan": "Lambat",
+  "tahapHafalan": "Tahap1_Juz30"
+}
+
+### Update Santri - admin
+PUT http://localhost:5000/api/santri/14
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsInJvbGUiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwiaXNNb2JpbGUiOmZhbHNlLCJpYXQiOjE3NTQ3OTc5MDYsImV4cCI6MTc1NDg0MTEwNn0.a5WLFcDLeH4imxKRrHlYH5NsYUC86F8iFHuVZG-fDvI
+
+{
+  "nama": "ahmad",
+  "nomorHp": "08123456789",
+  "alamat": "bandung",
+  "jenisKelamin": "L",
+  "fotoProfil": "https://res.cloudinary.com/dqrppoiza/image/upload/v1754292060/placeholder_profile_ff5xwy.jpg",
+  "ortuId": 17,
+  "tingkatan": "Lambat",
+  "tahapHafalan": "Tahap1_Juz30"
+}
+
+### Tambah surat selesai - admin
+POST http://localhost:5000/api/santri/3/surat-selesai
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsInJvbGUiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwiaXNNb2JpbGUiOmZhbHNlLCJpYXQiOjE3NTQ3OTc5MDYsImV4cCI6MTc1NDg0MTEwNn0.a5WLFcDLeH4imxKRrHlYH5NsYUC86F8iFHuVZG-fDvI
+x-platform: web
+
+{
+  "surat": "Al-Ikhlas"
+}
+
+### Hapus surat selesai - admin
+DELETE http://localhost:5000/api/santri/3/surat-selesai
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsInJvbGUiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwiaXNNb2JpbGUiOmZhbHNlLCJpYXQiOjE3NTQ3OTc5MDYsImV4cCI6MTc1NDg0MTEwNn0.a5WLFcDLeH4imxKRrHlYH5NsYUC86F8iFHuVZG-fDvI
+x-platform: web
+
+{
+  "surat": "Al-Ikhlas"
+}
+
+### Tambah surat selesai - ustadz
+POST http://localhost:5000/api/santri/3/surat-selesai
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTYsInJvbGUiOiJ1c3RhZHoiLCJlbWFpbCI6InVzdGFkejIyQGdtYWlsLmNvbSIsImlzTW9iaWxlIjp0cnVlLCJpYXQiOjE3NTQ1Mzg0Njd9.h5_VTOlSFATbhXch0DNxOuEXi7m2yEsE4dbTY9Q880Y
+x-platform: mobile
+
+{
+  "surat": "Al-Ikhlas"
+}
+
+### Hapus surat selesai - ustadz
+DELETE http://localhost:5000/api/santri/3/surat-selesai
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTYsInJvbGUiOiJ1c3RhZHoiLCJlbWFpbCI6InVzdGFkejIyQGdtYWlsLmNvbSIsImlzTW9iaWxlIjp0cnVlLCJpYXQiOjE3NTQ1Mzg0Njd9.h5_VTOlSFATbhXch0DNxOuEXi7m2yEsE4dbTY9Q880Y
+x-platform: mobile
+
+{
+  "surat": "Al-Ikhlas"
+}
+
+### Get Santri for admin
+GET http://localhost:5000/api/santri?page=1&limit=10
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsInJvbGUiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwiaXNNb2JpbGUiOmZhbHNlLCJpYXQiOjE3NTQ4ODMxNjAsImV4cCI6MTc1NDkyNjM2MH0.EoU2hhsUPQoW6mjOKKE7Z4Aszt5AMkOJhy6J_vLNwV8
+x-platform: web
+
+### Get Santri for admin with filter by tingkatan and search
+GET http://localhost:5000/api/santri?page=1&limit=10&tingkatan=Sedang&search=ahmad
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsInJvbGUiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwiaXNNb2JpbGUiOmZhbHNlLCJpYXQiOjE3NTQ4ODMxNjAsImV4cCI6MTc1NDkyNjM2MH0.EoU2hhsUPQoW6mjOKKE7Z4Aszt5AMkOJhy6J_vLNwV8
+x-platform: web
+
+### Get Santri for admin with filter by tingkatan semua (kayaknya gak perlu)
+GET http://localhost:5000/api/santri?page=1&limit=10&sortBy=tingkatan
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsInJvbGUiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwiaXNNb2JpbGUiOmZhbHNlLCJpYXQiOjE3NTQ4ODMxNjAsImV4cCI6MTc1NDkyNjM2MH0.EoU2hhsUPQoW6mjOKKE7Z4Aszt5AMkOJhy6J_vLNwV8
+x-platform: web
+
+### Get Santri for admin with filter by tingkatan 
+GET http://localhost:5000/api/santri?tingkatan=Cepat
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsInJvbGUiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwiaXNNb2JpbGUiOmZhbHNlLCJpYXQiOjE3NTQ4ODMxNjAsImV4cCI6MTc1NDkyNjM2MH0.EoU2hhsUPQoW6mjOKKE7Z4Aszt5AMkOJhy6J_vLNwV8
+x-platform: web
+
+### Get Santri for Ustadz
+GET http://localhost:5000/api/santri?page=1&limit=10
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTYsInJvbGUiOiJ1c3RhZHoiLCJlbWFpbCI6InVzdGFkejIyQGdtYWlsLmNvbSIsImlzTW9iaWxlIjp0cnVlLCJpYXQiOjE3NTQ1Mzg0Njd9.h5_VTOlSFATbhXch0DNxOuEXi7m2yEsE4dbTY9Q880Y
+x-platform: mobile
+
+### Get Santri for Ustadz with filter by name sesuai tingkatan yang diajar
+GET http://localhost:5000/api/santri?page=1&limit=10&search=update
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTYsInJvbGUiOiJ1c3RhZHoiLCJlbWFpbCI6InVzdGFkejIyQGdtYWlsLmNvbSIsImlzTW9iaWxlIjp0cnVlLCJpYXQiOjE3NTQ1Mzg0Njd9.h5_VTOlSFATbhXch0DNxOuEXi7m2yEsE4dbTY9Q880Y
+x-platform: mobile
+
+### GET Peringkat - admin
+GET http://localhost:5000/api/santri/peringkat
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsInJvbGUiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwiaXNNb2JpbGUiOmZhbHNlLCJpYXQiOjE3NTQ5NjI1MTksImV4cCI6MTc1NTAwNTcxOX0.BgCJoIxGLXHVtLIGzM5i_N4lc4x9e72uctwcDEcx68A
+x-platform: web
+
+### GET Peringkat - ustadz
+GET http://localhost:5000/api/santri/peringkat
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTYsInJvbGUiOiJ1c3RhZHoiLCJlbWFpbCI6InVzdGFkejIyQGdtYWlsLmNvbSIsImlzTW9iaWxlIjp0cnVlLCJpYXQiOjE3NTQ1Mzg0Njd9.h5_VTOlSFATbhXch0DNxOuEXi7m2yEsE4dbTY9Q880Y
+x-platform: mobile
+
+### GET Peringkat - santri
+GET http://localhost:5000/api/santri/peringkat
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsInJvbGUiOiJzYW50cmkiLCJlbWFpbCI6InNhbnRyaTJAZ21haWwuY29tIiwiaXNNb2JpbGUiOnRydWUsImlhdCI6MTc1NDYzNjQyMn0.v3BYsL6Xi-AF5-OYjG3ZRZNNZnbM9zKrBOlc8Jg2MKs
+x-platform: mobile

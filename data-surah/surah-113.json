@@ -1,0 +1,48 @@
+[
+  {
+    "nomor": 113,
+    "nama": "الفلق",
+    "namaLatin": "Al-Falaq",
+    "totalAyat": 5,
+    "tempatTurun": "Makkiyyah",
+    "arti": "Subuh",
+    "deskripsi": "Surat ini terdiri atas 5 ayat, termasuk golongan surat-surat Makkiyah, diturunkan sesudah surat Al Fiil. Nama Al Falaq diambil dari kata Al Falaq yang terdapat pada ayat pertama surat ini yang artinya waktu subuh. Diriwayatkan oleh Abu Daud, At Tirmizi dan An Nasa-i dari 'Uqbah bin 'Aamir bahwa Rasulullah s.a.w. bersembahyang dengan membaca surat Al Falaq  dan surat An Naas dalam perjalanan.",
+    "ayat": [
+      {
+        "nomorAyat": 1,
+        "arab": "قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ",
+        "latin": "Qul a'uzoo bi rabbil-falaq",
+        "terjemah": "Katakanlah, “Aku berlindung kepada Tuhan yang menguasai subuh (fajar),",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 2,
+        "arab": "مِن شَرِّ مَا خَلَقَ",
+        "latin": "Min sharri ma khalaq",
+        "terjemah": "dari kejahatan (makhluk yang) Dia ciptakan,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 3,
+        "arab": "وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ",
+        "latin": "Wa min sharri ghasiqin iza waqab",
+        "terjemah": "dan dari kejahatan malam apabila telah gelap gulita,",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 4,
+        "arab": "وَمِن شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ",
+        "latin": "Wa min sharrin-naffaa-thaati fil 'uqad",
+        "terjemah": "dan dari kejahatan (perempuan-perempuan) penyihir yang meniup pada buhul-buhul (talinya),",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 5,
+        "arab": "وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ",
+        "latin": "Wa min shar ri haasidin iza hasad",
+        "terjemah": "dan dari kejahatan orang yang dengki apabila dia dengki.”",
+        "juz": 30
+      }
+    ]
+  }
+]

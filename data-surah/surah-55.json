@@ -1,0 +1,559 @@
+[
+  {
+    "nomor": 55,
+    "nama": "الرحمن",
+    "namaLatin": "Ar-Rahman",
+    "totalAyat": 78,
+    "tempatTurun": "Madaniyyah",
+    "arti": "Maha Pengasih",
+    "deskripsi": "Surat Ar Rahmaan terdiri atas 78 ayat, termasuk golongan surat- surat Madaniyyah, diturunkan sesudah surat Ar Ra'du. Dinamai Ar Rahmaan (Yang Maha Pemurah), diambil dari perkataan Ar Rahmaan yang terdapat pada ayat pertama surat ini. Ar Rahmaan adalah salah satu dari nama-nama Allah. Sebagian besar dari surat ini menerangkan kepemurahan Allah s.w.t. kepada hamba-hamba-Nya, yaitu dengan memberikan nikmat-nikmat yang tidak terhingga baik di dunia maupun di akhirat nanti.",
+    "ayat": [
+      {
+        "nomorAyat": 1,
+        "arab": "الرَّحْمَٰنُ",
+        "latin": "Ar Rahmaan",
+        "terjemah": "(Allah) Yang Maha Pengasih,",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 2,
+        "arab": "عَلَّمَ الْقُرْآنَ",
+        "latin": "'Allamal Quran",
+        "terjemah": "Yang telah mengajarkan Al-Qur'an.",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 3,
+        "arab": "خَلَقَ الْإِنسَانَ",
+        "latin": "Khalaqal insaan",
+        "terjemah": "Dia menciptakan manusia,",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 4,
+        "arab": "عَلَّمَهُ الْبَيَانَ",
+        "latin": "'Allamalhul bayaan",
+        "terjemah": "mengajarnya pandai berbicara.",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 5,
+        "arab": "الشَّمْسُ وَالْقَمَرُ بِحُسْبَانٍ",
+        "latin": "Ashshamsu walqamaru bihusbaan",
+        "terjemah": "Matahari dan bulan beredar menurut perhitungan,",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 6,
+        "arab": "وَالنَّجْمُ وَالشَّجَرُ يَسْجُدَانِ",
+        "latin": "Wannajmu washshajaru yasjudan",
+        "terjemah": "dan tetumbuhan dan pepohonan, keduanya tunduk (kepada-Nya).",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 7,
+        "arab": "وَالسَّمَاءَ رَفَعَهَا وَوَضَعَ الْمِيزَانَ",
+        "latin": "Wassamaaa'a rafa'ahaa wa wada'al Meezan",
+        "terjemah": "Dan langit telah ditinggikan-Nya dan Dia ciptakan keseimbangan,",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 8,
+        "arab": "أَلَّا تَطْغَوْا فِي الْمِيزَانِ",
+        "latin": "Allaa tatghaw fil meezaan",
+        "terjemah": "agar kamu jangan merusak keseimbangan itu,",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 9,
+        "arab": "وَأَقِيمُوا الْوَزْنَ بِالْقِسْطِ وَلَا تُخْسِرُوا الْمِيزَانَ",
+        "latin": "Wa aqeemul wazna bilqisti wa laa tukhsirul meezaan",
+        "terjemah": "dan tegakkanlah keseimbangan itu dengan adil dan janganlah kamu mengurangi keseimbangan itu.",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 10,
+        "arab": "وَالْأَرْضَ وَضَعَهَا لِلْأَنَامِ",
+        "latin": "Wal arda wada'ahaa lilanaame",
+        "terjemah": "Dan bumi telah dibentangkan-Nya untuk makhluk(-Nya),",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 11,
+        "arab": "فِيهَا فَاكِهَةٌ وَالنَّخْلُ ذَاتُ الْأَكْمَامِ",
+        "latin": "Feehaa faakihatunw wan nakhlu zaatul akmaam",
+        "terjemah": "di dalamnya ada buah-buahan dan pohon kurma yang mempunyai kelopak mayang,",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 12,
+        "arab": "وَالْحَبُّ ذُو الْعَصْفِ وَالرَّيْحَانُ",
+        "latin": "Walhabbu zul 'asfi war Raihaanu",
+        "terjemah": "dan biji-bijian yang berkulit dan bunga-bunga yang harum baunya.",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 13,
+        "arab": "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ",
+        "latin": "Fabi ayyi aalaaa'i Rabbikumaa tukazzibaan",
+        "terjemah": "Maka nikmat Tuhanmu yang manakah yang kamu dustakan?",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 14,
+        "arab": "خَلَقَ الْإِنسَانَ مِن صَلْصَالٍ كَالْفَخَّارِ",
+        "latin": "Khalaqal insaana min salsaalin kalfakhkhaari",
+        "terjemah": "Dia menciptakan manusia dari tanah kering seperti tembikar,",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 15,
+        "arab": "وَخَلَقَ الْجَانَّ مِن مَّارِجٍ مِّن نَّارٍ",
+        "latin": "Wa khalaqal jaaan mim maarijim min naar",
+        "terjemah": "dan Dia menciptakan jin dari nyala api tanpa asap.",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 16,
+        "arab": "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ",
+        "latin": "Fabi ayyi aalaaa'i Rabbikumaa tukazzibaan",
+        "terjemah": "Maka nikmat Tuhanmu yang manakah yang kamu dustakan?",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 17,
+        "arab": "رَبُّ الْمَشْرِقَيْنِ وَرَبُّ الْمَغْرِبَيْنِ",
+        "latin": "Rabbul mashriqayni wa Rabbul maghribayni",
+        "terjemah": "Tuhan (yang memelihara) dua timur dan Tuhan (yang memelihara) dua barat.",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 18,
+        "arab": "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ",
+        "latin": "Fabi ayyi aalaaa'i Rabbikumaa tukazzibaan",
+        "terjemah": "Maka nikmat Tuhanmu yang manakah yang kamu dustakan?",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 19,
+        "arab": "مَرَجَ الْبَحْرَيْنِ يَلْتَقِيَانِ",
+        "latin": "Marajal bahrayni yalta qiyaani",
+        "terjemah": "Dia membiarkan dua laut mengalir yang (kemudian) keduanya bertemu,",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 20,
+        "arab": "بَيْنَهُمَا بَرْزَخٌ لَّا يَبْغِيَانِ",
+        "latin": "Bainahumaa barzakhul laa yabghiyaan",
+        "terjemah": "di antara keduanya ada batas yang tidak dilampaui oleh masing-masing.",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 21,
+        "arab": "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ",
+        "latin": "Fabi ayyi aalaaa'i Rabbikumaa tukazzibaan",
+        "terjemah": "Maka nikmat Tuhanmu yang manakah yang kamu dustakan?",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 22,
+        "arab": "يَخْرُجُ مِنْهُمَا اللُّؤْلُؤُ وَالْمَرْجَانُ",
+        "latin": "Yakhruju minhumal lu 'lu u wal marjaanu",
+        "terjemah": "Dari keduanya keluar mutiara dan marjan.",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 23,
+        "arab": "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ",
+        "latin": "Fabi ayyi aalaaa'i Rabbikumaa tukazzibaan",
+        "terjemah": "Maka nikmat Tuhanmu yang manakah yang kamu dustakan?",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 24,
+        "arab": "وَلَهُ الْجَوَارِ الْمُنشَآتُ فِي الْبَحْرِ كَالْأَعْلَامِ",
+        "latin": "Wa lahul jawaaril mun sha'aatu fil bahri kal a'laam",
+        "terjemah": "Milik-Nyalah kapal-kapal yang berlayar di lautan bagaikan gunung-gunung.",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 25,
+        "arab": "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ",
+        "latin": "Fabi ayyi aalaaa'i Rabbikumaa tukazzibaan.",
+        "terjemah": "Maka nikmat Tuhanmu yang manakah yang kamu dustakan?",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 26,
+        "arab": "كُلُّ مَنْ عَلَيْهَا فَانٍ",
+        "latin": "Kullu man 'alaihaa faan",
+        "terjemah": "Semua yang ada di bumi itu akan binasa,",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 27,
+        "arab": "وَيَبْقَىٰ وَجْهُ رَبِّكَ ذُو الْجَلَالِ وَالْإِكْرَامِ",
+        "latin": "Wa yabqaa wajhu rabbika zul jalaali wal ikraam",
+        "terjemah": "tetapi wajah Tuhanmu yang memiliki kebesaran dan kemuliaan tetap kekal.",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 28,
+        "arab": "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ",
+        "latin": "Fabi ayyi aalaaa'i Rabbikumaa tukazzibaan.",
+        "terjemah": "Maka nikmat Tuhanmu yang manakah yang kamu dustakan?",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 29,
+        "arab": "يَسْأَلُهُ مَن فِي السَّمَاوَاتِ وَالْأَرْضِ ۚ كُلَّ يَوْمٍ هُوَ فِي شَأْنٍ",
+        "latin": "Yas'aluhoo man fissamaawaati walard; kulla ywmin huwa fee shaan",
+        "terjemah": "Apa yang di langit dan di bumi selalu meminta kepada-Nya. Setiap waktu Dia dalam kesibukan.",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 30,
+        "arab": "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ",
+        "latin": "Fabi ayyi aalaaa'i Rabbikumaa tukazzibaan.",
+        "terjemah": "Maka nikmat Tuhanmu yang manakah yang kamu dustakan?",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 31,
+        "arab": "سَنَفْرُغُ لَكُمْ أَيُّهَ الثَّقَلَانِ",
+        "latin": "Sanafrughu lakum ayyuhas saqalaan",
+        "terjemah": "Kami akan memberi perhatian sepenuhnya kepadamu wahai (golongan) manusia dan jin!",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 32,
+        "arab": "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ",
+        "latin": "Fabi ayyi aalaaa'i Rabbikumaa tukazzibaan.",
+        "terjemah": "Maka nikmat Tuhanmu yang manakah yang kamu dustakan?",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 33,
+        "arab": "يَا مَعْشَرَ الْجِنِّ وَالْإِنسِ إِنِ اسْتَطَعْتُمْ أَن تَنفُذُوا مِنْ أَقْطَارِ السَّمَاوَاتِ وَالْأَرْضِ فَانفُذُوا ۚ لَا تَنفُذُونَ إِلَّا بِسُلْطَانٍ",
+        "latin": "Yaa ma'sharal jinni wal insi inis tata'tum an tanfuzoo min aqtaaris samaawaati wal ardi fanfuzoo; laa tanfuzoona illaa bisultaan",
+        "terjemah": "Wahai golongan jin dan manusia! Jika kamu sanggup menembus (melintasi) penjuru langit dan bumi, maka tembuslah. Kamu tidak akan mampu menembusnya kecuali dengan kekuatan (dari Allah).",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 34,
+        "arab": "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ",
+        "latin": "Fabi ayyi aalaaa'i Rabbikumaa tukazzibaan.",
+        "terjemah": "Maka nikmat Tuhanmu yang manakah yang kamu dustakan?",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 35,
+        "arab": "يُرْسَلُ عَلَيْكُمَا شُوَاظٌ مِّن نَّارٍ وَنُحَاسٌ فَلَا تَنتَصِرَانِ",
+        "latin": "Yursalu 'alaikumaa shuwaazum min naarifiw-wa nuhaasun falaa tantasiraan",
+        "terjemah": "Kepada kamu (jin dan manusia), akan dikirim nyala api dan cairan tembaga (panas) sehingga kamu tidak dapat menyelamatkan diri (darinya).",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 36,
+        "arab": "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ",
+        "latin": "Fabi ayyi aalaaa'i Rabbikumaa tukazzibaan.",
+        "terjemah": "Maka nikmat Tuhanmu yang manakah yang kamu dustakan?",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 37,
+        "arab": "فَإِذَا انشَقَّتِ السَّمَاءُ فَكَانَتْ وَرْدَةً كَالدِّهَانِ",
+        "latin": "Fa-izan shaqqatis samaaa'u fakaanat wardatan kaddihaan",
+        "terjemah": "Maka apabila langit telah terbelah dan menjadi merah mawar seperti (kilauan) minyak.",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 38,
+        "arab": "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ",
+        "latin": "Fabi ayyi aalaaa'i Rabbikumaa tukazzibaan.",
+        "terjemah": "Maka nikmat Tuhanmu yang manakah yang kamu dustakan?",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 39,
+        "arab": "فَيَوْمَئِذٍ لَّا يُسْأَلُ عَن ذَنبِهِ إِنسٌ وَلَا جَانٌّ",
+        "latin": "Fa-yawma'izil laa yus'alu 'an zambiheee insunw wa laa jaann",
+        "terjemah": "Maka pada hari itu manusia dan jin tidak ditanya tentang dosanya.",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 40,
+        "arab": "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ",
+        "latin": "Fabi ayyi aalaaa'i Rabbikumaa tukazzibaan.",
+        "terjemah": "Maka nikmat Tuhanmu yang manakah yang kamu dustakan?",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 41,
+        "arab": "يُعْرَفُ الْمُجْرِمُونَ بِسِيمَاهُمْ فَيُؤْخَذُ بِالنَّوَاصِي وَالْأَقْدَامِ",
+        "latin": "Yu'raful mujrimoona biseemaahum fa'yu'khazu binna waasi wal aqdaam",
+        "terjemah": "Orang-orang yang berdosa itu diketahui dengan tanda-tandanya, lalu direnggut ubun-ubun dan kakinya.",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 42,
+        "arab": "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ",
+        "latin": "Fabi ayyi aalaaa'i Rabbikumaa tukazzibaan.",
+        "terjemah": "Maka nikmat Tuhanmu yang manakah yang kamu dustakan?",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 43,
+        "arab": "هَٰذِهِ جَهَنَّمُ الَّتِي يُكَذِّبُ بِهَا الْمُجْرِمُونَ",
+        "latin": "Haazihee jahannamul latee yukazzibu bihal mujrimoon",
+        "terjemah": "Inilah neraka Jahanam yang didustakan oleh orang-orang yang berdosa.",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 44,
+        "arab": "يَطُوفُونَ بَيْنَهَا وَبَيْنَ حَمِيمٍ آنٍ",
+        "latin": "Yatoofoona bainahaa wa baina hameemim aan",
+        "terjemah": "Mereka berkeliling di sana dan di antara air yang mendidih.",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 45,
+        "arab": "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ",
+        "latin": "Fabi ayyi aalaaa'i Rabbikumaa tukazzibaan.",
+        "terjemah": "Maka nikmat Tuhanmu yang manakah yang kamu dustakan?",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 46,
+        "arab": "وَلِمَنْ خَافَ مَقَامَ رَبِّهِ جَنَّتَانِ",
+        "latin": "Wa liman khaafa maqaama rabbihee jannataan",
+        "terjemah": "Dan bagi siapa yang takut akan saat menghadap Tuhannya ada dua surga.",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 47,
+        "arab": "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ",
+        "latin": "Fabi ayyi aalaaa'i Rabbikumaa tukazzibaan.",
+        "terjemah": "Maka nikmat Tuhanmu yang manakah yang kamu dustakan?",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 48,
+        "arab": "ذَوَاتَا أَفْنَانٍ",
+        "latin": "Zawaataaa afnaan",
+        "terjemah": "kedua surga itu mempunyai aneka pepohonan dan buah-buahan.",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 49,
+        "arab": "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ",
+        "latin": "Fabi ayyi aalaaa'i Rabbikumaa tukazzibaan.",
+        "terjemah": "Maka nikmat Tuhanmu yang manakah yang kamu dustakan?",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 50,
+        "arab": "فِيهِمَا عَيْنَانِ تَجْرِيَانِ",
+        "latin": "Feehimaa 'aynaani tajriyaan",
+        "terjemah": "Di dalam kedua surga itu ada dua buah mata air yang memancar.",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 51,
+        "arab": "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ",
+        "latin": "Fabi ayyi aalaaa'i Rabbikumaa tukazzibaan.",
+        "terjemah": "Maka nikmat Tuhanmu yang manakah yang kamu dustakan?",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 52,
+        "arab": "فِيهِمَا مِن كُلِّ فَاكِهَةٍ زَوْجَانِ",
+        "latin": "Feehimaa min kulli faakihatin zawjaan",
+        "terjemah": "Di dalam kedua surga itu terdapat aneka buah-buahan yang berpasang-pasangan.",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 53,
+        "arab": "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ",
+        "latin": "Fabi ayyi aalaaa'i Rabbikumaa tukazzibaan.",
+        "terjemah": "Maka nikmat Tuhanmu yang manakah yang kamu dustakan?",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 54,
+        "arab": "مُتَّكِئِينَ عَلَىٰ فُرُشٍ بَطَائِنُهَا مِنْ إِسْتَبْرَقٍ ۚ وَجَنَى الْجَنَّتَيْنِ دَانٍ",
+        "latin": "Muttaki'eena 'alaa furushim bataaa'inuhaa min istabraq; wajanal jannataini daan",
+        "terjemah": "Mereka bersandar di atas permadani yang bagian dalamnya dari sutera tebal. Dan buah-buahan di kedua surga itu dapat (dipetik) dari dekat.",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 55,
+        "arab": "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ",
+        "latin": "Fabi ayyi aalaaa'i Rabbikumaa tukazzibaan.",
+        "terjemah": "Maka nikmat Tuhanmu yang manakah yang kamu dustakan?",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 56,
+        "arab": "فِيهِنَّ قَاصِرَاتُ الطَّرْفِ لَمْ يَطْمِثْهُنَّ إِنسٌ قَبْلَهُمْ وَلَا جَانٌّ",
+        "latin": "Feehinna qaasiratut tarfi lam yatmishunna insun qablahum wa laa jaaann",
+        "terjemah": "Di dalam surga itu ada bidadari-bidadari yang membatasi pandangan, yang tidak pernah disentuh oleh manusia maupun jin sebelumnya.",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 57,
+        "arab": "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ",
+        "latin": "Fabi ayyi aalaaa'i Rabbikumaa tukazzibaan.",
+        "terjemah": "Maka nikmat Tuhanmu yang manakah yang kamu dustakan?",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 58,
+        "arab": "كَأَنَّهُنَّ الْيَاقُوتُ وَالْمَرْجَانُ",
+        "latin": "ka annahunnal yaaqootu wal marjaan",
+        "terjemah": "Seakan-akan mereka itu permata yakut dan marjan.",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 59,
+        "arab": "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ",
+        "latin": "Fabi ayyi aalaaa'i Rabbikumaa tukazzibaan.",
+        "terjemah": "Maka nikmat Tuhanmu yang manakah yang kamu dustakan?",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 60,
+        "arab": "هَلْ جَزَاءُ الْإِحْسَانِ إِلَّا الْإِحْسَانُ",
+        "latin": "Hal jazaaa'ul ihsaani illal ihsaan",
+        "terjemah": "Tidak ada balasan untuk kebaikan selain kebaikan (pula).",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 61,
+        "arab": "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ",
+        "latin": "Fabi ayyi aalaaa'i Rabbikumaa tukazzibaan.",
+        "terjemah": "Maka nikmat Tuhanmu yang manakah yang kamu dustakan?",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 62,
+        "arab": "وَمِن دُونِهِمَا جَنَّتَانِ",
+        "latin": "Wa min doonihimaa jannataan",
+        "terjemah": "Dan selain dari dua surga itu ada dua surga lagi.",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 63,
+        "arab": "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ",
+        "latin": "Fabi ayyi aalaaa'i Rabbikumaa tukazzibaan.",
+        "terjemah": "Maka nikmat Tuhanmu yang manakah yang kamu dustakan,",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 64,
+        "arab": "مُدْهَامَّتَانِ",
+        "latin": "Mudhaaammataan",
+        "terjemah": "kedua surga itu (kelihatan) hijau tua warnanya.",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 65,
+        "arab": "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ",
+        "latin": "Fabi ayyi aalaaa'i Rabbikumaa tukazzibaan.",
+        "terjemah": "Maka nikmat Tuhanmu yang manakah yang kamu dustakan?",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 66,
+        "arab": "فِيهِمَا عَيْنَانِ نَضَّاخَتَانِ",
+        "latin": "Feehimaa 'aynaani nad daakhataan",
+        "terjemah": "Di dalam keduanya (surga itu) ada dua buah mata air yang memancar.",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 67,
+        "arab": "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ",
+        "latin": "Fabi ayyi aalaaa'i Rabbikumaa tukazzibaan.",
+        "terjemah": "Maka nikmat Tuhanmu yang manakah yang kamu dustakan?",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 68,
+        "arab": "فِيهِمَا فَاكِهَةٌ وَنَخْلٌ وَرُمَّانٌ",
+        "latin": "Feehimaa faakihatunw wa nakhlunw wa rummaan",
+        "terjemah": "Di dalam kedua surga itu ada buah-buahan, kurma dan delima.",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 69,
+        "arab": "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ",
+        "latin": "Fabi ayyi aalaaa'i Rabbikumaa tukazzibaan.",
+        "terjemah": "Maka nikmat Tuhanmu yang manakah yang kamu dustakan?",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 70,
+        "arab": "فِيهِنَّ خَيْرَاتٌ حِسَانٌ",
+        "latin": "Feehinna khairaatun hisaan",
+        "terjemah": "Di dalam surga-surga itu ada bidadari-bidadari yang baik-baik dan jelita.",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 71,
+        "arab": "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ",
+        "latin": "Fabi ayyi aalaaa'i Rabbikumaa tukazzibaan.",
+        "terjemah": "Maka nikmat Tuhanmu yang manakah yang kamu dustakan?",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 72,
+        "arab": "حُورٌ مَّقْصُورَاتٌ فِي الْخِيَامِ",
+        "latin": "Hoorum maqsooraatun fil khiyaam",
+        "terjemah": "Bidadari-bidadari yang dipelihara di dalam kemah-kemah.",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 73,
+        "arab": "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ",
+        "latin": "Fabi ayyi aalaaa'i Rabbikumaa tukazzibaan.",
+        "terjemah": "Maka nikmat Tuhanmu yang manakah yang kamu dustakan?",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 74,
+        "arab": "لَمْ يَطْمِثْهُنَّ إِنسٌ قَبْلَهُمْ وَلَا جَانٌّ",
+        "latin": "Lam yatmis hunna insun qablahum wa laa jaaann",
+        "terjemah": "Mereka tidak pernah disentuh oleh manusia maupun oleh jin sebelumnya.",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 75,
+        "arab": "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ",
+        "latin": "Fabi ayyi aalaaa'i Rabbikumaa tukazzibaan.",
+        "terjemah": "Maka nikmat Tuhanmu yang manakah yang kamu dustakan?",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 76,
+        "arab": "مُتَّكِئِينَ عَلَىٰ رَفْرَفٍ خُضْرٍ وَعَبْقَرِيٍّ حِسَانٍ",
+        "latin": "Muttaki'eena 'alaa rafratin khudrinw wa 'abqariyyin hisaan",
+        "terjemah": "Mereka bersandar pada bantal-bantal yang hijau dan permadani-permadani yang indah.",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 77,
+        "arab": "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ",
+        "latin": "Fabi ayyi aalaaa'i Rabbikumaa tukazzibaan.",
+        "terjemah": "Maka nikmat Tuhanmu yang manakah yang kamu dustakan?",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 78,
+        "arab": "تَبَارَكَ اسْمُ رَبِّكَ ذِي الْجَلَالِ وَالْإِكْرَامِ",
+        "latin": "Tabaarakasmu Rabbika Zil-Jalaali wal-Ikraam",
+        "terjemah": "Mahasuci nama Tuhanmu Pemilik Keagungan dan Kemuliaan.",
+        "juz": 27
+      }
+    ]
+  }
+]

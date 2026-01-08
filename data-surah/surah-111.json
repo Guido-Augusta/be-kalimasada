@@ -1,0 +1,48 @@
+[
+  {
+    "nomor": 111,
+    "nama": "المسد",
+    "namaLatin": "Al-Lahab",
+    "totalAyat": 5,
+    "tempatTurun": "Makkiyyah",
+    "arti": "Api Yang Bergejolak",
+    "deskripsi": "Surat ini terdiri atas 5 ayat, termasuk golongan surat-surat Makkiyyah,  diturunkan sesudah surat Al Fath. Nama Al Lahab diambil dari kata  Al Lahab yang terdapat pada ayat ketiga surat ini yang artinya gejolak  api. Surat ini juga dinamakan surat Al Masad.",
+    "ayat": [
+      {
+        "nomorAyat": 1,
+        "arab": "تَبَّتْ يَدَا أَبِي لَهَبٍ وَتَبَّ",
+        "latin": "Tab bat yadaa abee Lahabinw-wa tabb",
+        "terjemah": "Binasalah kedua tangan Abu Lahab dan benar-benar binasa dia!",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 2,
+        "arab": "مَا أَغْنَىٰ عَنْهُ مَالُهُ وَمَا كَسَبَ",
+        "latin": "Maa aghna 'anhu maaluhu wa ma kasab",
+        "terjemah": "Tidaklah berguna baginya hartanya dan apa yang dia usahakan.",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 3,
+        "arab": "سَيَصْلَىٰ نَارًا ذَاتَ لَهَبٍ",
+        "latin": "Sa yas laa naran zaata lahab",
+        "terjemah": "Kelak dia akan masuk ke dalam api yang bergejolak (neraka).",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 4,
+        "arab": "وَامْرَأَتُهُ حَمَّالَةَ الْحَطَبِ",
+        "latin": "Wam ra-atuh hamma latal-hatab",
+        "terjemah": "Dan (begitu pula) istrinya, pembawa kayu bakar (penyebar fitnah).",
+        "juz": 30
+      },
+      {
+        "nomorAyat": 5,
+        "arab": "فِي جِيدِهَا حَبْلٌ مِّن مَّسَدٍ",
+        "latin": "Fee jeediha hab lum mim-masad",
+        "terjemah": "Di lehernya ada tali dari sabut yang dipintal.",
+        "juz": 30
+      }
+    ]
+  }
+]

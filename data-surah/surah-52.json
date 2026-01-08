@@ -1,0 +1,356 @@
+[
+  {
+    "nomor": 52,
+    "nama": "الطور",
+    "namaLatin": "At-Tur",
+    "totalAyat": 49,
+    "tempatTurun": "Makkiyyah",
+    "arti": "Bukit Tursina",
+    "deskripsi": "Surat Ath Thuur terdiri atas 49 ayat, termasuk golongan surat-surat Makkiyyah, diturunkan sesudah surat As Sajdah. Dinamai Ath Thuur (Bukit) diambil dari perkataan Ath Thuur yang terdapat pada ayat pertama surat ini. Yang dimaksud dengan bukit di sini ialah bukit Thursina yang terletak di semenanjung Sinai, tempat Nabi Musa menerima wahyu dari Tuhannya.",
+    "ayat": [
+      {
+        "nomorAyat": 1,
+        "arab": "وَالطُّورِ",
+        "latin": "Wat-Toor",
+        "terjemah": "Demi gunung (Sinai),",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 2,
+        "arab": "وَكِتَابٍ مَّسْطُورٍ",
+        "latin": "Wa kitaabim mastoor",
+        "terjemah": "dan demi Kitab yang ditulis,",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 3,
+        "arab": "فِي رَقٍّ مَّنشُورٍ",
+        "latin": "Fee raqqim manshoor",
+        "terjemah": "pada lembaran yang terbuka,",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 4,
+        "arab": "وَالْبَيْتِ الْمَعْمُورِ",
+        "latin": "Wal baitil ma'moor",
+        "terjemah": "demi Baitulma‘mur (Ka‘bah),",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 5,
+        "arab": "وَالسَّقْفِ الْمَرْفُوعِ",
+        "latin": "Wassaqfil marfoo'",
+        "terjemah": "demi atap yang ditinggikan (langit),",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 6,
+        "arab": "وَالْبَحْرِ الْمَسْجُورِ",
+        "latin": "Wal bahril masjoor",
+        "terjemah": "demi lautan yang penuh gelombang,",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 7,
+        "arab": "إِنَّ عَذَابَ رَبِّكَ لَوَاقِعٌ",
+        "latin": "Inna 'azaaba Rabbika lawaaqi'",
+        "terjemah": "sungguh, azab Tuhanmu pasti terjadi,",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 8,
+        "arab": "مَّا لَهُ مِن دَافِعٍ",
+        "latin": "Maa lahoo min daafi'",
+        "terjemah": "tidak sesuatu pun yang dapat menolaknya,",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 9,
+        "arab": "يَوْمَ تَمُورُ السَّمَاءُ مَوْرًا",
+        "latin": "Yawma tamoorus samaaa'u mawraa",
+        "terjemah": "pada hari (ketika) langit berguncang sekeras-kerasnya,",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 10,
+        "arab": "وَتَسِيرُ الْجِبَالُ سَيْرًا",
+        "latin": "Wa taseerul jibaalu sairaa",
+        "terjemah": "dan gunung berjalan (berpindah-pindah).",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 11,
+        "arab": "فَوَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ",
+        "latin": "Fawailuny yawma 'izil lil mukaazzibeen",
+        "terjemah": "Maka celakalah pada hari itu bagi orang-orang yang mendustakan.",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 12,
+        "arab": "الَّذِينَ هُمْ فِي خَوْضٍ يَلْعَبُونَ",
+        "latin": "Allazeena hum fee khawdiny yal'aboon",
+        "terjemah": "Orang-orang yang bermain-main dalam kebatilan (perbuatan dosa),",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 13,
+        "arab": "يَوْمَ يُدَعُّونَ إِلَىٰ نَارِ جَهَنَّمَ دَعًّا",
+        "latin": "Yawma yuda'-'oona ilaa naari jahannama da'-'aa",
+        "terjemah": "pada hari (ketika) itu mereka didorong ke neraka Jahanam dengan sekuat-kuatnya.",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 14,
+        "arab": "هَٰذِهِ النَّارُ الَّتِي كُنتُم بِهَا تُكَذِّبُونَ",
+        "latin": "Haazihin naarul latee kuntum bihaa tukazziboon",
+        "terjemah": "(Dikatakan kepada mereka), “Inilah neraka yang dahulu kamu mendustakannya.”",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 15,
+        "arab": "أَفَسِحْرٌ هَٰذَا أَمْ أَنتُمْ لَا تُبْصِرُونَ",
+        "latin": "Afasihrun haazaaaa am antum laa tubsiroon",
+        "terjemah": "Maka apakah ini sihir? Ataukah kamu tidak melihat?",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 16,
+        "arab": "اصْلَوْهَا فَاصْبِرُوا أَوْ لَا تَصْبِرُوا سَوَاءٌ عَلَيْكُمْ ۖ إِنَّمَا تُجْزَوْنَ مَا كُنتُمْ تَعْمَلُونَ",
+        "latin": "Islawhaa fasbirooo aw laa tasbiroo sawaaa'un 'alaikum innamaa tujzawna maa kuntum ta'maloon",
+        "terjemah": "Masuklah ke dalamnya (rasakanlah panas apinya); baik kamu bersabar atau tidak, sama saja bagimu; sesungguhnya kamu hanya diberi balasan atas apa yang telah kamu kerjakan.",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 17,
+        "arab": "إِنَّ الْمُتَّقِينَ فِي جَنَّاتٍ وَنَعِيمٍ",
+        "latin": "Innal muttaqeena fee jannaatinw wa na'eem",
+        "terjemah": "Sesungguhnya orang-orang yang bertakwa berada dalam surga dan kenikmatan,",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 18,
+        "arab": "فَاكِهِينَ بِمَا آتَاهُمْ رَبُّهُمْ وَوَقَاهُمْ رَبُّهُمْ عَذَابَ الْجَحِيمِ",
+        "latin": "Faakiheena bimaaa aataahum rabbuhum wa waqaahum rabbuhum 'azaabal jaheem",
+        "terjemah": "mereka bersuka ria dengan apa yang diberikan Tuhan kepada mereka; dan Tuhan memelihara mereka dari azab neraka.",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 19,
+        "arab": "كُلُوا وَاشْرَبُوا هَنِيئًا بِمَا كُنتُمْ تَعْمَلُونَ",
+        "latin": "Kuloo washraboo haneee 'am bimaa kuntum ta'maloon",
+        "terjemah": "(Dikatakan kepada mereka), “Makan dan minumlah dengan rasa nikmat sebagai balasan dari apa yang telah kamu kerjakan.”",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 20,
+        "arab": "مُتَّكِئِينَ عَلَىٰ سُرُرٍ مَّصْفُوفَةٍ ۖ وَزَوَّجْنَاهُم بِحُورٍ عِينٍ",
+        "latin": "Muttaki'eena 'alaa sururim masfoofatinw wa zawwaj naahum bihoorin 'een",
+        "terjemah": "Mereka bersandar di atas dipan-dipan yang tersusun dan Kami berikan kepada mereka pasangan bidadari yang bermata indah.",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 21,
+        "arab": "وَالَّذِينَ آمَنُوا وَاتَّبَعَتْهُمْ ذُرِّيَّتُهُم بِإِيمَانٍ أَلْحَقْنَا بِهِمْ ذُرِّيَّتَهُمْ وَمَا أَلَتْنَاهُم مِّنْ عَمَلِهِم مِّن شَيْءٍ ۚ كُلُّ امْرِئٍ بِمَا كَسَبَ رَهِينٌ",
+        "latin": "Wallazeena aamanoo wattaba'at hum zurriyyatuhum bieemaanin alhaqnaa bihim zurriyyatahum wa maaa alatnaahum min 'amalihim min shai'; kullum ri'im bimaa kasaba raheen",
+        "terjemah": "Dan orang-orang yang beriman, beserta anak cucu mereka yang mengikuti mereka dalam keimanan, Kami pertemukan mereka dengan anak cucu mereka (di dalam surga), dan Kami tidak mengurangi sedikit pun pahala amal (kebajikan) mereka. Setiap orang terikat dengan apa yang dikerjakannya.",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 22,
+        "arab": "وَأَمْدَدْنَاهُم بِفَاكِهَةٍ وَلَحْمٍ مِّمَّا يَشْتَهُونَ",
+        "latin": "Wa amdadnaahum bifaa kihatinw wa lahmim mimmaa yashtahoon",
+        "terjemah": "Dan Kami berikan kepada mereka tambahan berupa buah-buahan dan daging dari segala jenis yang mereka ingini.",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 23,
+        "arab": "يَتَنَازَعُونَ فِيهَا كَأْسًا لَّا لَغْوٌ فِيهَا وَلَا تَأْثِيمٌ",
+        "latin": "Yatanaaza'oona feehaa kaasal laa laghwun feehaa wa laa taaseem",
+        "terjemah": "(Di dalam surga itu) mereka saling mengulurkan gelas yang isinya tidak (menimbulkan) ucapan yang tidak berfaedah ataupun perbuatan dosa.",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 24,
+        "arab": "۞ وَيَطُوفُ عَلَيْهِمْ غِلْمَانٌ لَّهُمْ كَأَنَّهُمْ لُؤْلُؤٌ مَّكْنُونٌ",
+        "latin": "Wa yatoofu 'alaihim ghilmaanul lahum ka annahum lu'lu'um maknoon",
+        "terjemah": "Dan di sekitar mereka ada anak-anak muda yang berkeliling untuk (melayani) mereka, seakan-akan mereka itu mutiara yang tersimpan.",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 25,
+        "arab": "وَأَقْبَلَ بَعْضُهُمْ عَلَىٰ بَعْضٍ يَتَسَاءَلُونَ",
+        "latin": "Wa aqbala ba'duhum 'alaa ba'diny yatasaaa'aloon",
+        "terjemah": "Dan sebagian mereka berhadap-hadapan satu sama lain saling bertegur sapa.",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 26,
+        "arab": "قَالُوا إِنَّا كُنَّا قَبْلُ فِي أَهْلِنَا مُشْفِقِينَ",
+        "latin": "Qaalooo innaa kunnaa qablu feee ahlinaa mushfiqeen",
+        "terjemah": "Mereka berkata, “Sesungguhnya kami dahulu, sewaktu berada di tengah-tengah keluarga kami merasa takut (akan diazab).",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 27,
+        "arab": "فَمَنَّ اللَّهُ عَلَيْنَا وَوَقَانَا عَذَابَ السَّمُومِ",
+        "latin": "Famannnal laahu 'alainaa wa waqaanaa 'azaabas samoom",
+        "terjemah": "Maka Allah memberikan karunia kepada kami dan memelihara kami dari azab neraka.",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 28,
+        "arab": "إِنَّا كُنَّا مِن قَبْلُ نَدْعُوهُ ۖ إِنَّهُ هُوَ الْبَرُّ الرَّحِيمُ",
+        "latin": "Innaa kunnaa min qablu nad'oohu innahoo huwal barrur raheem",
+        "terjemah": "Sesungguhnya kami menyembah-Nya sejak dahulu. Dialah Yang Maha Melimpahkan Kebaikan, Maha Penyayang.”",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 29,
+        "arab": "فَذَكِّرْ فَمَا أَنتَ بِنِعْمَتِ رَبِّكَ بِكَاهِنٍ وَلَا مَجْنُونٍ",
+        "latin": "Fazakkir famaaa anta bini'mati rabbika bikaahininw wa laa majnoon",
+        "terjemah": "Maka peringatkanlah, karena dengan nikmat Tuhanmu engkau (Muhammad) bukanlah seorang tukang tenung dan bukan pula orang gila.",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 30,
+        "arab": "أَمْ يَقُولُونَ شَاعِرٌ نَّتَرَبَّصُ بِهِ رَيْبَ الْمَنُونِ",
+        "latin": "Am yaqooloona shaa'irun natarabbasu bihee raibal manoon",
+        "terjemah": "Bahkan mereka berkata, “Dia adalah seorang penyair yang kami tunggu-tunggu kecelakaan menimpanya.”",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 31,
+        "arab": "قُلْ تَرَبَّصُوا فَإِنِّي مَعَكُم مِّنَ الْمُتَرَبِّصِينَ",
+        "latin": "Qul tarabbasoo fa innee ma'akum minal mutarabbiseen",
+        "terjemah": "Katakanlah (Muhammad), “Tunggulah! Sesungguhnya aku pun termasuk orang yang sedang menunggu bersama kamu.”",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 32,
+        "arab": "أَمْ تَأْمُرُهُمْ أَحْلَامُهُم بِهَٰذَا ۚ أَمْ هُمْ قَوْمٌ طَاغُونَ",
+        "latin": "Am taamuruhum ahlaamuhum bihaazaaa am hum qawmun taaghoon",
+        "terjemah": "Apakah mereka diperintah oleh pikiran-pikiran mereka untuk mengucapkan (tuduhan-tuduhan) ini ataukah mereka kaum yang melampaui batas?",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 33,
+        "arab": "أَمْ يَقُولُونَ تَقَوَّلَهُ ۚ بَل لَّا يُؤْمِنُونَ",
+        "latin": "Am yaqooloona taqawwalah; bal laa yu'minoon",
+        "terjemah": "Ataukah mereka berkata, “Dia (Muhammad) mereka-rekanya.” Tidak! Merekalah yang tidak beriman.",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 34,
+        "arab": "فَلْيَأْتُوا بِحَدِيثٍ مِّثْلِهِ إِن كَانُوا صَادِقِينَ",
+        "latin": "Falyaatoo bihadeesim misliheee in kaanoo saadiqeen",
+        "terjemah": "Maka cobalah mereka membuat yang semisal dengannya (Al-Qur'an) jika mereka orang-orang yang benar.",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 35,
+        "arab": "أَمْ خُلِقُوا مِنْ غَيْرِ شَيْءٍ أَمْ هُمُ الْخَالِقُونَ",
+        "latin": "Am khuliqoo min ghairi shai'in am humul khaaliqoon",
+        "terjemah": "Atau apakah mereka tercipta tanpa asal-usul ataukah mereka yang menciptakan (diri mereka sendiri)?",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 36,
+        "arab": "أَمْ خَلَقُوا السَّمَاوَاتِ وَالْأَرْضَ ۚ بَل لَّا يُوقِنُونَ",
+        "latin": "Am khalaqus samaawaati wal ard; bal laa yooqinoon",
+        "terjemah": "Ataukah mereka telah menciptakan langit dan bumi? Sebenarnya mereka tidak meyakini (apa yang mereka katakan).",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 37,
+        "arab": "أَمْ عِندَهُمْ خَزَائِنُ رَبِّكَ أَمْ هُمُ الْمُصَيْطِرُونَ",
+        "latin": "Am'indahum khazaaa'inu rabbika am humul musaitiroon",
+        "terjemah": "Ataukah di sisi mereka ada perbendaharaan Tuhanmu ataukah mereka yang berkuasa?",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 38,
+        "arab": "أَمْ لَهُمْ سُلَّمٌ يَسْتَمِعُونَ فِيهِ ۖ فَلْيَأْتِ مُسْتَمِعُهُم بِسُلْطَانٍ مُّبِينٍ",
+        "latin": "Am lahum sullamuny yastami'oona feehi falyaati mustami'uhum bisultaanim mubeen",
+        "terjemah": "Atau apakah mereka mempunyai tangga (ke langit) untuk mendengarkan (hal-hal yang gaib)? Maka hendaklah orang yang mendengarkan di antara mereka itu datang membawa keterangan yang nyata.",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 39,
+        "arab": "أَمْ لَهُ الْبَنَاتُ وَلَكُمُ الْبَنُونَ",
+        "latin": "Am lahul banaatu wa lakumul banoon",
+        "terjemah": "Ataukah (pantas) untuk Dia anak-anak perempuan sedangkan untuk kamu anak-anak laki-laki?",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 40,
+        "arab": "أَمْ تَسْأَلُهُمْ أَجْرًا فَهُم مِّن مَّغْرَمٍ مُّثْقَلُونَ",
+        "latin": "Am tas'aluhum ajran fahum mim maghramim musqaloon",
+        "terjemah": "Ataukah engkau (Muhamamd) meminta imbalan kepada mereka sehingga mereka dibebani dengan utang?",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 41,
+        "arab": "أَمْ عِندَهُمُ الْغَيْبُ فَهُمْ يَكْتُبُونَ",
+        "latin": "Am 'indahumul ghaibu fahum yaktuboon",
+        "terjemah": "Ataukah di sisi mereka mempunyai (pengetahuan) tentang yang gaib lalu mereka menuliskannya?",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 42,
+        "arab": "أَمْ يُرِيدُونَ كَيْدًا ۖ فَالَّذِينَ كَفَرُوا هُمُ الْمَكِيدُونَ",
+        "latin": "Am yureedoona kaidan fallazeena kafaroo humul makeedoon",
+        "terjemah": "Ataukah mereka hendak melakukan tipu daya? Tetapi orang-orang yang kafir itu, justru merekalah yang terkena tipu daya.",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 43,
+        "arab": "أَمْ لَهُمْ إِلَٰهٌ غَيْرُ اللَّهِ ۚ سُبْحَانَ اللَّهِ عَمَّا يُشْرِكُونَ",
+        "latin": "Am lahum ilaahun ghairul laa; subhaanal laahi 'ammaa yushrikoon",
+        "terjemah": "Ataukah mereka mempunyai tuhan selain Allah? Mahasuci Allah dari apa yang mereka persekutukan.",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 44,
+        "arab": "وَإِن يَرَوْا كِسْفًا مِّنَ السَّمَاءِ سَاقِطًا يَقُولُوا سَحَابٌ مَّرْكُومٌ",
+        "latin": "Wa iny yaraw kisfam minas samaaa'i saaqitany yaqooloo sahaabum markoom",
+        "terjemah": "Dan jika mereka melihat gumpalan-gumpalan awan berjatuhan dari langit, mereka berkata, “Itu adalah awan yang bertumpuk-tumpuk.”",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 45,
+        "arab": "فَذَرْهُمْ حَتَّىٰ يُلَاقُوا يَوْمَهُمُ الَّذِي فِيهِ يُصْعَقُونَ",
+        "latin": "Fazarhum hatta yulaaqoo yawmahumul lazee feehi yus'aqoon",
+        "terjemah": "Maka biarkanlah mereka hingga mereka menemui hari (yang dijanjikan kepada) mereka, pada hari itu mereka dibinasakan,",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 46,
+        "arab": "يَوْمَ لَا يُغْنِي عَنْهُمْ كَيْدُهُمْ شَيْئًا وَلَا هُمْ يُنصَرُونَ",
+        "latin": "Yawma laa yughnee 'anhum kaidumhum shai'anw wa laa hum yunsaroon",
+        "terjemah": "(yaitu) pada hari (ketika) tipu daya mereka tidak berguna sedikit pun bagi mereka dan mereka tidak akan diberi pertolongan.",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 47,
+        "arab": "وَإِنَّ لِلَّذِينَ ظَلَمُوا عَذَابًا دُونَ ذَٰلِكَ وَلَٰكِنَّ أَكْثَرَهُمْ لَا يَعْلَمُونَ",
+        "latin": "Wa inna lillazeena zalamoo 'azaaban doona zalika wa laakinna aksarahum laa ya'lamoon",
+        "terjemah": "Dan sesungguhnya bagi orang-orang yang zalim masih ada azab selain itu. Tetapi kebanyakan mereka tidak mengetahui.",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 48,
+        "arab": "وَاصْبِرْ لِحُكْمِ رَبِّكَ فَإِنَّكَ بِأَعْيُنِنَا ۖ وَسَبِّحْ بِحَمْدِ رَبِّكَ حِينَ تَقُومُ",
+        "latin": "Wasbir lihukmi rabbika fa innaka bi-a'yuninaa wa sabbih bihamdi rabbika heena taqoom",
+        "terjemah": "Dan bersabarlah (Muhammad) menunggu ketetapan Tuhanmu, karena sesungguhnya engkau berada dalam pengawasan Kami, dan bertasbihlah dengan memuji Tuhanmu ketika engkau bangun,",
+        "juz": 27
+      },
+      {
+        "nomorAyat": 49,
+        "arab": "وَمِنَ اللَّيْلِ فَسَبِّحْهُ وَإِدْبَارَ النُّجُومِ",
+        "latin": "Wa minal laili fasabbihhu wa idbaaran nujoom",
+        "terjemah": "dan pada sebagian malam bertasbihlah kepada-Nya dan (juga) pada waktu terbenamnya bintang-bintang (pada waktu fajar).",
+        "juz": 27
+      }
+    ]
+  }
+]

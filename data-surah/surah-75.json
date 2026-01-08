@@ -1,0 +1,293 @@
+[
+  {
+    "nomor": 75,
+    "nama": "القيامة",
+    "namaLatin": "Al-Qiyamah",
+    "totalAyat": 40,
+    "tempatTurun": "Makkiyyah",
+    "arti": "Hari Kiamat",
+    "deskripsi": "Surat Al Qiyaamah terdiri atas 40 ayat, termasuk golongan surat-surat Makkiyah, diturunkan sesudah surat Al Qaari'ah. Dinamai Al Qiyaamah (hari kiamat) diambil dari perkataan Al Qiyaamah yang terdapat pada ayat pertama surat ini.",
+    "ayat": [
+      {
+        "nomorAyat": 1,
+        "arab": "لَا أُقْسِمُ بِيَوْمِ الْقِيَامَةِ",
+        "latin": "Laaa uqsimu bi yawmil qiyaamah",
+        "terjemah": "Aku bersumpah dengan hari Kiamat,",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 2,
+        "arab": "وَلَا أُقْسِمُ بِالنَّفْسِ اللَّوَّامَةِ",
+        "latin": "Wa laaa uqsimu bin nafsil lawwaamah",
+        "terjemah": "dan aku bersumpah demi jiwa yang selalu menyesali (dirinya sendiri).",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 3,
+        "arab": "أَيَحْسَبُ الْإِنسَانُ أَلَّن نَّجْمَعَ عِظَامَهُ",
+        "latin": "Ayahsabul insaanu al lan najm'a 'izaamah",
+        "terjemah": "Apakah manusia mengira bahwa Kami tidak akan mengumpulkan (kembali) tulang-belulangnya?",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 4,
+        "arab": "بَلَىٰ قَادِرِينَ عَلَىٰ أَن نُّسَوِّيَ بَنَانَهُ",
+        "latin": "Balaa qaadireena 'alaaa an nusawwiya banaanah",
+        "terjemah": "(Bahkan) Kami mampu menyusun (kembali) jari-jemarinya dengan sempurna.",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 5,
+        "arab": "بَلْ يُرِيدُ الْإِنسَانُ لِيَفْجُرَ أَمَامَهُ",
+        "latin": "Bal yureedul insaanu liyafjura amaamah",
+        "terjemah": "Tetapi manusia hendak membuat maksiat terus-menerus.",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 6,
+        "arab": "يَسْأَلُ أَيَّانَ يَوْمُ الْقِيَامَةِ",
+        "latin": "Yas'alu ayyyaana yawmul qiyaamah",
+        "terjemah": "Dia bertanya, “Kapankah hari Kiamat itu?”",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 7,
+        "arab": "فَإِذَا بَرِقَ الْبَصَرُ",
+        "latin": "Fa izaa bariqal basar",
+        "terjemah": "Maka apabila mata terbelalak (ketakutan),",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 8,
+        "arab": "وَخَسَفَ الْقَمَرُ",
+        "latin": "We khasafal qamar",
+        "terjemah": "dan bulan pun telah hilang cahayanya,",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 9,
+        "arab": "وَجُمِعَ الشَّمْسُ وَالْقَمَرُ",
+        "latin": "Wa jumi'ash shamusu wal qamar",
+        "terjemah": "lalu matahari dan bulan dikumpulkan,",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 10,
+        "arab": "يَقُولُ الْإِنسَانُ يَوْمَئِذٍ أَيْنَ الْمَفَرُّ",
+        "latin": "Yaqoolul insaanu yaw ma 'izin aynal mafarr",
+        "terjemah": "pada hari itu manusia berkata, “Ke mana tempat lari?”",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 11,
+        "arab": "كَلَّا لَا وَزَرَ",
+        "latin": "Kallaa laa wazar",
+        "terjemah": "Tidak! Tidak ada tempat berlindung!",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 12,
+        "arab": "إِلَىٰ رَبِّكَ يَوْمَئِذٍ الْمُسْتَقَرُّ",
+        "latin": "Ilaa rabbika yawma 'izinil mustaqarr",
+        "terjemah": "Hanya kepada Tuhanmu tempat kembali pada hari itu.",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 13,
+        "arab": "يُنَبَّأُ الْإِنسَانُ يَوْمَئِذٍ بِمَا قَدَّمَ وَأَخَّرَ",
+        "latin": "Yunabba 'ul insaanu yawma 'izim bimaa qaddama wa akhkhar",
+        "terjemah": "Pada hari itu diberitakan kepada manusia apa yang telah dikerjakannya dan apa yang dilalaikannya.",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 14,
+        "arab": "بَلِ الْإِنسَانُ عَلَىٰ نَفْسِهِ بَصِيرَةٌ",
+        "latin": "Balil insaanu 'alaa nafsihee baseerah",
+        "terjemah": "Bahkan manusia menjadi saksi atas dirinya sendiri,",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 15,
+        "arab": "وَلَوْ أَلْقَىٰ مَعَاذِيرَهُ",
+        "latin": "Wa law alqaa ma'aazeerah",
+        "terjemah": "dan meskipun dia mengemukakan alasan-alasannya.",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 16,
+        "arab": "لَا تُحَرِّكْ بِهِ لِسَانَكَ لِتَعْجَلَ بِهِ",
+        "latin": "Laa tuharrik bihee lisaa naka lita'jala bih",
+        "terjemah": "Jangan engkau (Muhammad) gerakkan lidahmu (untuk membaca Al-Qur'an) karena hendak cepat-cepat (menguasai)nya.",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 17,
+        "arab": "إِنَّ عَلَيْنَا جَمْعَهُ وَقُرْآنَهُ",
+        "latin": "Inna 'alainaa jam'ahoo wa qur aanah",
+        "terjemah": "Sesungguhnya Kami yang akan mengumpulkannya (di dadamu) dan membacakannya.",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 18,
+        "arab": "فَإِذَا قَرَأْنَاهُ فَاتَّبِعْ قُرْآنَهُ",
+        "latin": "Fa izaa qaraanaahu fattabi' qur aanah",
+        "terjemah": "Apabila Kami telah selesai membacakannya maka ikutilah bacaannya itu.",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 19,
+        "arab": "ثُمَّ إِنَّ عَلَيْنَا بَيَانَهُ",
+        "latin": "Summa inna 'alainaa bayaanah",
+        "terjemah": "Kemudian sesungguhnya Kami yang akan menjelaskannya.",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 20,
+        "arab": "كَلَّا بَلْ تُحِبُّونَ الْعَاجِلَةَ",
+        "latin": "Kallaa bal tuhibboonal 'aajilah",
+        "terjemah": "Tidak! Bahkan kamu mencintai kehidupan dunia,",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 21,
+        "arab": "وَتَذَرُونَ الْآخِرَةَ",
+        "latin": "Wa tazaroonal Aakhirah",
+        "terjemah": "dan mengabaikan (kehidupan) akhirat.",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 22,
+        "arab": "وُجُوهٌ يَوْمَئِذٍ نَّاضِرَةٌ",
+        "latin": "Wujoohuny yawma 'izin naadirah",
+        "terjemah": "Wajah-wajah (orang mukmin) pada hari itu berseri-seri,",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 23,
+        "arab": "إِلَىٰ رَبِّهَا نَاظِرَةٌ",
+        "latin": "Ilaa rabbihaa naazirah",
+        "terjemah": "memandang Tuhannya.",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 24,
+        "arab": "وَوُجُوهٌ يَوْمَئِذٍ بَاسِرَةٌ",
+        "latin": "Wa wujoohuny yawma 'izim baasirah",
+        "terjemah": "Dan wajah-wajah (orang kafir) pada hari itu muram,",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 25,
+        "arab": "تَظُنُّ أَن يُفْعَلَ بِهَا فَاقِرَةٌ",
+        "latin": "Tazunnu any yuf'ala bihaa faaqirah",
+        "terjemah": "mereka yakin bahwa akan ditimpakan kepadanya malapetaka yang sangat dahsyat.",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 26,
+        "arab": "كَلَّا إِذَا بَلَغَتِ التَّرَاقِيَ",
+        "latin": "Kallaaa izaa balaghatit taraaqee",
+        "terjemah": "Tidak! Apabila (nyawa) telah sampai ke kerongkongan,",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 27,
+        "arab": "وَقِيلَ مَنْ ۜ رَاقٍ",
+        "latin": "Wa qeela man raaq",
+        "terjemah": "dan dikatakan (kepadanya), “Siapa yang dapat menyembuhkan?”",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 28,
+        "arab": "وَظَنَّ أَنَّهُ الْفِرَاقُ",
+        "latin": "Wa zanna annahul firaaq",
+        "terjemah": "Dan dia yakin bahwa itulah waktu perpisahan (dengan dunia),",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 29,
+        "arab": "وَالْتَفَّتِ السَّاقُ بِالسَّاقِ",
+        "latin": "Waltaffatis saaqu bissaaq",
+        "terjemah": "dan bertaut betis (kiri) dengan betis (kanan),",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 30,
+        "arab": "إِلَىٰ رَبِّكَ يَوْمَئِذٍ الْمَسَاقُ",
+        "latin": "Ilaa rabbika yawma'izinil masaaq",
+        "terjemah": "kepada Tuhanmulah pada hari itu kamu dihalau.",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 31,
+        "arab": "فَلَا صَدَّقَ وَلَا صَلَّىٰ",
+        "latin": "Falaa saddaqa wa laa sallaa",
+        "terjemah": "Karena dia (dahulu) tidak mau membenarkan (Al-Qur'an dan Rasul) dan tidak mau melaksanakan salat,",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 32,
+        "arab": "وَلَٰكِن كَذَّبَ وَتَوَلَّىٰ",
+        "latin": "Wa laakin kazzaba wa tawalla",
+        "terjemah": "tetapi justru dia mendustakan (Rasul) dan berpaling (dari kebenaran),",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 33,
+        "arab": "ثُمَّ ذَهَبَ إِلَىٰ أَهْلِهِ يَتَمَطَّىٰ",
+        "latin": "Summa zahaba ilaaa ahlihee yatamatta",
+        "terjemah": "kemudian dia pergi kepada keluarganya dengan sombong.",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 34,
+        "arab": "أَوْلَىٰ لَكَ فَأَوْلَىٰ",
+        "latin": "Awlaa laka fa awlaa",
+        "terjemah": "Celakalah kamu! Maka celakalah!",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 35,
+        "arab": "ثُمَّ أَوْلَىٰ لَكَ فَأَوْلَىٰ",
+        "latin": "Summa awlaa laka fa awla",
+        "terjemah": "Sekali lagi, celakalah kamu (manusia)! Maka celakalah!",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 36,
+        "arab": "أَيَحْسَبُ الْإِنسَانُ أَن يُتْرَكَ سُدًى",
+        "latin": "Ayahsabul insaanu anyytraka sudaa",
+        "terjemah": "Apakah manusia mengira, dia akan dibiarkan begitu saja (tanpa pertanggungjawaban)?",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 37,
+        "arab": "أَلَمْ يَكُ نُطْفَةً مِّن مَّنِيٍّ يُمْنَىٰ",
+        "latin": "Alam yaku nutfatam mim maniyyiny yumnaa",
+        "terjemah": "Bukankah dia mulanya hanya setetes mani yang ditumpahkan (ke dalam rahim),",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 38,
+        "arab": "ثُمَّ كَانَ عَلَقَةً فَخَلَقَ فَسَوَّىٰ",
+        "latin": "Summa kaana 'alaqata fakhalaq fasawwaa",
+        "terjemah": "kemudian (mani itu) menjadi sesuatu yang melekat, lalu Allah menciptakannya dan menyempurnakannya,",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 39,
+        "arab": "فَجَعَلَ مِنْهُ الزَّوْجَيْنِ الذَّكَرَ وَالْأُنثَىٰ",
+        "latin": "Faja'ala minhuz zawjayniz zakara wal unsaa",
+        "terjemah": "lalu Dia menjadikan darinya sepasang laki-laki dan perempuan.",
+        "juz": 29
+      },
+      {
+        "nomorAyat": 40,
+        "arab": "أَلَيْسَ ذَٰلِكَ بِقَادِرٍ عَلَىٰ أَن يُحْيِيَ الْمَوْتَىٰ",
+        "latin": "Alaisa zaalika biqaadirin 'alaaa any yuhyiyal mawtaa",
+        "terjemah": "Bukankah (Allah yang berbuat) demikian berkuasa (pula) menghidupkan orang mati?",
+        "juz": 29
+      }
+    ]
+  }
+]
