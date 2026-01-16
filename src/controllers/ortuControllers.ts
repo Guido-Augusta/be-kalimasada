@@ -111,7 +111,7 @@ export const getOne = async (req: Request, res: Response) => {
 export const getByName = async (req: Request, res: Response) => {
   try {
     const nama = req.params.nama;
-    const data = await ortuService.getOrangTuaByName(nama);
+    const data = await ortuService.getOrangTuaByName(nama as string);
     if (!data || data.length === 0) {
       return res.status(404).json({ message: 'Orang Tua not found', status: 404 });
     }

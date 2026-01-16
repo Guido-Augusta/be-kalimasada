@@ -98,7 +98,7 @@ export const getOne = async (req: Request, res: Response) => {
 
 export const getByName = async (req: Request, res: Response) => {
   try {
-    const data = await santriService.getSantriByName(req.params.nama);
+    const data = await santriService.getSantriByName(req.params.nama as string);
     if (!data || data.length === 0) {
       return res.status(404).json({ message: 'Santri not found', status: 404 });
     }
