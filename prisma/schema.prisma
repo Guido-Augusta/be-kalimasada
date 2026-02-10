@@ -107,6 +107,7 @@ model Ayat {
   latin         String
   terjemah      String
   juz           Int?
+  halaman       Int?
 
   surah         Surah   @relation(fields: [surahId], references: [id])
   riwayatHafalan RiwayatHafalan[]

@@ -7,6 +7,7 @@ interface AyatOutput {
   latin: string;
   terjemah: string;
   juz: number; 
+  halaman: number;
 }
 
 interface SurahDataOutput {

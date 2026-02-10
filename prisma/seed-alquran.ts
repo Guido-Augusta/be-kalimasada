@@ -1,5 +1,5 @@
 import { PrismaClient } from '@prisma/client';
-import surahData from './data/alquran.json';
+import surahData from './data/alquran-v2.json';
 
 const prisma = new PrismaClient();
 const url = process.env.NODE_ENV === "production" ? process.env.PROD_URL : process.env.DEV_URL;
@@ -26,7 +26,7 @@ async function main() {
         tempatTurun: surah.tempatTurun as 'Makkiyyah' | 'Madaniyyah',
         arti: surah.arti,
         deskripsi: surah.deskripsi,
-        audio: audioUrl
+        audio: audioUrl,
         },
     });
 
@@ -48,6 +48,7 @@ async function main() {
           latin: ayat.latin,
           terjemah: ayat.terjemah,
           juz: ayat.juz,
+          halaman: ayat.halaman
         },
       });
     }
