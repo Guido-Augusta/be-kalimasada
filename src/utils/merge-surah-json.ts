@@ -7,6 +7,7 @@ interface Ayat {
   latin: string;
   terjemah: string;
   juz: number;
+  halaman: number;
 }
 
 interface Surat {
@@ -21,7 +22,7 @@ interface Surat {
 }
 
 async function gabungkanFileJson(): Promise<void> {
-  const direktoriData: string = './data-surah';
+  const direktoriData: string = './data-surah-page';
   const fileOutput: string = 'alquran.json';
   const dataGabungan: Surat[] = [];
 
