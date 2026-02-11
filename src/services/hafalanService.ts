@@ -37,18 +37,14 @@ export const HafalanService = {
   },
 
   async simpanHafalan(santriId: number, ustadzId: number, ayatIds: number[], status: string, catatan?: string) {
-    let ayatYangDisimpan = ayatIds;
-    let sudahAdaCount = 0;
+    let sudahAdaAyatIds: number[] = [];
+    let ayatBaruIds: number[] = ayatIds;
     
     if (status === "TambahHafalan") {
       const exist = await HafalanRepository.findExistingHafalan(santriId, ayatIds);
       const sudahAda = new Set(exist.map((e) => e.ayatId));
-      ayatYangDisimpan = ayatIds.filter((id) => !sudahAda.has(id));
-      sudahAdaCount = sudahAda.size;
-
-      if (ayatYangDisimpan.length === 0) {
-        throw new Error("Semua ayat sudah pernah ditambahkan sebagai hafalan.");
-      }
+      sudahAdaAyatIds = ayatIds.filter((id) => sudahAda.has(id));
+      ayatBaruIds = ayatIds.filter((id) => !sudahAda.has(id));
     }
 
     // Get data santri
@@ -60,8 +56,8 @@ export const HafalanService = {
     // Get all parents for the santri
     const orangTuaList = await HafalanRepository.getOrangTuaBySantriId(santriId);
     
-    // Get detail ayat and surah
-    const detailAyat = await HafalanRepository.getAyatDetailByIds(ayatYangDisimpan);
+    // Get detail ayat and surah untuk semua ayat yang diinput (untuk email)
+    const detailAyat = await HafalanRepository.getAyatDetailByIds(ayatIds);
     
     // Check if detailAyat has elements before accessing
     if (detailAyat.length === 0) {
@@ -73,16 +69,18 @@ export const HafalanService = {
     }
     
     const poinPerAyat = (status === "TambahHafalan") ? 5 : 0;
-    const totalPoinDidapat = ayatYangDisimpan.length * poinPerAyat;
+    const totalPoinDidapat = ayatBaruIds.length * poinPerAyat;
 
-    const newHafalanData = ayatYangDisimpan.map((ayatId) => ({
+    // Buat data untuk semua ayat yang diinput
+    // Ayat baru mendapat poin, ayat yang sudah ada mendapat 0 poin
+    const newHafalanData = ayatIds.map((ayatId) => ({
       santriId,
       ustadzId,
       ayatId,
       tanggalHafalan: new Date(),
       status,
       catatan,
-      poinDidapat: poinPerAyat,
+      poinDidapat: ayatBaruIds.includes(ayatId) ? poinPerAyat : 0,
     }));
     
     // Use transaction for TambahHafalan to be safe
@@ -120,7 +118,8 @@ export const HafalanService = {
       return { 
         message: "TambahHafalan berhasil disimpan", 
         count: newHafalanData.length, 
-        dilewati: sudahAdaCount,
+        dilewati: sudahAdaAyatIds.length,
+        ayatBaru: ayatBaruIds.length,
         totalPoinDidapat: totalPoinDidapat
       };
     } else {
@@ -148,6 +147,8 @@ export const HafalanService = {
         namaSurahLatin: string;
         jumlahAyat: number;
         totalPoin: number;
+        rangeAyat: { awal: number; akhir: number };
+        _ayatNumbers: number[];
       };
     } = {};
 
@@ -157,12 +158,14 @@ export const HafalanService = {
       const surahId = r.ayat.surah.id;
       const namaSurah = r.ayat.surah.nama;
       const namaSurahLatin = r.ayat.surah.namaLatin;
+      const nomorAyat = r.ayat.nomorAyat;
 
       const key = `${tanggal}-${status}-${surahId}`;
 
       if (groupedData[key]) {
         groupedData[key].jumlahAyat += 1;
         groupedData[key].totalPoin += r.poinDidapat;
+        groupedData[key]._ayatNumbers.push(nomorAyat);
       } else {
         groupedData[key] = {
           tanggal,
@@ -172,8 +175,19 @@ export const HafalanService = {
           namaSurahLatin,
           jumlahAyat: 1,
           totalPoin: r.poinDidapat,
+          rangeAyat: { awal: nomorAyat, akhir: nomorAyat },
+          _ayatNumbers: [nomorAyat],
         };
       }
+    });
+
+    // Calculate rangeAyat for each group
+    Object.keys(groupedData).forEach((key) => {
+      const group = groupedData[key];
+      const minAyat = Math.min(...group._ayatNumbers);
+      const maxAyat = Math.max(...group._ayatNumbers);
+      group.rangeAyat = { awal: minAyat, akhir: maxAyat };
+      delete (group as { _ayatNumbers?: number[] })._ayatNumbers;
     });
 
     let allGroupedData = Object.values(groupedData);
@@ -301,12 +315,21 @@ export const HafalanService = {
       };
     });
 
+    // Calculate range ayat
+    const nomorAyatList = ayatList.map(ayat => ayat.nomorAyat);
+    const ayatAwal = Math.min(...nomorAyatList);
+    const ayatAkhir = Math.max(...nomorAyatList);
+
     return {
       tanggal: tanggal,
       status: firstItem.status,
       ustadz: firstItem.ustadz,
       catatan: firstItem.catatan,
       totalPoin: totalPoin,
+      rangeAyat: {
+        awal: ayatAwal,
+        akhir: ayatAkhir,
+      },
       surah: {
         id: surahData.id,
         nama: surahData.nama,

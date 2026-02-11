@@ -82,7 +82,7 @@ export const HafalanRepository = {
     }),
 
   createManyHafalan: (data: CreateManyHafalanPayload[]) =>
-    prisma.riwayatHafalan.createMany({ data }),
+    prisma.riwayatHafalan.createMany({ data, skipDuplicates: true }),
 
   // Riwayat Hafalan
   getRiwayatHafalanBySantri: (santriId: number, status?: string) =>
@@ -98,6 +98,7 @@ export const HafalanRepository = {
         poinDidapat: true,
         ayat: {
           select: {
+            nomorAyat: true,
             surah: {
               select: {
                 id: true,
