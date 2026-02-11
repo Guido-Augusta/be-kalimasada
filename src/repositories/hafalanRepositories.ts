@@ -98,6 +98,7 @@ export const HafalanRepository = {
         poinDidapat: true,
         ayat: {
           select: {
+            nomorAyat: true,
             surah: {
               select: {
                 id: true,

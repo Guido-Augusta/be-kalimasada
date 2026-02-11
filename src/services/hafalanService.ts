@@ -147,6 +147,8 @@ export const HafalanService = {
         namaSurahLatin: string;
         jumlahAyat: number;
         totalPoin: number;
+        rangeAyat: { awal: number; akhir: number };
+        _ayatNumbers: number[];
       };
     } = {};
 
@@ -156,12 +158,14 @@ export const HafalanService = {
       const surahId = r.ayat.surah.id;
       const namaSurah = r.ayat.surah.nama;
       const namaSurahLatin = r.ayat.surah.namaLatin;
+      const nomorAyat = r.ayat.nomorAyat;
 
       const key = `${tanggal}-${status}-${surahId}`;
 
       if (groupedData[key]) {
         groupedData[key].jumlahAyat += 1;
         groupedData[key].totalPoin += r.poinDidapat;
+        groupedData[key]._ayatNumbers.push(nomorAyat);
       } else {
         groupedData[key] = {
           tanggal,
@@ -171,8 +175,19 @@ export const HafalanService = {
           namaSurahLatin,
           jumlahAyat: 1,
           totalPoin: r.poinDidapat,
+          rangeAyat: { awal: nomorAyat, akhir: nomorAyat },
+          _ayatNumbers: [nomorAyat],
         };
       }
+    });
+
+    // Calculate rangeAyat for each group
+    Object.keys(groupedData).forEach((key) => {
+      const group = groupedData[key];
+      const minAyat = Math.min(...group._ayatNumbers);
+      const maxAyat = Math.max(...group._ayatNumbers);
+      group.rangeAyat = { awal: minAyat, akhir: maxAyat };
+      delete (group as { _ayatNumbers?: number[] })._ayatNumbers;
     });
 
     let allGroupedData = Object.values(groupedData);
@@ -300,12 +315,21 @@ export const HafalanService = {
       };
     });
 
+    // Calculate range ayat
+    const nomorAyatList = ayatList.map(ayat => ayat.nomorAyat);
+    const ayatAwal = Math.min(...nomorAyatList);
+    const ayatAkhir = Math.max(...nomorAyatList);
+
     return {
       tanggal: tanggal,
       status: firstItem.status,
       ustadz: firstItem.ustadz,
       catatan: firstItem.catatan,
       totalPoin: totalPoin,
+      rangeAyat: {
+        awal: ayatAwal,
+        akhir: ayatAkhir,
+      },
       surah: {
         id: surahData.id,
         nama: surahData.nama,
