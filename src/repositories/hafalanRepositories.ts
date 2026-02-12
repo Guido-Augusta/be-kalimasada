@@ -50,6 +50,40 @@ export const HafalanRepository = {
       ]
     }),
 
+  getAyatDetailByJuz: (juz: number) =>
+    prisma.ayat.findMany({
+      where: { juz },
+      select: {
+        id: true,
+        nomorAyat: true,
+        arab: true,
+        latin: true,
+        terjemah: true,
+        surah: {
+          select: {
+            id: true,
+            nomor: true,
+            nama: true,
+            namaLatin: true
+          }
+        }
+      },
+      orderBy: [
+        { surahId: 'asc' },
+        { nomorAyat: 'asc' }
+      ]
+    }),
+
+  getHafalanByAyatIds: (santriId: number, ayatIds: number[], status?: string) =>
+    prisma.riwayatHafalan.findMany({
+      where: {
+        santriId,
+        ayatId: { in: ayatIds },
+        ...(status && { status: status as StatusHafalan }),
+      },
+      select: { ayatId: true },
+    }),
+
   getSantriById: (id: number) =>
     prisma.santri.findUnique({
       where: { id },

@@ -46,6 +46,29 @@ export const getDetailHafalanSurah = async (req: Request, res: Response) => {
   }
 };
 
+export const getDetailHafalanJuz = async (req: Request, res: Response) => {
+  try {
+    const { santriId, juzId } = req.params;
+    const { mode } = req.query;
+    
+    if (!mode || (mode !== "tambah" && mode !== "murajaah")) {
+      return res.status(400).json({
+        message: "Query parameter 'mode' is required and must be 'tambah' or 'murajaah'",
+        status: 400,
+      });
+    }
+
+    const result = await HafalanService.getDetailHafalanJuz(Number(santriId), Number(juzId), String(mode));
+    return res.status(200).json(result);
+  } catch (error: unknown) {
+    if (error instanceof Error) {
+      return res.status(500).json({ message: error.message, status: 500 });
+    } else {
+      return res.status(500).json({ message: "Internal server error", status: 500 });
+    }
+  }
+};
+
 export const simpanHafalan = async (req: AuthRequest, res: Response) => {
   const role = req.user?.role;
   const userId = req.user?.id;

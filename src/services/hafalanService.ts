@@ -63,6 +63,40 @@ export const HafalanService = {
     return { surah, santriId, mode, ayat: result };
   },
 
+  async getDetailHafalanJuz(santriId: number, juzId: number, mode: string) {
+    const ayatJuz = await HafalanRepository.getAyatDetailByJuz(juzId);
+    const ayatIds = ayatJuz.map((a) => a.id);
+    const hafalanSantri = await HafalanRepository.getHafalanByAyatIds(santriId, ayatIds, "TambahHafalan");
+
+    const sudahHafal = new Set(hafalanSantri.map((h) => h.ayatId));
+
+    // Group ayat by surah
+    const surahMap = new Map();
+    ayatJuz.forEach((ayat) => {
+      const surahId = ayat.surah.id;
+      if (!surahMap.has(surahId)) {
+        surahMap.set(surahId, {
+          surah: ayat.surah,
+          ayat: [],
+        });
+      }
+      surahMap.get(surahId).ayat.push({
+        ...ayat,
+        checked: mode === "tambah" ? sudahHafal.has(ayat.id) : false,
+      });
+    });
+
+    const surahList = Array.from(surahMap.values());
+
+    return {
+      juz: juzId,
+      santriId,
+      mode,
+      totalSurah: surahList.length,
+      surah: surahList,
+    };
+  },
+
   async simpanHafalan(santriId: number, ustadzId: number, ayatIds: number[], status: string, catatan?: string) {
     let sudahAdaAyatIds: number[] = [];
     let ayatBaruIds: number[] = ayatIds;

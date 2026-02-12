@@ -13,6 +13,9 @@ hafalanRoutes.get("/:santriId", authMiddleware, hafalanController.getProgress);
 // Get Detail Hafalan per Surah (Mode Tambah & Mode Murajaah)
 hafalanRoutes.get("/:santriId/surah/:surahId", authMiddleware, hafalanController.getDetailHafalanSurah);
 
+// Get Detail Hafalan per Juz (Mode Tambah & Mode Murajaah)
+hafalanRoutes.get("/:santriId/juz/:juzId", authMiddleware, hafalanController.getDetailHafalanJuz);
+
 // GET Riwayat Hafalan by Santri
 hafalanRoutes.get("/riwayat/:santriId", authMiddleware, hafalanController.getRiwayatHafalanBySantri);
 
