@@ -109,6 +109,53 @@ export const simpanHafalan = async (req: AuthRequest, res: Response) => {
   }
 };
 
+export const simpanHafalanByHalaman = async (req: AuthRequest, res: Response) => {
+  const role = req.user?.role;
+  const userId = req.user?.id;
+  let ustadzId;
+
+  try {
+    const { santriId, halamanAwal, halamanAkhir, status, catatan } = req.body;
+
+    if (!userId || !role) {
+      return res.status(401).json({ message: "Unauthorized", status: 401 });
+    }
+
+    if (role === "ustadz") {
+      const ustadz = await getUstadzByUserId(userId);
+
+      if (!ustadz) {
+        return res.status(403).json({ message: "Ustadz not found for the authenticated user.", status: 403 });
+      }
+      ustadzId = ustadz.id;
+    } else if (role === "admin") {
+      const ustadzIdFromBody = req.body.ustadzId;
+      if (!ustadzIdFromBody) {
+        return res.status(400).json({ message: "Ustadz ID is required for admin role.", status: 400 });
+      }
+      ustadzId = Number(ustadzIdFromBody);
+    } else {
+      return res.status(403).json({ message: "Forbidden: You do not have permission to save hafalan.", status: 403 });
+    }
+
+    const result = await HafalanService.simpanHafalanByHalaman(
+      Number(santriId),
+      ustadzId,
+      Number(halamanAwal),
+      Number(halamanAkhir),
+      status,
+      catatan
+    );
+    return res.status(200).json({ ...result, status: 200 });
+  } catch (error: unknown) {
+    if (error instanceof Error) {
+      return res.status(400).json({ message: error.message, status: 400 });
+    } else {
+      return res.status(400).json({ message: "Internal server error", status: 400 });
+    }
+  }
+};
+
 export const getRiwayatHafalanBySantri = async (req: Request, res: Response) => {
   try {
     const { santriId } = req.params;

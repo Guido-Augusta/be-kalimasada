@@ -4,8 +4,11 @@ import { authMiddleware, isUstadzOrAdmin } from "../middleware/auth";
 
 const hafalanRoutes = Router();
 
-// Simpan Hafalan
-hafalanRoutes.post("/", authMiddleware, isUstadzOrAdmin, hafalanController.simpanHafalan);
+// Simpan Hafalan by Ayat Range
+hafalanRoutes.post("/ayat", authMiddleware, isUstadzOrAdmin, hafalanController.simpanHafalan);
+
+// Simpan Hafalan by Halaman Range
+hafalanRoutes.post("/halaman", authMiddleware, isUstadzOrAdmin, hafalanController.simpanHafalanByHalaman);
 
 // Get Progress by mode (surah or juz)
 hafalanRoutes.get("/:santriId", authMiddleware, hafalanController.getProgress);

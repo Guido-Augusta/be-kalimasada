@@ -191,6 +191,109 @@ export const HafalanService = {
     }
   },
 
+  async simpanHafalanByHalaman(santriId: number, ustadzId: number, halamanAwal: number, halamanAkhir: number, status: string, catatan?: string) {
+    // Get all ayat in the page range
+    const ayatInRange = await HafalanRepository.getAyatByHalamanRange(halamanAwal, halamanAkhir);
+    
+    if (ayatInRange.length === 0) {
+      throw new Error(`Tidak ada ayat ditemukan pada rentang halaman ${halamanAwal} - ${halamanAkhir}.`);
+    }
+
+    const ayatIds = ayatInRange.map((a) => a.id);
+
+    let sudahAdaAyatIds: number[] = [];
+    let ayatBaruIds: number[] = ayatIds;
+    
+    if (status === "TambahHafalan") {
+      const exist = await HafalanRepository.findExistingHafalan(santriId, ayatIds);
+      const sudahAda = new Set(exist.map((e) => e.ayatId));
+      sudahAdaAyatIds = ayatIds.filter((id) => sudahAda.has(id));
+      ayatBaruIds = ayatIds.filter((id) => !sudahAda.has(id));
+    }
+
+    // Get data santri
+    const santri = await HafalanRepository.getSantriById(santriId);
+    if (!santri) {
+        throw new Error("Data santri tidak ditemukan.");
+    }
+
+    // Get all parents for the santri
+    const orangTuaList = await HafalanRepository.getOrangTuaBySantriId(santriId);
+    
+    // Get detail ayat untuk email
+    const detailAyat = ayatInRange;
+    
+    // Get surah info dari ayat pertama
+    const surahInfo = await HafalanRepository.getSurahById(detailAyat[0].surahId);
+    if (!surahInfo) {
+        throw new Error("Informasi Surah tidak ditemukan.");
+    }
+    
+    const poinPerAyat = (status === "TambahHafalan") ? 5 : 0;
+    const totalPoinDidapat = ayatBaruIds.length * poinPerAyat;
+
+    // Buat data untuk semua ayat yang diinput
+    const newHafalanData = ayatIds.map((ayatId) => ({
+      santriId,
+      ustadzId,
+      ayatId,
+      tanggalHafalan: new Date(),
+      status,
+      catatan,
+      poinDidapat: ayatBaruIds.includes(ayatId) ? poinPerAyat : 0,
+    }));
+    
+    // Use transaction for TambahHafalan to be safe
+    if (status === "TambahHafalan") {
+      await prisma.$transaction([
+        HafalanRepository.createManyHafalan(newHafalanData as CreateManyHafalanPayload[]),
+        HafalanRepository.updateSantriTotalPoin(santriId, totalPoinDidapat),
+      ]);
+    } else {
+      // For Murajaah, only save the record
+      await HafalanRepository.createManyHafalan(newHafalanData as CreateManyHafalanPayload[]);
+    }
+
+    // Send email notification to each parent
+    if (orangTuaList.length > 0) {
+      for (const orangTua of orangTuaList) {
+          if (orangTua.user?.email) {
+              await sendHafalanEmail({
+                  ortuName: orangTua.nama,
+                  santriName: santri.nama,
+                  tanggalHafalan: new Date(),
+                  namaSurah: surahInfo.namaLatin,
+                  jumlahAyat: newHafalanData.length,
+                  ayatNomorList: detailAyat.map(ayat => ayat.nomorAyat),
+                  status,
+                  catatan,
+                  emailOrtu: orangTua.user.email,
+              });
+          }
+      }
+    }
+
+    // Return response
+    if (status === "TambahHafalan") {
+      return { 
+        message: "TambahHafalan berdasarkan halaman berhasil disimpan", 
+        count: newHafalanData.length, 
+        dilewati: sudahAdaAyatIds.length,
+        ayatBaru: ayatBaruIds.length,
+        totalPoinDidapat: totalPoinDidapat,
+        halamanAwal,
+        halamanAkhir
+      };
+    } else {
+      return { 
+        message: "Murajaah berdasarkan halaman berhasil disimpan", 
+        count: newHafalanData.length,
+        halamanAwal,
+        halamanAkhir
+      };
+    }
+  },
+
   async getRiwayatHafalanBySantri(santriId: number, page: number, limit: number, sort: string, sortBy: string, status?: string) {
     const santri = await HafalanRepository.getSantriById(santriId);
     if (!santri) {

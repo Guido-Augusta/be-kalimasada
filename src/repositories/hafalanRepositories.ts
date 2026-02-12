@@ -84,6 +84,26 @@ export const HafalanRepository = {
       select: { ayatId: true },
     }),
 
+  getAyatByHalamanRange: (halamanAwal: number, halamanAkhir: number) =>
+    prisma.ayat.findMany({
+      where: {
+        halaman: {
+          gte: halamanAwal,
+          lte: halamanAkhir,
+        },
+      },
+      select: {
+        id: true,
+        nomorAyat: true,
+        surahId: true,
+        halaman: true,
+      },
+      orderBy: [
+        { surahId: 'asc' },
+        { nomorAyat: 'asc' }
+      ]
+    }),
+
   getSantriById: (id: number) =>
     prisma.santri.findUnique({
       where: { id },
