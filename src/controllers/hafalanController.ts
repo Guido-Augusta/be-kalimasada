@@ -4,13 +4,25 @@ import { AuthRequest } from "../middleware/auth";
 import { getUstadzByUserId } from "../repositories/ustadzRepo";
 import { StatusHafalan, TahapHafalan } from "@prisma/client";
 
-export const getSurahProgress = async (req: Request, res: Response) => {
+export const getProgress = async (req: Request, res: Response) => {
   try {
     const { santriId } = req.params;
-    const result = await HafalanService.getSurahProgress(Number(santriId));
-    return res.status(200).json({ message: "Surah retrieved", status: 200, ...result });
+    const mode = req.query.mode as string;
+
+    if (!mode || (mode !== "surah" && mode !== "juz")) {
+      return res.status(400).json({
+        message: "Query parameter 'mode' is required and must be 'surah' or 'juz'",
+        status: 400,
+      });
+    }
+
+    const result = await HafalanService.getProgress(Number(santriId), mode);
+    return res.status(200).json({
+      message: `${mode === "surah" ? "Surah" : "Juz"} retrieved`,
+      status: 200,
+      ...result,
+    });
   } catch (error: unknown) {
-    // res.status(500).json({ message: error.message || "Internal server error", status: 500 });
     if (error instanceof Error) {
       return res.status(500).json({ message: "Internal server error", status: 500 });
     } else {

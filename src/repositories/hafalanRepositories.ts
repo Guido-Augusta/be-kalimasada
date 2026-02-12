@@ -18,6 +18,38 @@ export const HafalanRepository = {
       orderBy: { nomor: "asc" },
     }),
 
+  getAllJuz: () =>
+    prisma.ayat.groupBy({
+      by: ["juz"],
+      orderBy: { juz: "asc" },
+    }),
+
+  getAyatByJuz: (juz: number) =>
+    prisma.ayat.findMany({
+      where: { juz },
+      select: { id: true, nomorAyat: true, surahId: true },
+    }),
+
+  getAyatByJuzWithSurah: (juz: number) =>
+    prisma.ayat.findMany({
+      where: { juz },
+      select: {
+        id: true,
+        nomorAyat: true,
+        surah: {
+          select: {
+            nomor: true,
+            nama: true,
+            namaLatin: true
+          }
+        }
+      },
+      orderBy: [
+        { surahId: 'asc' },
+        { nomorAyat: 'asc' }
+      ]
+    }),
+
   getSantriById: (id: number) =>
     prisma.santri.findUnique({
       where: { id },

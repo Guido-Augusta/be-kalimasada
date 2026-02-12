@@ -7,8 +7,8 @@ const hafalanRoutes = Router();
 // Simpan Hafalan
 hafalanRoutes.post("/", authMiddleware, isUstadzOrAdmin, hafalanController.simpanHafalan);
 
-// Get Surah Progress
-hafalanRoutes.get("/:santriId/surah", authMiddleware, hafalanController.getSurahProgress);
+// Get Progress by mode (surah or juz)
+hafalanRoutes.get("/:santriId", authMiddleware, hafalanController.getProgress);
 
 // Get Detail Hafalan per Surah (Mode Tambah & Mode Murajaah)
 hafalanRoutes.get("/:santriId/surah/:surahId", authMiddleware, hafalanController.getDetailHafalanSurah);

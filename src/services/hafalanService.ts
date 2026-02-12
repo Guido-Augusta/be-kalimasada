@@ -4,21 +4,48 @@ import { CreateManyHafalanPayload, HafalanRepository } from "../repositories/haf
 import { sendHafalanEmail } from "../utils/sendAccountEmail";
 
 export const HafalanService = {
-  async getSurahProgress(santriId: number) {
-    const surahList = await HafalanRepository.getAllSurah();
-    const hafalan = await HafalanRepository.getHafalanSantri(santriId);
+  async getProgress(santriId: number, mode: string) {
     const santri = await HafalanRepository.getSantriById(santriId);
-
+    const hafalan = await HafalanRepository.getHafalanSantri(santriId);
     const ayatSudah = new Set(hafalan.map((h) => h.ayatId));
 
-    const result = await Promise.all(
-      surahList.map(async (s) => {
-        const totalSudah = await HafalanRepository.countAyatHafal(s.id, Array.from(ayatSudah));
-        return { ...s, progress: `${totalSudah}/${s.totalAyat}` };
-      })
-    );
-
-    return { santri, data: result };
+    if (mode === "surah") {
+      const surahList = await HafalanRepository.getAllSurah();
+      const result = await Promise.all(
+        surahList.map(async (s) => {
+          const totalSudah = await HafalanRepository.countAyatHafal(s.id, Array.from(ayatSudah));
+          return { ...s, progress: `${totalSudah}/${s.totalAyat}` };
+        })
+      );
+      return { santri, data: result };
+    } else {
+      // mode === "juz"
+      const juzList = await HafalanRepository.getAllJuz();
+      const result = await Promise.all(
+        juzList.map(async (j) => {
+          const ayatInJuz = await HafalanRepository.getAyatByJuzWithSurah(j.juz as number);
+          const totalAyat = ayatInJuz.length;
+          const sudahHafal = ayatInJuz.filter((a) => ayatSudah.has(a.id)).length;
+          const firstAyat = ayatInJuz[0];
+          return {
+            juz: j.juz,
+            mulai_dari: firstAyat
+              ? {
+                  surah: {
+                    nomor: firstAyat.surah.nomor,
+                    nama: firstAyat.surah.nama,
+                    nama_latin: firstAyat.surah.namaLatin
+                  },
+                  ayat: firstAyat.nomorAyat
+                }
+              : null,
+            progress: `${sudahHafal}/${totalAyat}`,
+            totalAyat,
+          };
+        })
+      );
+      return { santri, data: result };
+    }
   },
 
   async getDetailHafalanSurah(santriId: number, surahId: number, mode: string) {
