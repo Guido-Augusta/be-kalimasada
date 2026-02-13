@@ -294,67 +294,133 @@ export const HafalanService = {
     }
   },
 
-  async getRiwayatHafalanBySantri(santriId: number, page: number, limit: number, sort: string, sortBy: string, status?: string) {
+  async getRiwayatHafalanBySantri(santriId: number, page: number, limit: number, sort: string, sortBy: string, status?: string, mode: string = 'ayat') {
     const santri = await HafalanRepository.getSantriById(santriId);
     if (!santri) {
       return { santri: null };
     }
 
-    const riwayat = await HafalanRepository.getRiwayatHafalanBySantri(santriId, status); 
+    const riwayat = await HafalanRepository.getRiwayatHafalanBySantri(santriId, status);
 
-    const groupedData: {
-      [key: string]: {
-        tanggal: string;
-        status: string;
-        surahId: number;
-        namaSurah: string;
-        namaSurahLatin: string;
-        jumlahAyat: number;
-        totalPoin: number;
-        rangeAyat: { awal: number; akhir: number };
-        _ayatNumbers: number[];
-      };
-    } = {};
+    let allGroupedData: any[] = [];
 
-    riwayat.forEach((r) => {
-      const tanggal = r.tanggalHafalan.toISOString().split("T")[0];
-      const status = r.status;
-      const surahId = r.ayat.surah.id;
-      const namaSurah = r.ayat.surah.nama;
-      const namaSurahLatin = r.ayat.surah.namaLatin;
-      const nomorAyat = r.ayat.nomorAyat;
-
-      const key = `${tanggal}-${status}-${surahId}`;
-
-      if (groupedData[key]) {
-        groupedData[key].jumlahAyat += 1;
-        groupedData[key].totalPoin += r.poinDidapat;
-        groupedData[key]._ayatNumbers.push(nomorAyat);
-      } else {
-        groupedData[key] = {
-          tanggal,
-          status,
-          surahId,
-          namaSurah,
-          namaSurahLatin,
-          jumlahAyat: 1,
-          totalPoin: r.poinDidapat,
-          rangeAyat: { awal: nomorAyat, akhir: nomorAyat },
-          _ayatNumbers: [nomorAyat],
+    if (mode === 'halaman') {
+      // Group by juz (pengelompokan: tanggal → juz)
+      const groupedData: {
+        [key: string]: {
+          tanggal: string;
+          status: string;
+          juz: number;
+          jumlahAyat: number;
+          totalPoin: number;
+          _ayatNumbers: number[];
+          _halamanNumbers: number[];
+          surahList: { id: number; nama: string; namaLatin: string }[];
         };
-      }
-    });
+      } = {};
 
-    // Calculate rangeAyat for each group
-    Object.keys(groupedData).forEach((key) => {
-      const group = groupedData[key];
-      const minAyat = Math.min(...group._ayatNumbers);
-      const maxAyat = Math.max(...group._ayatNumbers);
-      group.rangeAyat = { awal: minAyat, akhir: maxAyat };
-      delete (group as { _ayatNumbers?: number[] })._ayatNumbers;
-    });
+      riwayat.forEach((r) => {
+        const tanggal = r.tanggalHafalan.toISOString().split("T")[0];
+        const status = r.status;
+        const juz = r.ayat.juz || 0;
+        const halaman = r.ayat.halaman || 0;
+        const nomorAyat = r.ayat.nomorAyat;
+        const surah = r.ayat.surah;
 
-    let allGroupedData = Object.values(groupedData);
+        const key = `${tanggal}-${status}-${juz}`;
+
+        if (groupedData[key]) {
+          groupedData[key].jumlahAyat += 1;
+          groupedData[key].totalPoin += r.poinDidapat;
+          groupedData[key]._ayatNumbers.push(nomorAyat);
+          groupedData[key]._halamanNumbers.push(halaman);
+          // Add unique surah to list
+          if (!groupedData[key].surahList.find((s) => s.id === surah.id)) {
+            groupedData[key].surahList.push(surah);
+          }
+        } else {
+          groupedData[key] = {
+            tanggal,
+            status,
+            juz,
+            jumlahAyat: 1,
+            totalPoin: r.poinDidapat,
+            _ayatNumbers: [nomorAyat],
+            _halamanNumbers: [halaman],
+            surahList: [surah],
+          };
+        }
+      });
+
+      // Calculate rangeHalaman, totalHalaman and format for each group
+      allGroupedData = Object.values(groupedData).map((group) => {
+        const minHalaman = Math.min(...group._halamanNumbers);
+        const maxHalaman = Math.max(...group._halamanNumbers);
+        const uniqueHalaman = new Set(group._halamanNumbers);
+        const { _ayatNumbers, _halamanNumbers, surahList, ...rest } = group;
+        return {
+          ...rest,
+          totalHalaman: uniqueHalaman.size,
+          rangeHalaman: { awal: minHalaman, akhir: maxHalaman },
+          surah: surahList,
+        };
+      });
+    } else {
+      // Mode 'ayat' - Group by surah (existing behavior)
+      const groupedData: {
+        [key: string]: {
+          tanggal: string;
+          status: string;
+          surahId: number;
+          namaSurah: string;
+          namaSurahLatin: string;
+          jumlahAyat: number;
+          totalPoin: number;
+          rangeAyat: { awal: number; akhir: number };
+          _ayatNumbers: number[];
+        };
+      } = {};
+
+      riwayat.forEach((r) => {
+        const tanggal = r.tanggalHafalan.toISOString().split("T")[0];
+        const status = r.status;
+        const surahId = r.ayat.surah.id;
+        const namaSurah = r.ayat.surah.nama;
+        const namaSurahLatin = r.ayat.surah.namaLatin;
+        const nomorAyat = r.ayat.nomorAyat;
+
+        const key = `${tanggal}-${status}-${surahId}`;
+
+        if (groupedData[key]) {
+          groupedData[key].jumlahAyat += 1;
+          groupedData[key].totalPoin += r.poinDidapat;
+          groupedData[key]._ayatNumbers.push(nomorAyat);
+        } else {
+          groupedData[key] = {
+            tanggal,
+            status,
+            surahId,
+            namaSurah,
+            namaSurahLatin,
+            jumlahAyat: 1,
+            totalPoin: r.poinDidapat,
+            rangeAyat: { awal: nomorAyat, akhir: nomorAyat },
+            _ayatNumbers: [nomorAyat],
+          };
+        }
+      });
+
+      // Calculate rangeAyat for each group
+      Object.keys(groupedData).forEach((key) => {
+        const group = groupedData[key];
+        const minAyat = Math.min(...group._ayatNumbers);
+        const maxAyat = Math.max(...group._ayatNumbers);
+        group.rangeAyat = { awal: minAyat, akhir: maxAyat };
+        delete (group as { _ayatNumbers?: number[] })._ayatNumbers;
+      });
+
+      allGroupedData = Object.values(groupedData);
+    }
 
     if (sort && sortBy) {
         allGroupedData.sort((a, b) => {
@@ -388,6 +454,7 @@ export const HafalanService = {
 
     return {
       santri,
+      mode,
       pagination: {
         page,
         limit,

@@ -164,8 +164,19 @@ export const getRiwayatHafalanBySantri = async (req: Request, res: Response) => 
     const sort = req.query.sort as string; // 'tanggal' or 'status'
     const sortBy = req.query.sortBy as string; // 'asc' or 'desc'
     const status = req.query.status as string;
+    const mode = req.query.mode as string; // 'ayat' or 'halaman'
 
-    const result = await HafalanService.getRiwayatHafalanBySantri(Number(santriId), page, limit, sort, sortBy, status);
+    // Default to 'ayat' if mode is not provided (backward compatibility)
+    const modeParam = mode || 'ayat';
+
+    if (modeParam !== 'ayat' && modeParam !== 'halaman') {
+      return res.status(400).json({
+        message: "Query parameter 'mode' must be 'ayat' or 'halaman'",
+        status: 400,
+      });
+    }
+
+    const result = await HafalanService.getRiwayatHafalanBySantri(Number(santriId), page, limit, sort, sortBy, status, modeParam);
 
     if (!result.santri) {
       return res.status(404).json({

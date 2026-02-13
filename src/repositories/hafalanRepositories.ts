@@ -185,6 +185,8 @@ export const HafalanRepository = {
         ayat: {
           select: {
             nomorAyat: true,
+            halaman: true,
+            juz: true,
             surah: {
               select: {
                 id: true,
