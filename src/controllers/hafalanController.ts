@@ -324,6 +324,7 @@ export const getLatestHafalanAllSantri = async (req: Request, res: Response) => 
     const limit = parseInt((req.query.limit as string) || "10");
     const sortByAyat = req.query.sortByAyat as string | undefined;
     const name = req.query.name as string | undefined;
+    const mode = req.query.mode as string | undefined;
     let tahapHafalan: TahapHafalan | undefined;
     const statusQuery = req.query.status as string | undefined;
     let statusFilter: StatusHafalan | undefined
@@ -348,7 +349,7 @@ export const getLatestHafalanAllSantri = async (req: Request, res: Response) => 
       tahapHafalan = tahapMap[tahapNormalized];
     }
 
-    const result = await HafalanService.getLatestHafalanAllSantri(page, limit, tahapHafalan, statusFilter, sortByAyat, name);
+    const result = await HafalanService.getLatestHafalanAllSantri(page, limit, tahapHafalan, statusFilter, sortByAyat, name, mode);
 
     return res.status(200).json({ status: 200, ...result });
   } catch (error: unknown) {

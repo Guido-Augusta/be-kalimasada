@@ -635,10 +635,11 @@ export const HafalanService = {
     };
   },
 
-  async getLatestHafalanAllSantri(page: number, limit: number, tahapHafalan?: string, status?: string, sortByAyat?: string, name?: string) {
+  async getLatestHafalanAllSantri(page: number, limit: number, tahapHafalan?: string, status?: string, sortByAyat?: string, name?: string, mode?: string) {
     const totalData = await HafalanRepository.countAllSantri(tahapHafalan, name);
     const totalPages = Math.ceil(totalData / limit);
-    const filterStatus = status || StatusHafalan.TambahHafalan; 
+    const filterStatus = status || StatusHafalan.TambahHafalan;
+    const modeParam = mode || 'surah';
 
     const santriWithHafalan = await HafalanRepository.getAllSantriWithLatestHafalan(
       tahapHafalan,
@@ -653,42 +654,108 @@ export const HafalanService = {
       let hafalanInfo: {
         tanggal: string;
         status: StatusHafalan;
-        surah: string;
-        surahId: number;
-        ayatDetail: string | null;
+        surah?: string;
+        surahId?: number;
+        juz?: number;
+        ayatDetail?: string | null;
+        halamanDetail?: string | null;
+        surahList?: { id: number; nama: string; namaLatin: string }[];
       } | null = null;
-        
-      if (latestHafalan) {
-        const tanggalHafalan = latestHafalan.tanggalHafalan;
-        const surahId = latestHafalan.ayat.surah.id;
-        const statusHafalan = latestHafalan.status as StatusHafalan;
-  
-        const groupedAyat = await HafalanRepository.getGroupedAyatByDateSurahStatus(
-          santri.id, surahId, tanggalHafalan, statusHafalan
-        );
-          
-        if (groupedAyat.length > 0) {
-          const ayatNumbers = groupedAyat.map(a => a.ayat.nomorAyat);
-          const ayatMin = Math.min(...ayatNumbers);
-          const ayatMax = Math.max(...ayatNumbers);
-  
-          if (statusHafalan === StatusHafalan.TambahHafalan) {
-            ayatTerakhirText = `${ayatMax}`;
-            ayatTerakhirNumber = ayatMax;
-          } else if (statusHafalan === StatusHafalan.Murajaah) {
-            ayatTerakhirText = (ayatMin === ayatMax) 
-              ? `${ayatMin}`
-              : `${ayatMin} - ${ayatMax}`;
-          }
-        }
 
-        hafalanInfo = {
-          tanggal: tanggalHafalan.toISOString().split("T")[0],
-          status: statusHafalan,
-          surah: latestHafalan.ayat.surah.namaLatin,
-          surahId: latestHafalan.ayat.surah.id,
-          ayatDetail: ayatTerakhirText,
-        };
+      if (latestHafalan && santri.riwayatHafalan.length > 0) {
+        const tanggalHafalan = latestHafalan.tanggalHafalan;
+        const statusHafalan = latestHafalan.status as StatusHafalan;
+
+        if (modeParam === 'juz') {
+          // Mode juz - filter hanya riwayat dari tanggal terakhir
+          const latestDateStr = tanggalHafalan.toISOString().split('T')[0];
+          const riwayatOnLatestDate = santri.riwayatHafalan.filter((riwayat: any) => {
+            const riwayatDateStr = new Date(riwayat.tanggalHafalan).toISOString().split('T')[0];
+            return riwayatDateStr === latestDateStr;
+          });
+
+          // Kelompokkan berdasarkan juz dari riwayat tanggal terakhir saja
+          const juzGroups = new Map<number, { halaman: number; surah: any }[]>();
+          const allSurahMap = new Map();
+
+          riwayatOnLatestDate.forEach((riwayat: any) => {
+            const juzNumber = riwayat.ayat.juz || 0;
+            const halaman = riwayat.ayat.halaman;
+            const surah = riwayat.ayat.surah;
+
+            // Tambahkan ke grup juz
+            if (!juzGroups.has(juzNumber)) {
+              juzGroups.set(juzNumber, []);
+            }
+            juzGroups.get(juzNumber)?.push({ halaman, surah });
+
+            // Tambahkan surah ke map (untuk unique list)
+            if (!allSurahMap.has(surah.id)) {
+              allSurahMap.set(surah.id, surah);
+            }
+          });
+
+          // Ambil juz dengan jumlah ayat terbanyak (juz utama)
+          let mainJuz = 0;
+          let maxAyatCount = 0;
+          juzGroups.forEach((ayatList, juzNum) => {
+            if (ayatList.length > maxAyatCount) {
+              maxAyatCount = ayatList.length;
+              mainJuz = juzNum;
+            }
+          });
+
+          const mainJuzData = juzGroups.get(mainJuz) || [];
+
+          if (mainJuzData.length > 0) {
+            const halamanNumbers = mainJuzData
+              .map(a => a.halaman)
+              .filter((h): h is number => h !== null && h !== undefined);
+
+            const surahList = Array.from(allSurahMap.values());
+
+            // Halaman range dari juz utama
+            let halamanDetail: string | null = null;
+            if (halamanNumbers.length > 0) {
+              const halamanMin = Math.min(...halamanNumbers);
+              const halamanMax = Math.max(...halamanNumbers);
+              halamanDetail = (halamanMin === halamanMax) ? `${halamanMin}` : `${halamanMin} - ${halamanMax}`;
+            }
+
+            hafalanInfo = {
+              tanggal: tanggalHafalan.toISOString().split("T")[0],
+              status: statusHafalan,
+              juz: mainJuz,
+              halamanDetail,
+              surahList,
+            };
+          }
+        } else {
+          // Mode surah (default)
+          const surahId = latestHafalan.ayat.surah.id;
+
+          const groupedAyat = await HafalanRepository.getGroupedAyatByDateSurahStatus(
+            santri.id, surahId, tanggalHafalan, statusHafalan
+          );
+
+          if (groupedAyat.length > 0) {
+            const ayatNumbers = groupedAyat.map(a => a.ayat.nomorAyat);
+            const ayatMin = Math.min(...ayatNumbers);
+            const ayatMax = Math.max(...ayatNumbers);
+
+            // Always show range for both TambahHafalan and Murajaah
+            ayatTerakhirText = (ayatMin === ayatMax) ? `${ayatMin}` : `${ayatMin} - ${ayatMax}`;
+            ayatTerakhirNumber = ayatMax;
+          }
+
+          hafalanInfo = {
+            tanggal: tanggalHafalan.toISOString().split("T")[0],
+            status: statusHafalan,
+            surah: latestHafalan.ayat.surah.namaLatin,
+            surahId: latestHafalan.ayat.surah.id,
+            ayatDetail: ayatTerakhirText,
+          };
+        }
       }
 
       return {
@@ -710,7 +777,7 @@ export const HafalanService = {
           const numB = b.ayatTerakhirNumber ?? 0;
 
           if (numA === numB) return 0;
-            
+
           return isAsc ? numA - numB : numB - numA;
         });
     }
@@ -720,6 +787,7 @@ export const HafalanService = {
 
     return {
       message: "Riwayat hafalan terakhir semua santri berhasil diambil",
+      mode: modeParam,
       pagination: {
         page,
         limit,
