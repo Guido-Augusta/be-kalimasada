@@ -403,7 +403,6 @@ export const HafalanRepository = {
       noInduk: true,
       tahapHafalan: true,
       riwayatHafalan: {
-        take: 1,
         orderBy: {
           tanggalHafalan: 'desc',
         },
@@ -416,6 +415,8 @@ export const HafalanRepository = {
           status: true,
           ayat: {
             select: {
+              juz: true,
+              halaman: true,
               surah: {
                 select: {
                   namaLatin: true,
@@ -487,13 +488,90 @@ export const HafalanRepository = {
       select: {
         ayat: {
           select: {
-            nomorAyat: true
+            nomorAyat: true,
+            halaman: true,
           }
         },
       },
       orderBy: {
         ayat: { nomorAyat: 'asc' }
       },
+    });
+  },
+
+  getGroupedAyatByDateJuzStatus: (santriId: number, juz: number, tanggal: Date, status: StatusHafalan) => {
+    const startDate = new Date(tanggal);
+    const endDate = new Date(tanggal);
+    endDate.setDate(endDate.getDate() + 1);
+
+    return prisma.riwayatHafalan.findMany({
+      where: {
+        santriId,
+        status,
+        tanggalHafalan: {
+          gte: startDate,
+          lt: endDate,
+        },
+        ayat: { juz },
+      },
+      select: {
+        ayat: {
+          select: {
+            nomorAyat: true,
+            halaman: true,
+            juz: true,
+            surah: {
+              select: {
+                id: true,
+                nama: true,
+                namaLatin: true,
+              }
+            }
+          }
+        },
+      },
+      orderBy: [
+        { ayat: { surahId: 'asc' } },
+        { ayat: { nomorAyat: 'asc' } }
+      ],
+    });
+  },
+
+  getAllAyatByDateAndStatus: (santriId: number, tanggal: Date, status: StatusHafalan) => {
+    const startDate = new Date(tanggal);
+    const endDate = new Date(tanggal);
+    endDate.setDate(endDate.getDate() + 1);
+
+    return prisma.riwayatHafalan.findMany({
+      where: {
+        santriId,
+        status,
+        tanggalHafalan: {
+          gte: startDate,
+          lt: endDate,
+        },
+      },
+      select: {
+        ayat: {
+          select: {
+            nomorAyat: true,
+            halaman: true,
+            juz: true,
+            surah: {
+              select: {
+                id: true,
+                nama: true,
+                namaLatin: true,
+              }
+            }
+          }
+        },
+      },
+      orderBy: [
+        { ayat: { halaman: 'asc' } },
+        { ayat: { surahId: 'asc' } },
+        { ayat: { nomorAyat: 'asc' } }
+      ],
     });
   },
 };
