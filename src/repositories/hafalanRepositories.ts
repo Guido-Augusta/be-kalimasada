@@ -18,6 +18,92 @@ export const HafalanRepository = {
       orderBy: { nomor: "asc" },
     }),
 
+  getAllJuz: () =>
+    prisma.ayat.groupBy({
+      by: ["juz"],
+      orderBy: { juz: "asc" },
+    }),
+
+  getAyatByJuz: (juz: number) =>
+    prisma.ayat.findMany({
+      where: { juz },
+      select: { id: true, nomorAyat: true, surahId: true },
+    }),
+
+  getAyatByJuzWithSurah: (juz: number) =>
+    prisma.ayat.findMany({
+      where: { juz },
+      select: {
+        id: true,
+        nomorAyat: true,
+        surah: {
+          select: {
+            nomor: true,
+            nama: true,
+            namaLatin: true
+          }
+        }
+      },
+      orderBy: [
+        { surahId: 'asc' },
+        { nomorAyat: 'asc' }
+      ]
+    }),
+
+  getAyatDetailByJuz: (juz: number) =>
+    prisma.ayat.findMany({
+      where: { juz },
+      select: {
+        id: true,
+        nomorAyat: true,
+        arab: true,
+        latin: true,
+        terjemah: true,
+        surah: {
+          select: {
+            id: true,
+            nomor: true,
+            nama: true,
+            namaLatin: true
+          }
+        }
+      },
+      orderBy: [
+        { surahId: 'asc' },
+        { nomorAyat: 'asc' }
+      ]
+    }),
+
+  getHafalanByAyatIds: (santriId: number, ayatIds: number[], status?: string) =>
+    prisma.riwayatHafalan.findMany({
+      where: {
+        santriId,
+        ayatId: { in: ayatIds },
+        ...(status && { status: status as StatusHafalan }),
+      },
+      select: { ayatId: true },
+    }),
+
+  getAyatByHalamanRange: (halamanAwal: number, halamanAkhir: number) =>
+    prisma.ayat.findMany({
+      where: {
+        halaman: {
+          gte: halamanAwal,
+          lte: halamanAkhir,
+        },
+      },
+      select: {
+        id: true,
+        nomorAyat: true,
+        surahId: true,
+        halaman: true,
+      },
+      orderBy: [
+        { surahId: 'asc' },
+        { nomorAyat: 'asc' }
+      ]
+    }),
+
   getSantriById: (id: number) =>
     prisma.santri.findUnique({
       where: { id },
@@ -99,6 +185,8 @@ export const HafalanRepository = {
         ayat: {
           select: {
             nomorAyat: true,
+            halaman: true,
+            juz: true,
             surah: {
               select: {
                 id: true,
@@ -226,6 +314,59 @@ export const HafalanRepository = {
           nomorAyat: "asc",
         },
       },
+    }),
+
+  getDetailRiwayatAyatByJuz: (santriId: number, juzId: number, startDate: Date, endDate: Date, status: string) =>
+    prisma.riwayatHafalan.findMany({
+      where: {
+        santriId,
+        status: status as StatusHafalan,
+        tanggalHafalan: {
+          gte: startDate,
+          lt: endDate,
+        },
+        ayat: {
+          juz: juzId,
+        },
+      },
+      select: {
+        status: true,
+        poinDidapat: true,
+        ayat: {
+          select: {
+            id: true,
+            nomorAyat: true,
+            arab: true,
+            latin: true,
+            terjemah: true,
+            halaman: true,
+            juz: true,
+            surah: {
+              select: {
+                id: true,
+                nama: true,
+                namaLatin: true
+              },
+            },
+          },
+        },
+        ustadz: {
+          select: { id: true, nama: true}
+        },
+        catatan: true,
+      },
+      orderBy: [
+        {
+          ayat: {
+            surahId: 'asc',
+          },
+        },
+        {
+          ayat: {
+            nomorAyat: 'asc',
+          },
+        },
+      ],
     }),
 
   getOrangTuaBySantriId: (santriId: number) =>

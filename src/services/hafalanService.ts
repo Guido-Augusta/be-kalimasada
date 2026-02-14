@@ -4,21 +4,48 @@ import { CreateManyHafalanPayload, HafalanRepository } from "../repositories/haf
 import { sendHafalanEmail } from "../utils/sendAccountEmail";
 
 export const HafalanService = {
-  async getSurahProgress(santriId: number) {
-    const surahList = await HafalanRepository.getAllSurah();
-    const hafalan = await HafalanRepository.getHafalanSantri(santriId);
+  async getProgress(santriId: number, mode: string) {
     const santri = await HafalanRepository.getSantriById(santriId);
-
+    const hafalan = await HafalanRepository.getHafalanSantri(santriId);
     const ayatSudah = new Set(hafalan.map((h) => h.ayatId));
 
-    const result = await Promise.all(
-      surahList.map(async (s) => {
-        const totalSudah = await HafalanRepository.countAyatHafal(s.id, Array.from(ayatSudah));
-        return { ...s, progress: `${totalSudah}/${s.totalAyat}` };
-      })
-    );
-
-    return { santri, data: result };
+    if (mode === "surah") {
+      const surahList = await HafalanRepository.getAllSurah();
+      const result = await Promise.all(
+        surahList.map(async (s) => {
+          const totalSudah = await HafalanRepository.countAyatHafal(s.id, Array.from(ayatSudah));
+          return { ...s, progress: `${totalSudah}/${s.totalAyat}` };
+        })
+      );
+      return { santri, data: result };
+    } else {
+      // mode === "juz"
+      const juzList = await HafalanRepository.getAllJuz();
+      const result = await Promise.all(
+        juzList.map(async (j) => {
+          const ayatInJuz = await HafalanRepository.getAyatByJuzWithSurah(j.juz as number);
+          const totalAyat = ayatInJuz.length;
+          const sudahHafal = ayatInJuz.filter((a) => ayatSudah.has(a.id)).length;
+          const firstAyat = ayatInJuz[0];
+          return {
+            juz: j.juz,
+            mulai_dari: firstAyat
+              ? {
+                  surah: {
+                    nomor: firstAyat.surah.nomor,
+                    nama: firstAyat.surah.nama,
+                    nama_latin: firstAyat.surah.namaLatin
+                  },
+                  ayat: firstAyat.nomorAyat
+                }
+              : null,
+            progress: `${sudahHafal}/${totalAyat}`,
+            totalAyat,
+          };
+        })
+      );
+      return { santri, data: result };
+    }
   },
 
   async getDetailHafalanSurah(santriId: number, surahId: number, mode: string) {
@@ -34,6 +61,40 @@ export const HafalanService = {
         : ayatSurah.map((ayat) => ({ ...ayat, checked: false }));
 
     return { surah, santriId, mode, ayat: result };
+  },
+
+  async getDetailHafalanJuz(santriId: number, juzId: number, mode: string) {
+    const ayatJuz = await HafalanRepository.getAyatDetailByJuz(juzId);
+    const ayatIds = ayatJuz.map((a) => a.id);
+    const hafalanSantri = await HafalanRepository.getHafalanByAyatIds(santriId, ayatIds, "TambahHafalan");
+
+    const sudahHafal = new Set(hafalanSantri.map((h) => h.ayatId));
+
+    // Group ayat by surah
+    const surahMap = new Map();
+    ayatJuz.forEach((ayat) => {
+      const surahId = ayat.surah.id;
+      if (!surahMap.has(surahId)) {
+        surahMap.set(surahId, {
+          surah: ayat.surah,
+          ayat: [],
+        });
+      }
+      surahMap.get(surahId).ayat.push({
+        ...ayat,
+        checked: mode === "tambah" ? sudahHafal.has(ayat.id) : false,
+      });
+    });
+
+    const surahList = Array.from(surahMap.values());
+
+    return {
+      juz: juzId,
+      santriId,
+      mode,
+      totalSurah: surahList.length,
+      surah: surahList,
+    };
   },
 
   async simpanHafalan(santriId: number, ustadzId: number, ayatIds: number[], status: string, catatan?: string) {
@@ -130,67 +191,236 @@ export const HafalanService = {
     }
   },
 
-  async getRiwayatHafalanBySantri(santriId: number, page: number, limit: number, sort: string, sortBy: string, status?: string) {
+  async simpanHafalanByHalaman(santriId: number, ustadzId: number, halamanAwal: number, halamanAkhir: number, status: string, catatan?: string) {
+    // Get all ayat in the page range
+    const ayatInRange = await HafalanRepository.getAyatByHalamanRange(halamanAwal, halamanAkhir);
+    
+    if (ayatInRange.length === 0) {
+      throw new Error(`Tidak ada ayat ditemukan pada rentang halaman ${halamanAwal} - ${halamanAkhir}.`);
+    }
+
+    const ayatIds = ayatInRange.map((a) => a.id);
+
+    let sudahAdaAyatIds: number[] = [];
+    let ayatBaruIds: number[] = ayatIds;
+    
+    if (status === "TambahHafalan") {
+      const exist = await HafalanRepository.findExistingHafalan(santriId, ayatIds);
+      const sudahAda = new Set(exist.map((e) => e.ayatId));
+      sudahAdaAyatIds = ayatIds.filter((id) => sudahAda.has(id));
+      ayatBaruIds = ayatIds.filter((id) => !sudahAda.has(id));
+    }
+
+    // Get data santri
+    const santri = await HafalanRepository.getSantriById(santriId);
+    if (!santri) {
+        throw new Error("Data santri tidak ditemukan.");
+    }
+
+    // Get all parents for the santri
+    const orangTuaList = await HafalanRepository.getOrangTuaBySantriId(santriId);
+    
+    // Get detail ayat untuk email
+    const detailAyat = ayatInRange;
+    
+    // Get surah info dari ayat pertama
+    const surahInfo = await HafalanRepository.getSurahById(detailAyat[0].surahId);
+    if (!surahInfo) {
+        throw new Error("Informasi Surah tidak ditemukan.");
+    }
+    
+    const poinPerAyat = (status === "TambahHafalan") ? 5 : 0;
+    const totalPoinDidapat = ayatBaruIds.length * poinPerAyat;
+
+    // Buat data untuk semua ayat yang diinput
+    const newHafalanData = ayatIds.map((ayatId) => ({
+      santriId,
+      ustadzId,
+      ayatId,
+      tanggalHafalan: new Date(),
+      status,
+      catatan,
+      poinDidapat: ayatBaruIds.includes(ayatId) ? poinPerAyat : 0,
+    }));
+    
+    // Use transaction for TambahHafalan to be safe
+    if (status === "TambahHafalan") {
+      await prisma.$transaction([
+        HafalanRepository.createManyHafalan(newHafalanData as CreateManyHafalanPayload[]),
+        HafalanRepository.updateSantriTotalPoin(santriId, totalPoinDidapat),
+      ]);
+    } else {
+      // For Murajaah, only save the record
+      await HafalanRepository.createManyHafalan(newHafalanData as CreateManyHafalanPayload[]);
+    }
+
+    // Send email notification to each parent
+    if (orangTuaList.length > 0) {
+      for (const orangTua of orangTuaList) {
+          if (orangTua.user?.email) {
+              await sendHafalanEmail({
+                  ortuName: orangTua.nama,
+                  santriName: santri.nama,
+                  tanggalHafalan: new Date(),
+                  namaSurah: surahInfo.namaLatin,
+                  jumlahAyat: newHafalanData.length,
+                  ayatNomorList: detailAyat.map(ayat => ayat.nomorAyat),
+                  status,
+                  catatan,
+                  emailOrtu: orangTua.user.email,
+              });
+          }
+      }
+    }
+
+    // Return response
+    if (status === "TambahHafalan") {
+      return { 
+        message: "TambahHafalan berdasarkan halaman berhasil disimpan", 
+        count: newHafalanData.length, 
+        dilewati: sudahAdaAyatIds.length,
+        ayatBaru: ayatBaruIds.length,
+        totalPoinDidapat: totalPoinDidapat,
+        halamanAwal,
+        halamanAkhir
+      };
+    } else {
+      return { 
+        message: "Murajaah berdasarkan halaman berhasil disimpan", 
+        count: newHafalanData.length,
+        halamanAwal,
+        halamanAkhir
+      };
+    }
+  },
+
+  async getRiwayatHafalanBySantri(santriId: number, page: number, limit: number, sort: string, sortBy: string, status?: string, mode: string = 'ayat') {
     const santri = await HafalanRepository.getSantriById(santriId);
     if (!santri) {
       return { santri: null };
     }
 
-    const riwayat = await HafalanRepository.getRiwayatHafalanBySantri(santriId, status); 
+    const riwayat = await HafalanRepository.getRiwayatHafalanBySantri(santriId, status);
 
-    const groupedData: {
-      [key: string]: {
-        tanggal: string;
-        status: string;
-        surahId: number;
-        namaSurah: string;
-        namaSurahLatin: string;
-        jumlahAyat: number;
-        totalPoin: number;
-        rangeAyat: { awal: number; akhir: number };
-        _ayatNumbers: number[];
-      };
-    } = {};
+    let allGroupedData: any[] = [];
 
-    riwayat.forEach((r) => {
-      const tanggal = r.tanggalHafalan.toISOString().split("T")[0];
-      const status = r.status;
-      const surahId = r.ayat.surah.id;
-      const namaSurah = r.ayat.surah.nama;
-      const namaSurahLatin = r.ayat.surah.namaLatin;
-      const nomorAyat = r.ayat.nomorAyat;
-
-      const key = `${tanggal}-${status}-${surahId}`;
-
-      if (groupedData[key]) {
-        groupedData[key].jumlahAyat += 1;
-        groupedData[key].totalPoin += r.poinDidapat;
-        groupedData[key]._ayatNumbers.push(nomorAyat);
-      } else {
-        groupedData[key] = {
-          tanggal,
-          status,
-          surahId,
-          namaSurah,
-          namaSurahLatin,
-          jumlahAyat: 1,
-          totalPoin: r.poinDidapat,
-          rangeAyat: { awal: nomorAyat, akhir: nomorAyat },
-          _ayatNumbers: [nomorAyat],
+    if (mode === 'halaman') {
+      // Group by juz (pengelompokan: tanggal → juz)
+      const groupedData: {
+        [key: string]: {
+          tanggal: string;
+          status: string;
+          juz: number;
+          jumlahAyat: number;
+          totalPoin: number;
+          _ayatNumbers: number[];
+          _halamanNumbers: number[];
+          surahList: { id: number; nama: string; namaLatin: string }[];
         };
-      }
-    });
+      } = {};
 
-    // Calculate rangeAyat for each group
-    Object.keys(groupedData).forEach((key) => {
-      const group = groupedData[key];
-      const minAyat = Math.min(...group._ayatNumbers);
-      const maxAyat = Math.max(...group._ayatNumbers);
-      group.rangeAyat = { awal: minAyat, akhir: maxAyat };
-      delete (group as { _ayatNumbers?: number[] })._ayatNumbers;
-    });
+      riwayat.forEach((r) => {
+        const tanggal = r.tanggalHafalan.toISOString().split("T")[0];
+        const status = r.status;
+        const juz = r.ayat.juz || 0;
+        const halaman = r.ayat.halaman || 0;
+        const nomorAyat = r.ayat.nomorAyat;
+        const surah = r.ayat.surah;
 
-    let allGroupedData = Object.values(groupedData);
+        const key = `${tanggal}-${status}-${juz}`;
+
+        if (groupedData[key]) {
+          groupedData[key].jumlahAyat += 1;
+          groupedData[key].totalPoin += r.poinDidapat;
+          groupedData[key]._ayatNumbers.push(nomorAyat);
+          groupedData[key]._halamanNumbers.push(halaman);
+          // Add unique surah to list
+          if (!groupedData[key].surahList.find((s) => s.id === surah.id)) {
+            groupedData[key].surahList.push(surah);
+          }
+        } else {
+          groupedData[key] = {
+            tanggal,
+            status,
+            juz,
+            jumlahAyat: 1,
+            totalPoin: r.poinDidapat,
+            _ayatNumbers: [nomorAyat],
+            _halamanNumbers: [halaman],
+            surahList: [surah],
+          };
+        }
+      });
+
+      // Calculate rangeHalaman, totalHalaman and format for each group
+      allGroupedData = Object.values(groupedData).map((group) => {
+        const minHalaman = Math.min(...group._halamanNumbers);
+        const maxHalaman = Math.max(...group._halamanNumbers);
+        const uniqueHalaman = new Set(group._halamanNumbers);
+        const { _ayatNumbers, _halamanNumbers, surahList, ...rest } = group;
+        return {
+          ...rest,
+          totalHalaman: uniqueHalaman.size,
+          rangeHalaman: { awal: minHalaman, akhir: maxHalaman },
+          surah: surahList,
+        };
+      });
+    } else {
+      // Mode 'ayat' - Group by surah (existing behavior)
+      const groupedData: {
+        [key: string]: {
+          tanggal: string;
+          status: string;
+          surahId: number;
+          namaSurah: string;
+          namaSurahLatin: string;
+          jumlahAyat: number;
+          totalPoin: number;
+          rangeAyat: { awal: number; akhir: number };
+          _ayatNumbers: number[];
+        };
+      } = {};
+
+      riwayat.forEach((r) => {
+        const tanggal = r.tanggalHafalan.toISOString().split("T")[0];
+        const status = r.status;
+        const surahId = r.ayat.surah.id;
+        const namaSurah = r.ayat.surah.nama;
+        const namaSurahLatin = r.ayat.surah.namaLatin;
+        const nomorAyat = r.ayat.nomorAyat;
+
+        const key = `${tanggal}-${status}-${surahId}`;
+
+        if (groupedData[key]) {
+          groupedData[key].jumlahAyat += 1;
+          groupedData[key].totalPoin += r.poinDidapat;
+          groupedData[key]._ayatNumbers.push(nomorAyat);
+        } else {
+          groupedData[key] = {
+            tanggal,
+            status,
+            surahId,
+            namaSurah,
+            namaSurahLatin,
+            jumlahAyat: 1,
+            totalPoin: r.poinDidapat,
+            rangeAyat: { awal: nomorAyat, akhir: nomorAyat },
+            _ayatNumbers: [nomorAyat],
+          };
+        }
+      });
+
+      // Calculate rangeAyat for each group
+      Object.keys(groupedData).forEach((key) => {
+        const group = groupedData[key];
+        const minAyat = Math.min(...group._ayatNumbers);
+        const maxAyat = Math.max(...group._ayatNumbers);
+        group.rangeAyat = { awal: minAyat, akhir: maxAyat };
+        delete (group as { _ayatNumbers?: number[] })._ayatNumbers;
+      });
+
+      allGroupedData = Object.values(groupedData);
+    }
 
     if (sort && sortBy) {
         allGroupedData.sort((a, b) => {
@@ -224,6 +454,7 @@ export const HafalanService = {
 
     return {
       santri,
+      mode,
       pagination: {
         page,
         limit,
@@ -335,6 +566,71 @@ export const HafalanService = {
         nama: surahData.nama,
         namaLatin: surahData.namaLatin,
       },
+      daftarAyat: ayatList,
+    };
+  },
+
+  async getRiwayatDetailByDateAndJuz(santriId: number, juzId: number, tanggal: string, status: string) {
+    const startDate = new Date(tanggal);
+    const endDate = new Date(tanggal);
+    endDate.setDate(endDate.getDate() + 1);
+
+    const riwayat = await HafalanRepository.getDetailRiwayatAyatByJuz(
+      santriId,
+      juzId,
+      startDate,
+      endDate,
+      status
+    );
+
+    if (!riwayat || riwayat.length === 0) {
+      return null;
+    }
+
+    const firstItem = riwayat[0];
+    let totalPoin = 0;
+    const ayatList = riwayat.map(item => {
+      totalPoin += item.poinDidapat;
+      return {
+        ...item.ayat,
+        poinDidapat: item.poinDidapat,
+      };
+    });
+
+    // Calculate range ayat and halaman
+    const nomorAyatList = ayatList.map(ayat => ayat.nomorAyat);
+    const ayatAwal = Math.min(...nomorAyatList);
+    const ayatAkhir = Math.max(...nomorAyatList);
+
+    const halamanList = ayatList.map(ayat => ayat.halaman).filter((h): h is number => h !== null && h !== undefined);
+    const halamanAwal = halamanList.length > 0 ? Math.min(...halamanList) : null;
+    const halamanAkhir = halamanList.length > 0 ? Math.max(...halamanList) : null;
+
+    // Get unique surah list
+    const surahMap = new Map();
+    ayatList.forEach(ayat => {
+      if (!surahMap.has(ayat.surah.id)) {
+        surahMap.set(ayat.surah.id, ayat.surah);
+      }
+    });
+    const surahList = Array.from(surahMap.values());
+
+    return {
+      tanggal: tanggal,
+      status: firstItem.status,
+      ustadz: firstItem.ustadz,
+      catatan: firstItem.catatan,
+      totalPoin: totalPoin,
+      juz: juzId,
+      rangeAyat: {
+        awal: ayatAwal,
+        akhir: ayatAkhir,
+      },
+      rangeHalaman: {
+        awal: halamanAwal,
+        akhir: halamanAkhir,
+      },
+      surah: surahList,
       daftarAyat: ayatList,
     };
   },

@@ -4,13 +4,25 @@ import { AuthRequest } from "../middleware/auth";
 import { getUstadzByUserId } from "../repositories/ustadzRepo";
 import { StatusHafalan, TahapHafalan } from "@prisma/client";
 
-export const getSurahProgress = async (req: Request, res: Response) => {
+export const getProgress = async (req: Request, res: Response) => {
   try {
     const { santriId } = req.params;
-    const result = await HafalanService.getSurahProgress(Number(santriId));
-    return res.status(200).json({ message: "Surah retrieved", status: 200, ...result });
+    const mode = req.query.mode as string;
+
+    if (!mode || (mode !== "surah" && mode !== "juz")) {
+      return res.status(400).json({
+        message: "Query parameter 'mode' is required and must be 'surah' or 'juz'",
+        status: 400,
+      });
+    }
+
+    const result = await HafalanService.getProgress(Number(santriId), mode);
+    return res.status(200).json({
+      message: `${mode === "surah" ? "Surah" : "Juz"} retrieved`,
+      status: 200,
+      ...result,
+    });
   } catch (error: unknown) {
-    // res.status(500).json({ message: error.message || "Internal server error", status: 500 });
     if (error instanceof Error) {
       return res.status(500).json({ message: "Internal server error", status: 500 });
     } else {
@@ -24,6 +36,29 @@ export const getDetailHafalanSurah = async (req: Request, res: Response) => {
     const { santriId, surahId } = req.params;
     const { mode } = req.query;
     const result = await HafalanService.getDetailHafalanSurah(Number(santriId), Number(surahId), String(mode));
+    return res.status(200).json(result);
+  } catch (error: unknown) {
+    if (error instanceof Error) {
+      return res.status(500).json({ message: error.message, status: 500 });
+    } else {
+      return res.status(500).json({ message: "Internal server error", status: 500 });
+    }
+  }
+};
+
+export const getDetailHafalanJuz = async (req: Request, res: Response) => {
+  try {
+    const { santriId, juzId } = req.params;
+    const { mode } = req.query;
+    
+    if (!mode || (mode !== "tambah" && mode !== "murajaah")) {
+      return res.status(400).json({
+        message: "Query parameter 'mode' is required and must be 'tambah' or 'murajaah'",
+        status: 400,
+      });
+    }
+
+    const result = await HafalanService.getDetailHafalanJuz(Number(santriId), Number(juzId), String(mode));
     return res.status(200).json(result);
   } catch (error: unknown) {
     if (error instanceof Error) {
@@ -74,6 +109,53 @@ export const simpanHafalan = async (req: AuthRequest, res: Response) => {
   }
 };
 
+export const simpanHafalanByHalaman = async (req: AuthRequest, res: Response) => {
+  const role = req.user?.role;
+  const userId = req.user?.id;
+  let ustadzId;
+
+  try {
+    const { santriId, halamanAwal, halamanAkhir, status, catatan } = req.body;
+
+    if (!userId || !role) {
+      return res.status(401).json({ message: "Unauthorized", status: 401 });
+    }
+
+    if (role === "ustadz") {
+      const ustadz = await getUstadzByUserId(userId);
+
+      if (!ustadz) {
+        return res.status(403).json({ message: "Ustadz not found for the authenticated user.", status: 403 });
+      }
+      ustadzId = ustadz.id;
+    } else if (role === "admin") {
+      const ustadzIdFromBody = req.body.ustadzId;
+      if (!ustadzIdFromBody) {
+        return res.status(400).json({ message: "Ustadz ID is required for admin role.", status: 400 });
+      }
+      ustadzId = Number(ustadzIdFromBody);
+    } else {
+      return res.status(403).json({ message: "Forbidden: You do not have permission to save hafalan.", status: 403 });
+    }
+
+    const result = await HafalanService.simpanHafalanByHalaman(
+      Number(santriId),
+      ustadzId,
+      Number(halamanAwal),
+      Number(halamanAkhir),
+      status,
+      catatan
+    );
+    return res.status(200).json({ ...result, status: 200 });
+  } catch (error: unknown) {
+    if (error instanceof Error) {
+      return res.status(400).json({ message: error.message, status: 400 });
+    } else {
+      return res.status(400).json({ message: "Internal server error", status: 400 });
+    }
+  }
+};
+
 export const getRiwayatHafalanBySantri = async (req: Request, res: Response) => {
   try {
     const { santriId } = req.params;
@@ -82,8 +164,19 @@ export const getRiwayatHafalanBySantri = async (req: Request, res: Response) => 
     const sort = req.query.sort as string; // 'tanggal' or 'status'
     const sortBy = req.query.sortBy as string; // 'asc' or 'desc'
     const status = req.query.status as string;
+    const mode = req.query.mode as string; // 'ayat' or 'halaman'
 
-    const result = await HafalanService.getRiwayatHafalanBySantri(Number(santriId), page, limit, sort, sortBy, status);
+    // Default to 'ayat' if mode is not provided (backward compatibility)
+    const modeParam = mode || 'ayat';
+
+    if (modeParam !== 'ayat' && modeParam !== 'halaman') {
+      return res.status(400).json({
+        message: "Query parameter 'mode' must be 'ayat' or 'halaman'",
+        status: 400,
+      });
+    }
+
+    const result = await HafalanService.getRiwayatHafalanBySantri(Number(santriId), page, limit, sort, sortBy, status, modeParam);
 
     if (!result.santri) {
       return res.status(404).json({
@@ -173,6 +266,46 @@ export const getRiwayatDetailByDateAndSurah = async (req: Request, res: Response
 
     return res.status(200).json({
       message: "Detail riwayat hafalan retrieved.",
+      status: 200,
+      data: result,
+    });
+  } catch (error: unknown) {
+    if (error instanceof Error) {
+      return res.status(500).json({ message: "Internal server error", status: 500 });
+    } else {
+      return res.status(500).json({ message: "Internal server error", status: 500 });
+    }
+  }
+};
+
+export const getRiwayatDetailByDateAndJuz = async (req: Request, res: Response) => {
+  try {
+    const { santriId, juzId } = req.params;
+    const { tanggal, status } = req.query;
+
+    if (!santriId || !juzId || !tanggal || !status) {
+      return res.status(400).json({
+        message: "SantriId, juzId, tanggal, dan status are required.",
+        status: 400,
+      });
+    }
+
+    const result = await HafalanService.getRiwayatDetailByDateAndJuz(
+      Number(santriId),
+      Number(juzId),
+      String(tanggal),
+      String(status)
+    );
+
+    if (!result) {
+      return res.status(404).json({
+        message: "Riwayat detail hafalan not found.",
+        status: 404,
+      });
+    }
+
+    return res.status(200).json({
+      message: "Detail riwayat hafalan by juz retrieved.",
       status: 200,
       data: result,
     });
