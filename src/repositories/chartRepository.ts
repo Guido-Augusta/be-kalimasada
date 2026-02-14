@@ -22,6 +22,7 @@ export async function getRiwayatHafalanByRange(
       ayat: {
         select: {
           nomorAyat: true,
+          halaman: true,
         },
       },
     },

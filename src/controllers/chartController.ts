@@ -4,10 +4,19 @@ import { prisma } from "../utils/prisma";
 
 export async function getChartHafalanController(req: Request, res: Response) {
   try {
-    const { range = "1w", santriId } = req.query;
+    const { range = "1w", santriId, mode = "ayat" } = req.query;
 
     if (!santriId) {
       return res.status(400).json({ message: "santriId is required", status: 400 });
+    }
+
+    // Validate mode parameter
+    const modeParam = mode as string;
+    if (modeParam !== "ayat" && modeParam !== "halaman") {
+      return res.status(400).json({ 
+        message: "mode must be 'ayat' or 'halaman'", 
+        status: 400 
+      });
     }
 
     const santri = await prisma.santri.findUnique({ where: { id: parseInt(santriId as string, 10) } });
@@ -17,12 +26,14 @@ export async function getChartHafalanController(req: Request, res: Response) {
 
     const data = await getChartData(
       parseInt(santriId as string, 10),
-      range as ChartRange
+      range as ChartRange,
+      modeParam
     );
 
     return res.json({ 
       message: "Chart data", 
       status: 200, 
+      mode: modeParam,
       santri: {
         nama: santri.nama, 
         tahapHafalan: santri.tahapHafalan, 
