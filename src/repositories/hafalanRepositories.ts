@@ -316,6 +316,59 @@ export const HafalanRepository = {
       },
     }),
 
+  getDetailRiwayatAyatByJuz: (santriId: number, juzId: number, startDate: Date, endDate: Date, status: string) =>
+    prisma.riwayatHafalan.findMany({
+      where: {
+        santriId,
+        status: status as StatusHafalan,
+        tanggalHafalan: {
+          gte: startDate,
+          lt: endDate,
+        },
+        ayat: {
+          juz: juzId,
+        },
+      },
+      select: {
+        status: true,
+        poinDidapat: true,
+        ayat: {
+          select: {
+            id: true,
+            nomorAyat: true,
+            arab: true,
+            latin: true,
+            terjemah: true,
+            halaman: true,
+            juz: true,
+            surah: {
+              select: {
+                id: true,
+                nama: true,
+                namaLatin: true
+              },
+            },
+          },
+        },
+        ustadz: {
+          select: { id: true, nama: true}
+        },
+        catatan: true,
+      },
+      orderBy: [
+        {
+          ayat: {
+            surahId: 'asc',
+          },
+        },
+        {
+          ayat: {
+            nomorAyat: 'asc',
+          },
+        },
+      ],
+    }),
+
   getOrangTuaBySantriId: (santriId: number) =>
     prisma.orangTua.findMany({
       where: {

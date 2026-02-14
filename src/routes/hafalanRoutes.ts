@@ -25,6 +25,9 @@ hafalanRoutes.get("/riwayat/:santriId", authMiddleware, hafalanController.getRiw
 // GET Riwayat Detail by Date and Surah
 hafalanRoutes.get("/riwayat/detail/:santriId/surah/:surahId", authMiddleware, hafalanController.getRiwayatDetailByDateAndSurah);
 
+// GET Riwayat Detail by Date and Juz
+hafalanRoutes.get("/riwayat/detail/:santriId/juz/:juzId", authMiddleware, hafalanController.getRiwayatDetailByDateAndJuz);
+
 // DELETE Riwayat Hafalan
 hafalanRoutes.delete("/riwayat", authMiddleware, isUstadzOrAdmin, hafalanController.deleteRiwayatHafalan);
 

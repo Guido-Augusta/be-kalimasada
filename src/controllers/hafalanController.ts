@@ -278,6 +278,46 @@ export const getRiwayatDetailByDateAndSurah = async (req: Request, res: Response
   }
 };
 
+export const getRiwayatDetailByDateAndJuz = async (req: Request, res: Response) => {
+  try {
+    const { santriId, juzId } = req.params;
+    const { tanggal, status } = req.query;
+
+    if (!santriId || !juzId || !tanggal || !status) {
+      return res.status(400).json({
+        message: "SantriId, juzId, tanggal, dan status are required.",
+        status: 400,
+      });
+    }
+
+    const result = await HafalanService.getRiwayatDetailByDateAndJuz(
+      Number(santriId),
+      Number(juzId),
+      String(tanggal),
+      String(status)
+    );
+
+    if (!result) {
+      return res.status(404).json({
+        message: "Riwayat detail hafalan not found.",
+        status: 404,
+      });
+    }
+
+    return res.status(200).json({
+      message: "Detail riwayat hafalan by juz retrieved.",
+      status: 200,
+      data: result,
+    });
+  } catch (error: unknown) {
+    if (error instanceof Error) {
+      return res.status(500).json({ message: "Internal server error", status: 500 });
+    } else {
+      return res.status(500).json({ message: "Internal server error", status: 500 });
+    }
+  }
+};
+
 export const getLatestHafalanAllSantri = async (req: Request, res: Response) => {
   try {
     const page = parseInt((req.query.page as string) || "1");

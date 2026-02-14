@@ -570,6 +570,71 @@ export const HafalanService = {
     };
   },
 
+  async getRiwayatDetailByDateAndJuz(santriId: number, juzId: number, tanggal: string, status: string) {
+    const startDate = new Date(tanggal);
+    const endDate = new Date(tanggal);
+    endDate.setDate(endDate.getDate() + 1);
+
+    const riwayat = await HafalanRepository.getDetailRiwayatAyatByJuz(
+      santriId,
+      juzId,
+      startDate,
+      endDate,
+      status
+    );
+
+    if (!riwayat || riwayat.length === 0) {
+      return null;
+    }
+
+    const firstItem = riwayat[0];
+    let totalPoin = 0;
+    const ayatList = riwayat.map(item => {
+      totalPoin += item.poinDidapat;
+      return {
+        ...item.ayat,
+        poinDidapat: item.poinDidapat,
+      };
+    });
+
+    // Calculate range ayat and halaman
+    const nomorAyatList = ayatList.map(ayat => ayat.nomorAyat);
+    const ayatAwal = Math.min(...nomorAyatList);
+    const ayatAkhir = Math.max(...nomorAyatList);
+
+    const halamanList = ayatList.map(ayat => ayat.halaman).filter((h): h is number => h !== null && h !== undefined);
+    const halamanAwal = halamanList.length > 0 ? Math.min(...halamanList) : null;
+    const halamanAkhir = halamanList.length > 0 ? Math.max(...halamanList) : null;
+
+    // Get unique surah list
+    const surahMap = new Map();
+    ayatList.forEach(ayat => {
+      if (!surahMap.has(ayat.surah.id)) {
+        surahMap.set(ayat.surah.id, ayat.surah);
+      }
+    });
+    const surahList = Array.from(surahMap.values());
+
+    return {
+      tanggal: tanggal,
+      status: firstItem.status,
+      ustadz: firstItem.ustadz,
+      catatan: firstItem.catatan,
+      totalPoin: totalPoin,
+      juz: juzId,
+      rangeAyat: {
+        awal: ayatAwal,
+        akhir: ayatAkhir,
+      },
+      rangeHalaman: {
+        awal: halamanAwal,
+        akhir: halamanAkhir,
+      },
+      surah: surahList,
+      daftarAyat: ayatList,
+    };
+  },
+
   async getLatestHafalanAllSantri(page: number, limit: number, tahapHafalan?: string, status?: string, sortByAyat?: string, name?: string) {
     const totalData = await HafalanRepository.countAllSantri(tahapHafalan, name);
     const totalPages = Math.ceil(totalData / limit);
