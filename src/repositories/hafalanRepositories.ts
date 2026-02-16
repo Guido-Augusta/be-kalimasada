@@ -59,6 +59,7 @@ export const HafalanRepository = {
         arab: true,
         latin: true,
         terjemah: true,
+        halaman: true,
         surah: {
           select: {
             id: true,
