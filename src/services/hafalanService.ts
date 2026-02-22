@@ -481,26 +481,38 @@ export const HafalanService = {
     };
   },
 
-  async deleteRiwayatHafalan(santriId: number, surahId: number, tanggal: string, status: string) {
-    const ayatInSurah = await HafalanRepository.getAyatIdsBySurahId(surahId);
-    if (!ayatInSurah.length) {
-      return { count: 0, message: "Surah tidak ditemukan atau tidak memiliki ayat." };
+  async deleteRiwayatHafalan(santriId: number, surahId: number | undefined, juzId: number | undefined, tanggal: string, status: string) {
+    let ayatIds: number[];
+
+    if (surahId !== undefined) {
+      const ayatInSurah = await HafalanRepository.getAyatIdsBySurahId(surahId);
+      if (!ayatInSurah.length) {
+        return { count: 0, message: "Surah tidak ditemukan atau tidak memiliki ayat." };
+      }
+      ayatIds = ayatInSurah.map((ayat) => ayat.id);
+    } else if (juzId !== undefined) {
+      const ayatInJuz = await HafalanRepository.getAyatByJuz(juzId);
+      if (!ayatInJuz.length) {
+        return { count: 0, message: "Juz tidak ditemukan atau tidak memiliki ayat." };
+      }
+      ayatIds = ayatInJuz.map((ayat) => ayat.id);
+    } else {
+      return { count: 0, message: "SurahId atau juz harus diberikan." };
     }
 
-    const ayatIdsInSurah = ayatInSurah.map((ayat) => ayat.id);
     let deletedCount = 0;
     
     if (status === "TambahHafalan") {
       const poinData = await HafalanRepository.getPoinHafalanToDelete(
         santriId,
-        ayatIdsInSurah,
+        ayatIds,
         tanggal,
         status
       );
       const totalPoinToDeduct = poinData._sum.poinDidapat || 0;
 
       const [deleteResult] = await prisma.$transaction([
-        HafalanRepository.deleteHafalanByDateSurahStatus(santriId, ayatIdsInSurah, tanggal, status),
+        HafalanRepository.deleteHafalanByDateSurahStatus(santriId, ayatIds, tanggal, status),
         HafalanRepository.updateSantriTotalPoin(santriId, -totalPoinToDeduct),
       ]);
 
@@ -518,7 +530,7 @@ export const HafalanService = {
     } else {
       const result = await HafalanRepository.deleteHafalanByDateSurahStatus(
         santriId,
-        ayatIdsInSurah,
+        ayatIds,
         tanggal,
         status
       );

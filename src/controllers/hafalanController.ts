@@ -201,18 +201,26 @@ export const getRiwayatHafalanBySantri = async (req: Request, res: Response) => 
 
 export const deleteRiwayatHafalan = async (req: Request, res: Response) => {
   try {
-    const { santriId, surahId, tanggal, status } = req.body;
+    const { santriId, surahId, juzId, tanggal, status } = req.body;
 
-    if (!santriId || !surahId || !tanggal || !status) {
+    if (!santriId || !tanggal || !status) {
       return res.status(400).json({
-        message: "SantriId, surahId, tanggal, dan status are required.",
+        message: "SantriId, tanggal, dan status are required.",
+        status: 400,
+      });
+    }
+
+    if (!surahId && !juzId) {
+      return res.status(400).json({
+        message: "Either surahId or juzId is required.",
         status: 400,
       });
     }
 
     const result = await HafalanService.deleteRiwayatHafalan(
       Number(santriId),
-      Number(surahId),
+      surahId ? Number(surahId) : undefined,
+      juzId ? Number(juzId) : undefined,
       String(tanggal),
       String(status)
     );
