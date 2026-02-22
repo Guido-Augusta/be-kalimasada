@@ -1,7 +1,14 @@
 import { StatusHafalan } from "@prisma/client";
+import { formatInTimeZone } from "date-fns-tz";
 import prisma from "../utils/prisma";
 import { CreateManyHafalanPayload, HafalanRepository } from "../repositories/hafalanRepositories";
 import { sendHafalanEmail } from "../utils/sendAccountEmail";
+
+const JAKARTA_TIMEZONE = "Asia/Jakarta";
+
+function formatDateToYMD(date: Date): string {
+  return formatInTimeZone(date, JAKARTA_TIMEZONE, "yyyy-MM-dd");
+}
 
 export const HafalanService = {
   async getProgress(santriId: number, mode: string) {
@@ -320,7 +327,7 @@ export const HafalanService = {
       } = {};
 
       riwayat.forEach((r) => {
-        const tanggal = r.tanggalHafalan.toISOString().split("T")[0];
+        const tanggal = formatDateToYMD(r.tanggalHafalan);
         const status = r.status;
         const juz = r.ayat.juz || 0;
         const halaman = r.ayat.halaman || 0;
@@ -382,7 +389,7 @@ export const HafalanService = {
       } = {};
 
       riwayat.forEach((r) => {
-        const tanggal = r.tanggalHafalan.toISOString().split("T")[0];
+        const tanggal = formatDateToYMD(r.tanggalHafalan);
         const status = r.status;
         const surahId = r.ayat.surah.id;
         const namaSurah = r.ayat.surah.nama;
@@ -667,10 +674,9 @@ export const HafalanService = {
         const statusHafalan = latestHafalan.status as StatusHafalan;
 
         if (modeParam === 'juz') {
-          // Mode juz - filter hanya riwayat dari tanggal terakhir
-          const latestDateStr = tanggalHafalan.toISOString().split('T')[0];
+          const latestDateStr = formatDateToYMD(tanggalHafalan);
           const riwayatOnLatestDate = santri.riwayatHafalan.filter((riwayat: any) => {
-            const riwayatDateStr = new Date(riwayat.tanggalHafalan).toISOString().split('T')[0];
+            const riwayatDateStr = formatDateToYMD(new Date(riwayat.tanggalHafalan));
             return riwayatDateStr === latestDateStr;
           });
 
@@ -723,7 +729,7 @@ export const HafalanService = {
             }
 
             hafalanInfo = {
-              tanggal: tanggalHafalan.toISOString().split("T")[0],
+              tanggal: formatDateToYMD(tanggalHafalan),
               status: statusHafalan,
               juz: mainJuz,
               halamanDetail,
@@ -749,7 +755,7 @@ export const HafalanService = {
           }
 
           hafalanInfo = {
-            tanggal: tanggalHafalan.toISOString().split("T")[0],
+            tanggal: formatDateToYMD(tanggalHafalan),
             status: statusHafalan,
             surah: latestHafalan.ayat.surah.namaLatin,
             surahId: latestHafalan.ayat.surah.id,
