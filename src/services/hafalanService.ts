@@ -5,9 +5,18 @@ import { CreateManyHafalanPayload, HafalanRepository } from "../repositories/haf
 import { sendHafalanEmail } from "../utils/sendAccountEmail";
 
 const JAKARTA_TIMEZONE = "Asia/Jakarta";
+const JAKARTA_OFFSET_HOURS = 7;
 
 function formatDateToYMD(date: Date): string {
   return formatInTimeZone(date, JAKARTA_TIMEZONE, "yyyy-MM-dd");
+}
+
+function getJakartaDateRange(tanggal: string): { startDate: Date; endDate: Date } {
+  const baseDate = new Date(tanggal + "T00:00:00.000Z");
+  const offsetMs = JAKARTA_OFFSET_HOURS * 60 * 60 * 1000;
+  const startDate = new Date(baseDate.getTime() - offsetMs);
+  const endDate = new Date(startDate.getTime() + 24 * 60 * 60 * 1000);
+  return { startDate, endDate };
 }
 
 export const HafalanService = {
@@ -526,9 +535,7 @@ export const HafalanService = {
   },
 
   async getRiwayatDetailByDateAndSurah(santriId: number, surahId: number, tanggal: string, status: string) {
-    const startDate = new Date(tanggal);
-    const endDate = new Date(tanggal);
-    endDate.setDate(endDate.getDate() + 1);
+    const { startDate, endDate } = getJakartaDateRange(tanggal);
 
     const riwayat = await HafalanRepository.getDetailRiwayatAyat(
       santriId,
@@ -578,9 +585,7 @@ export const HafalanService = {
   },
 
   async getRiwayatDetailByDateAndJuz(santriId: number, juzId: number, tanggal: string, status: string) {
-    const startDate = new Date(tanggal);
-    const endDate = new Date(tanggal);
-    endDate.setDate(endDate.getDate() + 1);
+    const { startDate, endDate } = getJakartaDateRange(tanggal);
 
     const riwayat = await HafalanRepository.getDetailRiwayatAyatByJuz(
       santriId,

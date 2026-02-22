@@ -1,6 +1,16 @@
 import { StatusHafalan, TahapHafalan } from "@prisma/client";
 import { prisma } from "../utils/prisma";
 
+const JAKARTA_OFFSET_HOURS = 7;
+
+function getJakartaDateRange(tanggal: string): { startDate: Date; endDate: Date } {
+  const baseDate = new Date(tanggal + "T00:00:00.000Z");
+  const offsetMs = JAKARTA_OFFSET_HOURS * 60 * 60 * 1000;
+  const startDate = new Date(baseDate.getTime() - offsetMs);
+  const endDate = new Date(startDate.getTime() + 24 * 60 * 60 * 1000);
+  return { startDate, endDate };
+}
+
 export type CreateManyHafalanPayload = {
   santriId: number;
   ustadzId: number;
@@ -207,9 +217,7 @@ export const HafalanRepository = {
     }),
   
   deleteHafalanByDateSurahStatus: (santriId: number, ayatIds: number[], tanggal: string, status: string) => {
-    const startDate = new Date(tanggal);
-    const endDate = new Date(tanggal);
-    endDate.setDate(endDate.getDate() + 1);
+    const { startDate, endDate } = getJakartaDateRange(tanggal);
   
     return prisma.riwayatHafalan.deleteMany({
       where: {
@@ -227,9 +235,7 @@ export const HafalanRepository = {
   },
 
   getPoinHafalanToDelete: (santriId: number, ayatIds: number[], tanggal: string, status: string) => {
-    const startDate = new Date(tanggal);
-    const endDate = new Date(tanggal);
-    endDate.setDate(endDate.getDate() + 1);
+    const { startDate, endDate } = getJakartaDateRange(tanggal);
 
     return prisma.riwayatHafalan.aggregate({
       where: {
