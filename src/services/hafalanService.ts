@@ -935,7 +935,11 @@ export const HafalanService = {
         const numA = a.halamanTerakhirNumber ?? 0;
         const numB = b.halamanTerakhirNumber ?? 0;
 
-        if (numA === numB) return 0;
+        if (numA === numB) {
+          return isAsc
+            ? (a.nama || '').localeCompare(b.nama || '')
+            : (b.nama || '').localeCompare(a.nama || '');
+        }
 
         return isAsc ? numA - numB : numB - numA;
       });
@@ -946,7 +950,11 @@ export const HafalanService = {
         const numA = a.ayatTerakhirNumber ?? 0;
         const numB = b.ayatTerakhirNumber ?? 0;
 
-        if (numA === numB) return 0;
+        if (numA === numB) {
+          return isAsc
+            ? (a.nama || '').localeCompare(b.nama || '')
+            : (b.nama || '').localeCompare(a.nama || '');
+        }
 
         return isAsc ? numA - numB : numB - numA;
       });
