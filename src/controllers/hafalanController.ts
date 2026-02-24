@@ -1,32 +1,37 @@
-import { Request, Response } from "express";
-import { HafalanService } from "../services/hafalanService";
-import { AuthRequest } from "../middleware/auth";
-import { getUstadzByUserId } from "../repositories/ustadzRepo";
-import { StatusHafalan, TahapHafalan } from "@prisma/client";
+import { Request, Response } from 'express';
+import { HafalanService } from '../services/hafalanService';
+import { AuthRequest } from '../middleware/auth';
+import { getUstadzByUserId } from '../repositories/ustadzRepo';
+import { StatusHafalan, TahapHafalan } from '@prisma/client';
 
 export const getProgress = async (req: Request, res: Response) => {
   try {
     const { santriId } = req.params;
     const mode = req.query.mode as string;
 
-    if (!mode || (mode !== "surah" && mode !== "juz")) {
+    if (!mode || (mode !== 'surah' && mode !== 'juz')) {
       return res.status(400).json({
-        message: "Query parameter 'mode' is required and must be 'surah' or 'juz'",
+        message:
+          "Query parameter 'mode' is required and must be 'surah' or 'juz'",
         status: 400,
       });
     }
 
     const result = await HafalanService.getProgress(Number(santriId), mode);
     return res.status(200).json({
-      message: `${mode === "surah" ? "Surah" : "Juz"} retrieved`,
+      message: `${mode === 'surah' ? 'Surah' : 'Juz'} retrieved`,
       status: 200,
       ...result,
     });
   } catch (error: unknown) {
     if (error instanceof Error) {
-      return res.status(500).json({ message: "Internal server error", status: 500 });
+      return res
+        .status(500)
+        .json({ message: 'Internal server error', status: 500 });
     } else {
-      return res.status(500).json({ message: "Internal server error", status: 500 });
+      return res
+        .status(500)
+        .json({ message: 'Internal server error', status: 500 });
     }
   }
 };
@@ -35,13 +40,19 @@ export const getDetailHafalanSurah = async (req: Request, res: Response) => {
   try {
     const { santriId, surahId } = req.params;
     const { mode } = req.query;
-    const result = await HafalanService.getDetailHafalanSurah(Number(santriId), Number(surahId), String(mode));
+    const result = await HafalanService.getDetailHafalanSurah(
+      Number(santriId),
+      Number(surahId),
+      String(mode)
+    );
     return res.status(200).json(result);
   } catch (error: unknown) {
     if (error instanceof Error) {
       return res.status(500).json({ message: error.message, status: 500 });
     } else {
-      return res.status(500).json({ message: "Internal server error", status: 500 });
+      return res
+        .status(500)
+        .json({ message: 'Internal server error', status: 500 });
     }
   }
 };
@@ -50,21 +61,28 @@ export const getDetailHafalanJuz = async (req: Request, res: Response) => {
   try {
     const { santriId, juzId } = req.params;
     const { mode } = req.query;
-    
-    if (!mode || (mode !== "tambah" && mode !== "murajaah")) {
+
+    if (!mode || (mode !== 'tambah' && mode !== 'murajaah')) {
       return res.status(400).json({
-        message: "Query parameter 'mode' is required and must be 'tambah' or 'murajaah'",
+        message:
+          "Query parameter 'mode' is required and must be 'tambah' or 'murajaah'",
         status: 400,
       });
     }
 
-    const result = await HafalanService.getDetailHafalanJuz(Number(santriId), Number(juzId), String(mode));
+    const result = await HafalanService.getDetailHafalanJuz(
+      Number(santriId),
+      Number(juzId),
+      String(mode)
+    );
     return res.status(200).json(result);
   } catch (error: unknown) {
     if (error instanceof Error) {
       return res.status(500).json({ message: error.message, status: 500 });
     } else {
-      return res.status(500).json({ message: "Internal server error", status: 500 });
+      return res
+        .status(500)
+        .json({ message: 'Internal server error', status: 500 });
     }
   }
 };
@@ -78,38 +96,64 @@ export const simpanHafalan = async (req: AuthRequest, res: Response) => {
     const { santriId, ayatIds, status, catatan } = req.body;
 
     if (!userId || !role) {
-      return res.status(401).json({ message: "Unauthorized", status: 401 });
+      return res.status(401).json({ message: 'Unauthorized', status: 401 });
     }
 
-    if (role === "ustadz") {
+    if (role === 'ustadz') {
       const ustadz = await getUstadzByUserId(userId);
 
       if (!ustadz) {
-        return res.status(403).json({ message: "Ustadz not found for the authenticated user.", status: 403 });
+        return res
+          .status(403)
+          .json({
+            message: 'Ustadz not found for the authenticated user.',
+            status: 403,
+          });
       }
       ustadzId = ustadz.id;
-    } else if (role === "admin") {
+    } else if (role === 'admin') {
       const ustadzIdFromBody = req.body.ustadzId;
       if (!ustadzIdFromBody) {
-        return res.status(400).json({ message: "Ustadz ID is required for admin role.", status: 400 });
+        return res
+          .status(400)
+          .json({
+            message: 'Ustadz ID is required for admin role.',
+            status: 400,
+          });
       }
       ustadzId = Number(ustadzIdFromBody);
     } else {
-      return res.status(403).json({ message: "Forbidden: You do not have permission to save hafalan.", status: 403 });
+      return res
+        .status(403)
+        .json({
+          message: 'Forbidden: You do not have permission to save hafalan.',
+          status: 403,
+        });
     }
 
-    const result = await HafalanService.simpanHafalan(Number(santriId), ustadzId, ayatIds, status, catatan);
+    const result = await HafalanService.simpanHafalan(
+      Number(santriId),
+      ustadzId,
+      ayatIds,
+      status,
+      catatan
+    );
     return res.status(200).json({ ...result, status: 200 });
   } catch (error: unknown) {
     if (error instanceof Error) {
       return res.status(400).json({ message: error.message, status: 400 });
     } else {
-      return res.status(400).json({ message: "Internal server error", status: 400 });
+      return res
+        .status(400)
+        .json({ message: 'Internal server error', status: 400 });
     }
   }
 };
 
-export const simpanHafalanByHalaman = async (req: AuthRequest, res: Response) => {
+export const simpanHafalanByHalaman = async (
+  req: AuthRequest,
+  res: Response
+) => {
   const role = req.user?.role;
   const userId = req.user?.id;
   let ustadzId;
@@ -118,24 +162,39 @@ export const simpanHafalanByHalaman = async (req: AuthRequest, res: Response) =>
     const { santriId, halamanAwal, halamanAkhir, status, catatan } = req.body;
 
     if (!userId || !role) {
-      return res.status(401).json({ message: "Unauthorized", status: 401 });
+      return res.status(401).json({ message: 'Unauthorized', status: 401 });
     }
 
-    if (role === "ustadz") {
+    if (role === 'ustadz') {
       const ustadz = await getUstadzByUserId(userId);
 
       if (!ustadz) {
-        return res.status(403).json({ message: "Ustadz not found for the authenticated user.", status: 403 });
+        return res
+          .status(403)
+          .json({
+            message: 'Ustadz not found for the authenticated user.',
+            status: 403,
+          });
       }
       ustadzId = ustadz.id;
-    } else if (role === "admin") {
+    } else if (role === 'admin') {
       const ustadzIdFromBody = req.body.ustadzId;
       if (!ustadzIdFromBody) {
-        return res.status(400).json({ message: "Ustadz ID is required for admin role.", status: 400 });
+        return res
+          .status(400)
+          .json({
+            message: 'Ustadz ID is required for admin role.',
+            status: 400,
+          });
       }
       ustadzId = Number(ustadzIdFromBody);
     } else {
-      return res.status(403).json({ message: "Forbidden: You do not have permission to save hafalan.", status: 403 });
+      return res
+        .status(403)
+        .json({
+          message: 'Forbidden: You do not have permission to save hafalan.',
+          status: 403,
+        });
     }
 
     const result = await HafalanService.simpanHafalanByHalaman(
@@ -151,16 +210,21 @@ export const simpanHafalanByHalaman = async (req: AuthRequest, res: Response) =>
     if (error instanceof Error) {
       return res.status(400).json({ message: error.message, status: 400 });
     } else {
-      return res.status(400).json({ message: "Internal server error", status: 400 });
+      return res
+        .status(400)
+        .json({ message: 'Internal server error', status: 400 });
     }
   }
 };
 
-export const getRiwayatHafalanBySantri = async (req: Request, res: Response) => {
+export const getRiwayatHafalanBySantri = async (
+  req: Request,
+  res: Response
+) => {
   try {
     const { santriId } = req.params;
-    const page = parseInt((req.query.page as string) || "1");
-    const limit = parseInt((req.query.limit as string) || "10");
+    const page = parseInt((req.query.page as string) || '1');
+    const limit = parseInt((req.query.limit as string) || '10');
     const sort = req.query.sort as string; // 'tanggal' or 'status'
     const sortBy = req.query.sortBy as string; // 'asc' or 'desc'
     const status = req.query.status as string;
@@ -176,25 +240,37 @@ export const getRiwayatHafalanBySantri = async (req: Request, res: Response) => 
       });
     }
 
-    const result = await HafalanService.getRiwayatHafalanBySantri(Number(santriId), page, limit, sort, sortBy, status, modeParam);
+    const result = await HafalanService.getRiwayatHafalanBySantri(
+      Number(santriId),
+      page,
+      limit,
+      sort,
+      sortBy,
+      status,
+      modeParam
+    );
 
     if (!result.santri) {
       return res.status(404).json({
-        message: "Santri not found",
+        message: 'Santri not found',
         status: 404,
       });
     }
 
     return res.json({
-      message: "Success retrieve riwayat hafalan",
+      message: 'Success retrieve riwayat hafalan',
       status: 200,
       ...result,
     });
   } catch (error: unknown) {
     if (error instanceof Error) {
-      return res.status(500).json({ message: "Internal server error", status: 500 });
+      return res
+        .status(500)
+        .json({ message: 'Internal server error', status: 500 });
     } else {
-      return res.status(500).json({ message: "Internal server error", status: 500 });
+      return res
+        .status(500)
+        .json({ message: 'Internal server error', status: 500 });
     }
   }
 };
@@ -205,14 +281,14 @@ export const deleteRiwayatHafalan = async (req: Request, res: Response) => {
 
     if (!santriId || !tanggal || !status) {
       return res.status(400).json({
-        message: "SantriId, tanggal, dan status are required.",
+        message: 'SantriId, tanggal, dan status are required.',
         status: 400,
       });
     }
 
     if (!surahId && !juzId) {
       return res.status(400).json({
-        message: "Either surahId or juzId is required.",
+        message: 'Either surahId or juzId is required.',
         status: 400,
       });
     }
@@ -227,7 +303,7 @@ export const deleteRiwayatHafalan = async (req: Request, res: Response) => {
 
     if (result.count === 0) {
       return res.status(404).json({
-        message: "Riwayat hafalan not found",
+        message: 'Riwayat hafalan not found',
         status: 404,
       });
     }
@@ -239,21 +315,28 @@ export const deleteRiwayatHafalan = async (req: Request, res: Response) => {
     });
   } catch (error: unknown) {
     if (error instanceof Error) {
-      return res.status(500).json({ message: "Internal server error", status: 500 });
+      return res
+        .status(500)
+        .json({ message: 'Internal server error', status: 500 });
     } else {
-      return res.status(500).json({ message: "Internal server error", status: 500 });
+      return res
+        .status(500)
+        .json({ message: 'Internal server error', status: 500 });
     }
   }
 };
 
-export const getRiwayatDetailByDateAndSurah = async (req: Request, res: Response) => {
+export const getRiwayatDetailByDateAndSurah = async (
+  req: Request,
+  res: Response
+) => {
   try {
     const { santriId, surahId } = req.params;
     const { tanggal, status } = req.query;
 
     if (!santriId || !surahId || !tanggal || !status) {
       return res.status(400).json({
-        message: "SantriId, surahId, tanggal, dan status are required.",
+        message: 'SantriId, surahId, tanggal, dan status are required.',
         status: 400,
       });
     }
@@ -267,33 +350,40 @@ export const getRiwayatDetailByDateAndSurah = async (req: Request, res: Response
 
     if (!result) {
       return res.status(404).json({
-        message: "Riwayat detail hafalan not found.",
+        message: 'Riwayat detail hafalan not found.',
         status: 404,
       });
     }
 
     return res.status(200).json({
-      message: "Detail riwayat hafalan retrieved.",
+      message: 'Detail riwayat hafalan retrieved.',
       status: 200,
       data: result,
     });
   } catch (error: unknown) {
     if (error instanceof Error) {
-      return res.status(500).json({ message: "Internal server error", status: 500 });
+      return res
+        .status(500)
+        .json({ message: 'Internal server error', status: 500 });
     } else {
-      return res.status(500).json({ message: "Internal server error", status: 500 });
+      return res
+        .status(500)
+        .json({ message: 'Internal server error', status: 500 });
     }
   }
 };
 
-export const getRiwayatDetailByDateAndJuz = async (req: Request, res: Response) => {
+export const getRiwayatDetailByDateAndJuz = async (
+  req: Request,
+  res: Response
+) => {
   try {
     const { santriId, juzId } = req.params;
     const { tanggal, status } = req.query;
 
     if (!santriId || !juzId || !tanggal || !status) {
       return res.status(400).json({
-        message: "SantriId, juzId, tanggal, dan status are required.",
+        message: 'SantriId, juzId, tanggal, dan status are required.',
         status: 400,
       });
     }
@@ -307,35 +397,43 @@ export const getRiwayatDetailByDateAndJuz = async (req: Request, res: Response) 
 
     if (!result) {
       return res.status(404).json({
-        message: "Riwayat detail hafalan not found.",
+        message: 'Riwayat detail hafalan not found.',
         status: 404,
       });
     }
 
     return res.status(200).json({
-      message: "Detail riwayat hafalan by juz retrieved.",
+      message: 'Detail riwayat hafalan by juz retrieved.',
       status: 200,
       data: result,
     });
   } catch (error: unknown) {
     if (error instanceof Error) {
-      return res.status(500).json({ message: "Internal server error", status: 500 });
+      return res
+        .status(500)
+        .json({ message: 'Internal server error', status: 500 });
     } else {
-      return res.status(500).json({ message: "Internal server error", status: 500 });
+      return res
+        .status(500)
+        .json({ message: 'Internal server error', status: 500 });
     }
   }
 };
 
-export const getLatestHafalanAllSantri = async (req: Request, res: Response) => {
+export const getLatestHafalanAllSantri = async (
+  req: Request,
+  res: Response
+) => {
   try {
-    const page = parseInt((req.query.page as string) || "1");
-    const limit = parseInt((req.query.limit as string) || "10");
+    const page = parseInt((req.query.page as string) || '1');
+    const limit = parseInt((req.query.limit as string) || '10');
     const sortByAyat = req.query.sortByAyat as string | undefined;
+    const sortByHalaman = req.query.sortByHalaman as string | undefined;
     const name = req.query.name as string | undefined;
     const mode = req.query.mode as string | undefined;
     let tahapHafalan: TahapHafalan | undefined;
     const statusQuery = req.query.status as string | undefined;
-    let statusFilter: StatusHafalan | undefined
+    let statusFilter: StatusHafalan | undefined;
 
     if (statusQuery) {
       const statusMap: Record<string, StatusHafalan> = {
@@ -357,14 +455,27 @@ export const getLatestHafalanAllSantri = async (req: Request, res: Response) => 
       tahapHafalan = tahapMap[tahapNormalized];
     }
 
-    const result = await HafalanService.getLatestHafalanAllSantri(page, limit, tahapHafalan, statusFilter, sortByAyat, name, mode);
+    const result = await HafalanService.getLatestHafalanAllSantri(
+      page,
+      limit,
+      tahapHafalan,
+      statusFilter,
+      sortByAyat,
+      sortByHalaman,
+      name,
+      mode
+    );
 
     return res.status(200).json({ status: 200, ...result });
   } catch (error: unknown) {
     if (error instanceof Error) {
-      return res.status(500).json({ message: "Internal server error", status: 500 });
+      return res
+        .status(500)
+        .json({ message: 'Internal server error', status: 500 });
     } else {
-      return res.status(500).json({ message: "Internal server error", status: 500 });
+      return res
+        .status(500)
+        .json({ message: 'Internal server error', status: 500 });
     }
   }
 };
