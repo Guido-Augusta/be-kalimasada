@@ -135,6 +135,8 @@ model RiwayatHafalan {
   @@index([ustadzId])
   @@index([ayatId])
   @@index([tanggalHafalan])
+  @@index([santriId, status, tanggalHafalan])
+  @@index([santriId, status, ayatId])
 }
 
 model TokenStore {
