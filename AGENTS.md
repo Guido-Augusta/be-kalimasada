@@ -39,44 +39,37 @@ npx prettier --write .
 npx prettier --check .
 ```
 
+**Note**: No ESLint is currently configured. Prettier handles all code formatting.
+
 ## Test Commands
 
-**No test framework is currently configured.** The test script in package.json only echoes an error. Before writing tests, install a testing framework like Jest or Vitest and add scripts:
+**No test framework is currently configured.** The test script in package.json only echoes an error.
 
 ```bash
-# After installing Jest/Vitest, add these to package.json:
-"test": "jest"
-"test:watch": "jest --watch"
+# After installing Jest or Vitest, add these scripts to package.json:
+"test": "jest",
+"test:watch": "jest --watch",
 "test:coverage": "jest --coverage"
+
+# Run a single test file
+npx jest path/to/test-file.test.ts
+
+# Run tests matching a pattern
+npx jest --testNamePattern="controller name"
+
+# Run tests in a specific directory
+npx jest src/services/
 ```
 
 ## Code Style Guidelines
 
 ### Formatting (Prettier)
-- **Indent**: 2 spaces (no tabs)
-- **Semicolons**: Required
-- **Quotes**: Single quotes
-- **Trailing commas**: ES5 style (where valid)
-- **Print width**: 80 characters
-- **Line endings**: LF
-- Run Prettier: `npx prettier --write .`
+- **Indent**: 2 spaces, **Semicolons**: Required, **Quotes**: Single
+- **Trailing commas**: ES5, **Print width**: 80, **Line endings**: LF
+- Run: `npx prettier --write .`
 
 ### Imports Order
-1. External libraries (express, bcrypt, etc.)
-2. Prisma client types
-3. Internal utils (prisma, jwt)
-4. Internal validation schemas
-5. Internal controllers/services/repos
-
-Example:
-```typescript
-import { Request, Response } from 'express';
-import bcrypt from 'bcrypt';
-import { Role } from '@prisma/client';
-import { prisma } from '../utils/prisma';
-import { loginSchema } from '../validation/authValidation';
-import * as ustadzRepo from '../repositories/ustadzRepo';
-```
+1. External libs (express, bcrypt) → 2. Prisma types → 3. Utils → 4. Validation → 5. Controllers/services/repos
 
 ### Naming Conventions
 - **Files**: camelCase (e.g., `authController.ts`, `ustadzRoutes.ts`)
@@ -86,6 +79,38 @@ import * as ustadzRepo from '../repositories/ustadzRepo';
 - **Constants**: UPPER_SNAKE_CASE for true constants
 - **Database enums**: PascalCase (e.g., `Role`, `StatusHafalan`)
 
+### Code Patterns
+
+**Controller structure**:
+```typescript
+export const functionName = async (req: Request, res: Response) => {
+  try {
+    // validation
+    // business logic
+    return res.status(200).json({ message: 'Success', status: 200, data: ... });
+  } catch (err: unknown) {
+    if (err instanceof Error) {
+      return res.status(500).json({ message: 'Internal server error', status: 500 });
+    }
+    return res.status(500).json({ message: 'Internal server error', status: 500 });
+  }
+};
+```
+
+**Validation with Zod**:
+```typescript
+const validation = schema.safeParse(req.body);
+if (!validation.success) {
+  return res.status(400).json({
+    message: 'Validation failed',
+    errors: validation.error.flatten().fieldErrors,
+  });
+}
+const data = validation.data;
+```
+
+**Proper error typing**: Always use `unknown` in catch blocks, never `any`. Check with `instanceof Error` before accessing message.
+
 ### TypeScript Rules
 - Enable `strict: true` in tsconfig.json
 - Use explicit return types for exported functions
@@ -94,64 +119,31 @@ import * as ustadzRepo from '../repositories/ustadzRepo';
 - Use Zod for runtime validation (schema files in `src/validation/`)
 - Avoid `any` type; use proper typing
 
-### Error Handling
-Always use try-catch in controllers. Return structured error responses:
+## Architecture & Project Structure
 
-```typescript
-try {
-  // logic
-} catch (err: unknown) {
-  if (err instanceof Error) {
-    return res.status(500).json({ message: 'Internal server error', status: 500 });
-  }
-  return res.status(500).json({ message: 'Internal server error', status: 500 });
-}
-```
-
-## Architecture Pattern
-
-Follows layered architecture:
-- **Routes**: Define API endpoints and middleware
-- **Controllers**: Handle HTTP requests/responses
-- **Services**: Business logic layer
-- **Repositories**: Database access layer (Prisma queries)
-- **Validation**: Zod schemas for input validation
-- **Utils**: Helper functions (prisma client, JWT, etc.)
-
-## Project Structure
+Layered architecture: Routes → Controllers → Services → Repositories → Prisma
 
 ```
 src/
 ├── controllers/      # HTTP request handlers
-├── routes/           # API route definitions
+├── routes/           # API route definitions  
 ├── services/         # Business logic
 ├── repositories/     # Database queries
-├── validation/       # Zod validation schemas
-├── middleware/       # Express middleware (auth, etc.)
-├── utils/            # Helpers (prisma, jwt, etc.)
+├── validation/       # Zod schemas
+├── middleware/       # Express middleware
+├── utils/            # Helpers (prisma, jwt)
 ├── cron/             # Scheduled tasks
-data-surah-page/      # Quran JSON data
-prisma/
-├── schema.prisma     # Database schema
+prisma/schema.prisma # Database schema
 ```
 
 ## Database (Prisma)
 
-PostgreSQL with Prisma ORM. Key enums:
-- `Role`: admin, santri, ustadz, ortu
-- `StatusHafalan`: TambahHafalan, Murajaah
-- `TahapHafalan`: Level1, Level2, Level3
-- `JenisKelamin`: L, P
-- `Platform`: web, mobile
+PostgreSQL. Key enums: `Role` (admin, Santi, ustadz, ortu), `StatusHafalan` (TambahHafalan, Murajaah), `TahapHafalan` (Level1-3), `JenisKelamin` (L, P), `Platform` (web, mobile).
 
-Always regenerate Prisma client after schema changes:
-```bash
-pnpm run generate
-```
+After schema changes: `pnpm run generate`
 
 ## Environment Variables
 
-Required in `.env`:
 ```
 DATABASE_URL="postgresql://user:pass@localhost:5432/dbname"
 JWT_SECRET="your-secret-key"
@@ -160,20 +152,5 @@ PORT=5000
 
 ## API Response Format
 
-Success responses:
-```json
-{
-  "message": "Success message",
-  "status": 200,
-  "data": { ... }
-}
-```
-
-Error responses:
-```json
-{
-  "message": "Error message",
-  "status": 400,
-  "errors": { ... }  // optional validation errors
-}
-```
+Success: `{ "message": "...", "status": 200, "data": {...} }`
+Error: `{ "message": "...", "status": 400, "errors": {...} }`
