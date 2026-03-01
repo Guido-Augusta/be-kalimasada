@@ -138,7 +138,7 @@ prisma/schema.prisma # Database schema
 
 ## Database (Prisma)
 
-PostgreSQL. Key enums: `Role` (admin, Santi, ustadz, ortu), `StatusHafalan` (TambahHafalan, Murajaah), `TahapHafalan` (Level1-3), `JenisKelamin` (L, P), `Platform` (web, mobile).
+PostgreSQL. Key enums: `Role` (admin, santri, ustadz, ortu), `StatusHafalan` (TambahHafalan, Murajaah), `TahapHafalan` (Level1-3), `JenisKelamin` (L, P), `Platform` (web, mobile).
 
 After schema changes: `pnpm run generate`
 
