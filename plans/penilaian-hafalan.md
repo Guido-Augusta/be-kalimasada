@@ -25,11 +25,11 @@ Menambahkan skala penilaian untuk Tambah Hafalan (kualitas + keterangan) dan Mur
 - [x] 1.6 Run `pnpm run generate` untuk generate Prisma client
 
 ### Phase 2: Validation
-- [ ] 2.1 Buat file `src/validation/hafalanValidation.ts`
-- [ ] 2.2 Buat schema untuk `simpanHafalan` (per ayat):
+- [x] 2.1 Buat file `src/validation/hafalanValidation.ts`
+- [x] 2.2 Buat schema untuk `simpanHafalan` (per ayat):
   - Jika `status = TambahHafalan`: wajib `kualitas` + wajib `keterangan`
   - Jika `status = Murajaah`: wajib `keterangan` saja
-- [ ] 2.3 Buat schema untuk `simpanHafalanByHalaman` (per halaman):
+- [x] 2.3 Buat schema untuk `simpanHafalanByHalaman` (per halaman):
   - Same validation logic seperti di atas
 
 ### Phase 3: Controller Updates
