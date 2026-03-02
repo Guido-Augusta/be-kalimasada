@@ -122,6 +122,8 @@ model RiwayatHafalan {
   ayatId         Int
   tanggalHafalan DateTime
   status         StatusHafalan
+  kualitas       KualitasHafalan?
+  keterangan     KeteranganHafalan?
   catatan        String?
   poinDidapat    Int            @default(0)
   createdAt      DateTime       @default(now())
@@ -189,6 +191,18 @@ enum TahapHafalan {
 enum StatusHafalan {
   TambahHafalan
   Murajaah
+}
+
+enum KualitasHafalan {
+  Kurang
+  Cukup
+  Baik
+  SangatBaik
+}
+
+enum KeteranganHafalan {
+  Mengulang
+  Lanjut
 }
 
 enum TempatTurun {
