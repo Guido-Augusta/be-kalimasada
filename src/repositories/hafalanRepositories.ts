@@ -16,8 +16,10 @@ export type CreateManyHafalanPayload = {
   ustadzId: number;
   ayatId: number;
   tanggalHafalan: Date;
-  status: 'TambahHafalan' | 'Murajaah'; 
-  catatan: string;
+  status: 'TambahHafalan' | 'Murajaah';
+  kualitas?: 'Kurang' | 'Cukup' | 'Baik' | 'SangatBaik';
+  keterangan?: 'Mengulang' | 'Lanjut';
+  catatan?: string;
   poinDidapat: number;
 };
 

@@ -33,21 +33,21 @@ Menambahkan skala penilaian untuk Tambah Hafalan (kualitas + keterangan) dan Mur
   - Same validation logic seperti di atas
 
 ### Phase 3: Controller Updates
-- [ ] 3.1 Update `simpanHafalan` di `src/controllers/hafalanController.ts`:
+- [x] 3.1 Update `simpanHafalan` di `src/controllers/hafalanController.ts`:
   - Import schema dari hafalanValidation
   - Replace manual validation dengan Zod schema
-- [ ] 3.2 Update `simpanHafalanByHalaman` di controller:
+- [x] 3.2 Update `simpanHafalanByHalaman` di controller:
   - Import schema dari hafalanValidation
   - Replace manual validation dengan Zod schema
 
 ### Phase 4: Service Updates
-- [ ] 4.1 Update `simpanHafalan` di `src/services/hafalanService.ts`:
+- [x] 4.1 Update `simpanHafalan` di `src/services/hafalanService.ts`:
   - Tambahkan parameter `kualitas` dan `keterangan`
   - Update logika poin:
     - Jika TambahHafalan + Lanjut = 5 poin/ayat
     - Jika TambahHafalan + Mengulang = 0 poin
     - Jika Murajaah = 0 poin (default)
-- [ ] 4.2 Update `simpanHafalanByHalaman` di service:
+- [x] 4.2 Update `simpanHafalanByHalaman` di service:
   - Same logic seperti di atas
 
 ### Phase 5: Email Notification

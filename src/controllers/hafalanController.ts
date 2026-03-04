@@ -3,6 +3,10 @@ import { HafalanService } from '../services/hafalanService';
 import { AuthRequest } from '../middleware/auth';
 import { getUstadzByUserId } from '../repositories/ustadzRepo';
 import { StatusHafalan, TahapHafalan } from '@prisma/client';
+import {
+  SimpanHafalanSchema,
+  SimpanHafalanByHalamanSchema,
+} from '../validation/hafalanValidation';
 
 export const getProgress = async (req: Request, res: Response) => {
   try {
@@ -93,7 +97,15 @@ export const simpanHafalan = async (req: AuthRequest, res: Response) => {
   let ustadzId;
 
   try {
-    const { santriId, ayatIds, status, catatan } = req.body;
+    const validation = SimpanHafalanSchema.safeParse(req.body);
+    if (!validation.success) {
+      return res.status(400).json({
+        message: 'Validation failed',
+        errors: validation.error.flatten().fieldErrors,
+      });
+    }
+
+    const data = validation.data;
 
     if (!userId || !role) {
       return res.status(401).json({ message: 'Unauthorized', status: 401 });
@@ -103,49 +115,43 @@ export const simpanHafalan = async (req: AuthRequest, res: Response) => {
       const ustadz = await getUstadzByUserId(userId);
 
       if (!ustadz) {
-        return res
-          .status(403)
-          .json({
-            message: 'Ustadz not found for the authenticated user.',
-            status: 403,
-          });
+        return res.status(403).json({
+          message: 'Ustadz not found for the authenticated user.',
+          status: 403,
+        });
       }
       ustadzId = ustadz.id;
     } else if (role === 'admin') {
       const ustadzIdFromBody = req.body.ustadzId;
       if (!ustadzIdFromBody) {
-        return res
-          .status(400)
-          .json({
-            message: 'Ustadz ID is required for admin role.',
-            status: 400,
-          });
+        return res.status(400).json({
+          message: 'Ustadz ID is required for admin role.',
+          status: 400,
+        });
       }
       ustadzId = Number(ustadzIdFromBody);
     } else {
-      return res
-        .status(403)
-        .json({
-          message: 'Forbidden: You do not have permission to save hafalan.',
-          status: 403,
-        });
+      return res.status(403).json({
+        message: 'Forbidden: You do not have permission to save hafalan.',
+        status: 403,
+      });
     }
 
     const result = await HafalanService.simpanHafalan(
-      Number(santriId),
+      Number(data.santriId),
       ustadzId,
-      ayatIds,
-      status,
-      catatan
+      data.ayatIds,
+      data.status,
+      data.kualitas,
+      data.keterangan,
+      data.catatan
     );
     return res.status(200).json({ ...result, status: 200 });
   } catch (error: unknown) {
     if (error instanceof Error) {
       return res.status(400).json({ message: error.message, status: 400 });
     } else {
-      return res
-        .status(400)
-        .json({ message: 'Internal server error', status: 400 });
+      return res.status(400).json({ message: 'Internal server error', status: 400 });
     }
   }
 };
@@ -159,7 +165,15 @@ export const simpanHafalanByHalaman = async (
   let ustadzId;
 
   try {
-    const { santriId, halamanAwal, halamanAkhir, status, catatan } = req.body;
+    const validation = SimpanHafalanByHalamanSchema.safeParse(req.body);
+    if (!validation.success) {
+      return res.status(400).json({
+        message: 'Validation failed',
+        errors: validation.error.flatten().fieldErrors,
+      });
+    }
+
+    const data = validation.data;
 
     if (!userId || !role) {
       return res.status(401).json({ message: 'Unauthorized', status: 401 });
@@ -169,50 +183,44 @@ export const simpanHafalanByHalaman = async (
       const ustadz = await getUstadzByUserId(userId);
 
       if (!ustadz) {
-        return res
-          .status(403)
-          .json({
-            message: 'Ustadz not found for the authenticated user.',
-            status: 403,
-          });
+        return res.status(403).json({
+          message: 'Ustadz not found for the authenticated user.',
+          status: 403,
+        });
       }
       ustadzId = ustadz.id;
     } else if (role === 'admin') {
       const ustadzIdFromBody = req.body.ustadzId;
       if (!ustadzIdFromBody) {
-        return res
-          .status(400)
-          .json({
-            message: 'Ustadz ID is required for admin role.',
-            status: 400,
-          });
+        return res.status(400).json({
+          message: 'Ustadz ID is required for admin role.',
+          status: 400,
+        });
       }
       ustadzId = Number(ustadzIdFromBody);
     } else {
-      return res
-        .status(403)
-        .json({
-          message: 'Forbidden: You do not have permission to save hafalan.',
-          status: 403,
-        });
+      return res.status(403).json({
+        message: 'Forbidden: You do not have permission to save hafalan.',
+        status: 403,
+      });
     }
 
     const result = await HafalanService.simpanHafalanByHalaman(
-      Number(santriId),
+      Number(data.santriId),
       ustadzId,
-      Number(halamanAwal),
-      Number(halamanAkhir),
-      status,
-      catatan
+      Number(data.halamanAwal),
+      Number(data.halamanAkhir),
+      data.status,
+      data.kualitas,
+      data.keterangan,
+      data.catatan
     );
     return res.status(200).json({ ...result, status: 200 });
   } catch (error: unknown) {
     if (error instanceof Error) {
       return res.status(400).json({ message: error.message, status: 400 });
     } else {
-      return res
-        .status(400)
-        .json({ message: 'Internal server error', status: 400 });
+      return res.status(400).json({ message: 'Internal server error', status: 400 });
     }
   }
 };

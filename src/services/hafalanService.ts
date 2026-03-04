@@ -142,6 +142,8 @@ export const HafalanService = {
     ustadzId: number,
     ayatIds: number[],
     status: string,
+    kualitas?: 'Kurang' | 'Cukup' | 'Baik' | 'SangatBaik',
+    keterangan?: 'Mengulang' | 'Lanjut',
     catatan?: string
   ) {
     let sudahAdaAyatIds: number[] = [];
@@ -181,7 +183,7 @@ export const HafalanService = {
       throw new Error('Informasi Surah tidak ditemukan.');
     }
 
-    const poinPerAyat = status === 'TambahHafalan' ? 5 : 0;
+    const poinPerAyat = status === 'TambahHafalan' && keterangan === 'Lanjut' ? 5 : 0;
     const totalPoinDidapat = ayatBaruIds.length * poinPerAyat;
 
     // Buat data untuk semua ayat yang diinput
@@ -192,6 +194,8 @@ export const HafalanService = {
       ayatId,
       tanggalHafalan: new Date(),
       status,
+      kualitas: status === 'TambahHafalan' ? kualitas : undefined,
+      keterangan,
       catatan,
       poinDidapat: ayatBaruIds.includes(ayatId) ? poinPerAyat : 0,
     }));
@@ -253,6 +257,8 @@ export const HafalanService = {
     halamanAwal: number,
     halamanAkhir: number,
     status: string,
+    kualitas?: 'Kurang' | 'Cukup' | 'Baik' | 'SangatBaik',
+    keterangan?: 'Mengulang' | 'Lanjut',
     catatan?: string
   ) {
     // Get all ayat in the page range
@@ -303,7 +309,7 @@ export const HafalanService = {
       throw new Error('Informasi Surah tidak ditemukan.');
     }
 
-    const poinPerAyat = status === 'TambahHafalan' ? 5 : 0;
+    const poinPerAyat = status === 'TambahHafalan' && keterangan === 'Lanjut' ? 5 : 0;
     const totalPoinDidapat = ayatBaruIds.length * poinPerAyat;
 
     // Buat data untuk semua ayat yang diinput
@@ -313,6 +319,8 @@ export const HafalanService = {
       ayatId,
       tanggalHafalan: new Date(),
       status,
+      kualitas: status === 'TambahHafalan' ? kualitas : undefined,
+      keterangan,
       catatan,
       poinDidapat: ayatBaruIds.includes(ayatId) ? poinPerAyat : 0,
     }));
