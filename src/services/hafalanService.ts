@@ -147,7 +147,12 @@ export const HafalanService = {
     catatan?: string
   ) {
     let sudahAdaAyatIds: number[] = [];
-    let ayatBaruIds: number[] = ayatIds;
+    let ayatBaruIds: number[] = [];
+
+    const santri = await HafalanRepository.getSantriById(santriId);
+    if (!santri) {
+      throw new Error('Data santri tidak ditemukan.');
+    }
 
     if (status === 'TambahHafalan') {
       const exist = await HafalanRepository.findExistingHafalan(
@@ -156,13 +161,22 @@ export const HafalanService = {
       );
       const sudahAda = new Set(exist.map((e) => e.ayatId));
       sudahAdaAyatIds = ayatIds.filter((id) => sudahAda.has(id));
-      ayatBaruIds = ayatIds.filter((id) => !sudahAda.has(id));
-    }
 
-    // Get data santri
-    const santri = await HafalanRepository.getSantriById(santriId);
-    if (!santri) {
-      throw new Error('Data santri tidak ditemukan.');
+      // If "Lanjut", only give points to ayats that haven't received points yet
+      if (keterangan === 'Lanjut') {
+        const ayatsWithPoin = await HafalanRepository.findAyatWithPoin(
+          santriId,
+          ayatIds
+        );
+        const ayatsWithPoinSet = new Set(ayatsWithPoin.map((a) => a.ayatId));
+        ayatBaruIds = ayatIds.filter((id) => !ayatsWithPoinSet.has(id));
+      } else {
+        // For "Mengulang" - no points
+        ayatBaruIds = [];
+      }
+    } else {
+      // For Murajaah - no points
+      ayatBaruIds = [];
     }
 
     // Get all parents for the santri
@@ -278,7 +292,12 @@ export const HafalanService = {
     const ayatIds = ayatInRange.map((a) => a.id);
 
     let sudahAdaAyatIds: number[] = [];
-    let ayatBaruIds: number[] = ayatIds;
+    let ayatBaruIds: number[] = [];
+
+    const santri = await HafalanRepository.getSantriById(santriId);
+    if (!santri) {
+      throw new Error('Data santri tidak ditemukan.');
+    }
 
     if (status === 'TambahHafalan') {
       const exist = await HafalanRepository.findExistingHafalan(
@@ -287,13 +306,22 @@ export const HafalanService = {
       );
       const sudahAda = new Set(exist.map((e) => e.ayatId));
       sudahAdaAyatIds = ayatIds.filter((id) => sudahAda.has(id));
-      ayatBaruIds = ayatIds.filter((id) => !sudahAda.has(id));
-    }
 
-    // Get data santri
-    const santri = await HafalanRepository.getSantriById(santriId);
-    if (!santri) {
-      throw new Error('Data santri tidak ditemukan.');
+      // If "Lanjut", only give points to ayats that haven't received points yet
+      if (keterangan === 'Lanjut') {
+        const ayatsWithPoin = await HafalanRepository.findAyatWithPoin(
+          santriId,
+          ayatIds
+        );
+        const ayatsWithPoinSet = new Set(ayatsWithPoin.map((a) => a.ayatId));
+        ayatBaruIds = ayatIds.filter((id) => !ayatsWithPoinSet.has(id));
+      } else {
+        // For "Mengulang" - no points
+        ayatBaruIds = [];
+      }
+    } else {
+      // For Murajaah - no points
+      ayatBaruIds = [];
     }
 
     // Get all parents for the santri

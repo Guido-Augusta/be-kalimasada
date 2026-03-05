@@ -180,6 +180,18 @@ export const HafalanRepository = {
       select: { ayatId: true },
     }),
 
+  // Find ayats that have already received points from TambahHafalan + Lanjut
+  findAyatWithPoin: (santriId: number, ayatIds: number[]) =>
+    prisma.riwayatHafalan.findMany({
+      where: {
+        santriId,
+        ayatId: { in: ayatIds },
+        status: "TambahHafalan",
+        poinDidapat: { gt: 0 },
+      },
+      select: { ayatId: true },
+    }),
+
   createManyHafalan: (data: CreateManyHafalanPayload[]) =>
     prisma.riwayatHafalan.createMany({ data, skipDuplicates: true }),
 

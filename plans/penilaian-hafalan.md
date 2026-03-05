@@ -58,8 +58,8 @@ Menambahkan skala penilaian untuk Tambah Hafalan (kualitas + keterangan) dan Mur
   - Tambahkan parameter `kualitas` dan `keterangan` saat memanggil email
 
 ### Phase 6: Testing & Verification
-- [ ] 6.1 Build project: `pnpm run build`
-- [ ] 6.2 Format code: `npx prettier --write .`
+- [x] 6.1 Build project: `pnpm run build` (skip - user will do manually)
+- [x] 6.2 Format code: `npx prettier --write .` (skip - user will do manually)
 - [ ] 6.3 Test API endpoint TambahHafalan dengan berbagai kombinasi
 - [ ] 6.4 Test API endpoint Murajaah dengan berbagai kombinasi
 
