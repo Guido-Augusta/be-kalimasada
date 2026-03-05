@@ -308,6 +308,8 @@ export const HafalanRepository = {
       select: {
         status: true,
         poinDidapat: true,
+        kualitas: true,
+        keterangan: true,
         ayat: {
           select: {
             id: true,
@@ -353,6 +355,8 @@ export const HafalanRepository = {
       select: {
         status: true,
         poinDidapat: true,
+        kualitas: true,
+        keterangan: true,
         ayat: {
           select: {
             id: true,

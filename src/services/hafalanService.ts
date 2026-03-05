@@ -701,6 +701,8 @@ export const HafalanService = {
       return {
         ...item.ayat,
         poinDidapat: item.poinDidapat,
+        kualitas: item.kualitas,
+        keterangan: item.keterangan,
       };
     });
 
@@ -713,6 +715,8 @@ export const HafalanService = {
       tanggal: tanggal,
       status: firstItem.status,
       ustadz: firstItem.ustadz,
+      kualitas: firstItem.kualitas,
+      keterangan: firstItem.keterangan,
       catatan: firstItem.catatan,
       totalPoin: totalPoin,
       rangeAyat: {
@@ -755,6 +759,8 @@ export const HafalanService = {
       return {
         ...item.ayat,
         poinDidapat: item.poinDidapat,
+        kualitas: item.kualitas,
+        keterangan: item.keterangan
       };
     });
 
