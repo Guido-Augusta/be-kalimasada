@@ -51,9 +51,11 @@ Menambahkan skala penilaian untuk Tambah Hafalan (kualitas + keterangan) dan Mur
   - Same logic seperti di atas
 
 ### Phase 5: Email Notification
-- [ ] 5.1 Update `src/utils/sendAccountEmail.ts`:
+- [x] 5.1 Update `src/utils/sendAccountEmail.ts`:
   - Tambahkan parameter `kualitas` dan `keterangan` di function
   - Update template email untuk menyertakan info kualitas dan keterangan
+- [x] 5.2 Update `sendHafalanEmail` call di `hafalanService.ts`:
+  - Tambahkan parameter `kualitas` dan `keterangan` saat memanggil email
 
 ### Phase 6: Testing & Verification
 - [ ] 6.1 Build project: `pnpm run build`

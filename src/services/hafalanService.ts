@@ -227,6 +227,8 @@ export const HafalanService = {
             jumlahAyat: newHafalanData.length,
             ayatNomorList: detailAyat.map((ayat) => ayat.nomorAyat),
             status,
+            kualitas,
+            keterangan,
             catatan,
             emailOrtu: orangTua.user.email,
           });
