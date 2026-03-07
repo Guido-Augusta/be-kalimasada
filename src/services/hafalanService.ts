@@ -79,36 +79,69 @@ export const HafalanService = {
 
   async getDetailHafalanSurah(santriId: number, surahId: number, mode: string) {
     const ayatSurah = await HafalanRepository.getAyatSurah(surahId);
+    const status = mode === 'tambah' ? 'TambahHafalan' : 'Murajaah';
     const hafalanSantri = await HafalanRepository.getHafalanBySurah(
       santriId,
       surahId,
-      'TambahHafalan'
+      status
     );
     const surah = await HafalanRepository.getSurahById(surahId);
 
-    const sudahHafal = new Set(hafalanSantri.map((h) => h.ayatId));
+    const sudahHafal = new Set<number>();
+    const hafalanMap = new Map<
+      number,
+      { kualitas: string | null; keterangan: string | null }
+    >();
 
-    const result =
-      mode === 'tambah'
-        ? ayatSurah.map((ayat) => ({
-            ...ayat,
-            checked: sudahHafal.has(ayat.id),
-          }))
-        : ayatSurah.map((ayat) => ({ ...ayat, checked: false }));
+    // Take only the first (latest) record for each ayatId
+    for (const h of hafalanSantri) {
+      if (!hafalanMap.has(h.ayatId)) {
+        sudahHafal.add(h.ayatId);
+        hafalanMap.set(h.ayatId, {
+          kualitas: h.kualitas,
+          keterangan: h.keterangan,
+        });
+      }
+    }
 
+    const result = ayatSurah.map((ayat) => {
+      const hafalanData = hafalanMap.get(ayat.id);
+      return {
+        ...ayat,
+        checked: sudahHafal.has(ayat.id),
+        kualitas: hafalanData?.kualitas || null,
+        keterangan: hafalanData?.keterangan || null,
+      };
+    });
     return { surah, santriId, mode, ayat: result };
   },
 
   async getDetailHafalanJuz(santriId: number, juzId: number, mode: string) {
     const ayatJuz = await HafalanRepository.getAyatDetailByJuz(juzId);
     const ayatIds = ayatJuz.map((a) => a.id);
+    const status = mode === 'tambah' ? 'TambahHafalan' : 'Murajaah';
     const hafalanSantri = await HafalanRepository.getHafalanByAyatIds(
       santriId,
       ayatIds,
-      'TambahHafalan'
+      status
     );
 
-    const sudahHafal = new Set(hafalanSantri.map((h) => h.ayatId));
+    const sudahHafal = new Set<number>();
+    const hafalanMap = new Map<
+      number,
+      { kualitas: string | null; keterangan: string | null }
+    >();
+
+    // Take only the first (latest) record for each ayatId
+    for (const h of hafalanSantri) {
+      if (!hafalanMap.has(h.ayatId)) {
+        sudahHafal.add(h.ayatId);
+        hafalanMap.set(h.ayatId, {
+          kualitas: h.kualitas,
+          keterangan: h.keterangan,
+        });
+      }
+    }
 
     // Group ayat by surah
     const surahMap = new Map();
@@ -120,9 +153,12 @@ export const HafalanService = {
           ayat: [],
         });
       }
+      const hafalanData = hafalanMap.get(ayat.id);
       surahMap.get(surahId).ayat.push({
         ...ayat,
-        checked: mode === 'tambah' ? sudahHafal.has(ayat.id) : false,
+        checked: sudahHafal.has(ayat.id),
+        kualitas: hafalanData?.kualitas || null,
+        keterangan: hafalanData?.keterangan || null,
       });
     });
 

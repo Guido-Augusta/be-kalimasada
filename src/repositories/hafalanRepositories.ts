@@ -94,7 +94,8 @@ export const HafalanRepository = {
         ayatId: { in: ayatIds },
         ...(status && { status: status as StatusHafalan }),
       },
-      select: { ayatId: true },
+      select: { ayatId: true, kualitas: true, keterangan: true },
+      orderBy: { tanggalHafalan: 'desc' },
     }),
 
   getAyatByHalamanRange: (halamanAwal: number, halamanAkhir: number) =>
@@ -164,7 +165,8 @@ export const HafalanRepository = {
         ayat: { surahId },
         ...(status && { status: status as StatusHafalan }),
       },
-      select: { ayatId: true },
+      select: { ayatId: true, kualitas: true, keterangan: true },
+      orderBy: { tanggalHafalan: 'desc' },
     }),
 
   getSurahById: (id: number) =>
