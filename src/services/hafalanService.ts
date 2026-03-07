@@ -735,15 +735,20 @@ export const HafalanService = {
     const firstItem = riwayat[0];
     const surahData = firstItem.ayat.surah;
 
-    // Deduplicate by ayatId and accumulate total poin
+    const latestItem = riwayat[0];
+
+    // Deduplicate by ayatId and accumulate total poin, keeping last kualitas & keterangan
     const ayatMap = new Map<number, { item: any; totalPoin: number }>();
     for (const item of riwayat) {
       const ayatId = item.ayat.id;
-      if (!ayatMap.has(ayatId)) {
+      const existing = ayatMap.get(ayatId);
+      if (!existing) {
         ayatMap.set(ayatId, { item, totalPoin: item.poinDidapat });
       } else {
-        const existing = ayatMap.get(ayatId)!;
-        existing.totalPoin += item.poinDidapat;
+        ayatMap.set(ayatId, { 
+          item: existing.item,
+          totalPoin: existing.totalPoin + item.poinDidapat 
+        });
       }
     }
 
@@ -770,21 +775,14 @@ export const HafalanService = {
 
     return {
       tanggal: tanggal,
-      status: firstItem.status,
-      ustadz: firstItem.ustadz,
-      kualitas: firstItem.kualitas,
-      keterangan: firstItem.keterangan,
-      catatan: firstItem.catatan,
+      status: latestItem.status,
+      ustadz: latestItem.ustadz,
+      kualitas: latestItem.kualitas,
+      keterangan: latestItem.keterangan,
+      catatan: latestItem.catatan,
       totalPoin: totalPoin,
-      rangeAyat: {
-        awal: ayatAwal,
-        akhir: ayatAkhir,
-      },
-      surah: {
-        id: surahData.id,
-        nama: surahData.nama,
-        namaLatin: surahData.namaLatin,
-      },
+      rangeAyat: { awal: ayatAwal, akhir: ayatAkhir },
+      surah: { id: surahData.id, nama: surahData.nama, namaLatin: surahData.namaLatin },
       daftarAyat: ayatList,
     };
   },
@@ -810,19 +808,22 @@ export const HafalanService = {
     }
 
     const firstItem = riwayat[0];
+    const latestItem = riwayat[0];
 
-    // Deduplicate by ayatId and accumulate total poin
+    // Deduplicate by ayatId and accumulate total poin, keeping last kualitas & keterangan
     const ayatMap = new Map<number, { item: any; totalPoin: number }>();
     for (const item of riwayat) {
       const ayatId = item.ayat.id;
-      if (!ayatMap.has(ayatId)) {
+      const existing = ayatMap.get(ayatId);
+      if (!existing) {
         ayatMap.set(ayatId, { item, totalPoin: item.poinDidapat });
       } else {
-        const existing = ayatMap.get(ayatId)!;
-        existing.totalPoin += item.poinDidapat;
+        ayatMap.set(ayatId, { 
+          item: existing.item,
+          totalPoin: existing.totalPoin + item.poinDidapat 
+        });
       }
     }
-
     // Build ayatList from deduplicated map, maintaining order by surahId and nomorAyat
     const ayatList = Array.from(ayatMap.values())
       .sort((a, b) => {
@@ -867,19 +868,15 @@ export const HafalanService = {
 
     return {
       tanggal: tanggal,
-      status: firstItem.status,
-      ustadz: firstItem.ustadz,
-      catatan: firstItem.catatan,
+      status: latestItem.status,
+      ustadz: latestItem.ustadz,
+      kualitas: latestItem.kualitas,
+      keterangan: latestItem.keterangan,
+      catatan: latestItem.catatan,
       totalPoin: totalPoin,
       juz: juzId,
-      rangeAyat: {
-        awal: ayatAwal,
-        akhir: ayatAkhir,
-      },
-      rangeHalaman: {
-        awal: halamanAwal,
-        akhir: halamanAkhir,
-      },
+      rangeAyat: { awal: ayatAwal, akhir: ayatAkhir },
+      rangeHalaman: { awal: halamanAwal, akhir: halamanAkhir },
       surah: surahList,
       daftarAyat: ayatList,
     };

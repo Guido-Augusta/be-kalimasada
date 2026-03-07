@@ -336,9 +336,7 @@ export const HafalanRepository = {
         catatan: true,
       },
       orderBy: {
-        ayat: {
-          nomorAyat: "asc",
-        },
+        tanggalHafalan: 'desc',
       },
     }),
 
@@ -383,18 +381,9 @@ export const HafalanRepository = {
         },
         catatan: true,
       },
-      orderBy: [
-        {
-          ayat: {
-            surahId: 'asc',
-          },
-        },
-        {
-          ayat: {
-            nomorAyat: 'asc',
-          },
-        },
-      ],
+      orderBy: {
+        tanggalHafalan: 'desc',
+      },
     }),
 
   getOrangTuaBySantriId: (santriId: number) =>
