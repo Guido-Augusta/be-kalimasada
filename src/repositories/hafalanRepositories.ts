@@ -489,7 +489,7 @@ export const HafalanRepository = {
 
   getGroupedAyatByDateSurahStatus: (santriId: number, surahId: number, tanggal: Date, status: StatusHafalan) => {
     const startDate = new Date(tanggal);
-    const endDate = new Date(tanggal);
+    const endDate = new Date(startDate.getTime() + 24 * 60 * 60 * 1000);
     endDate.setDate(endDate.getDate() + 1);
     
     return prisma.riwayatHafalan.findMany({

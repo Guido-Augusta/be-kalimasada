@@ -1005,12 +1005,15 @@ export const HafalanService = {
           } else {
             // Mode surah (default)
             const surahId = latestHafalan.ayat.surah.id;
+            const tanggalStr = formatDateToYMD(tanggalHafalan);
+            const { startDate } = getJakartaDateRange(tanggalStr);
+            const startOfDay = startDate;
 
             const groupedAyat =
               await HafalanRepository.getGroupedAyatByDateSurahStatus(
                 santri.id,
                 surahId,
-                tanggalHafalan,
+                startOfDay,
                 statusHafalan
               );
 
