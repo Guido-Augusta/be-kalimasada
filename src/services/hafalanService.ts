@@ -540,7 +540,7 @@ export const HafalanService = {
           jumlahAyat: number;
           totalPoin: number;
           rangeAyat: { awal: number; akhir: number };
-          _ayatIds: Set<number>;
+          _nomorAyat: Set<number>;
         };
       } = {};
 
@@ -550,12 +550,12 @@ export const HafalanService = {
         const surahId = r.ayat.surah.id;
         const namaSurah = r.ayat.surah.nama;
         const namaSurahLatin = r.ayat.surah.namaLatin;
-        const ayatId = r.ayat.id;
+        const nomorAyat = r.ayat.nomorAyat;
 
         const key = `${tanggal}-${status}-${surahId}`;
 
         if (groupedData[key]) {
-          groupedData[key]._ayatIds.add(ayatId);
+          groupedData[key]._nomorAyat.add(nomorAyat);
           groupedData[key].totalPoin += r.poinDidapat;
         } else {
           groupedData[key] = {
@@ -567,7 +567,7 @@ export const HafalanService = {
             jumlahAyat: 1,
             totalPoin: r.poinDidapat,
             rangeAyat: { awal: 0, akhir: 0 },
-            _ayatIds: new Set([ayatId]),
+            _nomorAyat: new Set([nomorAyat]),
           };
         }
       });
@@ -575,15 +575,15 @@ export const HafalanService = {
       // Calculate rangeAyat and count unique ayat for each group
       Object.keys(groupedData).forEach((key) => {
         const group = groupedData[key];
-        const ayatIds = Array.from(group._ayatIds);
-        const minAyat = Math.min(...ayatIds);
-        const maxAyat = Math.max(...ayatIds);
+        const nomorAyatList = Array.from(group._nomorAyat);
+        const minAyat = Math.min(...nomorAyatList);
+        const maxAyat = Math.max(...nomorAyatList);
         group.rangeAyat = { awal: minAyat, akhir: maxAyat };
-        group.jumlahAyat = group._ayatIds.size;
+        group.jumlahAyat = group._nomorAyat.size;
       });
 
       allGroupedData = Object.values(groupedData).map((group) => {
-        const { _ayatIds, ...rest } = group;
+        const { _nomorAyat, ...rest } = group;
         return rest;
       });
     }

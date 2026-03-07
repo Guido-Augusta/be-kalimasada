@@ -142,7 +142,7 @@ export const HafalanRepository = {
   getHafalanSantri: (santriId: number) =>
     prisma.riwayatHafalan.groupBy({
       by: ["ayatId"],
-      where: { santriId, status: "TambahHafalan" },
+      where: { santriId, status: "TambahHafalan", keterangan: "Lanjut" },
     }),
 
   countAyatHafal: (surahId: number, ayatIds: number[]) =>
