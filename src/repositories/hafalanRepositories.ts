@@ -200,7 +200,7 @@ export const HafalanRepository = {
   // Riwayat Hafalan
   getRiwayatHafalanBySantri: (santriId: number, status?: string) =>
     prisma.riwayatHafalan.findMany({
-      where: { 
+      where: {
         santriId,
         ...(status && { status: status as StatusHafalan })
       },
@@ -211,6 +211,7 @@ export const HafalanRepository = {
         poinDidapat: true,
         ayat: {
           select: {
+            id: true,
             nomorAyat: true,
             halaman: true,
             juz: true,
