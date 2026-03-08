@@ -216,3 +216,31 @@ enum TipeOrangTua {
   Ibu
   Wali
 }
+
+model EmailQueue {
+  id             Int         @id @default(autoincrement())
+  emailOrtu      String
+  namaOrtu       String
+  namaSantri     String
+  tanggalHafalan DateTime
+  namaSurah      String
+  jumlahAyat     Int
+  ayatNomorList   String
+  statusHafalan  String
+  kualitas       String?
+  keterangan     String?
+  catatan        String?
+
+  status         EmailStatus @default(PENDING)
+  createdAt      DateTime    @default(now())
+  sentAt         DateTime?
+  error          String?
+
+  @@index([status, createdAt])
+}
+
+enum EmailStatus {
+  PENDING
+  SENT
+  FAILED
+}

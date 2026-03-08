@@ -13,6 +13,7 @@ import chartRoutes from './routes/chartRoutes';
 import alquranRoutes from './routes/alquranRoutes';
 import hafalanRoutes from './routes/hafalanRoutes';
 import './cron/peringkatCron';
+import './cron/emailCron';
 
 dotenv.config();
 const app = express();

@@ -5,7 +5,6 @@ import {
   CreateManyHafalanPayload,
   HafalanRepository,
 } from '../repositories/hafalanRepositories';
-import { sendHafalanEmail } from '../utils/sendAccountEmail';
 
 const JAKARTA_TIMEZONE = 'Asia/Jakarta';
 const JAKARTA_OFFSET_HOURS = 7;
@@ -275,24 +274,26 @@ export const HafalanService = {
       );
     }
 
-    // Send email notification to each parent
+    // Queue email notification for each parent
     if (orangTuaList.length > 0) {
-      for (const orangTua of orangTuaList) {
-        if (orangTua.user?.email) {
-          await sendHafalanEmail({
-            ortuName: orangTua.nama,
-            santriName: santri.nama,
-            tanggalHafalan: new Date(),
-            namaSurah: surahInfo.namaLatin,
-            jumlahAyat: newHafalanData.length,
-            ayatNomorList: detailAyat.map((ayat) => ayat.nomorAyat),
-            status,
-            kualitas,
-            keterangan,
-            catatan,
-            emailOrtu: orangTua.user.email,
-          });
-        }
+      const emailJobs = orangTuaList
+        .filter((orangTua) => orangTua.user?.email)
+        .map((orangTua) => ({
+          emailOrtu: orangTua.user!.email,
+          namaOrtu: orangTua.nama,
+          namaSantri: santri.nama,
+          tanggalHafalan: new Date(),
+          namaSurah: surahInfo.namaLatin,
+          jumlahAyat: newHafalanData.length,
+          ayatNomorList: detailAyat.map((ayat) => ayat.nomorAyat).join(','),
+          statusHafalan: status,
+          kualitas: kualitas || null,
+          keterangan: keterangan || null,
+          catatan: catatan || null,
+        }));
+
+      if (emailJobs.length > 0) {
+        await prisma.emailQueue.createMany({ data: emailJobs });
       }
     }
 
@@ -416,22 +417,26 @@ export const HafalanService = {
       );
     }
 
-    // Send email notification to each parent
+    // Queue email notification for each parent
     if (orangTuaList.length > 0) {
-      for (const orangTua of orangTuaList) {
-        if (orangTua.user?.email) {
-          await sendHafalanEmail({
-            ortuName: orangTua.nama,
-            santriName: santri.nama,
-            tanggalHafalan: new Date(),
-            namaSurah: surahInfo.namaLatin,
-            jumlahAyat: newHafalanData.length,
-            ayatNomorList: detailAyat.map((ayat) => ayat.nomorAyat),
-            status,
-            catatan,
-            emailOrtu: orangTua.user.email,
-          });
-        }
+      const emailJobs = orangTuaList
+        .filter((orangTua) => orangTua.user?.email)
+        .map((orangTua) => ({
+          emailOrtu: orangTua.user!.email,
+          namaOrtu: orangTua.nama,
+          namaSantri: santri.nama,
+          tanggalHafalan: new Date(),
+          namaSurah: surahInfo.namaLatin,
+          jumlahAyat: newHafalanData.length,
+          ayatNomorList: detailAyat.map((ayat) => ayat.nomorAyat).join(','),
+          statusHafalan: status,
+          kualitas: kualitas || null,
+          keterangan: keterangan || null,
+          catatan: catatan || null,
+        }));
+
+      if (emailJobs.length > 0) {
+        await prisma.emailQueue.createMany({ data: emailJobs });
       }
     }
 
