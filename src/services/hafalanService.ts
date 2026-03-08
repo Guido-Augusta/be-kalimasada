@@ -79,7 +79,12 @@ export const HafalanService = {
 
   async getDetailHafalanSurah(santriId: number, surahId: number, mode: string) {
     const ayatSurah = await HafalanRepository.getAyatSurah(surahId);
-    const status = mode === 'tambah' ? 'TambahHafalan' : 'Murajaah';
+    const STATUS_MAP: Record<string, string> = {
+      tambah: 'TambahHafalan',
+      murajaah: 'Murajaah',
+      tahsin: 'Tahsin',
+    };
+    const status = STATUS_MAP[mode] || 'Murajaah';
     const hafalanSantri = await HafalanRepository.getHafalanBySurah(
       santriId,
       surahId,
@@ -119,7 +124,12 @@ export const HafalanService = {
   async getDetailHafalanJuz(santriId: number, juzId: number, mode: string) {
     const ayatJuz = await HafalanRepository.getAyatDetailByJuz(juzId);
     const ayatIds = ayatJuz.map((a) => a.id);
-    const status = mode === 'tambah' ? 'TambahHafalan' : 'Murajaah';
+    const STATUS_MAP: Record<string, string> = {
+      tambah: 'TambahHafalan',
+      murajaah: 'Murajaah',
+      tahsin: 'Tahsin',
+    };
+    const status = STATUS_MAP[mode] || 'Murajaah';
     const hafalanSantri = await HafalanRepository.getHafalanByAyatIds(
       santriId,
       ayatIds,
@@ -297,7 +307,7 @@ export const HafalanService = {
       };
     } else {
       return {
-        message: 'Murajaah berhasil disimpan',
+        message: `${status} berhasil disimpan`,
         count: newHafalanData.length,
       };
     }
@@ -438,7 +448,7 @@ export const HafalanService = {
       };
     } else {
       return {
-        message: 'Murajaah berdasarkan halaman berhasil disimpan',
+        message: `${status} berdasarkan halaman berhasil disimpan`,
         count: newHafalanData.length,
         halamanAwal,
         halamanAkhir,

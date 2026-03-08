@@ -191,6 +191,7 @@ enum TahapHafalan {
 enum StatusHafalan {
   TambahHafalan
   Murajaah
+  Tahsin
 }
 
 enum KualitasHafalan {

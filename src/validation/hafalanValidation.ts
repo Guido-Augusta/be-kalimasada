@@ -5,7 +5,7 @@ export const SimpanHafalanSchema = z
     santriId: z.number().min(1, 'Santri ID is required'),
     ustadzId: z.number().optional(),
     ayatIds: z.array(z.number()).min(1, 'At least one ayat is required'),
-    status: z.enum(['TambahHafalan', 'Murajaah']),
+    status: z.enum(['TambahHafalan', 'Murajaah', 'Tahsin']),
     kualitas: z.enum(['Kurang', 'Cukup', 'Baik', 'SangatBaik']).optional(),
     keterangan: z.enum(['Mengulang', 'Lanjut']).optional(),
     catatan: z.string().optional(),
@@ -26,11 +26,11 @@ export const SimpanHafalanSchema = z
           path: ['keterangan'],
         });
       }
-    } else if (data.status === 'Murajaah') {
+    } else if (data.status === 'Murajaah' || data.status === 'Tahsin') {
       if (!data.keterangan) {
         ctx.addIssue({
           code: z.ZodIssueCode.custom,
-          message: 'Keterangan is required for Murajaah',
+          message: `Keterangan is required for ${data.status}`,
           path: ['keterangan'],
         });
       }
@@ -45,7 +45,7 @@ export const SimpanHafalanByHalamanSchema = z
     ustadzId: z.number().optional(),
     halamanAwal: z.number().min(1, 'Halaman awal is required'),
     halamanAkhir: z.number().min(1, 'Halaman akhir is required'),
-    status: z.enum(['TambahHafalan', 'Murajaah']),
+    status: z.enum(['TambahHafalan', 'Murajaah', 'Tahsin']),
     kualitas: z.enum(['Kurang', 'Cukup', 'Baik', 'SangatBaik']).optional(),
     keterangan: z.enum(['Mengulang', 'Lanjut']).optional(),
     catatan: z.string().optional(),
@@ -66,11 +66,11 @@ export const SimpanHafalanByHalamanSchema = z
           path: ['keterangan'],
         });
       }
-    } else if (data.status === 'Murajaah') {
+    } else if (data.status === 'Murajaah' || data.status === 'Tahsin') {
       if (!data.keterangan) {
         ctx.addIssue({
           code: z.ZodIssueCode.custom,
-          message: 'Keterangan is required for Murajaah',
+          message: `Keterangan is required for ${data.status}`,
           path: ['keterangan'],
         });
       }

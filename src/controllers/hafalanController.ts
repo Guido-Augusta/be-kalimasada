@@ -66,10 +66,10 @@ export const getDetailHafalanJuz = async (req: Request, res: Response) => {
     const { santriId, juzId } = req.params;
     const { mode } = req.query;
 
-    if (!mode || (mode !== 'tambah' && mode !== 'murajaah')) {
+    if (!mode || (mode !== 'tambah' && mode !== 'murajaah' && mode !== 'tahsin')) {
       return res.status(400).json({
         message:
-          "Query parameter 'mode' is required and must be 'tambah' or 'murajaah'",
+          "Query parameter 'mode' is required and must be 'tambah', 'murajaah', or 'tahsin'",
         status: 400,
       });
     }
@@ -447,6 +447,7 @@ export const getLatestHafalanAllSantri = async (
       const statusMap: Record<string, StatusHafalan> = {
         tambahhafalan: StatusHafalan.TambahHafalan,
         murajaah: StatusHafalan.Murajaah,
+        tahsin: StatusHafalan.Tahsin,
       };
       const statusNormalized = statusQuery.toLowerCase();
       statusFilter = statusMap[statusNormalized];

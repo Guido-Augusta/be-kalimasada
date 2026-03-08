@@ -102,6 +102,7 @@ describe('Index Verification Tests', () => {
       const labels = statusEnum.map(s => s.enumlabel);
       expect(labels).toContain('TambahHafalan');
       expect(labels).toContain('Murajaah');
+      expect(labels).toContain('Tahsin');
       console.log('✅ StatusHafalan values:', labels);
     });
   });
