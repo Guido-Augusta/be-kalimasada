@@ -2,7 +2,7 @@ import cron from 'node-cron';
 import { prisma } from '../utils/prisma';
 import { sendHafalanEmail } from '../utils/sendAccountEmail';
 
-const DELAY_MINUTES = 1;
+const DELAY_MINUTES = 5;
 
 // Run every minute to check for pending emails
 setTimeout(() => {
