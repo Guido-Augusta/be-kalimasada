@@ -109,6 +109,10 @@ Create the bash script that will handle the dumping, compressing, and uploading 
 
    if [ $? -eq 0 ]; then
        echo "Upload successful."
+       
+       # Clean up old remote backups (Keep only 7 days of history on Google Drive)
+       echo "Cleaning up backups older than 7 days on Google Drive..."
+       rclone delete "$RCLONE_REMOTE" --min-age 7d
    else
        echo "ERROR: Failed to upload to Google Drive."
    fi
