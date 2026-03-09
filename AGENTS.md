@@ -6,27 +6,34 @@ Backend API for Tahfidz Quran application using Express.js + TypeScript + Prisma
 
 ## Build & Development Commands
 
+**Package Manager:** pnpm 10.11.0
+
 ```bash
-# Development server with hot reload
-pnpm run dev
+# Development server with hot reload (via nodemon)
+pnpm dev
 
 # Build TypeScript to JavaScript
-pnpm run build
+pnpm build
 
-# Production start
-pnpm run start:prod
+# Production server (runs compiled dist)
+pnpm start:prod
 
 # Direct TypeScript execution
-pnpm run start
+pnpm start
+
+# Vitest testing
+pnpm test           # Run all tests
+pnpm test:run       # Run tests once
+pnpm test:ui        # Run tests with UI dashboard
 
 # Prisma commands
-pnpm run migrate        # Run migrations in dev
-pnpm run generate       # Generate Prisma client
-pnpm run studio         # Open Prisma Studio GUI
+pnpm migrate        # Run migrations in dev
+pnpm generate       # Generate Prisma client
+pnpm studio         # Open Prisma Studio GUI
 
 # Utility scripts
-pnpm run generate:quran         # Generate Quran data
-pnpm run prisma:seed-alquran    # Seed Al-Quran data
+pnpm generate:quran         # Generate Quran data
+pnpm prisma:seed-alquran    # Seed Al-Quran data
 ```
 
 ## Lint & Format Commands
@@ -39,27 +46,7 @@ npx prettier --write .
 npx prettier --check .
 ```
 
-**Note**: No ESLint is currently configured. Prettier handles all code formatting.
-
-## Test Commands
-
-**No test framework is currently configured.** The test script in package.json only echoes an error.
-
-```bash
-# After installing Jest or Vitest, add these scripts to package.json:
-"test": "jest",
-"test:watch": "jest --watch",
-"test:coverage": "jest --coverage"
-
-# Run a single test file
-npx jest path/to/test-file.test.ts
-
-# Run tests matching a pattern
-npx jest --testNamePattern="controller name"
-
-# Run tests in a specific directory
-npx jest src/services/
-```
+**Note**: No ESLint is currently configured. Prettier handles all code formatting. Vitest is configured for testing.
 
 ## Code Style Guidelines
 
@@ -154,3 +141,33 @@ PORT=5000
 
 Success: `{ "message": "...", "status": 200, "data": {...} }`
 Error: `{ "message": "...", "status": 400, "errors": {...} }`
+
+## Key Dependencies
+
+**Framework & ORM:**
+- Express 5.1.0 (web framework)
+- Prisma 6.13.0 (ORM for PostgreSQL)
+- TypeScript 5.9.2
+
+**Authentication & Security:**
+- jsonwebtoken 9.0.2 (JWT)
+- bcrypt 6.0.0 (password hashing)
+
+**File Upload & Email:**
+- multer 2.0.2 (file handling)
+- nodemailer 7.0.5 (email sending)
+
+**Validation & Utilities:**
+- Zod 4.0.14 (schema validation)
+- date-fns 4.1.0 (date utilities)
+- date-fns-tz 3.2.0 (timezone support)
+- node-cron 4.2.1 (scheduled tasks)
+- ioredis 5.10.0 (Redis client)
+- cors 2.8.5 (CORS handling)
+- dotenv 17.2.1 (environment variables)
+
+**Development & Testing:**
+- nodemon 3.1.10 (auto-reload)
+- ts-node 10.9.2 (TypeScript execution)
+- Vitest 4.0.18 (testing framework)
+- @vitest/ui 4.0.18 (test dashboard)

@@ -16,8 +16,10 @@ export type CreateManyHafalanPayload = {
   ustadzId: number;
   ayatId: number;
   tanggalHafalan: Date;
-  status: 'TambahHafalan' | 'Murajaah'; 
-  catatan: string;
+  status: 'TambahHafalan' | 'Murajaah' | 'Tahsin';
+  kualitas?: 'Kurang' | 'Cukup' | 'Baik' | 'SangatBaik';
+  keterangan?: 'Mengulang' | 'Lanjut';
+  catatan?: string;
   poinDidapat: number;
 };
 
@@ -92,7 +94,8 @@ export const HafalanRepository = {
         ayatId: { in: ayatIds },
         ...(status && { status: status as StatusHafalan }),
       },
-      select: { ayatId: true },
+      select: { ayatId: true, kualitas: true, keterangan: true },
+      orderBy: { tanggalHafalan: 'desc' },
     }),
 
   getAyatByHalamanRange: (halamanAwal: number, halamanAkhir: number) =>
@@ -139,7 +142,7 @@ export const HafalanRepository = {
   getHafalanSantri: (santriId: number) =>
     prisma.riwayatHafalan.groupBy({
       by: ["ayatId"],
-      where: { santriId, status: "TambahHafalan" },
+      where: { santriId, status: "TambahHafalan", keterangan: "Lanjut" },
     }),
 
   countAyatHafal: (surahId: number, ayatIds: number[]) =>
@@ -162,7 +165,8 @@ export const HafalanRepository = {
         ayat: { surahId },
         ...(status && { status: status as StatusHafalan }),
       },
-      select: { ayatId: true },
+      select: { ayatId: true, kualitas: true, keterangan: true },
+      orderBy: { tanggalHafalan: 'desc' },
     }),
 
   getSurahById: (id: number) =>
@@ -178,13 +182,25 @@ export const HafalanRepository = {
       select: { ayatId: true },
     }),
 
+  // Find ayats that have already received points from TambahHafalan + Lanjut
+  findAyatWithPoin: (santriId: number, ayatIds: number[]) =>
+    prisma.riwayatHafalan.findMany({
+      where: {
+        santriId,
+        ayatId: { in: ayatIds },
+        status: "TambahHafalan",
+        poinDidapat: { gt: 0 },
+      },
+      select: { ayatId: true },
+    }),
+
   createManyHafalan: (data: CreateManyHafalanPayload[]) =>
     prisma.riwayatHafalan.createMany({ data, skipDuplicates: true }),
 
   // Riwayat Hafalan
   getRiwayatHafalanBySantri: (santriId: number, status?: string) =>
     prisma.riwayatHafalan.findMany({
-      where: { 
+      where: {
         santriId,
         ...(status && { status: status as StatusHafalan })
       },
@@ -195,6 +211,7 @@ export const HafalanRepository = {
         poinDidapat: true,
         ayat: {
           select: {
+            id: true,
             nomorAyat: true,
             halaman: true,
             juz: true,
@@ -294,6 +311,8 @@ export const HafalanRepository = {
       select: {
         status: true,
         poinDidapat: true,
+        kualitas: true,
+        keterangan: true,
         ayat: {
           select: {
             id: true,
@@ -317,9 +336,7 @@ export const HafalanRepository = {
         catatan: true,
       },
       orderBy: {
-        ayat: {
-          nomorAyat: "asc",
-        },
+        tanggalHafalan: 'desc',
       },
     }),
 
@@ -339,6 +356,8 @@ export const HafalanRepository = {
       select: {
         status: true,
         poinDidapat: true,
+        kualitas: true,
+        keterangan: true,
         ayat: {
           select: {
             id: true,
@@ -362,18 +381,9 @@ export const HafalanRepository = {
         },
         catatan: true,
       },
-      orderBy: [
-        {
-          ayat: {
-            surahId: 'asc',
-          },
-        },
-        {
-          ayat: {
-            nomorAyat: 'asc',
-          },
-        },
-      ],
+      orderBy: {
+        tanggalHafalan: 'desc',
+      },
     }),
 
   getOrangTuaBySantriId: (santriId: number) =>
@@ -479,7 +489,7 @@ export const HafalanRepository = {
 
   getGroupedAyatByDateSurahStatus: (santriId: number, surahId: number, tanggal: Date, status: StatusHafalan) => {
     const startDate = new Date(tanggal);
-    const endDate = new Date(tanggal);
+    const endDate = new Date(startDate.getTime() + 24 * 60 * 60 * 1000);
     endDate.setDate(endDate.getDate() + 1);
     
     return prisma.riwayatHafalan.findMany({

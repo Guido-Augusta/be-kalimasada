@@ -22,22 +22,24 @@ export async function getChartData(santriId: number, range: ChartRange, mode: st
 
   const hafalan = await chartRepository.getRiwayatHafalanByRange(santriId, daysRange);
 
-  const dataPerTanggal: Record<string, { tambahHafalan: number; murajaah: number }> = {};
+  const dataPerTanggal: Record<string, { tambahHafalan: number; murajaah: number; tahsin: number }> = {};
   
   if (mode === "halaman") {
     // Group by date and status, then count unique halaman
-    const halamanPerTanggal: Record<string, { tambahHafalan: Set<number>; murajaah: Set<number> }> = {};
+    const halamanPerTanggal: Record<string, { tambahHafalan: Set<number>; murajaah: Set<number>; tahsin: Set<number> }> = {};
     
     hafalan.forEach((item) => {
       const tgl = format(item.tanggalHafalan, "yyyy-MM-dd");
       if (!halamanPerTanggal[tgl]) {
-        halamanPerTanggal[tgl] = { tambahHafalan: new Set(), murajaah: new Set() };
+        halamanPerTanggal[tgl] = { tambahHafalan: new Set(), murajaah: new Set(), tahsin: new Set() };
       }
       if (item.ayat.halaman) {
         if (item.status === "TambahHafalan") {
           halamanPerTanggal[tgl].tambahHafalan.add(item.ayat.halaman);
         } else if (item.status === "Murajaah") {
           halamanPerTanggal[tgl].murajaah.add(item.ayat.halaman);
+        } else if (item.status === "Tahsin") {
+          halamanPerTanggal[tgl].tahsin.add(item.ayat.halaman);
         }
       }
     });
@@ -47,6 +49,7 @@ export async function getChartData(santriId: number, range: ChartRange, mode: st
       dataPerTanggal[tgl] = {
         tambahHafalan: halamanPerTanggal[tgl].tambahHafalan.size,
         murajaah: halamanPerTanggal[tgl].murajaah.size,
+        tahsin: halamanPerTanggal[tgl].tahsin.size,
       };
     });
   } else {
@@ -54,12 +57,14 @@ export async function getChartData(santriId: number, range: ChartRange, mode: st
     hafalan.forEach((item) => {
       const tgl = format(item.tanggalHafalan, "yyyy-MM-dd");
       if (!dataPerTanggal[tgl]) {
-        dataPerTanggal[tgl] = { tambahHafalan: 0, murajaah: 0 };
+        dataPerTanggal[tgl] = { tambahHafalan: 0, murajaah: 0, tahsin: 0 };
       }
       if (item.status === "TambahHafalan") {
         dataPerTanggal[tgl].tambahHafalan += 1;
       } else if (item.status === "Murajaah") {
         dataPerTanggal[tgl].murajaah += 1;
+      } else if (item.status === "Tahsin") {
+        dataPerTanggal[tgl].tahsin += 1;
       }
     });
   }
@@ -70,6 +75,7 @@ export async function getChartData(santriId: number, range: ChartRange, mode: st
       tanggal: key,
       tambahHafalan: dataPerTanggal[key]?.tambahHafalan || 0,
       murajaah: dataPerTanggal[key]?.murajaah || 0,
+      tahsin: dataPerTanggal[key]?.tahsin || 0,
     };
   });
 }
