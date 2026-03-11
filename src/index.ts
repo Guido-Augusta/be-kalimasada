@@ -13,6 +13,7 @@ import chartRoutes from './routes/chartRoutes';
 import alquranRoutes from './routes/alquranRoutes';
 import hafalanRoutes from './routes/hafalanRoutes';
 import './cron/peringkatCron';
+import './cron/emailCron';
 
 dotenv.config();
 const app = express();
@@ -42,7 +43,7 @@ app.get('/', (req, res) => {
 });
 
 // Seed route (just run once)
-// app.use('/api/seed', seedRoutes);
+app.use('/api/seed', seedRoutes);
 
 app.use('/api/auth', authRoutes);
 app.use('/api/ustadz', ustadzRoutes);

@@ -19,6 +19,8 @@ interface HafalanEmailParams {
   jumlahAyat: number;
   ayatNomorList: number[];
   status: string;
+  kualitas?: string;
+  keterangan?: string;
   catatan?: string;
   emailOrtu: string;
 }
@@ -67,7 +69,7 @@ export const sendAccountEmail = async ({ to, name, email, password, role }: Send
   });
 };
 
-export const sendHafalanEmail = async ({ ortuName, santriName, tanggalHafalan, namaSurah, jumlahAyat, ayatNomorList, status, catatan, emailOrtu }: HafalanEmailParams) => {
+export const sendHafalanEmail = async ({ ortuName, santriName, tanggalHafalan, namaSurah, jumlahAyat, ayatNomorList, status, kualitas, keterangan, catatan, emailOrtu }: HafalanEmailParams) => {
   const tanggalFormatted = new Intl.DateTimeFormat("id-ID", {
     day: "numeric",
     month: "long",
@@ -98,6 +100,22 @@ export const sendHafalanEmail = async ({ ortuName, santriName, tanggalHafalan, n
         <td style="border: 1px solid #ccc; padding: 8px;">Status</td>
         <td style="border: 1px solid #ccc; padding: 8px;">${status}</td>
       </tr>
+      ${
+        kualitas
+          ? `<tr>
+              <td style="border: 1px solid #ccc; padding: 8px;">Kualitas</td>
+              <td style="border: 1px solid #ccc; padding: 8px;">${kualitas}</td>
+            </tr>`
+          : ""
+      }
+      ${
+        keterangan
+          ? `<tr>
+              <td style="border: 1px solid #ccc; padding: 8px;">Keterangan</td>
+              <td style="border: 1px solid #ccc; padding: 8px;">${keterangan}</td>
+            </tr>`
+          : ""
+      }
       ${
         catatan
           ? `<tr>

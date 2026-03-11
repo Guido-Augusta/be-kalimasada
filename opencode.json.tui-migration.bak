@@ -1,0 +1,20 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "permission": {
+    "bash": "ask",
+    "webfetch": "allow"
+  },
+  "mcp": {
+    "context7": {
+      "type": "remote",
+      "url": "https://mcp.context7.com/mcp",
+      "headers": {
+        "CONTEXT7_API_KEY": "ctx7sk-3db4e1c3-d84c-45c7-8d14-dce202f60051"
+      },
+      "enabled": true
+    }
+  },
+  "keybinds": {
+    "input_newline": "ctrl+n"
+  }
+}

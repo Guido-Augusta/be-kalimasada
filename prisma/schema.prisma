@@ -107,6 +107,7 @@ model Ayat {
   latin         String
   terjemah      String
   juz           Int?
+  halaman       Int?
 
   surah         Surah   @relation(fields: [surahId], references: [id])
   riwayatHafalan RiwayatHafalan[]
@@ -121,6 +122,8 @@ model RiwayatHafalan {
   ayatId         Int
   tanggalHafalan DateTime
   status         StatusHafalan
+  kualitas       KualitasHafalan?
+  keterangan     KeteranganHafalan?
   catatan        String?
   poinDidapat    Int            @default(0)
   createdAt      DateTime       @default(now())
@@ -134,6 +137,8 @@ model RiwayatHafalan {
   @@index([ustadzId])
   @@index([ayatId])
   @@index([tanggalHafalan])
+  @@index([santriId, status, tanggalHafalan])
+  @@index([santriId, status, ayatId])
 }
 
 model TokenStore {
@@ -186,6 +191,19 @@ enum TahapHafalan {
 enum StatusHafalan {
   TambahHafalan
   Murajaah
+  Tahsin
+}
+
+enum KualitasHafalan {
+  Kurang
+  Cukup
+  Baik
+  SangatBaik
+}
+
+enum KeteranganHafalan {
+  Mengulang
+  Lanjut
 }
 
 enum TempatTurun {
@@ -197,4 +215,32 @@ enum TipeOrangTua {
   Ayah
   Ibu
   Wali
+}
+
+model EmailQueue {
+  id             Int         @id @default(autoincrement())
+  emailOrtu      String
+  namaOrtu       String
+  namaSantri     String
+  tanggalHafalan DateTime
+  namaSurah      String
+  jumlahAyat     Int
+  ayatNomorList   String
+  statusHafalan  String
+  kualitas       String?
+  keterangan     String?
+  catatan        String?
+
+  status         EmailStatus @default(PENDING)
+  createdAt      DateTime    @default(now())
+  sentAt         DateTime?
+  error          String?
+
+  @@index([status, createdAt])
+}
+
+enum EmailStatus {
+  PENDING
+  SENT
+  FAILED
 }

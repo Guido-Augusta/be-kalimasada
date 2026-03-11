@@ -1,13 +1,25 @@
 import { StatusHafalan, TahapHafalan } from "@prisma/client";
 import { prisma } from "../utils/prisma";
 
+const JAKARTA_OFFSET_HOURS = 7;
+
+function getJakartaDateRange(tanggal: string): { startDate: Date; endDate: Date } {
+  const baseDate = new Date(tanggal + "T00:00:00.000Z");
+  const offsetMs = JAKARTA_OFFSET_HOURS * 60 * 60 * 1000;
+  const startDate = new Date(baseDate.getTime() - offsetMs);
+  const endDate = new Date(startDate.getTime() + 24 * 60 * 60 * 1000);
+  return { startDate, endDate };
+}
+
 export type CreateManyHafalanPayload = {
   santriId: number;
   ustadzId: number;
   ayatId: number;
   tanggalHafalan: Date;
-  status: 'TambahHafalan' | 'Murajaah'; 
-  catatan: string;
+  status: 'TambahHafalan' | 'Murajaah' | 'Tahsin';
+  kualitas?: 'Kurang' | 'Cukup' | 'Baik' | 'SangatBaik';
+  keterangan?: 'Mengulang' | 'Lanjut';
+  catatan?: string;
   poinDidapat: number;
 };
 
@@ -16,6 +28,94 @@ export const HafalanRepository = {
     prisma.surah.findMany({
       select: { id: true, nomor: true, nama: true, namaLatin: true, totalAyat: true },
       orderBy: { nomor: "asc" },
+    }),
+
+  getAllJuz: () =>
+    prisma.ayat.groupBy({
+      by: ["juz"],
+      orderBy: { juz: "asc" },
+    }),
+
+  getAyatByJuz: (juz: number) =>
+    prisma.ayat.findMany({
+      where: { juz },
+      select: { id: true, nomorAyat: true, surahId: true },
+    }),
+
+  getAyatByJuzWithSurah: (juz: number) =>
+    prisma.ayat.findMany({
+      where: { juz },
+      select: {
+        id: true,
+        nomorAyat: true,
+        surah: {
+          select: {
+            nomor: true,
+            nama: true,
+            namaLatin: true
+          }
+        }
+      },
+      orderBy: [
+        { surahId: 'asc' },
+        { nomorAyat: 'asc' }
+      ]
+    }),
+
+  getAyatDetailByJuz: (juz: number) =>
+    prisma.ayat.findMany({
+      where: { juz },
+      select: {
+        id: true,
+        nomorAyat: true,
+        arab: true,
+        latin: true,
+        terjemah: true,
+        halaman: true,
+        surah: {
+          select: {
+            id: true,
+            nomor: true,
+            nama: true,
+            namaLatin: true
+          }
+        }
+      },
+      orderBy: [
+        { surahId: 'asc' },
+        { nomorAyat: 'asc' }
+      ]
+    }),
+
+  getHafalanByAyatIds: (santriId: number, ayatIds: number[], status?: string) =>
+    prisma.riwayatHafalan.findMany({
+      where: {
+        santriId,
+        ayatId: { in: ayatIds },
+        ...(status && { status: status as StatusHafalan }),
+      },
+      select: { ayatId: true, kualitas: true, keterangan: true },
+      orderBy: { tanggalHafalan: 'desc' },
+    }),
+
+  getAyatByHalamanRange: (halamanAwal: number, halamanAkhir: number) =>
+    prisma.ayat.findMany({
+      where: {
+        halaman: {
+          gte: halamanAwal,
+          lte: halamanAkhir,
+        },
+      },
+      select: {
+        id: true,
+        nomorAyat: true,
+        surahId: true,
+        halaman: true,
+      },
+      orderBy: [
+        { surahId: 'asc' },
+        { nomorAyat: 'asc' }
+      ]
     }),
 
   getSantriById: (id: number) =>
@@ -42,7 +142,7 @@ export const HafalanRepository = {
   getHafalanSantri: (santriId: number) =>
     prisma.riwayatHafalan.groupBy({
       by: ["ayatId"],
-      where: { santriId, status: "TambahHafalan" },
+      where: { santriId, status: "TambahHafalan", keterangan: "Lanjut" },
     }),
 
   countAyatHafal: (surahId: number, ayatIds: number[]) =>
@@ -65,7 +165,8 @@ export const HafalanRepository = {
         ayat: { surahId },
         ...(status && { status: status as StatusHafalan }),
       },
-      select: { ayatId: true },
+      select: { ayatId: true, kualitas: true, keterangan: true },
+      orderBy: { tanggalHafalan: 'desc' },
     }),
 
   getSurahById: (id: number) =>
@@ -81,13 +182,25 @@ export const HafalanRepository = {
       select: { ayatId: true },
     }),
 
+  // Find ayats that have already received points from TambahHafalan + Lanjut
+  findAyatWithPoin: (santriId: number, ayatIds: number[]) =>
+    prisma.riwayatHafalan.findMany({
+      where: {
+        santriId,
+        ayatId: { in: ayatIds },
+        status: "TambahHafalan",
+        poinDidapat: { gt: 0 },
+      },
+      select: { ayatId: true },
+    }),
+
   createManyHafalan: (data: CreateManyHafalanPayload[]) =>
-    prisma.riwayatHafalan.createMany({ data }),
+    prisma.riwayatHafalan.createMany({ data, skipDuplicates: true }),
 
   // Riwayat Hafalan
   getRiwayatHafalanBySantri: (santriId: number, status?: string) =>
     prisma.riwayatHafalan.findMany({
-      where: { 
+      where: {
         santriId,
         ...(status && { status: status as StatusHafalan })
       },
@@ -98,6 +211,10 @@ export const HafalanRepository = {
         poinDidapat: true,
         ayat: {
           select: {
+            id: true,
+            nomorAyat: true,
+            halaman: true,
+            juz: true,
             surah: {
               select: {
                 id: true,
@@ -117,9 +234,7 @@ export const HafalanRepository = {
     }),
   
   deleteHafalanByDateSurahStatus: (santriId: number, ayatIds: number[], tanggal: string, status: string) => {
-    const startDate = new Date(tanggal);
-    const endDate = new Date(tanggal);
-    endDate.setDate(endDate.getDate() + 1);
+    const { startDate, endDate } = getJakartaDateRange(tanggal);
   
     return prisma.riwayatHafalan.deleteMany({
       where: {
@@ -137,9 +252,7 @@ export const HafalanRepository = {
   },
 
   getPoinHafalanToDelete: (santriId: number, ayatIds: number[], tanggal: string, status: string) => {
-    const startDate = new Date(tanggal);
-    const endDate = new Date(tanggal);
-    endDate.setDate(endDate.getDate() + 1);
+    const { startDate, endDate } = getJakartaDateRange(tanggal);
 
     return prisma.riwayatHafalan.aggregate({
       where: {
@@ -198,6 +311,8 @@ export const HafalanRepository = {
       select: {
         status: true,
         poinDidapat: true,
+        kualitas: true,
+        keterangan: true,
         ayat: {
           select: {
             id: true,
@@ -221,9 +336,53 @@ export const HafalanRepository = {
         catatan: true,
       },
       orderBy: {
-        ayat: {
-          nomorAyat: "asc",
+        tanggalHafalan: 'desc',
+      },
+    }),
+
+  getDetailRiwayatAyatByJuz: (santriId: number, juzId: number, startDate: Date, endDate: Date, status: string) =>
+    prisma.riwayatHafalan.findMany({
+      where: {
+        santriId,
+        status: status as StatusHafalan,
+        tanggalHafalan: {
+          gte: startDate,
+          lt: endDate,
         },
+        ayat: {
+          juz: juzId,
+        },
+      },
+      select: {
+        status: true,
+        poinDidapat: true,
+        kualitas: true,
+        keterangan: true,
+        ayat: {
+          select: {
+            id: true,
+            nomorAyat: true,
+            arab: true,
+            latin: true,
+            terjemah: true,
+            halaman: true,
+            juz: true,
+            surah: {
+              select: {
+                id: true,
+                nama: true,
+                namaLatin: true
+              },
+            },
+          },
+        },
+        ustadz: {
+          select: { id: true, nama: true}
+        },
+        catatan: true,
+      },
+      orderBy: {
+        tanggalHafalan: 'desc',
       },
     }),
 
@@ -261,7 +420,6 @@ export const HafalanRepository = {
       noInduk: true,
       tahapHafalan: true,
       riwayatHafalan: {
-        take: 1,
         orderBy: {
           tanggalHafalan: 'desc',
         },
@@ -274,6 +432,8 @@ export const HafalanRepository = {
           status: true,
           ayat: {
             select: {
+              juz: true,
+              halaman: true,
               surah: {
                 select: {
                   namaLatin: true,
@@ -329,7 +489,7 @@ export const HafalanRepository = {
 
   getGroupedAyatByDateSurahStatus: (santriId: number, surahId: number, tanggal: Date, status: StatusHafalan) => {
     const startDate = new Date(tanggal);
-    const endDate = new Date(tanggal);
+    const endDate = new Date(startDate.getTime() + 24 * 60 * 60 * 1000);
     endDate.setDate(endDate.getDate() + 1);
     
     return prisma.riwayatHafalan.findMany({
@@ -345,13 +505,90 @@ export const HafalanRepository = {
       select: {
         ayat: {
           select: {
-            nomorAyat: true
+            nomorAyat: true,
+            halaman: true,
           }
         },
       },
       orderBy: {
         ayat: { nomorAyat: 'asc' }
       },
+    });
+  },
+
+  getGroupedAyatByDateJuzStatus: (santriId: number, juz: number, tanggal: Date, status: StatusHafalan) => {
+    const startDate = new Date(tanggal);
+    const endDate = new Date(tanggal);
+    endDate.setDate(endDate.getDate() + 1);
+
+    return prisma.riwayatHafalan.findMany({
+      where: {
+        santriId,
+        status,
+        tanggalHafalan: {
+          gte: startDate,
+          lt: endDate,
+        },
+        ayat: { juz },
+      },
+      select: {
+        ayat: {
+          select: {
+            nomorAyat: true,
+            halaman: true,
+            juz: true,
+            surah: {
+              select: {
+                id: true,
+                nama: true,
+                namaLatin: true,
+              }
+            }
+          }
+        },
+      },
+      orderBy: [
+        { ayat: { surahId: 'asc' } },
+        { ayat: { nomorAyat: 'asc' } }
+      ],
+    });
+  },
+
+  getAllAyatByDateAndStatus: (santriId: number, tanggal: Date, status: StatusHafalan) => {
+    const startDate = new Date(tanggal);
+    const endDate = new Date(tanggal);
+    endDate.setDate(endDate.getDate() + 1);
+
+    return prisma.riwayatHafalan.findMany({
+      where: {
+        santriId,
+        status,
+        tanggalHafalan: {
+          gte: startDate,
+          lt: endDate,
+        },
+      },
+      select: {
+        ayat: {
+          select: {
+            nomorAyat: true,
+            halaman: true,
+            juz: true,
+            surah: {
+              select: {
+                id: true,
+                nama: true,
+                namaLatin: true,
+              }
+            }
+          }
+        },
+      },
+      orderBy: [
+        { ayat: { halaman: 'asc' } },
+        { ayat: { surahId: 'asc' } },
+        { ayat: { nomorAyat: 'asc' } }
+      ],
     });
   },
 };

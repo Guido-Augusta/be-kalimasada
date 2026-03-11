@@ -7,6 +7,7 @@ interface AyatOutput {
   latin: string;
   terjemah: string;
   juz: number; 
+  halaman: number;
 }
 
 interface SurahDataOutput {
@@ -20,7 +21,7 @@ interface SurahDataOutput {
   ayat: AyatOutput[];
 }
 
-interface ApiResponse {
+interface ApiResponseGadingDev {
   code: number;
   status: string;
   message: string;
@@ -55,6 +56,7 @@ interface ApiResponse {
       };
       meta: {
         juz: number;
+        page: number;
       };
       text: {
         arab: string;
@@ -74,7 +76,7 @@ async function processAndSaveSurah(number: number): Promise<void> {
   try {
     const url = `https://api.quran.gading.dev/surah/${number}`;
     const response = await fetch(url);
-    const result: ApiResponse = await response.json();
+    const result: ApiResponseGadingDev = await response.json();
 
     if (result.code !== 200) {
       throw new Error(`Gagal mengambil data dari API.`);
@@ -88,9 +90,8 @@ async function processAndSaveSurah(number: number): Promise<void> {
       latin: ayat.text.transliteration.en,
       terjemah: ayat.translation.id,
       juz: ayat.meta.juz,
+      halaman: ayat.meta.page,
     }));
-
-    // console.log(ayatFormatted)
 
     const finalData: SurahDataOutput = {
       nomor: surahDataFromApi.number,
@@ -103,11 +104,9 @@ async function processAndSaveSurah(number: number): Promise<void> {
       ayat: ayatFormatted,
     };
 
-    // console.log(finalData)
-
     const jsonString = JSON.stringify([finalData], null, 2);
     const fileName = `surah-${finalData.nomor}.json`;
-    fs.writeFileSync("./data-surah/" + fileName, jsonString);
+    fs.writeFileSync("./data-surah-page/" + fileName, jsonString);
 
     console.log(`✅ Data surah ${finalData.namaLatin} (${finalData.nama}) berhasil disimpan ke file ${fileName}.`);
   } catch (error: unknown) {
@@ -118,7 +117,7 @@ async function processAndSaveSurah(number: number): Promise<void> {
 }
 
 // Panggil fungsi untuk memulai proses
-const surahListToProcess = [113, 114];
+const surahListToProcess = Array.from({ length: 114 }, (_, i) => i + 1);
 
 async function processAllSurahs() {
   for (const surahNumber of surahListToProcess) {

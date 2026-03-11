@@ -7,12 +7,13 @@ services:
       - .env
     depends_on:
       - db
+      - redis
     ports:
       - "${PORT}:5005"
 
   db:
     image: postgres:16
-    container_name: db_tahfidz_kalimasada
+    container_name: ${DB_CONTAINER_NAME:-db_tahfidz_kalimasada}
     restart: always
     environment:
       POSTGRES_USER: ${POSTGRES_USER}
@@ -22,6 +23,13 @@ services:
       - "${POSTGRES_PORT}:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
+
+  redis:
+    image: redis:7-alpine
+    container_name: redis_tahfidz_kalimasada
+    restart: always
+    ports:
+      - "${REDIS_PORT}:6379"
 
 volumes:
   postgres_data:
