@@ -3,21 +3,35 @@
 # TAHFIDZ APP: DOCKER TO GDRIVE BACKUP SCRIPT
 
 # 1. Configuration Variables
-# IMPORTANT: Change 'postgres-container' to your actual Docker container name
-CONTAINER_NAME="postgres-container" 
-DB_USER="postgres"
-DB_NAME="tahfidz_db"
+# Get script directory and project root
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
+ENV_FILE="$PROJECT_ROOT/.env"
+
+# Load environment variables from .env file if it exists
+if [ -f "$ENV_FILE" ]; then
+    echo "Loading configuration from $ENV_FILE"
+    # Export variables from .env, ignoring comments and empty lines
+    export $(grep -v '^#' "$ENV_FILE" | grep -v '^$' | xargs)
+else
+    echo "Warning: .env file not found at $ENV_FILE. Using default/hardcoded values."
+fi
+
+# IMPORTANT: Set 'DB_CONTAINER_NAME' in your .env or fallback below
+CONTAINER_NAME="${DB_CONTAINER_NAME:-db_tahfidz_kalimasada}" 
+DB_USER="${POSTGRES_USER:-postgres}"
+DB_NAME="${POSTGRES_DB:-tahfidz_db}"
 
 # Directory where local backups will be temporarily stored
 # This path should be accessible by the cron user on the host server
-BACKUP_DIR="/opt/backups/tahfidz/archives"
+BACKUP_DIR="${DB_BACKUP_DIR:-/opt/backups/tahfidz/archives}"
 
 # Timestamp for the filename (Format: YYYY-MM-DD_HHMM)
 DATE=$(date +"%Y-%m-%d_%H%M")
 BACKUP_FILE="$BACKUP_DIR/db_backup_$DATE.sql.gz"
 
 # Rclone Remote Path (RemoteName:/FolderOnGDrive)
-RCLONE_REMOTE="gdrive-tahfidz:/Tahfidz_DB_Backups"
+RCLONE_REMOTE="${DB_RCLONE_REMOTE:-gdrive-tahfidz:/Tahfidz_DB_Backups}"
 
 # 2. Preparation
 echo "Starting backup process at $(date)"
