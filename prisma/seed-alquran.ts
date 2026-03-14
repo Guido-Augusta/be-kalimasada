@@ -40,7 +40,13 @@ async function main() {
             nomorAyat: ayat.nomorAyat,
           },
         },
-        update: {},
+        update: {
+          arab: ayat.arab,
+          latin: ayat.latin,
+          terjemah: ayat.terjemah,
+          juz: ayat.juz,
+          halaman: ayat.halaman,
+        },
         create: {
           surahId: newSurah.id,
           nomorAyat: ayat.nomorAyat,
