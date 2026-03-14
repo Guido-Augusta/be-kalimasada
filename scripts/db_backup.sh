@@ -12,7 +12,10 @@ ENV_FILE="$PROJECT_ROOT/.env"
 if [ -f "$ENV_FILE" ]; then
     echo "Loading configuration from $ENV_FILE"
     # Export variables from .env, ignoring comments and empty lines
-    export $(grep -v '^#' "$ENV_FILE" | grep -v '^$' | xargs)
+    # export $(grep -v '^#' "$ENV_FILE" | grep -v '^$' | xargs)
+    set -o allexport
+    source "$ENV_FILE"
+    set +o allexport
 else
     echo "Warning: .env file not found at $ENV_FILE. Using default/hardcoded values."
 fi
