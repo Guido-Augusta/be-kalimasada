@@ -27,7 +27,8 @@ DB_NAME="${POSTGRES_DB:-tahfidz_db}"
 
 # Directory where local backups will be temporarily stored
 # This path should be accessible by the cron user on the host server
-BACKUP_DIR="${DB_BACKUP_DIR:-/opt/backups/tahfidz/archives}"
+# BACKUP_DIR="${DB_BACKUP_DIR:-/opt/backups/tahfidz/archives}"
+DB_BACKUP_DIR=/home/pengabdi/backups/tahfidz
 
 # Timestamp for the filename (Format: YYYY-MM-DD_HHMM)
 DATE=$(date +"%Y-%m-%d_%H%M")
