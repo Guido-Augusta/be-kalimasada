@@ -75,33 +75,34 @@ export const getAllSantriWithPagination = async (
 
 export const updatePeringkatSantri = async () => {
   try {
-    await prisma.$executeRawUnsafe(`
-      UPDATE "Santri"
-      SET "totalPoin" = COALESCE((
-          SELECT SUM("poinDidapat")
-          FROM "RiwayatHafalan"
-          WHERE "RiwayatHafalan"."santriId" = "Santri".id
-      ), 0)
-    `);
+    await prisma.$executeRaw`
+      UPDATE "Santri" s
+      SET "totalPoin" = COALESCE(r.total, 0)
+      FROM (
+        SELECT "santriId", SUM("poinDidapat") AS total
+        FROM "RiwayatHafalan"
+        GROUP BY "santriId"
+      ) r
+      WHERE r."santriId" = s.id
+    `;
 
-    await prisma.$executeRawUnsafe(`
+    await prisma.$executeRaw`
       WITH ranked AS (
         SELECT 
-            id, 
-            DENSE_RANK() OVER (PARTITION BY "tahapHafalan" ORDER BY "totalPoin" DESC, "poinUpdatedAt" ASC, id ASC) AS peringkat
+          id,
+          DENSE_RANK() OVER (
+            PARTITION BY "tahapHafalan"
+            ORDER BY "totalPoin" DESC, "poinUpdatedAt" ASC, id ASC
+          ) AS peringkat
         FROM "Santri"
       )
       UPDATE "Santri" s
       SET "peringkat" = r.peringkat
       FROM ranked r
       WHERE s.id = r.id
-    `);
-
-    // console.log(`✅ Peringkat santri berhasil diperbarui pada ${new Date().toLocaleString()}`);
-  } catch (error: unknown) {
-    if (error instanceof Error) {
-      console.error('Gagal memperbarui peringkat santri:', error.message);
-    }
+    `;
+  } catch (error) {
+    console.error(error);
   }
 };
 

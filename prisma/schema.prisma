@@ -14,12 +14,12 @@ datasource db {
 }
 
 model User {
-  id          Int          @id @default(autoincrement())
-  email       String       @unique
-  password    String
-  role        Role
-  createdAt   DateTime     @default(now())
-  updatedAt   DateTime     @updatedAt
+  id        Int      @id @default(autoincrement())
+  email     String   @unique
+  password  String
+  role      Role
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 
   santri      Santri?
   ustadz      Ustadz?
@@ -29,24 +29,24 @@ model User {
 }
 
 model Ustadz {
-  id           Int             @id @default(autoincrement())
-  userId       Int             @unique
-  nama         String
-  nomorHp      String
-  alamat       String
-  jenisKelamin JenisKelamin
-  fotoProfil   String?
+  id             Int           @id @default(autoincrement())
+  userId         Int           @unique
+  nama           String
+  nomorHp        String
+  alamat         String
+  jenisKelamin   JenisKelamin
+  fotoProfil     String?
   waliKelasTahap TahapHafalan? // null = ustadz biasa, Level1-3 = wali kelas
 
-  user         User            @relation(fields: [userId], references: [id])
+  user           User             @relation(fields: [userId], references: [id])
   riwayatHafalan RiwayatHafalan[]
 
   @@index([userId])
 }
 
 model OrangTua {
-  id           Int        @id @default(autoincrement())
-  userId       Int?       @unique
+  id           Int          @id @default(autoincrement())
+  userId       Int?         @unique
   nama         String
   nomorHp      String
   alamat       String
@@ -54,69 +54,70 @@ model OrangTua {
   fotoProfil   String?
   tipe         TipeOrangTua
 
-  user         User?      @relation(fields: [userId], references: [id])
-  santri       Santri[]   @relation("SantriOrangTua")
+  user   User?    @relation(fields: [userId], references: [id])
+  santri Santri[] @relation("SantriOrangTua")
 
   @@index([userId])
 }
 
 model Santri {
-  id             Int              @id @default(autoincrement())
-  userId         Int              @unique
-  nama           String
-  nomorHp        String?
-  alamat         String
-  jenisKelamin   JenisKelamin
-  tanggalLahir   DateTime         @default(now())
-  fotoProfil     String?
-  noInduk        String?          @unique
-  tahapHafalan   TahapHafalan
-  totalPoin      Int              @default(0)
-  peringkat      Int              @default(0)
-  createdAt      DateTime         @default(now())
-  poinUpdatedAt  DateTime         @default(now())
+  id            Int          @id @default(autoincrement())
+  userId        Int          @unique
+  nama          String
+  nomorHp       String?
+  alamat        String
+  jenisKelamin  JenisKelamin
+  tanggalLahir  DateTime     @default(now())
+  fotoProfil    String?
+  noInduk       String?      @unique
+  tahapHafalan  TahapHafalan
+  totalPoin     Int          @default(0)
+  peringkat     Int          @default(0)
+  createdAt     DateTime     @default(now())
+  poinUpdatedAt DateTime     @default(now())
 
   user           User             @relation(fields: [userId], references: [id])
   orangTua       OrangTua[]       @relation("SantriOrangTua")
   riwayatHafalan RiwayatHafalan[]
 
   @@index([userId])
+  @@index([tahapHafalan, totalPoin])
 }
 
 model Surah {
-  id           Int        @id @default(autoincrement())
-  nomor        Int        @unique
-  nama         String
-  namaLatin    String
-  totalAyat    Int
-  tempatTurun  TempatTurun
-  arti         String
-  deskripsi    String?
-  audio        String?
+  id          Int         @id @default(autoincrement())
+  nomor       Int         @unique
+  nama        String
+  namaLatin   String
+  totalAyat   Int
+  tempatTurun TempatTurun
+  arti        String
+  deskripsi   String?
+  audio       String?
 
-  ayat         Ayat[]
+  ayat Ayat[]
 
   @@index([nomor])
 }
 
 model Ayat {
-  id            Int     @id @default(autoincrement())
-  surahId       Int
-  nomorAyat     Int
-  arab          String
-  latin         String
-  terjemah      String
-  juz           Int?
-  halaman       Int?
+  id        Int    @id @default(autoincrement())
+  surahId   Int
+  nomorAyat Int
+  arab      String
+  latin     String
+  terjemah  String
+  juz       Int?
+  halaman   Int?
 
-  surah         Surah   @relation(fields: [surahId], references: [id])
+  surah          Surah            @relation(fields: [surahId], references: [id])
   riwayatHafalan RiwayatHafalan[]
 
   @@unique([surahId, nomorAyat])
 }
 
 model RiwayatHafalan {
-  id             Int            @id @default(autoincrement())
+  id             Int                @id @default(autoincrement())
   santriId       Int
   ustadzId       Int?
   ayatId         Int
@@ -125,13 +126,13 @@ model RiwayatHafalan {
   kualitas       KualitasHafalan?
   keterangan     KeteranganHafalan?
   catatan        String?
-  poinDidapat    Int            @default(0)
-  createdAt      DateTime       @default(now())
-  updatedAt      DateTime       @updatedAt
+  poinDidapat    Int                @default(0)
+  createdAt      DateTime           @default(now())
+  updatedAt      DateTime           @updatedAt
 
-  santri         Santri         @relation(fields: [santriId], references: [id], onDelete: Cascade)
-  ustadz         Ustadz?        @relation(fields: [ustadzId], references: [id], onDelete: SetNull)
-  ayat           Ayat           @relation(fields: [ayatId], references: [id])
+  santri Santri  @relation(fields: [santriId], references: [id], onDelete: Cascade)
+  ustadz Ustadz? @relation(fields: [ustadzId], references: [id], onDelete: SetNull)
+  ayat   Ayat    @relation(fields: [ayatId], references: [id])
 
   @@index([santriId])
   @@index([ustadzId])
@@ -139,16 +140,17 @@ model RiwayatHafalan {
   @@index([tanggalHafalan])
   @@index([santriId, status, tanggalHafalan])
   @@index([santriId, status, ayatId])
+  @@index([santriId, poinDidapat])
 }
 
 model TokenStore {
-  id          Int     @id @default(autoincrement())
-  userId      Int
-  platform    Platform
-  token       String  @unique
-  createdAt   DateTime @default(now())
+  id        Int      @id @default(autoincrement())
+  userId    Int
+  platform  Platform
+  token     String   @unique
+  createdAt DateTime @default(now())
 
-  user        User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@index([userId])
 }
@@ -160,7 +162,7 @@ model ResetToken {
   createdAt DateTime @default(now())
   expiresAt DateTime
 
-  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@index([userId])
 }
@@ -218,23 +220,23 @@ enum TipeOrangTua {
 }
 
 model EmailQueue {
-  id             Int         @id @default(autoincrement())
+  id             Int      @id @default(autoincrement())
   emailOrtu      String
   namaOrtu       String
   namaSantri     String
   tanggalHafalan DateTime
   namaSurah      String
   jumlahAyat     Int
-  ayatNomorList   String
+  ayatNomorList  String
   statusHafalan  String
   kualitas       String?
   keterangan     String?
   catatan        String?
 
-  status         EmailStatus @default(PENDING)
-  createdAt      DateTime    @default(now())
-  sentAt         DateTime?
-  error          String?
+  status    EmailStatus @default(PENDING)
+  createdAt DateTime    @default(now())
+  sentAt    DateTime?
+  error     String?
 
   @@index([status, createdAt])
 }

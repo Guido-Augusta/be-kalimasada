@@ -3,7 +3,7 @@ import { updatePeringkatSantri } from '../services/santriService';
 import { prisma } from '../utils/prisma';
 
 setTimeout(() => {
-  cron.schedule('*/5 * * * *', async () => {
+  cron.schedule('*/60 * * * *', async () => {
     try {
       await updatePeringkatSantri();
     } catch (error: unknown) {
