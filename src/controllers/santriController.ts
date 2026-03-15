@@ -7,8 +7,9 @@ import path from "path";
 import { AuthRequest } from '../middleware/auth';
 import { sendAccountEmail, sendUpdateEmail } from '../utils/sendAccountEmail';
 import { JenisKelamin, TahapHafalan } from '@prisma/client';
+import { getBaseUrl } from '../utils/url';
 
-const url = process.env.NODE_ENV === "production" ? process.env.PROD_URL : process.env.DEV_URL;
+const url = getBaseUrl();
 
 type UpdateSantriPayload = {
   email?: string;

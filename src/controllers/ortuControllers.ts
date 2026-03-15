@@ -6,8 +6,9 @@ import fs from "fs";
 import { prisma } from "../utils/prisma";
 import path from "path";
 import { sendAccountEmail, sendUpdateEmail } from '../utils/sendAccountEmail';
+import { getBaseUrl } from '../utils/url';
 
-const url = process.env.NODE_ENV === "production" ? process.env.PROD_URL : process.env.DEV_URL;
+const url = getBaseUrl();
 
 export const create = async (req: Request, res: Response) => {
   try {
