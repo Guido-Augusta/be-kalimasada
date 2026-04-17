@@ -13,44 +13,26 @@ export interface SantriFilter {
 }
 
 export interface SantriData {
-  email: string;
   password: string;
   ortuId: number[];
   nama: string;
-  nomorHp?: string;
-  noInduk: string;
-  alamat: string;
-  jenisKelamin: JenisKelamin;
-  tanggalLahir: Date;
-  fotoProfil?: string;
   tahapHafalan: TahapHafalan;
 }
 
 export interface SantriUpdateData {
-  email?:string;
   password?:string;
   nama?: string;
-  nomorHp?: string;
-  noInduk?: string;
-  alamat?: string;
-  jenisKelamin?: JenisKelamin;
-  tanggalLahir?: Date;
-  fotoProfil?: string | null;
   ortuId?: number[];
   tahapHafalan?: TahapHafalan;
 }
 
 export const createSantri = async (data: SantriData) => {
-  const existingUser = await prisma.user.findUnique({ where: { email: data.email } });
-  if (existingUser) throw new Error('Email already exists');
-
-  const existingSantriByNoInduk = await prisma.santri.findUnique({ where: { noInduk: data.noInduk } });
-  if (existingSantriByNoInduk) throw new Error('Nomor Induk already exists');
+  const existingSantriByName = await prisma.santri.findUnique({ where: { nama: data.nama } });
+  if (existingSantriByName) throw new Error('Santri with this name already exists');
 
   return prisma.$transaction(async (tx) => {
     const user = await tx.user.create({
       data: {
-        email: data.email,
         password: data.password,
         role: 'santri',
       },
@@ -59,17 +41,11 @@ export const createSantri = async (data: SantriData) => {
     const santri = await tx.santri.create({
       data: {
         nama: data.nama,
-        nomorHp: data.nomorHp,
-        alamat: data.alamat,
-        jenisKelamin: data.jenisKelamin,
-        tanggalLahir: new Date(data.tanggalLahir),
-        fotoProfil: data.fotoProfil,
         userId: user.id,
         orangTua: {
           connect: data.ortuId.map(id => ({ id }))
         },
         tahapHafalan: data.tahapHafalan,
-        noInduk: data.noInduk,
         peringkat: 0,
       },
     });
@@ -89,12 +65,6 @@ export const getSantriById = async (id: number) => {
       id: true,
       userId: true,
       nama: true,
-      nomorHp: true,
-      noInduk: true,
-      alamat: true,
-      jenisKelamin: true,
-      tanggalLahir: true,
-      fotoProfil: true,
       tahapHafalan: true,
       peringkat: true,
       totalPoin: true,
@@ -134,7 +104,9 @@ export const getSantriByName = async (nama: string) => {
   const santri = await prisma.santri.findMany({ 
     where: { nama: { contains: nama, mode: 'insensitive' } }, 
     include: {
-      user: true,
+      user: {
+        select: { id: true, role: true }
+      },
       orangTua: { 
         select: {
           id: true,
@@ -148,7 +120,7 @@ export const getSantriByName = async (nama: string) => {
 };
 
 export const updateSantriAndUser = async (id: number, data: SantriUpdateData) => {
-  const { ortuId, noInduk, ...santriData } = data;
+  const { ortuId, ...santriData } = data;
 
   return prisma.$transaction(async (tx) => {
     const existingSantri = await tx.santri.findUnique({
@@ -160,40 +132,25 @@ export const updateSantriAndUser = async (id: number, data: SantriUpdateData) =>
     const santriUserId = existingSantri.userId;
     if (!santriUserId) throw new Error('Santri user account not found');
 
-    if (noInduk && noInduk !== existingSantri.noInduk) {
-      const existingSantriByNoInduk = await tx.santri.findUnique({ where: { noInduk } });
-      if (existingSantriByNoInduk) {
-        throw new Error('Nomor Induk already exists');
-      }
-    }
-
-    const { email, password, ...restData } = santriData as SantriUpdateData;
+    const { password, ...restData } = santriData;
     let newHashedPassword: string | undefined;
 
     if (password) {
-      newHashedPassword= await bcrypt.hash(password, 10);
-    }
-    
-    if (email) {
-      const existingUser = await tx.user.findUnique({ where: { email } });
-      if (existingUser && existingUser.id !== santriUserId) {
-        throw new Error('Email already exists');
-      }
+      newHashedPassword = await bcrypt.hash(password, 10);
     }
 
     await tx.user.update({
       where: { id: santriUserId },
       data: {
-        ...(email && { email }),
         ...(newHashedPassword && { password: newHashedPassword }),
       },
     });
 
-    const updatePayload: Prisma.SantriUpdateInput = { ...restData, ...(noInduk && { noInduk }) };
+    const updatePayload: Prisma.SantriUpdateInput = { ...restData };
 
     if (ortuId) {
       updatePayload.orangTua = {
-        set: ortuId.map(ortuId => ({ id: ortuId })),
+        set: ortuId.map(id => ({ id })),
       };
     }
     
@@ -210,20 +167,6 @@ export const deleteSantri = async (id: number) => {
   return prisma.$transaction(async (tx) => {
     const santri = await tx.santri.findUnique({ where: { id } });
     if (!santri) throw new Error('Santri not found');
-
-    if (santri.fotoProfil && santri.fotoProfil.includes('/public/santri')) {
-      try {
-        const relativePath = santri.fotoProfil.replace(/^.*\/public\//, "public/");
-        const filePath = path.join(__dirname, '../../', relativePath);
-        if (fs.existsSync(filePath)) {
-          fs.unlinkSync(filePath);
-        }
-      } catch (error: unknown) {
-        if (error instanceof Error) {
-          console.error('Gagal menghapus file foto profil:', error.message);
-        }
-      }
-    }
 
     await tx.santri.delete({ where: { id } });
     await tx.user.delete({ where: { id: santri.userId } });
@@ -250,7 +193,7 @@ export const findSantri = async (filter: SantriFilter = { page: 1, limit: 10 }) 
     where,
     include: {
       user: {
-        select: { id: true, email: true, role: true },
+        select: { id: true, role: true },
       },
       orangTua: {
         select: { id: true, nama: true, tipe: true },
@@ -299,7 +242,7 @@ export const findSantriWithPagination = async (filter: SantriFilter = { page: 1,
     prisma.santri.findMany({
       where,
       include: {
-        user: { select: { id: true, email: true, role: true } },
+        user: { select: { id: true, role: true } },
         orangTua: { select: { id: true, nama: true, tipe: true } },
       },
       // orderBy: { nama: "asc" },
@@ -362,8 +305,6 @@ export const getRankedSantriWithPagination = async (page: number, limit: number,
         totalPoin: true,
         peringkat: true,
         tahapHafalan: true,
-        fotoProfil: true,
-        noInduk: true,
       },
       skip,
       take: limit,

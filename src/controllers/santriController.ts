@@ -12,36 +12,22 @@ import { getBaseUrl } from '../utils/url';
 const url = getBaseUrl();
 
 type UpdateSantriPayload = {
-  email?: string;
   password?: string;
   ortuId?: number[];
-  noInduk?: string;
   nama?: string;
-  tanggalLahir?: Date;
-  alamat?: string;
-  nomorHp?: string;
-  fotoProfil?: string;
   tahapHafalan?: TahapHafalan;
-  jenisKelamin?: JenisKelamin;
 }
 
 export const create = async (req: Request, res: Response) => {
   try {
-    const filePath = req.file ? `${url}/public/santri/${req.file.filename}` : "https://res.cloudinary.com/dqrppoiza/image/upload/v1754292060/placeholder_profile_ff5xwy.jpg";
-
     const ortuIds = Array.isArray(req.body.ortuId) ? req.body.ortuId.map(Number) : JSON.parse(req.body.ortuId);
 
     const validation = await RegisterSantriSchema.safeParseAsync({
       ...req.body,
       ortuId: ortuIds,
-      tanggalLahir: req.body.tanggalLahir ? new Date(req.body.tanggalLahir) : undefined,
-      fotoProfil: req.file,
     });
 
     if (!validation.success) {
-      if (req.file) {
-        fs.unlinkSync(req.file.path);
-      }
       return res.status(400).json({
         message: "Validation failed",
         status: 400,
@@ -51,33 +37,32 @@ export const create = async (req: Request, res: Response) => {
 
     const plainPassword = req.body.password;
 
-    const result = await santriService.registerSantri({ ...req.body, fotoProfil: filePath, ortuId: ortuIds, noInduk: req.body.noInduk });
+    const result = await santriService.registerSantri({ ...req.body, ortuId: ortuIds });
 
-    await sendAccountEmail({
-      to: req.body.email,
-      name: req.body.nama,
-      email: req.body.email,
-      password: plainPassword,
-      role: "Santri",
+    // Find parent email
+    const parents = await prisma.orangTua.findMany({
+      where: { id: { in: ortuIds } },
+      include: { user: true }
     });
+    const parentEmail = parents.find(p => p.user?.email)?.user?.email;
+
+    if (parentEmail) {
+      await sendAccountEmail({
+        to: parentEmail,
+        name: req.body.nama,
+        email: req.body.nama, // Santri logs in with Name
+        password: plainPassword,
+        role: "Santri",
+      });
+    }
 
     return res.status(201).json({ message: 'Santri created', status: 201, data: result });
   } catch (err: unknown) {
     if (err instanceof Error) {
-      if (err.message.includes('Email already exists')) {
-        if (req.file) {
-          fs.unlinkSync(req.file.path);
-        }
-        return res.status(400).json({ message: 'Email already exists', status: 400 });
-      }
-      if (err.message.includes('Nomor Induk already exists')) {
-        if (req.file) {
-          fs.unlinkSync(req.file.path);
-        }
-        return res.status(400).json({ message: 'Nomor Induk already exists', status: 400 });
+      if (err.message.includes('already exists')) {
+        return res.status(400).json({ message: err.message, status: 400 });
       }
     }
-    // res.status(500).json({ message: err.message, status: 500 });
     return res.status(500).json({ message: 'Internal server error', status: 500 });
   }
 };
@@ -117,7 +102,7 @@ export const update = async (req: AuthRequest, res: Response) => {
     const id = Number(req.params.id);
     const santriLama = await prisma.santri.findUnique({
       where: { id },
-      include: { user: true }
+      include: { user: true, orangTua: { include: { user: true } } }
     });
 
     if (!santriLama) {
@@ -126,8 +111,6 @@ export const update = async (req: AuthRequest, res: Response) => {
 
     const payload: UpdateSantriPayload = {
       ...req.body,
-      tanggalLahir: req.body.tanggalLahir ? new Date(req.body.tanggalLahir) : undefined,
-      fotoProfil: req.file,
     };
 
     if (req.user?.role === "admin") {
@@ -138,9 +121,7 @@ export const update = async (req: AuthRequest, res: Response) => {
           : undefined;
       payload.ortuId = ortuIds;
 
-      if (req.body.email) payload.email = req.body.email;
       if (req.body.password) payload.password = req.body.password;
-      if (req.body.noInduk) payload.noInduk = req.body.noInduk;
     }
 
     if (req.user?.role === "ustadz") {
@@ -158,20 +139,13 @@ export const update = async (req: AuthRequest, res: Response) => {
         });
       }
 
-      const dataToUpdate = {
-        tahapHafalan: validation.data.tahapHafalan,
-      };
-
-      const result = await santriService.updateSantri(id, dataToUpdate);
+      const result = await santriService.updateSantri(id, { tahapHafalan: validation.data.tahapHafalan });
       return res.status(200).json({ message: 'Santri updated by ustadz', status: 200, data: result });
     }
 
     const validation = await UpdateSantriSchema.safeParseAsync(payload);
 
     if (!validation.success) {
-      if (req.file) {
-        fs.unlinkSync(req.file.path);
-      }
       return res.status(400).json({
         message: 'Validation failed',
         status: 400,
@@ -182,62 +156,25 @@ export const update = async (req: AuthRequest, res: Response) => {
     if (req.user?.role !== "admin") {
       delete validation.data.ortuId;
       delete validation.data.tahapHafalan;
-      delete validation.data.email;
       delete validation.data.password;
-      delete validation.data.noInduk;
     }
 
-    if (req.file && santriLama.fotoProfil && santriLama.fotoProfil.includes("/public/santri")) {
-      const relativePath = santriLama.fotoProfil.replace(/^.*\/public\//, "public/");
-      const oldPath = path.join(__dirname, '../../', relativePath);
-      if (fs.existsSync(oldPath)) {
-        fs.unlinkSync(oldPath);
-      }
-    }
+    const result = await santriService.updateSantri(id, validation.data);
 
-    const filePath = req.file
-      ? `${url}/public/santri/${req.file.filename}`
-      : santriLama.fotoProfil;
+    if (req.user?.role === "admin" && validation.data.password) {
+      // Find parent email to notify about password change
+      const parentEmail = santriLama.orangTua.find(p => p.user?.email)?.user?.email;
 
-    const dataToUpdate = {
-      ...validation.data,
-      fotoProfil: filePath,
-    };
-
-    const result = await santriService.updateSantri(id, dataToUpdate);
-
-    const oldEmail = santriLama.user?.email as string;
-    const newEmail = validation.data.email as string;
-    const passwordChanged = !!validation.data.password;
-    const newPassword = validation.data.password || null;
-
-    if (req.user?.role === "admin") {
-      const emailUpdated = oldEmail && newEmail && oldEmail !== newEmail;
-
-      if (emailUpdated || passwordChanged) {
-        if (emailUpdated) {
-          await sendUpdateEmail({
-            to: oldEmail,
-            name: santriLama.nama,
-            oldEmail,
-            newEmail,
-            role: "Santri",
-            passwordChanged,
-            newPassword
-          });
-        }
-
-        if (emailUpdated || passwordChanged) {
-          await sendUpdateEmail({
-            to: newEmail || oldEmail,
-            name: santriLama.nama,
-            oldEmail,
-            newEmail,
-            role: "Santri",
-            passwordChanged,
-            newPassword
-          });
-        }
+      if (parentEmail) {
+        await sendUpdateEmail({
+          to: parentEmail,
+          name: santriLama.nama,
+          oldEmail: santriLama.nama,
+          newEmail: santriLama.nama,
+          role: "Santri",
+          passwordChanged: true,
+          newPassword: validation.data.password
+        });
       }
     }
 
@@ -247,11 +184,8 @@ export const update = async (req: AuthRequest, res: Response) => {
       if (err.message.includes('not found')) {
         return res.status(404).json({ message: 'Santri not found', status: 404 });
       }
-      if (err.message.includes('Email already exists')) {
-        return res.status(400).json({ message: 'Email already exists', status: 400 });
-      }
-      if (err.message.includes('Nomor Induk already exists')) {
-        return res.status(400).json({ message: 'Nomor Induk already exists', status: 400 });
+      if (err.message.includes('already exists')) {
+        return res.status(400).json({ message: err.message, status: 400 });
       }
     }
     return res.status(500).json({ message: 'Internal server error', status: 500 });

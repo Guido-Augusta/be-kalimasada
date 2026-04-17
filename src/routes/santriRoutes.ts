@@ -9,12 +9,12 @@ const upload = createUploadMiddleware("santri");
 // Reset semua total poin
 // santriRoutes.put('/reset-points', authMiddleware, isAdmin, santriController.resetAllPoints);
 
-santriRoutes.post('/', authMiddleware, isAdmin, upload.single("fotoProfil"), santriController.create);
+santriRoutes.post('/', authMiddleware, isAdmin, santriController.create);
 santriRoutes.get('/peringkat', authMiddleware, isUstadzOrAdmin, santriController.getPeringkatSantri);
 santriRoutes.get('/nama/:nama', authMiddleware, isUstadzOrAdmin, santriController.getByName);
 santriRoutes.get('/', authMiddleware, santriController.getAll);
 santriRoutes.get('/:id', authMiddleware, santriController.getOne);
-santriRoutes.put('/:id', authMiddleware, isAdminUstadSantri, upload.single("fotoProfil"), santriController.update);
+santriRoutes.put('/:id', authMiddleware, isAdminUstadSantri, santriController.update);
 santriRoutes.delete('/:id', authMiddleware, isAdmin, santriController.remove);
 
 // Mengurangi poin individu

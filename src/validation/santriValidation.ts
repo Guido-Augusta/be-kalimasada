@@ -5,17 +5,9 @@ const MAX_FILE_SIZE = 1 * 1024 * 1024;
 const ACCEPTED_IMAGE_TYPES = ["image/jpeg", "image/jpg", "image/png"];
 
 export const RegisterSantriSchema = z.object({
-  email: z.string().email("Invalid email"),
   password: z.string().min(8, "Password must be at least 8 characters long"),
-  nama: z.string().min(1, "Name must be at least 3 characters long"),
-  nomorHp: z.string().optional(),
-  // noInduk: checkNoIndukUniqueRegister,
-  noInduk: z.string().min(1, "Nomor Induk must be at least 1 characters long").optional(),
-  alamat: z.string().min(3, "Address must be at least 3 characters long"),
-  jenisKelamin: z.enum(["L", "P"]),
-  tanggalLahir: z.coerce.date(),
+  nama: z.string().min(1, "Name must be at least 1 characters long"),
   tahapHafalan: z.enum(["Level1", "Level2", "Level3"]),
-  peringkat: z.number().optional(),
   ortuId: z.array(z.number())
     .min(1, "Santri must have at least one parent.")
     .max(3, "Santri can have a maximum of three parents.")
@@ -59,30 +51,13 @@ export const RegisterSantriSchema = z.object({
         });
       }
     }),
-  fotoProfil: z
-  .any()
-    .optional()
-    .refine(
-      (file) => !file || file.size <= MAX_FILE_SIZE,
-      "Ukuran file maksimal 1MB"
-    )
-    .refine(
-      (file) => !file || ACCEPTED_IMAGE_TYPES.includes(file.mimetype),
-      "Format gambar tidak didukung"
-    ),
 });
 
 export type RegisterSantriInput = z.infer<typeof RegisterSantriSchema>;
 
 export const UpdateSantriSchema = z.object({
-  email: z.string().email("Invalid email").optional(),
   password: z.string().min(8, "Password must be at least 8 characters long").optional(),
-  nama: z.string().min(3, "Name must be at least 3 characters long").optional(),
-  nomorHp: z.string().optional(),
-  noInduk: z.string().min(1, "Nomor Induk must be at least 1 characters long").optional(),
-  alamat: z.string().min(3, "Address must be at least 3 characters long").optional(),
-  jenisKelamin: z.enum(["L", "P"]).optional(),
-  tanggalLahir: z.coerce.date().optional(),
+  nama: z.string().min(1, "Name must be at least 1 characters long").optional(),
   tahapHafalan: z.enum(["Level1", "Level2", "Level3"]).optional(),
   ortuId: z.array(z.number())
     .min(1, "Santri must have at least one parent.")
@@ -128,17 +103,6 @@ export const UpdateSantriSchema = z.object({
         });
       }
     }).optional(),
-  fotoProfil: z
-    .any()
-    .optional()
-    .refine(
-      (file) => !file || file.size <= MAX_FILE_SIZE,
-      "Ukuran file maksimal 1MB"
-    )
-    .refine(
-      (file) => !file || ACCEPTED_IMAGE_TYPES.includes(file.mimetype),
-      "Format gambar tidak didukung"
-    ),
 });
 
 export type UpdateSantriInput = z.infer<typeof UpdateSantriSchema>;

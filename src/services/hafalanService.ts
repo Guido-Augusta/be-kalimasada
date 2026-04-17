@@ -279,7 +279,7 @@ export const HafalanService = {
       const emailJobs = orangTuaList
         .filter((orangTua) => orangTua.user?.email)
         .map((orangTua) => ({
-          emailOrtu: orangTua.user!.email,
+          emailOrtu: orangTua.user!.email as string,
           namaOrtu: orangTua.nama,
           namaSantri: santri.nama,
           tanggalHafalan: new Date(),
@@ -422,7 +422,7 @@ export const HafalanService = {
       const emailJobs = orangTuaList
         .filter((orangTua) => orangTua.user?.email)
         .map((orangTua) => ({
-          emailOrtu: orangTua.user!.email,
+          emailOrtu: orangTua.user!.email as string,
           namaOrtu: orangTua.nama,
           namaSantri: santri.nama,
           tanggalHafalan: new Date(),
@@ -1056,7 +1056,6 @@ export const HafalanService = {
         return {
           id: santri.id,
           nama: santri.nama,
-          noInduk: santri.noInduk,
           tahapHafalan: santri.tahapHafalan,
           ayatTerakhirNumber,
           halamanTerakhirNumber,
