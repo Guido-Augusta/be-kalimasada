@@ -167,24 +167,27 @@ export const update = async (req: AuthRequest, res: Response) => {
     const result = await santriService.updateSantri(id, validation.data);
 
     if (req.user?.role === "admin" && validation.data.password) {
-      // Find parent email to notify about password change
-      const parentEmail = santriLama.orangTua.find(p => p.user?.email)?.user?.email;
+      // Find all parent emails to notify about password change
+      const parentsWithEmail = santriLama.orangTua.filter(p => p.user?.email);
 
-      if (parentEmail) {
-        await sendUpdateEmail({
-          to: parentEmail,
-          name: santriLama.nama,
-          oldEmail: santriLama.nama,
-          newEmail: santriLama.nama,
-          role: "Santri",
-          passwordChanged: true,
-          newPassword: validation.data.password
-        });
+      for (const parent of parentsWithEmail) {
+        if (parent.user?.email) {
+          await sendUpdateEmail({
+            to: parent.user.email,
+            name: santriLama.nama,
+            oldEmail: santriLama.nama,
+            newEmail: santriLama.nama,
+            role: "Santri",
+            passwordChanged: true,
+            newPassword: validation.data.password
+          });
+        }
       }
     }
 
     return res.status(200).json({ message: 'Santri updated', status: 200, data: result });
   } catch (err: unknown) {
+    console.error("Update Santri Error:", err);
     if (err instanceof Error) {
       if (err.message.includes('not found')) {
         return res.status(404).json({ message: 'Santri not found', status: 404 });
