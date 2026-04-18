@@ -6,6 +6,7 @@
   "scripts": {
     "test": "vitest",
     "test:run": "vitest run",
+    "test:api": "vitest run api.test.ts",
     "test:ui": "vitest --ui",
     "dev": "nodemon --exec ts-node src/index.ts",
     "start": "ts-node src/index.ts",
@@ -16,7 +17,8 @@
     "generate": "prisma generate",
     "studio": "prisma studio",
     "generate:quran": "ts-node src/utils/generate-quran-data.ts",
-    "prisma:seed-alquran": "ts-node prisma/seed-alquran.ts"
+    "prisma:seed-alquran": "ts-node prisma/seed-alquran.ts",
+    "prisma:seed-users": "ts-node prisma/seed-users.ts"
   },
   "keywords": [],
   "author": "",
@@ -47,8 +49,10 @@
     "@types/multer": "^2.0.0",
     "@types/node": "^24.1.0",
     "@types/nodemailer": "^6.4.17",
+    "@types/supertest": "^7.2.0",
     "@vitest/ui": "^4.0.18",
     "nodemon": "^3.1.10",
+    "supertest": "^7.2.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.2",
     "vitest": "^4.0.18"
