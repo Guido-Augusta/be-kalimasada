@@ -193,26 +193,14 @@ describe('Seed Data Tests', () => {
 
     const santrisData = [
       {
-        email: 'santri1@gmail.com',
         password: 'santri123',
         nama: 'Santri Satu',
-        nomorHp: '081234567901',
-        noInduk: 'S001',
-        alamat: 'Jl. Pondok No. 1',
-        jenisKelamin: JenisKelamin.L,
-        tanggalLahir: new Date('2010-01-15'),
         tahapHafalan: TahapHafalan.Level1,
         ortuId: [ortuList[0].id],
       },
       {
-        email: 'santri2@gmail.com',
         password: 'santri234',
         nama: 'Santri Dua',
-        nomorHp: '081234567902',
-        noInduk: 'S002',
-        alamat: 'Jl. Pondok No. 2',
-        jenisKelamin: JenisKelamin.P,
-        tanggalLahir: new Date('2011-03-20'),
         tahapHafalan: TahapHafalan.Level2,
         ortuId: [ortuList[1].id],
       },
@@ -223,7 +211,6 @@ describe('Seed Data Tests', () => {
       const result = await prisma.$transaction(async (tx) => {
         const user = await tx.user.create({
           data: {
-            email: data.email,
             password: hashed,
             role: Role.santri,
           },
@@ -234,16 +221,11 @@ describe('Seed Data Tests', () => {
         const santri = await tx.santri.create({
           data: {
             nama: data.nama,
-            nomorHp: data.nomorHp,
-            alamat: data.alamat,
-            jenisKelamin: data.jenisKelamin,
-            tanggalLahir: new Date(data.tanggalLahir),
             userId: user.id,
             orangTua: {
               connect: data.ortuId.map((id) => ({ id })),
             },
             tahapHafalan: data.tahapHafalan,
-            noInduk: data.noInduk,
             peringkat: 0,
           },
         });
