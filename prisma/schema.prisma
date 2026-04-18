@@ -15,7 +15,7 @@ datasource db {
 
 model User {
   id        Int      @id @default(autoincrement())
-  email     String   @unique
+  email     String?  @unique
   password  String
   role      Role
   createdAt DateTime @default(now())
@@ -63,13 +63,7 @@ model OrangTua {
 model Santri {
   id            Int          @id @default(autoincrement())
   userId        Int          @unique
-  nama          String
-  nomorHp       String?
-  alamat        String
-  jenisKelamin  JenisKelamin
-  tanggalLahir  DateTime     @default(now())
-  fotoProfil    String?
-  noInduk       String?      @unique
+  nama          String       @unique
   tahapHafalan  TahapHafalan
   totalPoin     Int          @default(0)
   peringkat     Int          @default(0)

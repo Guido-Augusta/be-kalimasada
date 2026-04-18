@@ -15,9 +15,16 @@ export const login = async (req: Request, res: Response) => {
       });
     }
 
-    const { email, password, platform } = validation.data;
+    const { email: identifier, password, platform } = validation.data;
 
-    const user = await prisma.user.findUnique({ where: { email } });
+    const isEmail = identifier.includes('@');
+
+    const user = await prisma.user.findFirst({
+      where: isEmail 
+        ? { email: identifier } 
+        : { santri: { nama: identifier } },
+      include: { santri: true }
+    });
 
     if (!user) {
       return res.status(404).json({ message: 'Invalid credentials' });
@@ -31,8 +38,7 @@ export const login = async (req: Request, res: Response) => {
     let roleId: number | null = null;
 
     if (user.role === "santri") {
-      const santri = await prisma.santri.findUnique({ where: { userId: user.id } });
-      roleId = santri?.id ?? null;
+      roleId = user.santri?.id ?? null;
     } else if (user.role === "ustadz") {
       const ustadz = await prisma.ustadz.findUnique({ where: { userId: user.id } });
       roleId = ustadz?.id ?? null;

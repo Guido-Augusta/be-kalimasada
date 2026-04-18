@@ -49,7 +49,7 @@ export const sendAccountEmail = async ({ to, name, email, password, role }: Send
     <p>Assalamu'alaikum ${name},</p>
     <p>Akun ${role} Anda sudah dibuat oleh admin. Berikut detail login:</p>
     <ul>
-      <li>Email: <b>${email}</b></li>
+      <li>${role === 'Santri' ? 'Nama Login' : 'Email'}: <b>${email}</b></li>
       <li>Password: <b>${password}</b></li>
     </ul>
     <p>Silakan login menggunakan email dan password di atas.</p>
@@ -175,7 +175,7 @@ export const sendUpdateEmail = async ({ to, name, oldEmail, newEmail, role, pass
       <p>Berikut detail perubahannya:</p>
       <ul style="background:#f9f9f9; padding:10px 15px; border-radius:8px; list-style-type:none;">
         ${emailChanged 
-          ? `<li>📧 Email lama: <b>${oldEmail}</b></li><li>📧 Email baru: <b>${newEmail}</b></li>` 
+          ? `<li>📧 ${role === 'Santri' ? 'Nama Login' : 'Email'} lama: <b>${oldEmail}</b></li><li>📧 ${role === 'Santri' ? 'Nama Login' : 'Email'} baru: <b>${newEmail}</b></li>` 
           : ''
         }
         ${passwordChanged 

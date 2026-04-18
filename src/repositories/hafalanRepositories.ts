@@ -126,7 +126,6 @@ export const HafalanRepository = {
         nama: true,
         tahapHafalan: true,
         totalPoin: true,
-        noInduk: true,
         orangTua: {
           select: {
             id: true,
@@ -417,7 +416,6 @@ export const HafalanRepository = {
     select: {
       id: true,
       nama: true,
-      noInduk: true,
       tahapHafalan: true,
       riwayatHafalan: {
         orderBy: {

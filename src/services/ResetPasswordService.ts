@@ -22,7 +22,7 @@ export const ResetPasswordService = {
 
     await ResetPasswordRepository.createResetToken(user.id, token, expiresAt);
 
-    await sendResetPasswordEmail(user.email, token);
+    await sendResetPasswordEmail(user.email as string, token);
 
     return { message: 'Password reset link has been sent to your email.' };
   },
