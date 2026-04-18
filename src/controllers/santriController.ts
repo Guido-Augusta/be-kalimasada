@@ -20,7 +20,12 @@ type UpdateSantriPayload = {
 
 export const create = async (req: Request, res: Response) => {
   try {
-    const ortuIds = Array.isArray(req.body.ortuId) ? req.body.ortuId.map(Number) : JSON.parse(req.body.ortuId);
+    let ortuIds: number[] = [];
+    if (req.body.ortuId) {
+      ortuIds = Array.isArray(req.body.ortuId) 
+        ? req.body.ortuId.map(Number) 
+        : JSON.parse(req.body.ortuId).map(Number);
+    }
 
     const validation = await RegisterSantriSchema.safeParseAsync({
       ...req.body,
@@ -117,7 +122,7 @@ export const update = async (req: AuthRequest, res: Response) => {
       const ortuIds = Array.isArray(req.body.ortuId)
         ? req.body.ortuId.map(Number)
         : req.body.ortuId
-          ? JSON.parse(req.body.ortuId)
+          ? JSON.parse(req.body.ortuId).map(Number)
           : undefined;
       payload.ortuId = ortuIds;
 
