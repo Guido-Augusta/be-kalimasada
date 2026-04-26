@@ -32,6 +32,7 @@ export async function getRiwayatHafalanByRange(
       },
     },
     select: {
+      ayatId: true,
       tanggalHafalan: true,
       status: true,
       ayat: {
