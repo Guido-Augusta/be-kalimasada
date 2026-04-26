@@ -1,5 +1,8 @@
-import { eachDayOfInterval, format, subDays } from "date-fns";
+import { eachDayOfInterval, subDays } from "date-fns";
+import { formatInTimeZone } from "date-fns-tz";
 import * as chartRepository from "../repositories/chartRepository";
+
+const JAKARTA_TZ = "Asia/Jakarta";
 export type ChartRange = "1w" | "1m" | "3m";
 
 function getDaysFromRange(range: ChartRange): number {
@@ -29,7 +32,7 @@ export async function getChartData(santriId: number, range: ChartRange, mode: st
     const halamanPerTanggal: Record<string, { tambahHafalan: Set<number>; murajaah: Set<number>; tahsin: Set<number> }> = {};
     
     hafalan.forEach((item) => {
-      const tgl = format(item.tanggalHafalan, "yyyy-MM-dd");
+      const tgl = formatInTimeZone(item.tanggalHafalan, JAKARTA_TZ, "yyyy-MM-dd");
       if (!halamanPerTanggal[tgl]) {
         halamanPerTanggal[tgl] = { tambahHafalan: new Set(), murajaah: new Set(), tahsin: new Set() };
       }
@@ -55,7 +58,7 @@ export async function getChartData(santriId: number, range: ChartRange, mode: st
   } else {
     // Mode 'ayat' - count by ayat (existing behavior)
     hafalan.forEach((item) => {
-      const tgl = format(item.tanggalHafalan, "yyyy-MM-dd");
+      const tgl = formatInTimeZone(item.tanggalHafalan, JAKARTA_TZ, "yyyy-MM-dd");
       if (!dataPerTanggal[tgl]) {
         dataPerTanggal[tgl] = { tambahHafalan: 0, murajaah: 0, tahsin: 0 };
       }
@@ -70,7 +73,7 @@ export async function getChartData(santriId: number, range: ChartRange, mode: st
   }
 
   return eachDayOfInterval({ start: startDate, end: endDate }).map((tgl) => {
-    const key = format(tgl, "yyyy-MM-dd");
+    const key = formatInTimeZone(tgl, JAKARTA_TZ, "yyyy-MM-dd");
     return {
       tanggal: key,
       tambahHafalan: dataPerTanggal[key]?.tambahHafalan || 0,
