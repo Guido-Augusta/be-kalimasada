@@ -21,15 +21,31 @@ setTimeout(() => {
 
       for (const job of pendingEmails) {
         try {
+          let surahList: { namaSurah: string; ayatNomorList: number[] }[];
+          try {
+            const parsed = JSON.parse(job.namaSurah);
+            if (Array.isArray(parsed)) {
+              surahList = parsed;
+            } else {
+              throw new Error('not array');
+            }
+          } catch {
+            surahList = [
+              {
+                namaSurah: job.namaSurah,
+                ayatNomorList: job.ayatNomorList
+                  .split(',')
+                  .map((n) => parseInt(n, 10)),
+              },
+            ];
+          }
+
           await sendHafalanEmail({
             ortuName: job.namaOrtu,
             santriName: job.namaSantri,
             tanggalHafalan: job.tanggalHafalan,
-            namaSurah: job.namaSurah,
+            surahList,
             jumlahAyat: job.jumlahAyat,
-            ayatNomorList: job.ayatNomorList
-              .split(',')
-              .map((n) => parseInt(n, 10)),
             status: job.statusHafalan,
             kualitas: job.kualitas || undefined,
             keterangan: job.keterangan || undefined,

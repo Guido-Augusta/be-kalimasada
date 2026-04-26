@@ -242,7 +242,8 @@ export const HafalanService = {
       throw new Error('Informasi Surah tidak ditemukan.');
     }
 
-    const poinPerAyat = status === 'TambahHafalan' && keterangan === 'Lanjut' ? 5 : 0;
+    const poinPerAyat =
+      status === 'TambahHafalan' && keterangan === 'Lanjut' ? 5 : 0;
     const totalPoinDidapat = ayatBaruIds.length * poinPerAyat;
 
     // Buat data untuk semua ayat yang diinput
@@ -259,7 +260,6 @@ export const HafalanService = {
       poinDidapat: ayatBaruIds.includes(ayatId) ? poinPerAyat : 0,
     }));
 
-    // Use transaction for TambahHafalan to be safe
     if (status === 'TambahHafalan') {
       await prisma.$transaction([
         HafalanRepository.createManyHafalan(
@@ -276,6 +276,23 @@ export const HafalanService = {
 
     // Queue email notification for each parent
     if (orangTuaList.length > 0) {
+      const surahAyatMap = new Map<string, number[]>();
+      for (const ayat of detailAyat) {
+        const key = ayat.surah?.namaLatin ?? surahInfo.namaLatin;
+        if (!surahAyatMap.has(key)) {
+          surahAyatMap.set(key, []);
+        }
+        surahAyatMap.get(key)!.push(ayat.nomorAyat);
+      }
+      const surahListEncoded = JSON.stringify(
+        Array.from(surahAyatMap.entries()).map(
+          ([namaSurah, ayatNomorList]) => ({
+            namaSurah,
+            ayatNomorList: ayatNomorList.sort((a, b) => a - b),
+          })
+        )
+      );
+
       const emailJobs = orangTuaList
         .filter((orangTua) => orangTua.user?.email)
         .map((orangTua) => ({
@@ -283,7 +300,7 @@ export const HafalanService = {
           namaOrtu: orangTua.nama,
           namaSantri: santri.nama,
           tanggalHafalan: new Date(),
-          namaSurah: surahInfo.namaLatin,
+          namaSurah: surahListEncoded,
           jumlahAyat: newHafalanData.length,
           ayatNomorList: detailAyat.map((ayat) => ayat.nomorAyat).join(','),
           statusHafalan: status,
@@ -386,7 +403,8 @@ export const HafalanService = {
       throw new Error('Informasi Surah tidak ditemukan.');
     }
 
-    const poinPerAyat = status === 'TambahHafalan' && keterangan === 'Lanjut' ? 5 : 0;
+    const poinPerAyat =
+      status === 'TambahHafalan' && keterangan === 'Lanjut' ? 5 : 0;
     const totalPoinDidapat = ayatBaruIds.length * poinPerAyat;
 
     // Buat data untuk semua ayat yang diinput
@@ -402,7 +420,6 @@ export const HafalanService = {
       poinDidapat: ayatBaruIds.includes(ayatId) ? poinPerAyat : 0,
     }));
 
-    // Use transaction for TambahHafalan to be safe
     if (status === 'TambahHafalan') {
       await prisma.$transaction([
         HafalanRepository.createManyHafalan(
@@ -411,7 +428,6 @@ export const HafalanService = {
         HafalanRepository.updateSantriTotalPoin(santriId, totalPoinDidapat),
       ]);
     } else {
-      // For Murajaah, only save the record
       await HafalanRepository.createManyHafalan(
         newHafalanData as CreateManyHafalanPayload[]
       );
@@ -419,6 +435,28 @@ export const HafalanService = {
 
     // Queue email notification for each parent
     if (orangTuaList.length > 0) {
+      const surahAyatMap = new Map<
+        number,
+        { namaLatin: string; ayatNomor: number[] }
+      >();
+      for (const ayat of detailAyat) {
+        if (!surahAyatMap.has(ayat.surahId)) {
+          const nama =
+            ayat.surahId === surahInfo.id
+              ? surahInfo.namaLatin
+              : ((await HafalanRepository.getSurahById(ayat.surahId))
+                  ?.namaLatin ?? 'Unknown');
+          surahAyatMap.set(ayat.surahId, { namaLatin: nama, ayatNomor: [] });
+        }
+        surahAyatMap.get(ayat.surahId)!.ayatNomor.push(ayat.nomorAyat);
+      }
+      const surahListEncoded = JSON.stringify(
+        Array.from(surahAyatMap.values()).map(({ namaLatin, ayatNomor }) => ({
+          namaSurah: namaLatin,
+          ayatNomorList: ayatNomor.sort((a, b) => a - b),
+        }))
+      );
+
       const emailJobs = orangTuaList
         .filter((orangTua) => orangTua.user?.email)
         .map((orangTua) => ({
@@ -426,7 +464,7 @@ export const HafalanService = {
           namaOrtu: orangTua.nama,
           namaSantri: santri.nama,
           tanggalHafalan: new Date(),
-          namaSurah: surahInfo.namaLatin,
+          namaSurah: surahListEncoded,
           jumlahAyat: newHafalanData.length,
           ayatNomorList: detailAyat.map((ayat) => ayat.nomorAyat).join(','),
           statusHafalan: status,
@@ -760,9 +798,9 @@ export const HafalanService = {
       if (!existing) {
         ayatMap.set(ayatId, { item, totalPoin: item.poinDidapat });
       } else {
-        ayatMap.set(ayatId, { 
+        ayatMap.set(ayatId, {
           item: existing.item,
-          totalPoin: existing.totalPoin + item.poinDidapat 
+          totalPoin: existing.totalPoin + item.poinDidapat,
         });
       }
     }
@@ -797,7 +835,11 @@ export const HafalanService = {
       catatan: latestItem.catatan,
       totalPoin: totalPoin,
       rangeAyat: { awal: ayatAwal, akhir: ayatAkhir },
-      surah: { id: surahData.id, nama: surahData.nama, namaLatin: surahData.namaLatin },
+      surah: {
+        id: surahData.id,
+        nama: surahData.nama,
+        namaLatin: surahData.namaLatin,
+      },
       daftarAyat: ayatList,
     };
   },
@@ -833,9 +875,9 @@ export const HafalanService = {
       if (!existing) {
         ayatMap.set(ayatId, { item, totalPoin: item.poinDidapat });
       } else {
-        ayatMap.set(ayatId, { 
+        ayatMap.set(ayatId, {
           item: existing.item,
-          totalPoin: existing.totalPoin + item.poinDidapat 
+          totalPoin: existing.totalPoin + item.poinDidapat,
         });
       }
     }

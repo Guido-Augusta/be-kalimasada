@@ -1,5 +1,5 @@
-import nodemailer from "nodemailer";
-import dotenv from "dotenv";
+import nodemailer from 'nodemailer';
+import dotenv from 'dotenv';
 
 dotenv.config();
 
@@ -11,13 +11,17 @@ interface SendAccountEmailParams {
   role: string;
 }
 
+interface SurahEmailInfo {
+  namaSurah: string;
+  ayatNomorList: number[];
+}
+
 interface HafalanEmailParams {
   ortuName: string;
   santriName: string;
   tanggalHafalan: Date;
-  namaSurah: string;
+  surahList: SurahEmailInfo[];
   jumlahAyat: number;
-  ayatNomorList: number[];
   status: string;
   kualitas?: string;
   keterangan?: string;
@@ -36,15 +40,20 @@ interface sendUpdateEmailParams {
 }
 
 export const transporter = nodemailer.createTransport({
-  service: "gmail",
+  service: 'gmail',
   auth: {
     user: process.env.EMAIL_USER,
     pass: process.env.EMAIL_PASS,
   },
 });
 
-export const sendAccountEmail = async ({ to, name, email, password, role }: SendAccountEmailParams) => {
-
+export const sendAccountEmail = async ({
+  to,
+  name,
+  email,
+  password,
+  role,
+}: SendAccountEmailParams) => {
   const htmlContent = `
     <p>Assalamu'alaikum ${name},</p>
     <p>Akun ${role} Anda sudah dibuat oleh admin. Berikut detail login:</p>
@@ -69,15 +78,36 @@ export const sendAccountEmail = async ({ to, name, email, password, role }: Send
   });
 };
 
-export const sendHafalanEmail = async ({ ortuName, santriName, tanggalHafalan, namaSurah, jumlahAyat, ayatNomorList, status, kualitas, keterangan, catatan, emailOrtu }: HafalanEmailParams) => {
-  const tanggalFormatted = new Intl.DateTimeFormat("id-ID", {
-    day: "numeric",
-    month: "long",
-    year: "numeric",
+export const sendHafalanEmail = async ({
+  ortuName,
+  santriName,
+  tanggalHafalan,
+  surahList,
+  jumlahAyat,
+  status,
+  kualitas,
+  keterangan,
+  catatan,
+  emailOrtu,
+}: HafalanEmailParams) => {
+  const tanggalFormatted = new Intl.DateTimeFormat('id-ID', {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
   }).format(tanggalHafalan);
 
-  // Format the list of ayat numbers
-  const ayatListFormatted = ayatNomorList.join(", ");
+  const surahRows = surahList
+    .map(
+      (s) => `
+      <tr>
+        <td style="border: 1px solid #ccc; padding: 8px; vertical-align: top;">Surah ${s.namaSurah}</td>
+        <td style="border: 1px solid #ccc; padding: 8px;">
+          Ayat: ${s.ayatNomorList.join(', ')}
+          <span style="color: #666; margin-left: 8px;">(${s.ayatNomorList.length} ayat)</span>
+        </td>
+      </tr>`
+    )
+    .join('');
 
   const htmlContent = `
     <p>Assalamualaikum <b>${ortuName}</b>,</p>
@@ -85,16 +115,14 @@ export const sendHafalanEmail = async ({ ortuName, santriName, tanggalHafalan, n
 
     <table style="border-collapse: collapse; width: 100%; margin-top: 10px;">
       <tr>
-        <td style="border: 1px solid #ccc; padding: 8px;">Surah</td>
-        <td style="border: 1px solid #ccc; padding: 8px;">${namaSurah}</td>
+        <td colspan="2" style="border: 1px solid #ccc; padding: 8px; background: #f5f5f5; font-weight: bold;">
+          Rincian Surah &amp; Ayat
+        </td>
       </tr>
+      ${surahRows}
       <tr>
-        <td style="border: 1px solid #ccc; padding: 8px;">Jumlah Ayat</td>
+        <td style="border: 1px solid #ccc; padding: 8px;">Total Ayat</td>
         <td style="border: 1px solid #ccc; padding: 8px;">${jumlahAyat}</td>
-      </tr>
-      <tr>
-        <td style="border: 1px solid #ccc; padding: 8px;">Nomor Ayat</td>
-        <td style="border: 1px solid #ccc; padding: 8px;">${ayatListFormatted}</td>
       </tr>
       <tr>
         <td style="border: 1px solid #ccc; padding: 8px;">Status</td>
@@ -106,7 +134,7 @@ export const sendHafalanEmail = async ({ ortuName, santriName, tanggalHafalan, n
               <td style="border: 1px solid #ccc; padding: 8px;">Kualitas</td>
               <td style="border: 1px solid #ccc; padding: 8px;">${kualitas}</td>
             </tr>`
-          : ""
+          : ''
       }
       ${
         keterangan
@@ -114,7 +142,7 @@ export const sendHafalanEmail = async ({ ortuName, santriName, tanggalHafalan, n
               <td style="border: 1px solid #ccc; padding: 8px;">Keterangan</td>
               <td style="border: 1px solid #ccc; padding: 8px;">${keterangan}</td>
             </tr>`
-          : ""
+          : ''
       }
       ${
         catatan
@@ -122,7 +150,7 @@ export const sendHafalanEmail = async ({ ortuName, santriName, tanggalHafalan, n
               <td style="border: 1px solid #ccc; padding: 8px;">Catatan</td>
               <td style="border: 1px solid #ccc; padding: 8px;">${catatan}</td>
             </tr>`
-          : ""
+          : ''
       }
     </table>
 
@@ -131,10 +159,13 @@ export const sendHafalanEmail = async ({ ortuName, santriName, tanggalHafalan, n
     <p><b>Admin Pondok Pesantren</b></p>
   `;
 
+  // Subject menyebutkan semua surah yang terlibat
+  const surahNames = surahList.map((s) => s.namaSurah).join(' & ');
+
   await transporter.sendMail({
     from: `"Admin Pondok Pesantren" <${process.env.EMAIL_USER}>`,
     to: emailOrtu,
-    subject: `Riwayat Hafalan Baru Dari ${santriName}`,
+    subject: `Riwayat Hafalan Baru Dari ${santriName} - ${surahNames}`,
     html: htmlContent,
   });
 };
@@ -155,17 +186,25 @@ export const sendResetPasswordEmail = async (to: string, token: string) => {
       <p>Jika Anda tidak merasa melakukan permintaan ini, abaikan email ini.</p>
       <p>Terima kasih,<br/>Admin Pondok Pesantren</p>
     </div>
-  ` 
+  `;
 
   await transporter.sendMail({
     from: `"Admin Pondok Pesantren" <${process.env.EMAIL_USER}>`,
     to,
-    subject: "Reset Password Akun Anda",
+    subject: 'Reset Password Akun Anda',
     html: htmlContent,
   });
 };
 
-export const sendUpdateEmail = async ({ to, name, oldEmail, newEmail, role, passwordChanged, newPassword }: sendUpdateEmailParams) => {
+export const sendUpdateEmail = async ({
+  to,
+  name,
+  oldEmail,
+  newEmail,
+  role,
+  passwordChanged,
+  newPassword,
+}: sendUpdateEmailParams) => {
   const emailChanged = oldEmail && newEmail && oldEmail !== newEmail;
 
   const htmlContent = `
@@ -174,13 +213,15 @@ export const sendUpdateEmail = async ({ to, name, oldEmail, newEmail, role, pass
       <p>Kami ingin memberitahukan bahwa akun <b>${role}</b> Anda telah diubah oleh admin.</p>
       <p>Berikut detail perubahannya:</p>
       <ul style="background:#f9f9f9; padding:10px 15px; border-radius:8px; list-style-type:none;">
-        ${emailChanged 
-          ? `<li>📧 ${role === 'Santri' ? 'Nama Login' : 'Email'} lama: <b>${oldEmail}</b></li><li>📧 ${role === 'Santri' ? 'Nama Login' : 'Email'} baru: <b>${newEmail}</b></li>` 
-          : ''
+        ${
+          emailChanged
+            ? `<li>📧 ${role === 'Santri' ? 'Nama Login' : 'Email'} lama: <b>${oldEmail}</b></li><li>📧 ${role === 'Santri' ? 'Nama Login' : 'Email'} baru: <b>${newEmail}</b></li>`
+            : ''
         }
-        ${passwordChanged 
-          ? `<li>🔑 Password baru: <b>${newPassword}</b></li>` 
-          : ''
+        ${
+          passwordChanged
+            ? `<li>🔑 Password baru: <b>${newPassword}</b></li>`
+            : ''
         }
       </ul>
       <p style="margin-top:20px;">Jika Anda tidak merasa melakukan perubahan ini, segera hubungi administrator.</p>

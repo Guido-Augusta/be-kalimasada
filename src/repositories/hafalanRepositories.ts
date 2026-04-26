@@ -291,7 +291,12 @@ export const HafalanRepository = {
   getAyatDetailByIds: (ids: number[]) =>
     prisma.ayat.findMany({
       where: { id: { in: ids } },
-      select: { surahId: true, nomorAyat: true },
+      select: {
+        surahId: true,
+        nomorAyat: true,
+        surah: { select: { namaLatin: true } },
+      },
+      orderBy: [{ surahId: 'asc' }, { nomorAyat: 'asc' }],
     }),
 
   getDetailRiwayatAyat: (santriId: number, surahId: number, startDate: Date, endDate: Date, status: string) =>
