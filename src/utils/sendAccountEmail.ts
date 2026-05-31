@@ -40,9 +40,7 @@ interface sendUpdateEmailParams {
 }
 
 export const transporter = nodemailer.createTransport({
-  host: process.env.EMAIL_HOST || 'smtp-relay.brevo.com',
-  port: parseInt(process.env.EMAIL_PORT || '587'),
-  secure: false,
+  service: 'gmail',
   auth: {
     user: process.env.EMAIL_USER,
     pass: process.env.EMAIL_PASS,
@@ -72,17 +70,12 @@ export const sendAccountEmail = async ({
     <p>Terima kasih.</p>
   `;
 
-  try {
-    await transporter.sendMail({
-      from: `"Admin Pondok Pesantren" <${process.env.EMAIL_SENDER || process.env.EMAIL_USER}>`,
-      to: to,
-      subject: `Akun ${role} Anda Telah Dibuat`,
-      html: htmlContent,
-    });
-  } catch (err: unknown) {
-    console.error(`Gagal mengirim email akun ke ${to}:`, err);
-    throw err;
-  }
+  await transporter.sendMail({
+    from: `"Admin Pondok Pesantren" <${process.env.EMAIL_USER}>`,
+    to: to,
+    subject: `Akun ${role} Anda Telah Dibuat`,
+    html: htmlContent,
+  });
 };
 
 export const sendHafalanEmail = async ({
@@ -169,17 +162,12 @@ export const sendHafalanEmail = async ({
   // Subject menyebutkan semua surah yang terlibat
   const surahNames = surahList.map((s) => s.namaSurah).join(' & ');
 
-  try {
-    await transporter.sendMail({
-      from: `"Admin Pondok Pesantren" <${process.env.EMAIL_SENDER || process.env.EMAIL_USER}>`,
-      to: emailOrtu,
-      subject: `Riwayat Hafalan Baru Dari ${santriName} - ${surahNames}`,
-      html: htmlContent,
-    });
-  } catch (err: unknown) {
-    console.error(`Gagal mengirim email hafalan ke ${emailOrtu}:`, err);
-    throw err;
-  }
+  await transporter.sendMail({
+    from: `"Admin Pondok Pesantren" <${process.env.EMAIL_USER}>`,
+    to: emailOrtu,
+    subject: `Riwayat Hafalan Baru Dari ${santriName} - ${surahNames}`,
+    html: htmlContent,
+  });
 };
 
 // email reset password
@@ -200,17 +188,12 @@ export const sendResetPasswordEmail = async (to: string, token: string) => {
     </div>
   `;
 
-  try {
-    await transporter.sendMail({
-      from: `"Admin Pondok Pesantren" <${process.env.EMAIL_SENDER || process.env.EMAIL_USER}>`,
-      to,
-      subject: 'Reset Password Akun Anda',
-      html: htmlContent,
-    });
-  } catch (err: unknown) {
-    console.error(`Gagal mengirim email reset password ke ${to}:`, err);
-    throw err;
-  }
+  await transporter.sendMail({
+    from: `"Admin Pondok Pesantren" <${process.env.EMAIL_USER}>`,
+    to,
+    subject: 'Reset Password Akun Anda',
+    html: htmlContent,
+  });
 };
 
 export const sendUpdateEmail = async ({
@@ -246,15 +229,10 @@ export const sendUpdateEmail = async ({
     </div>
   `;
 
-  try {
-    await transporter.sendMail({
-      from: `"Admin Pondok Pesantren" <${process.env.EMAIL_SENDER || process.env.EMAIL_USER}>`,
-      to,
-      subject: `Perubahan Akun ${role} Anda`,
-      html: htmlContent,
-    });
-  } catch (err: unknown) {
-    console.error(`Gagal mengirim email update akun ke ${to}:`, err);
-    throw err;
-  }
+  await transporter.sendMail({
+    from: `"Admin Pondok Pesantren" <${process.env.EMAIL_USER}>`,
+    to,
+    subject: `Perubahan Akun ${role} Anda`,
+    html: htmlContent,
+  });
 };

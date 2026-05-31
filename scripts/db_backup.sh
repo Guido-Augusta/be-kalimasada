@@ -58,54 +58,54 @@ chown "$ACTUAL_USER:$ACTUAL_USER" "$BACKUP_FILE"
 chmod 644 "$BACKUP_FILE"
 
 # 4. Sync to Google Drive
-# echo "Uploading to Google Drive via rclone..."
-# echo "DEBUG: Backup file details:"
-# ls -lh "$BACKUP_FILE"
-# echo "DEBUG: Running rclone as user: $ACTUAL_USER"
+echo "Uploading to Google Drive via rclone..."
+echo "DEBUG: Backup file details:"
+ls -lh "$BACKUP_FILE"
+echo "DEBUG: Running rclone as user: $ACTUAL_USER"
 
-# if [ "$ACTUAL_USER" != "root" ]; then
-#     sudo -u "$ACTUAL_USER" rclone copy \
-#         "$BACKUP_FILE" \
-#         "$RCLONE_REMOTE" \
-#         --retries 5 \
-#         --retries-sleep 1h \
-#         --low-level-retries 10 \
-#         --tpslimit 1 \
-#         --transfers 1 \
-#         --checkers 1 \
-#         -v
+if [ "$ACTUAL_USER" != "root" ]; then
+    sudo -u "$ACTUAL_USER" rclone copy \
+        "$BACKUP_FILE" \
+        "$RCLONE_REMOTE" \
+        --retries 5 \
+        --retries-sleep 1h \
+        --low-level-retries 10 \
+        --tpslimit 1 \
+        --transfers 1 \
+        --checkers 1 \
+        -v
 
-#     RCLONE_EXIT=$?
-# else
-#     rclone copy \
-#         "$BACKUP_FILE" \
-#         "$RCLONE_REMOTE" \
-#         --retries 5 \
-#         --retries-sleep 1h \
-#         --low-level-retries 10 \
-#         --tpslimit 1 \
-#         --transfers 1 \
-#         --checkers 1 \
-#         -v
+    RCLONE_EXIT=$?
+else
+    rclone copy \
+        "$BACKUP_FILE" \
+        "$RCLONE_REMOTE" \
+        --retries 5 \
+        --retries-sleep 1h \
+        --low-level-retries 10 \
+        --tpslimit 1 \
+        --transfers 1 \
+        --checkers 1 \
+        -v
 
-#     RCLONE_EXIT=$?
-# fi
+    RCLONE_EXIT=$?
+fi
 
-# if [ $RCLONE_EXIT -eq 0 ]; then
-#     echo "Upload successful."
+if [ $RCLONE_EXIT -eq 0 ]; then
+    echo "Upload successful."
     
-#     # Clean up old remote backups (Keep only 7 days of history on Google Drive)
-#     echo "Cleaning up backups older than 7 days on Google Drive..."
-#     if [ "$ACTUAL_USER" != "root" ]; then
-#         sudo -u "$ACTUAL_USER" rclone delete "$RCLONE_REMOTE" --min-age 7d
-#     else
-#         rclone delete "$RCLONE_REMOTE" --min-age 7d
-#     fi
-# else
-#     echo "ERROR: rclone upload failed with exit code $RCLONE_EXIT"
-#     exit 1
-# fi
-# # end rclone
+    # Clean up old remote backups (Keep only 7 days of history on Google Drive)
+    echo "Cleaning up backups older than 7 days on Google Drive..."
+    if [ "$ACTUAL_USER" != "root" ]; then
+        sudo -u "$ACTUAL_USER" rclone delete "$RCLONE_REMOTE" --min-age 7d
+    else
+        rclone delete "$RCLONE_REMOTE" --min-age 7d
+    fi
+else
+    echo "ERROR: rclone upload failed with exit code $RCLONE_EXIT"
+    exit 1
+fi
+# end rclone
 
 # 5. Local Cleanup (Keep only 7 days locally)
 echo "Cleaning up local files older than 7 days..."
