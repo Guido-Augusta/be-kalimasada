@@ -6,7 +6,7 @@ const DELAY_MINUTES = 5;
 
 // Run every minute to check for pending emails
 setTimeout(() => {
-  cron.schedule('* * * * *', async () => {
+  cron.schedule('*/2 * * * *', async () => {
     try {
       const cutoff = new Date(Date.now() - DELAY_MINUTES * 60 * 1000);
 
@@ -15,7 +15,7 @@ setTimeout(() => {
           status: 'PENDING',
           createdAt: { lte: cutoff },
         },
-        take: 10,
+        take: 1,
         orderBy: { createdAt: 'asc' },
       });
 
@@ -82,6 +82,6 @@ setTimeout(() => {
   });
 
   console.log(
-    '[EmailQueue] Cron job started - checking pending emails every minute'
+    '[EmailQueue] Cron job started - checking pending emails every 2 minutes'
   );
 }, 10000);
