@@ -2,6 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import path from "path";
+import compression from 'compression';
 
 import ustadzRoutes from './routes/ustadzRoutes';
 import seedRoutes from './routes/seedRoute';
@@ -16,6 +17,8 @@ import './cron/emailCron';
 
 dotenv.config();
 const app = express();
+
+app.use(compression());
 
 app.use(cors({
   origin: '*',
