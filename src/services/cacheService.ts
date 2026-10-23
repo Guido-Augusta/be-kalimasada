@@ -1,6 +1,7 @@
 import { redisClient } from '../utils/redis';
 
 export async function cacheGet(key: string): Promise<string | null> {
+  if (redisClient.status !== 'ready') return null;
   try {
     return await redisClient.get(key);
   } catch (error) {
@@ -17,6 +18,7 @@ export async function cacheSet(
   data: unknown,
   ttlSeconds: number = 3600
 ): Promise<boolean> {
+  if (redisClient.status !== 'ready') return false;
   try {
     const jsonData = JSON.stringify(data);
     await redisClient.setex(key, ttlSeconds, jsonData);
@@ -31,6 +33,7 @@ export async function cacheSet(
 }
 
 export async function cacheDelete(key: string): Promise<boolean> {
+  if (redisClient.status !== 'ready') return false;
   try {
     await redisClient.del(key);
     return true;
@@ -44,6 +47,7 @@ export async function cacheDelete(key: string): Promise<boolean> {
 }
 
 export async function cacheDeletePattern(pattern: string): Promise<boolean> {
+  if (redisClient.status !== 'ready') return false;
   try {
     const keys = await redisClient.keys(pattern);
     if (keys.length > 0) {
