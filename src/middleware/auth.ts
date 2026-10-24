@@ -9,8 +9,6 @@ export interface AuthRequest extends Request {
     roleId: number;
     role: Role;
   };
-  file?: any;
-  files?: any;
 }
 
 export const authMiddleware = async (req: AuthRequest, res: Response, next: NextFunction) => {
