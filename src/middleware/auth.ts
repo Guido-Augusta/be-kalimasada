@@ -9,6 +9,8 @@ export interface AuthRequest extends Request {
     roleId: number;
     role: Role;
   };
+  file?: Express.Multer.File;
+  files?: Express.Multer.File[] | { [fieldname: string]: Express.Multer.File[] };
 }
 
 export const authMiddleware = async (req: AuthRequest, res: Response, next: NextFunction) => {
@@ -142,7 +144,7 @@ const checkOrtuAccess = async (
   }
   next();
 };
-  
+
 // santri
 export const isSantriOrAdmin = (req: AuthRequest, res: Response, next: NextFunction) => {
   const user = req.user;
