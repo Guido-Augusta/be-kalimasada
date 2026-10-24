@@ -9,8 +9,8 @@ export interface AuthRequest extends Request {
     roleId: number;
     role: Role;
   };
-  file?: Express.Multer.File;
-  files?: Express.Multer.File[] | { [fieldname: string]: Express.Multer.File[] };
+  file?: any;
+  files?: any;
 }
 
 export const authMiddleware = async (req: AuthRequest, res: Response, next: NextFunction) => {
